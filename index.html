@@ -1,37 +1,56 @@
-<html>
+<!DOCTYPE html>
+<html lang="en-US">
  <head>
-     <title>TANGENTA</title>
-    <style>
-   .side {
-     display:inline-block;
-    }
-    body {background-color: whitesmoke;}
-    div {
-        color: black;
-        font-family:TimesNewRoman;
-        font-size: 200%;
-    }
-    input {font-size: 100%;}
-    p    {color: red;}
-    </style>
+	<link rel="stylesheet" 
+		 type="text/css" 
+		 href="TIndex.css" />
+     <title>TANGENTA-INVOICING</title>
  </head>
  <body>
-     <div class = "side">TANGENTA-INVOICING: </div>
-     <div class = "side">
-        <form action="FilesToDownload/Tangenta_001_setup.zip" >
-        <input type="submit" value="DOWNLOAD"/>
-     </div>   
-     <div>
-     <canvas id="TangentaLogo" width="600" height="500"></canvas>
+     <div class="relative">
+		 <canvas id="TangentaLogo" width="300" height="500"></canvas>
+		 <div class = "title_position">TANGENTA-INVOICING</div>
+		 <div class = "download_position">
+			<form  action="FilesToDownload/Tangenta_001_setup.zip" >
+			<input class = "download_button" type="submit" value="DOWNLOAD"/>
+		 </div>   
+		 <div class="content">
+			 <div class="content1position">
+				Tangenta is free open-source database program for selling<br>goods and services in small or medium businesses.
+			 </div>
+			 <div class="content2position">
+				You can write invoices and proforma-invoices and copy data between them.
+			 </div>
+			 <div class="content3position">
+				Tangenta has it's unique user interface where you always see how tables and columns are related to each other.
+			 </div>
+			 <div class="content4position">
+				Connection to SQLite or MSSQL database. SQLite is very convenient for one or two persons
+				who are working on the same machine. For multiuser operation select MSSQL server.
+			 </div>
+			 <div class="content5position">
+				Support for 3 different concurrent modes of selling:<br>
+			 </div>
+			 
+			 <div class="content6position">
+				Shop A: Simple without pricelist<br>
+				Shop B: integer quantities of items from pricelist and no stock <br>
+				Shop C: decimal quantities with physical units of items from pricelist,
+			 </div>
+			 <div class="content7position">
+				stock or directly from factory
+			 </div>
+		 </div>
      </div>
-<script type="text/javascript">
+
+	 <script type="text/javascript">
 var canvas, context, canvaso, contexto;
 canvaso = document.getElementById('TangentaLogo');
 context = canvaso.getContext('2d');
 context.lineWidth = 2;
 
 // Draw vertical line
-context.strokeStyle = '#000000';
+context.strokeStyle ='#D2B48C';
 context.beginPath();
 context.moveTo(30, 0);
 context.lineTo(30, 500);
@@ -44,7 +63,7 @@ context.stroke();
 
 // Draw head circle
 context.beginPath();
-context.fillStyle = "#CEF988";
+context.fillStyle = "#E2FFB0"/*"#CEF988";*/
 context.arc(72, 60, 40,0,2*Math.PI, false);
 context.fill();
 context.stroke();
@@ -53,10 +72,6 @@ context.closePath();
 context.restore();
 
 </script>
-
-<p>
-Tangenta je program za pisanje računov,predračunov, vključno z možnostjo elektronskega potrjevanja računov na davčni upravi.
-</p>
    
 </body>
 </html>
