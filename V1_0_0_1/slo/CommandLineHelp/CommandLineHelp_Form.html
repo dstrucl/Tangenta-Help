@@ -1,23 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Pomoč za komandno vrstico</title>
   </head>
   <body>
     <TControl name="CommandLineHelp_Form" imageincluded="1" link="" margin="4" heading="h1">
       <div class="Title">
-        <h1 class="Title">Pomoč za komandno vrstico in nastavitev povezave na pomoč</h1>
-        <div class="About">Dialog se prikaže kadar zaženemo program Tangenta.exe s parametrom 
-"/?"
-V zgornjem delu lahko nastavimo povezavo (mapo na lokalno pomoč)
-kot tudi internetni naslov pomoči.
-Dialog prikaže še vse ostale možne parametre komandne vrstice, 
-vključno z zagonom programa Tangenta.exe z izbranim parametrom.
-</div>
-        <img src="CommandLineHelp_Form.png" width="789" height="677" />
-        <div class="Description">V kolikor damo odkljukamo komandni parameter, se bo program nadaljeval 
-natanko tako, kot če bi ga napisali v komandni vrstici in nato zagnali.</div>
+<p id="demo"></p>
+
+<script>
+function loadXMLDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML =
+      this.responseText;
+    }
+  };
+  xhttp.open("GET", "file:///C:/Tangenta-Help/V1_0_0_1/slo/header.html", true);
+  xhttp.send();
+}
+</script>
+        <h1 class="Title" id="052d269c-a5cd-44ac-b026-f0b55f99c083">Pomoč za komandno vrstico</h1>
+        <img src="CommandLineHelp_Form.png" width="714" height="607" />
       </div>
       <TControl name="CommandLineHelp_Form.usrc_NavigationButtons1" imageincluded="1" link="" margin="4" heading="h2">
         <TControl name="CommandLineHelp_Form.usrc_NavigationButtons1.btn2" imageincluded="1" link="" margin="4" heading="h2" />
@@ -26,55 +33,43 @@ natanko tako, kot če bi ga napisali v komandni vrstici in nato zagnali.</div>
           <TControl name="CommandLineHelp_Form.usrc_NavigationButtons1.usrc_Help1.btn_Help" imageincluded="1" link="" margin="4" heading="h2" />
         </TControl>
       </TControl>
-      <TControl name="CommandLineHelp_Form.usrc_SelectLocalHelpFolder" imageincluded="1" link="" margin="4" heading="h2">
-        <TControl name="CommandLineHelp_Form.usrc_SelectLocalHelpFolder.label1" imageincluded="1" link="" margin="4" heading="h2" />
-        <TControl name="CommandLineHelp_Form.usrc_SelectLocalHelpFolder.txt_Folder" imageincluded="1" link="" margin="4" heading="h2" />
-        <TControl name="CommandLineHelp_Form.usrc_SelectLocalHelpFolder.btn_SelectFolder" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="CommandLineHelp_Form.usrc_HelpSettings1" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="CommandLineHelp_Form.usrc_HelpSettings1.grp_HelpSettings" imageincluded="1" link="" margin="4" heading="h2">
+          <div class="Title">
+            <h2 class="Title" id="b618c00c-0727-4d0f-b257-daa74144ab39">Nastavitev naslova za pomoč</h2>
+            <img src="CommandLineHelp_Form_usrc_HelpSettings1_grp_HelpSettings.png" width="691" height="90" />
+          </div>
+          <TControl name="CommandLineHelp_Form.usrc_HelpSettings1.grp_HelpSettings.lbl_RemoteURL" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="CommandLineHelp_Form.usrc_HelpSettings1.grp_HelpSettings.txt_RemoteHelpURL" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="CommandLineHelp_Form.usrc_HelpSettings1.grp_HelpSettings.usrc_SelectLocalHelpFolder" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="CommandLineHelp_Form.usrc_HelpSettings1.grp_HelpSettings.usrc_SelectLocalHelpFolder.label1" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="CommandLineHelp_Form.usrc_HelpSettings1.grp_HelpSettings.usrc_SelectLocalHelpFolder.txt_Folder" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="CommandLineHelp_Form.usrc_HelpSettings1.grp_HelpSettings.usrc_SelectLocalHelpFolder.btn_SelectFolder" imageincluded="1" link="" margin="4" heading="h2" />
+          </TControl>
+        </TControl>
       </TControl>
-      <TControl name="CommandLineHelp_Form.lbl_RemoteURL" imageincluded="1" link="" margin="4" heading="h2" />
-      <TControl name="CommandLineHelp_Form.txt_RemoteHelpURL" imageincluded="1" link="" margin="4" heading="h2" />
-      <TControl name="CommandLineHelp_Form.panel_Help" imageincluded="1" link="" margin="4" heading="h2">
-        <TControl name="CommandLineHelp_Form.panel_Help.CommandLineHelp_ItemControl[0]" imageincluded="1" link="" margin="4" heading="h2">
-          <div class="Title">
-            <h2 class="Title">Parameter "/DOCINVOICE"</h2>
-            <div class="About">V kolikor program zaženemo v komandni vrstici s parametron "/DOCINVOICE"
-se bo program avtomastko zagnal v načinu pisanja računov</div>
-            <img src="CommandLineHelp_Form_panel_Help_CommandLineHelp_ItemControl_0_.png" width="750" height="112" />
-          </div>
-          <TControl name="CommandLineHelp_Form.panel_Help.CommandLineHelp_ItemControl[0].txt_Help" imageincluded="1" link="" margin="4" heading="h2" />
-          <TControl name="CommandLineHelp_Form.panel_Help.CommandLineHelp_ItemControl[0].chk_select" imageincluded="1" link="" margin="4" heading="h2" />
-        </TControl>
-        <TControl name="CommandLineHelp_Form.panel_Help.CommandLineHelp_ItemControl[1]" imageincluded="1" link="" margin="4" heading="h2">
-          <div class="Title">
-            <h2 class="Title">Parameter "/DOCPROFORMAINVOICE"</h2>
-            <div class="About">V kolikor program zaženemo v komandni vrstici s parametron "/DOCINVOICE"
-se bo program avtomastko zagnal v načinu pisanja računov</div>
-            <img src="CommandLineHelp_Form_panel_Help_CommandLineHelp_ItemControl_1_.png" width="750" height="112" />
-          </div>
-          <TControl name="CommandLineHelp_Form.panel_Help.CommandLineHelp_ItemControl[1].txt_Help" imageincluded="1" link="" margin="4" heading="h2" />
-          <TControl name="CommandLineHelp_Form.panel_Help.CommandLineHelp_ItemControl[1].chk_select" imageincluded="1" link="" margin="4" heading="h2" />
-        </TControl>
-        <TControl name="CommandLineHelp_Form.panel_Help.CommandLineHelp_ItemControl[2]" imageincluded="1" link="" margin="4" heading="h2">
-          <div class="Title">
-            <h2 class="Title">Parameter "/CHANGE-CONNECTION"</h2>
-            <div class="About">V kolikor program zaženemo v komandni vrstici s parametron "/CHANGE-CONNECTION"
-se bo avtomatsko pojavil dialog za izbiro strežnika in nato podatkovne baze.</div>
-            <img src="CommandLineHelp_Form_panel_Help_CommandLineHelp_ItemControl_2_.png" width="750" height="112" />
-          </div>
-          <TControl name="CommandLineHelp_Form.panel_Help.CommandLineHelp_ItemControl[2].txt_Help" imageincluded="1" link="" margin="4" heading="h2" />
-          <TControl name="CommandLineHelp_Form.panel_Help.CommandLineHelp_ItemControl[2].chk_select" imageincluded="1" link="" margin="4" heading="h2" />
-        </TControl>
-        <TControl name="CommandLineHelp_Form.panel_Help.CommandLineHelp_ItemControl[3]" imageincluded="1" link="" margin="4" heading="h2">
-          <div class="Title">
-            <h2 class="Title">Parameter "/RESETNEW"</h2>
-            <div class="About">V kolikor program zaženemo v komandni vrstici s parametron "/RESETNEW"
-bo program vse nastavitve nastavil tako kot so bile ob sami prvi namestitvi
-programa, kar pomeni da boste morali še enkrat vnesti vse nastavitve.
-</div>
-            <img src="CommandLineHelp_Form_panel_Help_CommandLineHelp_ItemControl_3_.png" width="750" height="112" />
-          </div>
-          <TControl name="CommandLineHelp_Form.panel_Help.CommandLineHelp_ItemControl[3].txt_Help" imageincluded="1" link="" margin="4" heading="h2" />
-          <TControl name="CommandLineHelp_Form.panel_Help.CommandLineHelp_ItemControl[3].chk_select" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="CommandLineHelp_Form.grp_CommandLineParameters" imageincluded="1" link="" margin="4" heading="h2">
+        <div class="Title">
+          <h2 class="Title" id="53ce2651-0438-4250-86ea-a0e3281389c6">Parametri komandne vrstice</h2>
+          <img src="CommandLineHelp_Form_grp_CommandLineParameters.png" width="698" height="448" />
+        </div>
+        <TControl name="CommandLineHelp_Form.grp_CommandLineParameters.panel_Help" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="CommandLineHelp_Form.grp_CommandLineParameters.panel_Help.CommandLineHelp_ItemControl[0]" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="CommandLineHelp_Form.grp_CommandLineParameters.panel_Help.CommandLineHelp_ItemControl[0].txt_Help" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="CommandLineHelp_Form.grp_CommandLineParameters.panel_Help.CommandLineHelp_ItemControl[0].chk_select" imageincluded="1" link="" margin="4" heading="h2" />
+          </TControl>
+          <TControl name="CommandLineHelp_Form.grp_CommandLineParameters.panel_Help.CommandLineHelp_ItemControl[1]" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="CommandLineHelp_Form.grp_CommandLineParameters.panel_Help.CommandLineHelp_ItemControl[1].txt_Help" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="CommandLineHelp_Form.grp_CommandLineParameters.panel_Help.CommandLineHelp_ItemControl[1].chk_select" imageincluded="1" link="" margin="4" heading="h2" />
+          </TControl>
+          <TControl name="CommandLineHelp_Form.grp_CommandLineParameters.panel_Help.CommandLineHelp_ItemControl[2]" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="CommandLineHelp_Form.grp_CommandLineParameters.panel_Help.CommandLineHelp_ItemControl[2].txt_Help" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="CommandLineHelp_Form.grp_CommandLineParameters.panel_Help.CommandLineHelp_ItemControl[2].chk_select" imageincluded="1" link="" margin="4" heading="h2" />
+          </TControl>
+          <TControl name="CommandLineHelp_Form.grp_CommandLineParameters.panel_Help.CommandLineHelp_ItemControl[3]" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="CommandLineHelp_Form.grp_CommandLineParameters.panel_Help.CommandLineHelp_ItemControl[3].txt_Help" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="CommandLineHelp_Form.grp_CommandLineParameters.panel_Help.CommandLineHelp_ItemControl[3].chk_select" imageincluded="1" link="" margin="4" heading="h2" />
+          </TControl>
         </TControl>
       </TControl>
     </TControl>
