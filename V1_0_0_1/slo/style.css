@@ -1,6 +1,6 @@
     
     body {
-		font-family: Arial, Helvetica, sans-serif;
+		font-family: Verdana;
         background-color: white;
         display: block;
         margin-top: 4px;
@@ -11,8 +11,8 @@
 		display:block;
 		position: relative;
 		font-family: Verdana;
-		color: brown;
-		font-size: 120%;
+		color: #e0ca9f;
+		font-size: 110%;
 		top: 10px;
 		width: 830px;
 		height: 80px;
@@ -20,15 +20,16 @@
 
 	} 
 	a{
-		color: brown;
+		color: #936b20;
 	}
 	
 	div.header_menu {
 		position: relative;
 		top: 10px;
 		left: 10px;
-		color: brown;
-		font-size: 80%;
+		color: #936b20;
+		font-size: 90%;
+		font-weight: bold;
 		/*border: 3px solid #000000;*/
 	}	
 
@@ -39,8 +40,8 @@
 		position: absolute;
 		top: 0px;
 		left: 36px;
-		width: 720px;
-		height: 40px;
+		width: 780px;
+		height: 45px;
 		
 		/* IE10+ */ 
 	background-image: -ms-linear-gradient(top, #f8ffe8 0%, #DBF5A7 100%, #E8FFD4 100%);
@@ -71,7 +72,9 @@
 
 
     h1.Title {
-        font-size: 0.6cm;
+		color: #936b20;
+		font-size: 90%;
+        /*font-size: 0.6cm;*/
         padding-top: 0.5cm;
         padding-left: 0.5cm;
         padding-right: 0.5cm;
@@ -79,6 +82,7 @@
     }
 
     h2.Title {
+		color: #936b20;
         font-size: 0.5cm;
         line-height: 2.4em;
         padding-top: 0.6cm;
@@ -88,6 +92,7 @@
 
 	
     h3.Title {
+		color: #936b20;
         font-size: 0.4cm;
         padding-top: 0.6cm;
         padding-left: 0.5cm;
@@ -95,6 +100,7 @@
 	}
 	
     div.About{
+		color: #936b20;
         font-size: 0.4cm;
         padding-top: 0.2cm;
         padding-left: 0.8cm;
