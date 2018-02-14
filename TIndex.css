@@ -24,13 +24,13 @@ body {
 		position: relative;
 		top: 10px;
 		width: 1200px;
-		height: 600px;
+		height: 40px;
 	} 
 
 	div.title_position {
 		position: absolute;
 		top: 5px;
-		left: 300px;
+		left: 80px;
 		width: 920px;
 		height: 40px;
 	}	
