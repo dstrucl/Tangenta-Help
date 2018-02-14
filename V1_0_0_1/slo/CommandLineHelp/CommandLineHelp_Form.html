@@ -2,27 +2,57 @@
 <html>
   <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
     <title>Pomoč za komandno vrstico</title>
   </head>
   <body>
+   <div class="header"> 
+		<canvas id="TangentaLogo" width="60" height="50"></canvas>
+		<script type="text/javascript">
+		var canvas, context, canvaso, contexto;
+		canvaso = document.getElementById('TangentaLogo');
+		context = canvaso.getContext('2d');
+		context.lineWidth = 2;
+
+		// Draw vertical line
+		context.strokeStyle ='#D2B48C';
+		context.beginPath();
+		context.moveTo(30, 0);
+		context.lineTo(30, 50);
+		context.stroke();
+
+		// Draw large arc
+		context.beginPath();
+		context.arc(54, 26, 24,0.6*Math.PI,1.5*Math.PI, false);
+		context.stroke();
+
+		// Draw head circle
+		context.beginPath();
+		context.fillStyle = "#E2FFB0"/*"#CEF988";*/
+		context.arc(34, 6, 4,0,2*Math.PI, false);
+		context.fill();
+		context.stroke();
+
+		context.closePath();
+		context.restore();
+
+		</script>
+ 		 
+		 <div class="header_border_with_radius">
+			<div class = "header_menu">
+			 <span><a href="../Tangenta.html">TANGENTA</a></span>,
+			 <span><a href="../Invoice.html">RAČUNI</a></span>,
+			 <span><a href="../ProformaInvoice.html">PREDRAČUNI</a></span>,
+			 <span><a href="../Stock.html">ZALOGE</a></span>,
+			 <span><a href="../PriceList.html">CENIKI</a></span>,
+			 <span><a href="../Printing.html">TISKANJE RAČUNOV</a></span>,
+			 <span><a href="../InvoicingOverview.html">PREGLED FAKTUR</a></span>,
+			 <span><a href="../Support.html">PODPORA</a></span>
+			 </div>
+		</div>				
+	</div>		
     <TControl name="CommandLineHelp_Form" imageincluded="1" link="" margin="4" heading="h1">
       <div class="Title">
-<p id="demo"></p>
-
-<script>
-function loadXMLDoc() {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("demo").innerHTML =
-      this.responseText;
-    }
-  };
-  xhttp.open("GET", "file:///C:/Tangenta-Help/V1_0_0_1/slo/header.html", true);
-  xhttp.send();
-}
-</script>
         <h1 class="Title" id="052d269c-a5cd-44ac-b026-f0b55f99c083">Pomoč za komandno vrstico</h1>
         <img src="CommandLineHelp_Form.png" width="714" height="607" />
       </div>
