@@ -30,7 +30,7 @@ body {
 	div.title_position {
 		position: absolute;
 		top: 5px;
-		left: 80px;
+		left: 280px;
 		width: 920px;
 		height: 40px;
 	}	
@@ -68,7 +68,7 @@ body {
 	
 	div.content3position {
 		position: absolute;
-		top: 120px;
+		top: 130px;
 		left: 30px;
 		font-size: 70%;
 		text-align: center;
@@ -76,7 +76,7 @@ body {
 
 	div.content4position {
 		position: absolute;
-		top: 180px;
+		top: 190px;
 		left: 30px;
 		font-size: 70%;
 		text-align: center;
@@ -84,7 +84,7 @@ body {
 	
 	div.content5position {
 		position: absolute;
-		top: 240px;
+		top: 250px;
 		left: 55px;
 		font-size: 70%;
 		text-align: center;
@@ -92,7 +92,7 @@ body {
 	
 	div.content6position {
 		position: absolute;
-		top: 270px;
+		top: 280px;
 		left: 125px;
 		font-size: 70%;
 		text-align: Left;
@@ -100,8 +100,8 @@ body {
 	
 	div.content7position {
 		position: absolute;
-		top: 330px;
-		left: 215px;
+		top: 340px;
+		left: 195px;
 		font-size: 70%;
 		text-align: Left;
 	}	
