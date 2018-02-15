@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <title>Izberi</title>
+  </head>
+  <body>
+    <THeader>
+      <div class="header">
+        <canvas id="TangentaLogo" width="60" height="50"></canvas>
+        <script type="text/javascript">
+        var canvas, context, canvaso, contexto;
+        canvaso = document.getElementById('TangentaLogo');
+        context = canvaso.getContext('2d');
+        context.lineWidth = 1;
+
+        // Draw vertical line
+        context.strokeStyle ='#936b20';
+        context.beginPath();
+        context.moveTo(30, 0);
+        context.lineTo(30, 50);
+        context.stroke();
+
+        // Draw large arc
+        context.beginPath();
+        context.arc(54, 26, 24,0.6*Math.PI,1.5*Math.PI, false);
+        context.stroke();
+
+        // Draw head circle
+        context.beginPath();
+        context.fillStyle = "#E2FFB0"/*"#CEF988";*/
+        context.arc(34, 6, 4,0,2*Math.PI, false);
+        context.fill();
+        context.stroke();
+
+        context.closePath();
+        context.restore();
+
+        </script>
+        <div class="header_border_with_radius">
+          <div class="header_menu">
+            <span>
+              <a href="../Tangenta.html">TANGENTA</a>
+            </span>,
+             <span><a href="../Invoice.html">RAČUNI</a></span>,
+             <span><a href="../ProformaInvoice.html">PREDRAČUNI</a></span>,
+             <span><a href="../Stock.html">ZALOGE</a></span>,
+             <span><a href="../PriceList.html">CENIKI</a></span>,
+             <span><a href="../Printing.html">TISKANJE RAČUNOV</a></span>,
+             <span><a href="../InvoicingOverview.html">PREGLED FAKTUR</a></span>,
+             <span><a href="../Support.html">PODPORA</a></span></div>
+        </div>
+      </div>
+    </THeader>
+    <TControl name="Form_Navigate" imageincluded="1" link="" margin="4" heading="h1">
+      <div class="Title">
+        <h1 class="Title" id="6d91ca83-950a-4fba-b503-fd12ab35269a">Izberi</h1>
+        <div class="About">Dialog prikazuje osnovne navigacijske gumbe</div>
+        <img src="Form_Navigate.png" width="347" height="91" />
+        <div class="Description">Pomen navigacijskih gumbov je razložen v nadaljevanju</div>
+      </div>
+      <TControl name="Form_Navigate.usrc_NavigationButtons1" imageincluded="1" link="" margin="4" heading="h2">
+        <div class="Title">
+          <h2 class="Title" id="81bd1b5c-0841-4c79-ba30-f4f9588d19f3">Navigacisjki gumbi</h2>
+          <img src="Form_Navigate_usrc_NavigationButtons1.png" width="320" height="28" />
+          <div class="Description">Navigacijski gumbi se prikazujejo v zgornjem levem kotu dialoga.
+</div>
+        </div>
+        <TControl name="Form_Navigate.usrc_NavigationButtons1.btn1" imageincluded="1" link="" margin="4" heading="h2">
+          <div class="Title">
+            <h2 class="Title" id="8d9a2cfb-330d-4ae3-9db9-249c22549650">Gumb "Nazaj"</h2>
+            <img src="Form_Navigate_usrc_NavigationButtons1_btn1.png" width="81" height="27" />
+            <div class="Description">Z gumbom nazaj se vrnemo na prejšni dialog.
+Gumb nazaj se ne pojavi vedno na vseh dialogih, saj to zaradi logika programa
+v nekaterih primerih zaradi izgube že vnešenih podatkov ni možno oziroma smiselno.
+</div>
+          </div>
+        </TControl>
+        <TControl name="Form_Navigate.usrc_NavigationButtons1.btn2" imageincluded="1" link="" margin="4" heading="h2">
+          <div class="Title">
+            <h2 class="Title" id="092ba1a3-2b4b-415c-b60e-d469326e5da4">Gumb "Naprej"</h2>
+            <img src="Form_Navigate_usrc_NavigationButtons1_btn2.png" width="81" height="27" />
+            <div class="Description">Z gumbom "Naprej" gremo na naslednji korak oziroma nasldenji dialog.</div>
+          </div>
+        </TControl>
+        <TControl name="Form_Navigate.usrc_NavigationButtons1.btn3" imageincluded="1" link="" margin="4" heading="h2">
+          <div class="Title">
+            <h2 class="Title" id="245ad420-0187-40ca-80bf-4e841cc6c5db">Gumb "Izhod"</h2>
+            <img src="Form_Navigate_usrc_NavigationButtons1_btn3.png" width="81" height="27" />
+            <div class="Description">Gumb za izhod je prikazan na zgornji sliki.
+Z njim prekinemo izvajanje dialoga v nekatreih primerih pa tudi izvajanje programa.
+</div>
+          </div>
+        </TControl>
+        <TControl name="Form_Navigate.usrc_NavigationButtons1.usrc_Help1" imageincluded="1" link="" margin="4" heading="h2">
+          <div class="Title">
+            <h2 class="Title" id="fabae9a2-3c88-422e-9c3d-28a1d71daca3">Gumb za "Pomoč"</h2>
+            <img src="Form_Navigate_usrc_NavigationButtons1_usrc_Help1.png" width="38" height="27" />
+            <div class="Description">S pritiskom na gumb za "Pomoč", ki je prikazan na zgornji sliki, prikličemo na ekran
+pomoč za delo s prikazanim dialogom.</div>
+          </div>
+          <TControl name="Form_Navigate.usrc_NavigationButtons1.usrc_Help1.btn_Help" imageincluded="1" link="" margin="4" heading="h2" />
+        </TControl>
+      </TControl>
+    </TControl>
+  </body>
+</html>
