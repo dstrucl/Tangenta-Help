@@ -2,7 +2,7 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="../style.css" />
-    <title>Pomoč za komandno vrstico</title>
+    <title>Nastavitev za pomoč in pomoč za komandno vrstico</title>
   </head>
   <body>
     <THeader>
@@ -54,7 +54,11 @@
     </THeader>
     <TControl name="CommandLineHelp_Form" imageincluded="1" link="" margin="4" heading="h1">
       <div class="Title">
-        <h1 class="Title" id="052d269c-a5cd-44ac-b026-f0b55f99c083">Pomoč za komandno vrstico</h1>
+        <h1 class="Title" id="052d269c-a5cd-44ac-b026-f0b55f99c083">Nastavitev za pomoč in pomoč za komandno vrstico</h1>
+        <div class="About">Dialog  spodaj na sliki se prikaže kadar program Tangenta.exe zaženemo v komandni vrstici ali bližnjici s parametrom "/?".
+Dialog nam v zgornjem delu omogoča, da spremenimo nastavitve dostopa do pomoči na internetu in mapo za pomoč na lokalnem računalniku,v drugem spodnjem delu prikazuje ostale delujoče parametre komandne vrstice
+
+</div>
         <img src="CommandLineHelp_Form.png" width="714" height="607" />
       </div>
       <TControl name="CommandLineHelp_Form.usrc_NavigationButtons1" imageincluded="1" link="" margin="4" heading="h2">
@@ -69,11 +73,33 @@
           <div class="Title">
             <h2 class="Title" id="b618c00c-0727-4d0f-b257-daa74144ab39">Nastavitev naslova za pomoč</h2>
             <img src="CommandLineHelp_Form_usrc_HelpSettings1_grp_HelpSettings.png" width="691" height="90" />
+            <div class="Description">Tangenta.exe privzeto prikazuje tako imenovano "online" pomoč na internetu, ki jo avtor programa po potrebi dopolnjuje in ažurira.
+V kolikor računalnik nima dostopa do pomoči na internetu, Tangenta.exe prikazuje lokalno shranjeno pomoč, ki se je namestila ob
+namestitvi programa.
+</div>
           </div>
-          <TControl name="CommandLineHelp_Form.usrc_HelpSettings1.grp_HelpSettings.lbl_RemoteURL" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="CommandLineHelp_Form.usrc_HelpSettings1.grp_HelpSettings.lbl_RemoteURL" imageincluded="1" link="CommandLineHelp_Form.usrc_HelpSettings1.grp_HelpSettings.txt_RemoteHelpURL" margin="4" heading="h2">
+            <div class="Title">
+              <h2 class="Title" id="46bf5ceb-05cd-4eb9-88b1-9ea8cff32375">Naslov pomoči na internetu</h2>
+              <img src="CommandLineHelp_Form_usrc_HelpSettings1_grp_HelpSettings_lbl_RemoteURL.png" width="689" height="29" />
+              <div class="Description">V tekstovnem polju vpišete URL naslov za pomoč Tangenta na internetu.</div>
+            </div>
+          </TControl>
           <TControl name="CommandLineHelp_Form.usrc_HelpSettings1.grp_HelpSettings.txt_RemoteHelpURL" imageincluded="1" link="" margin="4" heading="h2" />
           <TControl name="CommandLineHelp_Form.usrc_HelpSettings1.grp_HelpSettings.usrc_SelectLocalHelpFolder" imageincluded="1" link="" margin="4" heading="h2">
-            <TControl name="CommandLineHelp_Form.usrc_HelpSettings1.grp_HelpSettings.usrc_SelectLocalHelpFolder.label1" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="CommandLineHelp_Form.usrc_HelpSettings1.grp_HelpSettings.usrc_SelectLocalHelpFolder.label1" imageincluded="1" link="CommandLineHelp_Form.usrc_HelpSettings1.grp_HelpSettings.usrc_SelectLocalHelpFolder.txt_Folder" margin="4" heading="h2">
+              <div class="Title">
+                <h2 class="Title" id="376ac2c3-d662-4c0f-84b8-a0d0dc7ae541">Lokalna mapa za pomoč</h2>
+                <img src="CommandLineHelp_Form_usrc_HelpSettings1_grp_HelpSettings_usrc_SelectLocalHelpFolder_label1.png" width="620" height="28" />
+                <div class="Description">V tekstovno polje vpišene mapo (direktorij) kjer se nahaja lokalna pomoč.
+Program ob namestitvi v kolikor ne določite drugače, namesti program Tangenta v
+mapo C:\Program Files (x86)\Tangenta Invoice\ datoteke za pomoč pa v mapo C:\Program Files (x86)\Tangenta Invoice\Tangenta-Help\
+Mapo Tangenta-Help lahko premaknete ali skopirate tudi kam drugam v besedilnem polju pa vpišete nov pot (mapo).
+
+
+</div>
+              </div>
+            </TControl>
             <TControl name="CommandLineHelp_Form.usrc_HelpSettings1.grp_HelpSettings.usrc_SelectLocalHelpFolder.txt_Folder" imageincluded="1" link="" margin="4" heading="h2" />
             <TControl name="CommandLineHelp_Form.usrc_HelpSettings1.grp_HelpSettings.usrc_SelectLocalHelpFolder.btn_SelectFolder" imageincluded="1" link="" margin="4" heading="h2" />
           </TControl>
@@ -86,18 +112,55 @@
         </div>
         <TControl name="CommandLineHelp_Form.grp_CommandLineParameters.panel_Help" imageincluded="1" link="" margin="4" heading="h2">
           <TControl name="CommandLineHelp_Form.grp_CommandLineParameters.panel_Help.CommandLineHelp_ItemControl[0]" imageincluded="1" link="" margin="4" heading="h2">
+            <div class="Title">
+              <h2 class="Title" id="630e9eae-baab-4545-a975-00b69a591ef1">/DOCINVOICE</h2>
+              <img src="CommandLineHelp_Form_grp_CommandLineParameters_panel_Help_CommandLineHelp_ItemControl_0_.png" width="672" height="91" />
+              <div class="Description">S parametrom /DOCINVOICE dosežemo, da se Tangenta zažene v načinu urejanja računov
+V kolikor odkljukamo kvadratek na levi strani zgornje slike, se bo zagon Tangenta nadaljeval enako kot bi se v primeru, da smo program zagnali s parametrom
+/DOCINVOICE v komandni vrstici
+POZOR:  /DOCPROFORMAINVOICE in /DOCINVOICE ne moremo in je nesmiselno dokljukati oziroma navesti hkrati v komandni vrstici, saj program ne bo vedel v katerem načinu naj se zažene!
+
+</div>
+            </div>
             <TControl name="CommandLineHelp_Form.grp_CommandLineParameters.panel_Help.CommandLineHelp_ItemControl[0].txt_Help" imageincluded="1" link="" margin="4" heading="h2" />
             <TControl name="CommandLineHelp_Form.grp_CommandLineParameters.panel_Help.CommandLineHelp_ItemControl[0].chk_select" imageincluded="1" link="" margin="4" heading="h2" />
           </TControl>
           <TControl name="CommandLineHelp_Form.grp_CommandLineParameters.panel_Help.CommandLineHelp_ItemControl[1]" imageincluded="1" link="" margin="4" heading="h2">
+            <div class="Title">
+              <h2 class="Title" id="cb62902c-ae1e-4a11-851e-700c10fd8dfd">/DOCPROFORMAINVOICE</h2>
+              <img src="CommandLineHelp_Form_grp_CommandLineParameters_panel_Help_CommandLineHelp_ItemControl_1_.png" width="672" height="91" />
+              <div class="Description">S parametrom /DOCPROFORMAINVOICE dosežemo, da se Tangenta zažene v načinu urejanja ponudb oziroma predračunov
+V kolikor odkljukamo kvadratek na levi strani zgornje slike, se bo zagon Tangenta nadaljeval enako kot bi se v primeru, da smo program zagnali s parametrom
+/DOCPROFORMAINVOICE v komandni vrstici.<br></br>
+POZOR:  /DOCPROFORMAINVOICE in /DOCINVOICE ne moremo in je nesmiselno dokljukati oziroma navesti hkrati v komandni vrstici, saj program ne bo vedel v katerem načinu naj se zažene!
+
+</div>
+            </div>
             <TControl name="CommandLineHelp_Form.grp_CommandLineParameters.panel_Help.CommandLineHelp_ItemControl[1].txt_Help" imageincluded="1" link="" margin="4" heading="h2" />
             <TControl name="CommandLineHelp_Form.grp_CommandLineParameters.panel_Help.CommandLineHelp_ItemControl[1].chk_select" imageincluded="1" link="" margin="4" heading="h2" />
           </TControl>
           <TControl name="CommandLineHelp_Form.grp_CommandLineParameters.panel_Help.CommandLineHelp_ItemControl[2]" imageincluded="1" link="" margin="4" heading="h2">
+            <div class="Title">
+              <h2 class="Title" id="7f3a9c35-5d45-4325-8881-6ef03f099fec">/CHANGE-CONNECTION</h2>
+              <img src="CommandLineHelp_Form_grp_CommandLineParameters_panel_Help_CommandLineHelp_ItemControl_2_.png" width="672" height="91" />
+              <div class="Description">V kolikor že nastavljen program Tangenta zaženemo, se Tangenta poveže na podatkovno bazo na katero je bila povezana že prej.
+Povezavo programa Tangenta na drugo podatkovno bazo lahko naredimo tako ta program Tangenta v komandni vrstici ali bližnjici zaženomo
+s parametrom /CHANGE-CONNECTION oziroma odkljukamo kvadratek na levi strani. Tangenta bo v em primeru, prikazala ob zagonu dialog za nastavitev
+in povezavo na podatkovni strežnik in podatkovno bazo.
+</div>
+            </div>
             <TControl name="CommandLineHelp_Form.grp_CommandLineParameters.panel_Help.CommandLineHelp_ItemControl[2].txt_Help" imageincluded="1" link="" margin="4" heading="h2" />
             <TControl name="CommandLineHelp_Form.grp_CommandLineParameters.panel_Help.CommandLineHelp_ItemControl[2].chk_select" imageincluded="1" link="" margin="4" heading="h2" />
           </TControl>
           <TControl name="CommandLineHelp_Form.grp_CommandLineParameters.panel_Help.CommandLineHelp_ItemControl[3]" imageincluded="1" link="" margin="4" heading="h2">
+            <div class="Title">
+              <h2 class="Title" id="5811f4b6-005b-4949-93f2-47df899ee2f7">/RESETNEW</h2>
+              <img src="CommandLineHelp_Form_grp_CommandLineParameters_panel_Help_CommandLineHelp_ItemControl_3_.png" width="672" height="91" />
+              <div class="Description">Parameter /RESETNEW zbriše vse nastavitve programa TANGENTA!
+V kolikor program Tangenta zaženemo v komandni vrstici ali bližnjici s parametrom /RESETNEW se bo prikazal dialog
+kjer lahko odkljukamo katere vse nastavitve posameznih modulov se bodo zbrisale oziroma postavile na "tovraniško" začetno vrednost.
+Posledica zagona Tangente s parametrom /RESETNEW je da se bo izvedla ponovni začetni ("deviški") zagon programa.</div>
+            </div>
             <TControl name="CommandLineHelp_Form.grp_CommandLineParameters.panel_Help.CommandLineHelp_ItemControl[3].txt_Help" imageincluded="1" link="" margin="4" heading="h2" />
             <TControl name="CommandLineHelp_Form.grp_CommandLineParameters.panel_Help.CommandLineHelp_ItemControl[3].chk_select" imageincluded="1" link="" margin="4" heading="h2" />
           </TControl>

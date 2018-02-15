@@ -50,9 +50,18 @@ body {
 		font-size: 100%;
 	}
 	
+	div.keyfeatures{
+		position: absolute;
+		top: 2px;
+		left: 430px;
+		font-size: 70%;
+		font-weight: bold;
+		text-align: center;
+	}	
+	
 	div.content1position {
 		position: absolute;
-		top: 20px;
+		top: 30px;
 		left: 140px;
 		font-size: 70%;
 		text-align: center;
@@ -60,7 +69,7 @@ body {
 	
 	div.content2position {
 		position: absolute;
-		top: 90px;
+		top: 100px;
 		left: 75px;
 		font-size: 70%;
 		text-align: center;
@@ -68,7 +77,7 @@ body {
 	
 	div.content3position {
 		position: absolute;
-		top: 140px;
+		top: 150px;
 		left: 30px;
 		font-size: 70%;
 		text-align: center;
@@ -76,7 +85,7 @@ body {
 
 	div.content4position {
 		position: absolute;
-		top: 200px;
+		top: 210px;
 		left: 30px;
 		font-size: 70%;
 		text-align: center;
@@ -84,7 +93,7 @@ body {
 	
 	div.content5position {
 		position: absolute;
-		top: 270px;
+		top: 280px;
 		left: 55px;
 		font-size: 70%;
 		text-align: center;
@@ -92,7 +101,7 @@ body {
 	
 	div.content6position {
 		position: absolute;
-		top: 300px;
+		top: 310px;
 		left: 125px;
 		font-size: 70%;
 		text-align: Left;
@@ -100,7 +109,7 @@ body {
 	
 	div.content7position {
 		position: absolute;
-		top: 360px;
+		top: 370px;
 		left: 158px;
 		font-size: 70%;
 		text-align: Left;
