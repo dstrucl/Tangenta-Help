@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <title>Izberite datoteko podatkovne baze</title>
+  </head>
+  <body>
+    <THeader>
+      <div class="header">
+        <canvas id="TangentaLogo" width="60" height="50"></canvas>
+        <script type="text/javascript">
+        var canvas, context, canvaso, contexto;
+        canvaso = document.getElementById('TangentaLogo');
+        context = canvaso.getContext('2d');
+        context.lineWidth = 1;
+
+        // Draw vertical line
+        context.strokeStyle ='#936b20';
+        context.beginPath();
+        context.moveTo(30, 0);
+        context.lineTo(30, 50);
+        context.stroke();
+
+        // Draw large arc
+        context.beginPath();
+        context.arc(54, 26, 24,0.6*Math.PI,1.5*Math.PI, false);
+        context.stroke();
+
+        // Draw head circle
+        context.beginPath();
+        context.fillStyle = "#E2FFB0"/*"#CEF988";*/
+        context.arc(34, 6, 4,0,2*Math.PI, false);
+        context.fill();
+        context.stroke();
+
+        context.closePath();
+        context.restore();
+
+        </script>
+        <div class="header_border_with_radius">
+          <div class="header_menu">
+            <span>
+              <a href="../Tangenta.html">TANGENTA</a>
+            </span>,
+             <span><a href="../Invoice.html">RAČUNI</a></span>,
+             <span><a href="../ProformaInvoice.html">PREDRAČUNI</a></span>,
+             <span><a href="../Stock.html">ZALOGE</a></span>,
+             <span><a href="../PriceList.html">CENIKI</a></span>,
+             <span><a href="../Printing.html">TISKANJE RAČUNOV</a></span>,
+             <span><a href="../InvoicingOverview.html">PREGLED FAKTUR</a></span>,
+             <span><a href="../Support.html">PODPORA</a></span></div>
+        </div>
+      </div>
+    </THeader>
+    <TControl name="st_SQLiteConnectionDialog" imageincluded="1" link="" margin="4" heading="h1">
+      <div class="Title">
+        <h1 class="Title" id="5eb810a8-af0d-46b7-94a6-a4b3444ca695">Izbira ali namestitev podatkovne baze tipa SQLite</h1>
+        <div class="About">Podatkovna baza tipa SQLite je samostajna datoteka.
+V kolikor v ne dodajate velikih slik bo ta datoteka zelo majhna
+Podatkovna baza podjetja Studio Marjetka d.o.o. ima preko 3000 izdanih faktur
+v obdobju treh let, njena velikost na disku pa je še vedno manjša od 3.5MB,
+kar je običajno manj kot je velikost ene same fotografije ki jo naredite z mobilnim telefonom.</div>
+        <img src="st_SQLiteConnectionDialog.png" width="590" height="230" />
+        <div class="Description">Prikazani dialog ima dva polja, ki sta razložena v nadaljevanju.</div>
+      </div>
+      <TControl name="st_SQLiteConnectionDialog.usrc_NavigationButtons1" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="st_SQLiteConnectionDialog.usrc_NavigationButtons1.btn1" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="st_SQLiteConnectionDialog.usrc_NavigationButtons1.btn2" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="st_SQLiteConnectionDialog.usrc_NavigationButtons1.btn3" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="st_SQLiteConnectionDialog.usrc_NavigationButtons1.usrc_Help1" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="st_SQLiteConnectionDialog.usrc_NavigationButtons1.usrc_Help1.btn_Help" imageincluded="1" link="" margin="4" heading="h2" />
+        </TControl>
+      </TControl>
+      <TControl name="st_SQLiteConnectionDialog.lbl_Folder" imageincluded="1" link="st_SQLiteConnectionDialog.btn_SelectFolder" margin="4" heading="h2">
+        <div class="Title">
+          <h2 class="Title" id="07671487-235d-4679-948a-9b58b2d6e922">Mapa kjer se nahaja podatkovna baza SQLite</h2>
+          <img src="st_SQLiteConnectionDialog_lbl_Folder.png" width="563" height="54" />
+          <div class="Description">S pritiskom na gumb ("Mapa (pot do datoteke) se bo prikazal standardni dialog operacisjkega sistema Windows za izbiro mape.
+Izbrana mapa se bo vpisala v tekstovno polje. Program na začetku privzeto nastavi mapo C:\TangentaDB\, kar seveda lahko spremenite.
+
+</div>
+        </div>
+      </TControl>
+      <TControl name="st_SQLiteConnectionDialog.cmbR_FilePath" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="st_SQLiteConnectionDialog.btn_SelectFolder" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="st_SQLiteConnectionDialog.lbl_FileName" imageincluded="1" link="st_SQLiteConnectionDialog.btn_SelectFile,st_SQLiteConnectionDialog.cmbR_FileName" margin="4" heading="h2">
+        <div class="Title">
+          <h2 class="Title" id="e5bcd4ae-b3cf-458a-9fea-f69e1ce21a2c">Ime datoteke</h2>
+          <img src="st_SQLiteConnectionDialog_lbl_FileName.png" width="560" height="53" />
+          <div class="Description">S pritiskom na gumb "Ime Datoteke" lahko izberemo neko že obstoječo podatkovno bazo tipa SQLite.
+Lahko pa tudi napišemo novo ime, program Tangenta, pa bo v nadaljevanju sutvaril novo prazno podatkovno bazo z novim imenom.</div>
+        </div>
+      </TControl>
+      <TControl name="st_SQLiteConnectionDialog.cmbR_FileName" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="st_SQLiteConnectionDialog.btn_SelectFile" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="st_SQLiteConnectionDialog.btn_SQLiteInfo" imageincluded="1" link="" margin="4" heading="h2">
+        <div class="Title">
+          <h2 class="Title" id="aae70c30-39b0-4c2d-a398-edd1fc19c8fe">Informacija o SQLite podatkovni bazi</h2>
+          <div class="About">S pritiskom na gum "SQLite Info" se prikaže dialog s potrebnimi informacijami verzije knjižnic in gonilnikov za SQLite</div>
+          <img src="st_SQLiteConnectionDialog_btn_SQLiteInfo.png" width="86" height="29" />
+        </div>
+      </TControl>
+    </TControl>
+  </body>
+</html>
