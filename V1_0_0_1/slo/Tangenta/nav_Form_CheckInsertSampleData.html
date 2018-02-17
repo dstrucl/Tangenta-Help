@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <title>Tangenta.Form_CheckInsertSampleData</title>
+  </head>
+  <body>
+    <THeader>
+      <div class="header">
+        <canvas id="TangentaLogo" width="60" height="50"></canvas>
+        <script type="text/javascript">
+        var canvas, context, canvaso, contexto;
+        canvaso = document.getElementById('TangentaLogo');
+        context = canvaso.getContext('2d');
+        context.lineWidth = 1;
+
+        // Draw vertical line
+        context.strokeStyle ='#936b20';
+        context.beginPath();
+        context.moveTo(30, 0);
+        context.lineTo(30, 50);
+        context.stroke();
+
+        // Draw large arc
+        context.beginPath();
+        context.arc(54, 26, 24,0.6*Math.PI,1.5*Math.PI, false);
+        context.stroke();
+
+        // Draw head circle
+        context.beginPath();
+        context.fillStyle = "#E2FFB0"/*"#CEF988";*/
+        context.arc(34, 6, 4,0,2*Math.PI, false);
+        context.fill();
+        context.stroke();
+
+        context.closePath();
+        context.restore();
+
+        </script>
+        <div class="header_border_with_radius">
+          <div class="header_menu">
+            <span>
+              <a href="../Tangenta.html">TANGENTA</a>
+            </span>,
+             <span><a href="../Invoice.html">RAČUNI</a></span>,
+             <span><a href="../ProformaInvoice.html">PREDRAČUNI</a></span>,
+             <span><a href="../Stock.html">ZALOGE</a></span>,
+             <span><a href="../PriceList.html">CENIKI</a></span>,
+             <span><a href="../Printing.html">TISKANJE RAČUNOV</a></span>,
+             <span><a href="../InvoicingOverview.html">PREGLED FAKTUR</a></span>,
+             <span><a href="../Support.html">PODPORA</a></span></div>
+        </div>
+      </div>
+    </THeader>
+    <TControl name="nav_Form_CheckInsertSampleData" imageincluded="1" link="" margin="4" heading="h1">
+      <div class="Title">
+        <h1 class="Title" id="34fd263b-eddf-4900-9320-1c3f2b2dda05">Baza podatkov je prazna</h1>
+        <img src="nav_Form_CheckInsertSampleData.png" width="528" height="349" />
+      </div>
+      <TControl name="nav_Form_CheckInsertSampleData.usrc_NavigationButtons1" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="nav_Form_CheckInsertSampleData.usrc_NavigationButtons1.btn1" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="nav_Form_CheckInsertSampleData.usrc_NavigationButtons1.btn2" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="nav_Form_CheckInsertSampleData.usrc_NavigationButtons1.btn3" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="nav_Form_CheckInsertSampleData.usrc_NavigationButtons1.usrc_Help1" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="nav_Form_CheckInsertSampleData.usrc_NavigationButtons1.usrc_Help1.btn_Help" imageincluded="1" link="" margin="4" heading="h2" />
+        </TControl>
+      </TControl>
+      <TControl name="nav_Form_CheckInsertSampleData.lbl_Message1" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="nav_Form_CheckInsertSampleData.rdb_WritePredefinedDefaultDataInDataBase" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="nav_Form_CheckInsertSampleData.lbl_Message2" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="nav_Form_CheckInsertSampleData.rdb_Enter_data_into_a_new_database_table" imageincluded="1" link="" margin="4" heading="h2" />
+    </TControl>
+  </body>
+</html>

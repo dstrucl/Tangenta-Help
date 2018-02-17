@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <title>Tangenta.Form_DBSettings</title>
+  </head>
+  <body>
+    <THeader>
+      <div class="header">
+        <canvas id="TangentaLogo" width="60" height="50"></canvas>
+        <script type="text/javascript">
+        var canvas, context, canvaso, contexto;
+        canvaso = document.getElementById('TangentaLogo');
+        context = canvaso.getContext('2d');
+        context.lineWidth = 1;
+
+        // Draw vertical line
+        context.strokeStyle ='#936b20';
+        context.beginPath();
+        context.moveTo(30, 0);
+        context.lineTo(30, 50);
+        context.stroke();
+
+        // Draw large arc
+        context.beginPath();
+        context.arc(54, 26, 24,0.6*Math.PI,1.5*Math.PI, false);
+        context.stroke();
+
+        // Draw head circle
+        context.beginPath();
+        context.fillStyle = "#E2FFB0"/*"#CEF988";*/
+        context.arc(34, 6, 4,0,2*Math.PI, false);
+        context.fill();
+        context.stroke();
+
+        context.closePath();
+        context.restore();
+
+        </script>
+        <div class="header_border_with_radius">
+          <div class="header_menu">
+            <span>
+              <a href="../Tangenta.html">TANGENTA</a>
+            </span>,
+             <span><a href="../Invoice.html">RAČUNI</a></span>,
+             <span><a href="../ProformaInvoice.html">PREDRAČUNI</a></span>,
+             <span><a href="../Stock.html">ZALOGE</a></span>,
+             <span><a href="../PriceList.html">CENIKI</a></span>,
+             <span><a href="../Printing.html">TISKANJE RAČUNOV</a></span>,
+             <span><a href="../InvoicingOverview.html">PREGLED FAKTUR</a></span>,
+             <span><a href="../Support.html">PODPORA</a></span></div>
+        </div>
+      </div>
+    </THeader>
+    <TControl name="st_Form_DBSettings" imageincluded="1" link="" margin="4" heading="h1">
+      <div class="Title">
+        <h1 class="Title" id="0f0eb9a5-1116-47d2-ba7e-9be292c0ad65">Nastavitve v podatkovni bazi</h1>
+        <img src="st_Form_DBSettings.png" width="409" height="350" />
+      </div>
+      <TControl name="st_Form_DBSettings.usrc_NavigationButtons1" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="st_Form_DBSettings.usrc_NavigationButtons1.btn1" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="st_Form_DBSettings.usrc_NavigationButtons1.btn2" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="st_Form_DBSettings.usrc_NavigationButtons1.btn3" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="st_Form_DBSettings.usrc_NavigationButtons1.usrc_Help1" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="st_Form_DBSettings.usrc_NavigationButtons1.usrc_Help1.btn_Help" imageincluded="1" link="" margin="4" heading="h2" />
+        </TControl>
+      </TControl>
+      <TControl name="st_Form_DBSettings.lbl_DataBaseVersion" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="st_Form_DBSettings.grp_OperationMode" imageincluded="1" link="" margin="4" heading="h2">
+        <div class="Title">
+          <h2 class="Title" id="dd4bbbb4-bf51-4dd9-ab81-e1eed1db0e21">Način delovanja</h2>
+          <img src="st_Form_DBSettings_grp_OperationMode.png" width="377" height="168" />
+        </div>
+        <TControl name="st_Form_DBSettings.grp_OperationMode.rdb_MultiUserOperation" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="st_Form_DBSettings.grp_OperationMode.rdb_SingleUser" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="st_Form_DBSettings.grp_OperationMode.chk_SingleUserLoginAsAdministrator" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="st_Form_DBSettings.grp_OperationMode.lbl_Administrator_Password" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="st_Form_DBSettings.grp_OperationMode.usrc_Password1" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="st_Form_DBSettings.grp_OperationMode.usrc_Password1.txt_Password" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="st_Form_DBSettings.grp_OperationMode.usrc_Password1.lbl_Retype_Password" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="st_Form_DBSettings.grp_OperationMode.usrc_Password1.btn_PasswordView" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="st_Form_DBSettings.grp_OperationMode.usrc_Password1.txt_Password_Retyped" imageincluded="1" link="" margin="4" heading="h2" />
+        </TControl>
+      </TControl>
+      <TControl name="st_Form_DBSettings.chk_StockCheckAtStartup" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="st_Form_DBSettings.chk_ShopC_ExclusivelySellFromStock" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="st_Form_DBSettings.chk_MultiCurrency" imageincluded="1" link="" margin="4" heading="h2" />
+    </TControl>
+  </body>
+</html>
