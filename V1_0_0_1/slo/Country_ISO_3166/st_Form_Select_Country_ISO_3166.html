@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <title>Država katere ste davčni zavezanec</title>
+  </head>
+  <body>
+    <THeader>
+      <div class="header">
+        <canvas id="TangentaLogo" width="60" height="50"></canvas>
+        <script type="text/javascript">
+        var canvas, context, canvaso, contexto;
+        canvaso = document.getElementById('TangentaLogo');
+        context = canvaso.getContext('2d');
+        context.lineWidth = 1;
+
+        // Draw vertical line
+        context.strokeStyle ='#936b20';
+        context.beginPath();
+        context.moveTo(30, 0);
+        context.lineTo(30, 50);
+        context.stroke();
+
+        // Draw large arc
+        context.beginPath();
+        context.arc(54, 26, 24,0.6*Math.PI,1.5*Math.PI, false);
+        context.stroke();
+
+        // Draw head circle
+        context.beginPath();
+        context.fillStyle = "#E2FFB0"/*"#CEF988";*/
+        context.arc(34, 6, 4,0,2*Math.PI, false);
+        context.fill();
+        context.stroke();
+
+        context.closePath();
+        context.restore();
+
+        </script>
+        <div class="header_border_with_radius">
+          <div class="header_menu">
+            <span>
+              <a href="../Tangenta.html">TANGENTA</a>
+            </span>,
+             <span><a href="../Invoice.html">RAČUNI</a></span>,
+             <span><a href="../ProformaInvoice.html">PREDRAČUNI</a></span>,
+             <span><a href="../Stock.html">ZALOGE</a></span>,
+             <span><a href="../PriceList.html">CENIKI</a></span>,
+             <span><a href="../Printing.html">TISKANJE RAČUNOV</a></span>,
+             <span><a href="../InvoicingOverview.html">PREGLED FAKTUR</a></span>,
+             <span><a href="../Support.html">PODPORA</a></span></div>
+        </div>
+      </div>
+    </THeader>
+    <TControl name="st_Form_Select_Country_ISO_3166" imageincluded="1" link="" margin="4" heading="h1">
+      <div class="Title">
+        <h1 class="Title" id="4c1c17c1-65d2-4295-862e-28db9e41d58e">Izbira države katere ste davčni zavezanec</h1>
+        <img src="st_Form_Select_Country_ISO_3166.png" width="662" height="530" />
+      </div>
+      <TControl name="st_Form_Select_Country_ISO_3166.usrc_NavigationButtons1" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="st_Form_Select_Country_ISO_3166.usrc_NavigationButtons1.btn1" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="st_Form_Select_Country_ISO_3166.usrc_NavigationButtons1.btn2" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="st_Form_Select_Country_ISO_3166.usrc_NavigationButtons1.btn3" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="st_Form_Select_Country_ISO_3166.usrc_NavigationButtons1.usrc_Help1" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="st_Form_Select_Country_ISO_3166.usrc_NavigationButtons1.usrc_Help1.btn_Help" imageincluded="1" link="" margin="4" heading="h2" />
+        </TControl>
+      </TControl>
+      <TControl name="st_Form_Select_Country_ISO_3166.txt_SelectCountry" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="st_Form_Select_Country_ISO_3166.dgvx_ISO_3166" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="st_Form_Select_Country_ISO_3166.dgvx_ISO_3166.Country" imageincluded="1" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="e4ba78a5-35b2-447a-a72e-bdbb4d5b9e3d">Država</h3>
+            <img src="st_Form_Select_Country_ISO_3166_dgvx_ISO_3166_Country.png" width="0" height="0" />
+          </div>
+        </TControl>
+        <TControl name="st_Form_Select_Country_ISO_3166.dgvx_ISO_3166.a2" imageincluded="1" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="d146297e-b5cd-4e23-8f4a-0a2573d8fe38">Okrajšava a2</h3>
+            <img src="st_Form_Select_Country_ISO_3166_dgvx_ISO_3166_a2.png" width="0" height="0" />
+          </div>
+        </TControl>
+        <TControl name="st_Form_Select_Country_ISO_3166.dgvx_ISO_3166.a3" imageincluded="1" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="712f6cd5-51d2-4661-ab46-27bec69cbee5">Okrajšava a3</h3>
+            <img src="st_Form_Select_Country_ISO_3166_dgvx_ISO_3166_a3.png" width="0" height="0" />
+          </div>
+        </TControl>
+        <TControl name="st_Form_Select_Country_ISO_3166.dgvx_ISO_3166.num" imageincluded="1" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="4ee99efb-f92d-4392-a3da-598c390bff71">Številka</h3>
+            <img src="st_Form_Select_Country_ISO_3166_dgvx_ISO_3166_num.png" width="0" height="0" />
+          </div>
+        </TControl>
+        <TControl name="st_Form_Select_Country_ISO_3166.dgvx_ISO_3166.Currency Name" imageincluded="1" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="9224ff5e-a809-431f-8dd1-ebd67e69f73a">Currency Name</h3>
+            <img src="st_Form_Select_Country_ISO_3166_dgvx_ISO_3166_Currency Name.png" width="0" height="0" />
+          </div>
+        </TControl>
+        <TControl name="st_Form_Select_Country_ISO_3166.dgvx_ISO_3166.Currency Abbreviation" imageincluded="1" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="2d3f8eb5-de71-4a1b-aab1-30bb8a9160be">Currency Abbreviation</h3>
+            <img src="st_Form_Select_Country_ISO_3166_dgvx_ISO_3166_Currency Abbreviation.png" width="0" height="0" />
+          </div>
+        </TControl>
+        <TControl name="st_Form_Select_Country_ISO_3166.dgvx_ISO_3166.Currency Symbol" imageincluded="1" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="6068ac42-02cb-434e-97d7-85926ba880a3">Currency Symbol</h3>
+            <img src="st_Form_Select_Country_ISO_3166_dgvx_ISO_3166_Currency Symbol.png" width="0" height="0" />
+          </div>
+        </TControl>
+        <TControl name="st_Form_Select_Country_ISO_3166.dgvx_ISO_3166.Currency Code" imageincluded="1" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="d7b5d967-c758-47e1-b89b-c2ef94d37f68">Currency Code</h3>
+            <img src="st_Form_Select_Country_ISO_3166_dgvx_ISO_3166_Currency Code.png" width="0" height="0" />
+          </div>
+        </TControl>
+        <TControl name="st_Form_Select_Country_ISO_3166.dgvx_ISO_3166.Currency Decimal Places" imageincluded="1" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="99041076-4c91-46b9-90bb-d64d086cd4aa">Currency Decimal Places</h3>
+            <img src="st_Form_Select_Country_ISO_3166_dgvx_ISO_3166_Currency Decimal Places.png" width="0" height="0" />
+          </div>
+        </TControl>
+      </TControl>
+    </TControl>
+  </body>
+</html>

@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <title>Vzorčni podatki organizacije z imenom Podjetje1, ki jih lahko spremenite v tem dialogu v podatke vaše organizacije.</title>
+  </head>
+  <body>
+    <THeader>
+      <div class="header">
+        <canvas id="TangentaLogo" width="60" height="50"></canvas>
+        <script type="text/javascript">
+        var canvas, context, canvaso, contexto;
+        canvaso = document.getElementById('TangentaLogo');
+        context = canvaso.getContext('2d');
+        context.lineWidth = 1;
+
+        // Draw vertical line
+        context.strokeStyle ='#936b20';
+        context.beginPath();
+        context.moveTo(30, 0);
+        context.lineTo(30, 50);
+        context.stroke();
+
+        // Draw large arc
+        context.beginPath();
+        context.arc(54, 26, 24,0.6*Math.PI,1.5*Math.PI, false);
+        context.stroke();
+
+        // Draw head circle
+        context.beginPath();
+        context.fillStyle = "#E2FFB0"/*"#CEF988";*/
+        context.arc(34, 6, 4,0,2*Math.PI, false);
+        context.fill();
+        context.stroke();
+
+        context.closePath();
+        context.restore();
+
+        </script>
+        <div class="header_border_with_radius">
+          <div class="header_menu">
+            <span>
+              <a href="../Tangenta.html">TANGENTA</a>
+            </span>,
+             <span><a href="../Invoice.html">RAČUNI</a></span>,
+             <span><a href="../ProformaInvoice.html">PREDRAČUNI</a></span>,
+             <span><a href="../Stock.html">ZALOGE</a></span>,
+             <span><a href="../PriceList.html">CENIKI</a></span>,
+             <span><a href="../Printing.html">TISKANJE RAČUNOV</a></span>,
+             <span><a href="../InvoicingOverview.html">PREGLED FAKTUR</a></span>,
+             <span><a href="../Support.html">PODPORA</a></span></div>
+        </div>
+      </div>
+    </THeader>
+    <TControl name="st_Form_EditMyOrgSampleData" imageincluded="1" link="" margin="4" heading="h1">
+      <div class="Title">
+        <h1 class="Title" id="a915f42a-27fd-4bde-9932-34301d90860a">Vzorčni podatki organizacije z imenom Podjetje1, ki jih lahko spremenite v tem dialogu v podatke vaše organizacije.</h1>
+        <img src="st_Form_EditMyOrgSampleData.png" width="593" height="543" />
+      </div>
+      <TControl name="st_Form_EditMyOrgSampleData.usrc_NavigationButtons1" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="st_Form_EditMyOrgSampleData.usrc_NavigationButtons1.btn1" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="st_Form_EditMyOrgSampleData.usrc_NavigationButtons1.btn2" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="st_Form_EditMyOrgSampleData.usrc_NavigationButtons1.btn3" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="st_Form_EditMyOrgSampleData.usrc_NavigationButtons1.usrc_Help1" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="st_Form_EditMyOrgSampleData.usrc_NavigationButtons1.usrc_Help1.btn_Help" imageincluded="1" link="" margin="4" heading="h2" />
+        </TControl>
+      </TControl>
+      <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg" imageincluded="1" link="" margin="4" heading="h2">
+          <div class="Title">
+            <h2 class="Title" id="046d436a-b825-4237-83ab-04ba42f75aea">Podatki o moji oragnizaciji</h2>
+            <img src="st_Form_EditMyOrgSampleData_m_usrc_SampleDataEdit_grp_grp_MyOrg.png" width="554" height="1987" />
+          </div>
+          <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.lbl_grp_grp_MyOrg_MyOrg_Name" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.txt_grp_grp_MyOrg_MyOrg_Name" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.lbl_grp_grp_MyOrg_MyOrg_Tax_ID" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.txt_grp_grp_MyOrg_MyOrg_Tax_ID" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.lbl_grp_grp_MyOrg_MyOrg_Registration_ID" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.txt_grp_grp_MyOrg_MyOrg_Registration_ID" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.lbl_grp_grp_MyOrg_MyOrg_TaxPayer" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.txt_grp_grp_MyOrg_MyOrg_TaxPayer" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.lbl_grp_grp_MyOrg_MyOrg_OrganisationTYPE" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.txt_grp_grp_MyOrg_MyOrg_OrganisationTYPE" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.lbl_grp_grp_MyOrg_MyOrg_PhoneNumber" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.txt_grp_grp_MyOrg_MyOrg_PhoneNumber" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.lbl_grp_grp_MyOrg_MyOrg_FaxNumber" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.txt_grp_grp_MyOrg_MyOrg_FaxNumber" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.lbl_grp_grp_MyOrg_MyOrg_Email" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.txt_grp_grp_MyOrg_MyOrg_Email" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.lbl_grp_grp_MyOrg_MyOrg_HomePage" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.txt_grp_grp_MyOrg_MyOrg_HomePage" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.lbl_grp_grp_MyOrg_MyOrg_Logo" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.txt_grp_grp_MyOrg_MyOrg_Logo" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.txt_grp_grp_MyOrg_MyOrg_Logo.btn_Select" imageincluded="1" link="" margin="4" heading="h2" />
+          </TControl>
+          <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Comment1" imageincluded="1" link="" margin="4" heading="h2">
+            <div class="Title">
+              <h2 class="Title" id="2a836467-a702-440e-8ab9-ab9f33add24f">Komentar 1</h2>
+              <img src="st_Form_EditMyOrgSampleData_m_usrc_SampleDataEdit_grp_grp_MyOrg_grp_grp_MyOrg_Comment1.png" width="534" height="84" />
+            </div>
+            <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Comment1.lbl_grp_grp_MyOrg_Comment1_MyOrg_Comment1" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Comment1.txt_grp_grp_MyOrg_Comment1_MyOrg_Comment1" imageincluded="1" link="" margin="4" heading="h2" />
+          </TControl>
+          <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_BankAccount" imageincluded="1" link="" margin="4" heading="h2">
+            <div class="Title">
+              <h2 class="Title" id="3bb9beab-3ead-483a-b3f2-2132d60f7d34">Bančni račun</h2>
+              <img src="st_Form_EditMyOrgSampleData_m_usrc_SampleDataEdit_grp_grp_MyOrg_grp_grp_MyOrg_BankAccount.png" width="534" height="252" />
+            </div>
+            <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_BankAccount.lbl_grp_grp_MyOrg_BankAccount_MyOrg_BankAccount_TRR" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_BankAccount.txt_grp_grp_MyOrg_BankAccount_MyOrg_BankAccount_TRR" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_BankAccount.lbl_grp_grp_MyOrg_BankAccount_MyOrg_BankAccount_Description" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_BankAccount.txt_grp_grp_MyOrg_BankAccount_MyOrg_BankAccount_Description" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_BankAccount.lbl_grp_grp_MyOrg_BankAccount_MyOrg_BankAccount_Active" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_BankAccount.txt_grp_grp_MyOrg_BankAccount_MyOrg_BankAccount_Active" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_BankAccount.grp_grp_MyOrg_BankAccount_Bank" imageincluded="1" link="" margin="4" heading="h2">
+              <div class="Title">
+                <h2 class="Title" id="16a6d270-ac6a-41a6-b876-4284d3630fd3">Banka</h2>
+                <img src="st_Form_EditMyOrgSampleData_m_usrc_SampleDataEdit_grp_grp_MyOrg_grp_grp_MyOrg_BankAccount_grp_grp_MyOrg_BankAccount_Bank.png" width="514" height="109" />
+              </div>
+              <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_BankAccount.grp_grp_MyOrg_BankAccount_Bank.lbl_grp_grp_MyOrg_BankAccount_Bank_MyOrg_Bank_Name" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_BankAccount.grp_grp_MyOrg_BankAccount_Bank.txt_grp_grp_MyOrg_BankAccount_Bank_MyOrg_Bank_Name" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_BankAccount.grp_grp_MyOrg_BankAccount_Bank.lbl_grp_grp_MyOrg_BankAccount_Bank_MyOrg_Bank_Tax_ID" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_BankAccount.grp_grp_MyOrg_BankAccount_Bank.txt_grp_grp_MyOrg_BankAccount_Bank_MyOrg_Bank_Tax_ID" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_BankAccount.grp_grp_MyOrg_BankAccount_Bank.lbl_grp_grp_MyOrg_BankAccount_Bank_MyOrg_Bank_Registration_ID" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_BankAccount.grp_grp_MyOrg_BankAccount_Bank.txt_grp_grp_MyOrg_BankAccount_Bank_MyOrg_Bank_Registration_ID" imageincluded="1" link="" margin="4" heading="h2" />
+            </TControl>
+          </TControl>
+          <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Address" imageincluded="1" link="" margin="4" heading="h2">
+            <div class="Title">
+              <h2 class="Title" id="a2204220-d1ba-4a6d-b469-34be9d545a88">Naslov</h2>
+              <img src="st_Form_EditMyOrgSampleData_m_usrc_SampleDataEdit_grp_grp_MyOrg_grp_grp_MyOrg_Address.png" width="534" height="289" />
+            </div>
+            <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Address.lbl_grp_grp_MyOrg_Address_MyOrg_Address_StreetName" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Address.txt_grp_grp_MyOrg_Address_MyOrg_Address_StreetName" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Address.lbl_grp_grp_MyOrg_Address_MyOrg_Address_HouseNumber" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Address.txt_grp_grp_MyOrg_Address_MyOrg_Address_HouseNumber" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Address.lbl_grp_grp_MyOrg_Address_MyOrg_Address_ZIP" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Address.txt_grp_grp_MyOrg_Address_MyOrg_Address_ZIP" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Address.lbl_grp_grp_MyOrg_Address_MyOrg_Address_ZIP" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Address.txt_grp_grp_MyOrg_Address_MyOrg_Address_ZIP" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Address.lbl_grp_grp_MyOrg_Address_MyOrg_Address_State" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Address.txt_grp_grp_MyOrg_Address_MyOrg_Address_State" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Address.grp_grp_MyOrg_Address_Country" imageincluded="1" link="" margin="4" heading="h2">
+              <div class="Title">
+                <h2 class="Title" id="8347cc77-9edc-42f1-95f1-d20f83f864f3">Država</h2>
+                <img src="st_Form_EditMyOrgSampleData_m_usrc_SampleDataEdit_grp_grp_MyOrg_grp_grp_MyOrg_Address_grp_grp_MyOrg_Address_Country.png" width="514" height="150" />
+              </div>
+              <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Address.grp_grp_MyOrg_Address_Country.lbl_grp_grp_MyOrg_Address_Country_MyOrg_Addres_Country" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Address.grp_grp_MyOrg_Address_Country.txt_grp_grp_MyOrg_Address_Country_MyOrg_Addres_Country" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Address.grp_grp_MyOrg_Address_Country.lbl_grp_grp_MyOrg_Address_Country_MyOrg_Address_Country_ISO_3166_a2" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Address.grp_grp_MyOrg_Address_Country.txt_grp_grp_MyOrg_Address_Country_MyOrg_Address_Country_ISO_3166_a2" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Address.grp_grp_MyOrg_Address_Country.lbl_grp_grp_MyOrg_Address_Country_MyOrg_Address_Country_ISO_3166_a3" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Address.grp_grp_MyOrg_Address_Country.txt_grp_grp_MyOrg_Address_Country_MyOrg_Address_Country_ISO_3166_a3" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Address.grp_grp_MyOrg_Address_Country.lbl_grp_grp_MyOrg_Address_Country_MyOrg_Address_Country_ISO_3166_num" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Address.grp_grp_MyOrg_Address_Country.txt_grp_grp_MyOrg_Address_Country_MyOrg_Address_Country_ISO_3166_num" imageincluded="1" link="" margin="4" heading="h2">
+                <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Address.grp_grp_MyOrg_Address_Country.txt_grp_grp_MyOrg_Address_Country_MyOrg_Address_Country_ISO_3166_num.txt_Value" imageincluded="1" link="" margin="4" heading="h2" />
+                <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Address.grp_grp_MyOrg_Address_Country.txt_grp_grp_MyOrg_Address_Country_MyOrg_Address_Country_ISO_3166_num.btn_Plus" imageincluded="1" link="" margin="4" heading="h2" />
+                <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Address.grp_grp_MyOrg_Address_Country.txt_grp_grp_MyOrg_Address_Country_MyOrg_Address_Country_ISO_3166_num.btn_Minus" imageincluded="1" link="" margin="4" heading="h2" />
+              </TControl>
+            </TControl>
+          </TControl>
+          <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office" imageincluded="1" link="" margin="4" heading="h2">
+            <div class="Title">
+              <h2 class="Title" id="87174147-a4eb-41a0-89d1-9db2968b3c7b">Poslovna enota</h2>
+              <img src="st_Form_EditMyOrgSampleData_m_usrc_SampleDataEdit_grp_grp_MyOrg_grp_grp_MyOrg_Office.png" width="534" height="1012" />
+            </div>
+            <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.lbl_grp_grp_MyOrg_Office_MyOrg_OfficeName" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.txt_grp_grp_MyOrg_Office_MyOrg_OfficeName" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.lbl_grp_grp_MyOrg_Office_MyOrg_OfficeShortName" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.txt_grp_grp_MyOrg_Office_MyOrg_OfficeShortName" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Address" imageincluded="1" link="" margin="4" heading="h2">
+              <div class="Title">
+                <h2 class="Title" id="0a9b08ac-6dbb-4ebe-8e90-a052cb6bdb09">Naslov</h2>
+                <img src="st_Form_EditMyOrgSampleData_m_usrc_SampleDataEdit_grp_grp_MyOrg_grp_grp_MyOrg_Office_grp_grp_MyOrg_Office_Address.png" width="514" height="289" />
+              </div>
+              <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Address.lbl_grp_grp_MyOrg_Office_Address_MyOrg_Office_Address_StreetName" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Address.txt_grp_grp_MyOrg_Office_Address_MyOrg_Office_Address_StreetName" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Address.lbl_grp_grp_MyOrg_Office_Address_MyOrg_Office_Address_HouseNumber" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Address.txt_grp_grp_MyOrg_Office_Address_MyOrg_Office_Address_HouseNumber" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Address.lbl_grp_grp_MyOrg_Office_Address_MyOrg_Office_Address_ZIP" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Address.txt_grp_grp_MyOrg_Office_Address_MyOrg_Office_Address_ZIP" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Address.lbl_grp_grp_MyOrg_Office_Address_MyOrg_Office_Address_ZIP" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Address.txt_grp_grp_MyOrg_Office_Address_MyOrg_Office_Address_ZIP" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Address.lbl_grp_grp_MyOrg_Office_Address_MyOrg_Office_Address_State" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Address.txt_grp_grp_MyOrg_Office_Address_MyOrg_Office_Address_State" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Address.grp_grp_MyOrg_Office_Address_Country" imageincluded="1" link="" margin="4" heading="h2">
+                <div class="Title">
+                  <h2 class="Title" id="a3b2032b-7f30-4bba-8fe3-1d5cadf63c1c">Država</h2>
+                  <img src="st_Form_EditMyOrgSampleData_m_usrc_SampleDataEdit_grp_grp_MyOrg_grp_grp_MyOrg_Office_grp_grp_MyOrg_Office_Address_grp_grp_MyOrg_Office_Address_Country.png" width="494" height="150" />
+                </div>
+                <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Address.grp_grp_MyOrg_Office_Address_Country.lbl_grp_grp_MyOrg_Office_Address_Country_MyOrg_Addres_Country" imageincluded="1" link="" margin="4" heading="h2" />
+                <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Address.grp_grp_MyOrg_Office_Address_Country.txt_grp_grp_MyOrg_Office_Address_Country_MyOrg_Addres_Country" imageincluded="1" link="" margin="4" heading="h2" />
+                <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Address.grp_grp_MyOrg_Office_Address_Country.lbl_grp_grp_MyOrg_Office_Address_Country_MyOrg_Office_Address_Country_ISO_3166_a2" imageincluded="1" link="" margin="4" heading="h2" />
+                <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Address.grp_grp_MyOrg_Office_Address_Country.txt_grp_grp_MyOrg_Office_Address_Country_MyOrg_Office_Address_Country_ISO_3166_a2" imageincluded="1" link="" margin="4" heading="h2" />
+                <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Address.grp_grp_MyOrg_Office_Address_Country.lbl_grp_grp_MyOrg_Office_Address_Country_MyOrg_Office_Address_Country_ISO_3166_a3" imageincluded="1" link="" margin="4" heading="h2" />
+                <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Address.grp_grp_MyOrg_Office_Address_Country.txt_grp_grp_MyOrg_Office_Address_Country_MyOrg_Office_Address_Country_ISO_3166_a3" imageincluded="1" link="" margin="4" heading="h2" />
+                <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Address.grp_grp_MyOrg_Office_Address_Country.lbl_grp_grp_MyOrg_Office_Address_Country_MyOrg_Office_Address_Country_ISO_3166_num" imageincluded="1" link="" margin="4" heading="h2" />
+                <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Address.grp_grp_MyOrg_Office_Address_Country.txt_grp_grp_MyOrg_Office_Address_Country_MyOrg_Office_Address_Country_ISO_3166_num" imageincluded="1" link="" margin="4" heading="h2">
+                  <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Address.grp_grp_MyOrg_Office_Address_Country.txt_grp_grp_MyOrg_Office_Address_Country_MyOrg_Office_Address_Country_ISO_3166_num.txt_Value" imageincluded="1" link="" margin="4" heading="h2" />
+                  <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Address.grp_grp_MyOrg_Office_Address_Country.txt_grp_grp_MyOrg_Office_Address_Country_MyOrg_Office_Address_Country_ISO_3166_num.btn_Plus" imageincluded="1" link="" margin="4" heading="h2" />
+                  <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Address.grp_grp_MyOrg_Office_Address_Country.txt_grp_grp_MyOrg_Office_Address_Country_MyOrg_Office_Address_Country_ISO_3166_num.btn_Minus" imageincluded="1" link="" margin="4" heading="h2" />
+                </TControl>
+              </TControl>
+            </TControl>
+            <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Person" imageincluded="1" link="" margin="4" heading="h2">
+              <div class="Title">
+                <h2 class="Title" id="6a6d3d6b-e561-4a0a-8f53-aa52639a8fc1">Oseba</h2>
+                <img src="st_Form_EditMyOrgSampleData_m_usrc_SampleDataEdit_grp_grp_MyOrg_grp_grp_MyOrg_Office_grp_grp_MyOrg_Office_Person.png" width="514" height="629" />
+              </div>
+              <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Person.lbl_grp_grp_MyOrg_Office_Person_MyOrg_Person_FirstName" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Person.txt_grp_grp_MyOrg_Office_Person_MyOrg_Person_FirstName" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Person.lbl_grp_grp_MyOrg_Office_Person_MyOrg_Person_LastName" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Person.txt_grp_grp_MyOrg_Office_Person_MyOrg_Person_LastName" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Person.lbl_grp_grp_MyOrg_Office_Person_MyOrg_Person_Gender" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Person.txt_grp_grp_MyOrg_Office_Person_MyOrg_Person_Gender" imageincluded="1" link="" margin="4" heading="h2">
+                <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Person.txt_grp_grp_MyOrg_Office_Person_MyOrg_Person_Gender.radioButton1" imageincluded="1" link="" margin="4" heading="h2" />
+                <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Person.txt_grp_grp_MyOrg_Office_Person_MyOrg_Person_Gender.radioButton2" imageincluded="1" link="" margin="4" heading="h2" />
+              </TControl>
+              <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Person.lbl_grp_grp_MyOrg_Office_Person_MyOrg_Person_DateOfBirth" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Person.txt_grp_grp_MyOrg_Office_Person_MyOrg_Person_DateOfBirth" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Person.lbl_grp_grp_MyOrg_Office_Person_MyOrg_Person_Job" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Person.txt_grp_grp_MyOrg_Office_Person_MyOrg_Person_Job" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Person.lbl_grp_grp_MyOrg_Office_Person_ MyOrg_Person_Description" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Person.txt_grp_grp_MyOrg_Office_Person_ MyOrg_Person_Description" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Person.lbl_grp_grp_MyOrg_Office_Person_MyOrg_Person_Tax_ID" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Person.txt_grp_grp_MyOrg_Office_Person_MyOrg_Person_Tax_ID" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Person.lbl_grp_grp_MyOrg_Office_Person_MyOrg_Person_Registration_ID" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Person.txt_grp_grp_MyOrg_Office_Person_MyOrg_Person_Registration_ID" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Person.lbl_grp_grp_MyOrg_Office_Person_MyOrg_Person_GsmNumber" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Person.txt_grp_grp_MyOrg_Office_Person_MyOrg_Person_GsmNumber" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Person.lbl_grp_grp_MyOrg_Office_Person_MyOrg_Person_PhoneNumber" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Person.txt_grp_grp_MyOrg_Office_Person_MyOrg_Person_PhoneNumber" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Person.lbl_grp_grp_MyOrg_Office_Person_MyOrg_Person_Email" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Person.txt_grp_grp_MyOrg_Office_Person_MyOrg_Person_Email" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Person.grp_grp_MyOrg_Office_Person_Address" imageincluded="1" link="" margin="4" heading="h2">
+                <div class="Title">
+                  <h2 class="Title" id="37e91e83-342e-4105-af1b-bf7e2e99d06a">Naslov</h2>
+                  <img src="st_Form_EditMyOrgSampleData_m_usrc_SampleDataEdit_grp_grp_MyOrg_grp_grp_MyOrg_Office_grp_grp_MyOrg_Office_Person_grp_grp_MyOrg_Office_Person_Address.png" width="494" height="289" />
+                </div>
+                <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Person.grp_grp_MyOrg_Office_Person_Address.lbl_grp_grp_MyOrg_Office_Person_Address_MyOrg_Office_Person_Address_StreetName" imageincluded="1" link="" margin="4" heading="h2" />
+                <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Person.grp_grp_MyOrg_Office_Person_Address.txt_grp_grp_MyOrg_Office_Person_Address_MyOrg_Office_Person_Address_StreetName" imageincluded="1" link="" margin="4" heading="h2" />
+                <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Person.grp_grp_MyOrg_Office_Person_Address.lbl_grp_grp_MyOrg_Office_Person_Address_MyOrg_Office_Person_Address_HouseNumber" imageincluded="1" link="" margin="4" heading="h2" />
+                <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Person.grp_grp_MyOrg_Office_Person_Address.txt_grp_grp_MyOrg_Office_Person_Address_MyOrg_Office_Person_Address_HouseNumber" imageincluded="1" link="" margin="4" heading="h2" />
+                <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Person.grp_grp_MyOrg_Office_Person_Address.lbl_grp_grp_MyOrg_Office_Person_Address_MyOrg_Office_Person_Address_ZIP" imageincluded="1" link="" margin="4" heading="h2" />
+                <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Person.grp_grp_MyOrg_Office_Person_Address.txt_grp_grp_MyOrg_Office_Person_Address_MyOrg_Office_Person_Address_ZIP" imageincluded="1" link="" margin="4" heading="h2" />
+                <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Person.grp_grp_MyOrg_Office_Person_Address.lbl_grp_grp_MyOrg_Office_Person_Address_MyOrg_Office_Person_Address_ZIP" imageincluded="1" link="" margin="4" heading="h2" />
+                <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Person.grp_grp_MyOrg_Office_Person_Address.txt_grp_grp_MyOrg_Office_Person_Address_MyOrg_Office_Person_Address_ZIP" imageincluded="1" link="" margin="4" heading="h2" />
+                <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Person.grp_grp_MyOrg_Office_Person_Address.lbl_grp_grp_MyOrg_Office_Person_Address_MyOrg_Office_Person_Address_State" imageincluded="1" link="" margin="4" heading="h2" />
+                <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Person.grp_grp_MyOrg_Office_Person_Address.txt_grp_grp_MyOrg_Office_Person_Address_MyOrg_Office_Person_Address_State" imageincluded="1" link="" margin="4" heading="h2" />
+                <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Person.grp_grp_MyOrg_Office_Person_Address.grp_grp_MyOrg_Office_Person_Address_Country" imageincluded="1" link="" margin="4" heading="h2">
+                  <div class="Title">
+                    <h2 class="Title" id="1709bf6c-0459-4086-be85-a37b6ac5c6d8">Država</h2>
+                    <img src="st_Form_EditMyOrgSampleData_m_usrc_SampleDataEdit_grp_grp_MyOrg_grp_grp_MyOrg_Office_grp_grp_MyOrg_Office_Person_grp_grp_MyOrg_Office_Person_Address_grp_grp_MyOrg_Office_Person_Address_Country.png" width="474" height="150" />
+                  </div>
+                  <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Person.grp_grp_MyOrg_Office_Person_Address.grp_grp_MyOrg_Office_Person_Address_Country.lbl_grp_grp_MyOrg_Office_Person_Address_Country_MyOrg_Office_Person_Address_Country" imageincluded="1" link="" margin="4" heading="h2" />
+                  <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Person.grp_grp_MyOrg_Office_Person_Address.grp_grp_MyOrg_Office_Person_Address_Country.txt_grp_grp_MyOrg_Office_Person_Address_Country_MyOrg_Office_Person_Address_Country" imageincluded="1" link="" margin="4" heading="h2" />
+                  <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Person.grp_grp_MyOrg_Office_Person_Address.grp_grp_MyOrg_Office_Person_Address_Country.lbl_grp_grp_MyOrg_Office_Person_Address_Country_MyOrg_Office_Person_Address_Country_ISO_3166_a2" imageincluded="1" link="" margin="4" heading="h2" />
+                  <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Person.grp_grp_MyOrg_Office_Person_Address.grp_grp_MyOrg_Office_Person_Address_Country.txt_grp_grp_MyOrg_Office_Person_Address_Country_MyOrg_Office_Person_Address_Country_ISO_3166_a2" imageincluded="1" link="" margin="4" heading="h2" />
+                  <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Person.grp_grp_MyOrg_Office_Person_Address.grp_grp_MyOrg_Office_Person_Address_Country.lbl_grp_grp_MyOrg_Office_Person_Address_Country_MyOrg_Office_Person_Address_Country_ISO_3166_a3" imageincluded="1" link="" margin="4" heading="h2" />
+                  <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Person.grp_grp_MyOrg_Office_Person_Address.grp_grp_MyOrg_Office_Person_Address_Country.txt_grp_grp_MyOrg_Office_Person_Address_Country_MyOrg_Office_Person_Address_Country_ISO_3166_a3" imageincluded="1" link="" margin="4" heading="h2" />
+                  <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Person.grp_grp_MyOrg_Office_Person_Address.grp_grp_MyOrg_Office_Person_Address_Country.lbl_grp_grp_MyOrg_Office_Person_Address_Country_MyOrg_Office_Person_Address_Country_ISO_3166_num" imageincluded="1" link="" margin="4" heading="h2" />
+                  <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Person.grp_grp_MyOrg_Office_Person_Address.grp_grp_MyOrg_Office_Person_Address_Country.txt_grp_grp_MyOrg_Office_Person_Address_Country_MyOrg_Office_Person_Address_Country_ISO_3166_num" imageincluded="1" link="" margin="4" heading="h2">
+                    <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Person.grp_grp_MyOrg_Office_Person_Address.grp_grp_MyOrg_Office_Person_Address_Country.txt_grp_grp_MyOrg_Office_Person_Address_Country_MyOrg_Office_Person_Address_Country_ISO_3166_num.txt_Value" imageincluded="1" link="" margin="4" heading="h2" />
+                    <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Person.grp_grp_MyOrg_Office_Person_Address.grp_grp_MyOrg_Office_Person_Address_Country.txt_grp_grp_MyOrg_Office_Person_Address_Country_MyOrg_Office_Person_Address_Country_ISO_3166_num.btn_Plus" imageincluded="1" link="" margin="4" heading="h2" />
+                    <TControl name="st_Form_EditMyOrgSampleData.m_usrc_SampleDataEdit.grp_grp_MyOrg.grp_grp_MyOrg_Office.grp_grp_MyOrg_Office_Person.grp_grp_MyOrg_Office_Person_Address.grp_grp_MyOrg_Office_Person_Address_Country.txt_grp_grp_MyOrg_Office_Person_Address_Country_MyOrg_Office_Person_Address_Country_ISO_3166_num.btn_Minus" imageincluded="1" link="" margin="4" heading="h2" />
+                  </TControl>
+                </TControl>
+              </TControl>
+            </TControl>
+          </TControl>
+        </TControl>
+      </TControl>
+    </TControl>
+  </body>
+</html>
