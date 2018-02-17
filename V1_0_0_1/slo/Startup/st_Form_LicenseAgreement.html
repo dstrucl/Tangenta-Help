@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <title>Licenčna pogodba</title>
+  </head>
+  <body>
+    <THeader>
+      <div class="header">
+        <canvas id="TangentaLogo" width="60" height="50"></canvas>
+        <script type="text/javascript">
+        var canvas, context, canvaso, contexto;
+        canvaso = document.getElementById('TangentaLogo');
+        context = canvaso.getContext('2d');
+        context.lineWidth = 1;
+
+        // Draw vertical line
+        context.strokeStyle ='#936b20';
+        context.beginPath();
+        context.moveTo(30, 0);
+        context.lineTo(30, 50);
+        context.stroke();
+
+        // Draw large arc
+        context.beginPath();
+        context.arc(54, 26, 24,0.6*Math.PI,1.5*Math.PI, false);
+        context.stroke();
+
+        // Draw head circle
+        context.beginPath();
+        context.fillStyle = "#E2FFB0"/*"#CEF988";*/
+        context.arc(34, 6, 4,0,2*Math.PI, false);
+        context.fill();
+        context.stroke();
+
+        context.closePath();
+        context.restore();
+
+        </script>
+        <div class="header_border_with_radius">
+          <div class="header_menu">
+            <span>
+              <a href="../Tangenta.html">TANGENTA</a>
+            </span>,
+             <span><a href="../Invoice.html">RAČUNI</a></span>,
+             <span><a href="../ProformaInvoice.html">PREDRAČUNI</a></span>,
+             <span><a href="../Stock.html">ZALOGE</a></span>,
+             <span><a href="../PriceList.html">CENIKI</a></span>,
+             <span><a href="../Printing.html">TISKANJE RAČUNOV</a></span>,
+             <span><a href="../InvoicingOverview.html">PREGLED FAKTUR</a></span>,
+             <span><a href="../Support.html">PODPORA</a></span></div>
+        </div>
+      </div>
+    </THeader>
+    <TControl name="st_Form_LicenseAgreement" imageincluded="0" link="" margin="4" heading="h1">
+      <div class="Title">
+        <h1 class="Title" id="2354e6f5-707e-4d33-9ae2-07126fe29fb5">Licenčna pogodba</h1>
+        <div class="About">Program Tangenta je odprtokodni program, ki ga lahko vsak poljubno kopira in
+namešča na računalnike v skladu z licenčno pogodbo, ki jo prikazuje dialog pred vami.
+Izvorna koda programske oprema je napisana v jeziku C# in C++, nahaja pa se
+na naslovu:<a href="https://www.github.com/dstrucl/Tangenta40">https://www.github.com/dstrucl/Tangenta40</a></div>
+      </div>
+      <TControl name="st_Form_LicenseAgreement.usrc_NavigationButtons1" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="st_Form_LicenseAgreement.usrc_NavigationButtons1.btn1" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="st_Form_LicenseAgreement.usrc_NavigationButtons1.btn3" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="st_Form_LicenseAgreement.usrc_NavigationButtons1.usrc_Help1" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="st_Form_LicenseAgreement.usrc_NavigationButtons1.usrc_Help1.btn_Help" imageincluded="1" link="" margin="4" heading="h2" />
+        </TControl>
+      </TControl>
+      <TControl name="st_Form_LicenseAgreement.usrc_web_Help1" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="st_Form_LicenseAgreement.usrc_web_Help1.txt_URL" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="st_Form_LicenseAgreement.usrc_web_Help1.chk_local" imageincluded="1" link="" margin="4" heading="h2" />
+      </TControl>
+      <TControl name="st_Form_LicenseAgreement.groupBox1" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="st_Form_LicenseAgreement.groupBox1.rdb_AcceptLicenseAgreement" imageincluded="1" link="" margin="4" heading="h2">
+          <div class="Title">
+            <h2 class="Title" id="f9278c24-f2b6-436c-a41e-1699e94fceeb">Sprejem licenčnih pogojev</h2>
+            <div class="About">S klikom krogec v dioalogu prikazan na sliki spodaj, potrdimo da v celoti sprejemamo pogoje in določila licenčne
+pogodbe.
+</div>
+            <img src="st_Form_LicenseAgreement_groupBox1_rdb_AcceptLicenseAgreement.png" width="286" height="17" />
+            <div class="Description">Šele s potrditvijo sprejema licenčne pogodbe se prikaže gumb "Naprej" za nadaljevanje namestitve programa.</div>
+          </div>
+        </TControl>
+        <TControl name="st_Form_LicenseAgreement.groupBox1.rdb_NotAcceptLicenseAgreement" imageincluded="1" link="" margin="4" heading="h2" />
+      </TControl>
+      <TControl name="st_Form_LicenseAgreement.btn_Print" imageincluded="1" link="" margin="4" heading="h2" />
+    </TControl>
+  </body>
+</html>
