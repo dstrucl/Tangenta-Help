@@ -1,0 +1,68 @@
+<html>
+ <head>
+	<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+	<meta name="description" content="Tangenta invoicing"/>
+	<meta name="keywords" content="Invoice,Invoicing,Estimates,Customers,SQLite,MSSSQL"/>
+	<meta name="author" content="Damjan Štrucl Hrnčič"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>	
+	<link rel="stylesheet" 
+		 type="text/css" 
+		 href="GeneralHelp.css" />
+     <title>TANGENTA-INVOICING</title>
+ </head>
+ <body>
+  <div class="header"> 
+		<canvas id="TangentaLogo" width="60" height="50"></canvas>
+		<script type="text/javascript">
+		var canvas, context, canvaso, contexto;
+		canvaso = document.getElementById('TangentaLogo');
+		context = canvaso.getContext('2d');
+		context.lineWidth = 1;
+
+		// Draw vertical line
+		context.strokeStyle ='#936b20';
+		context.beginPath();
+		context.moveTo(30, 0);
+		context.lineTo(30, 50);
+		context.stroke();
+
+		// Draw large arc
+		context.beginPath();
+		context.arc(54, 26, 24,0.6*Math.PI,1.5*Math.PI, false);
+		context.stroke();
+
+		// Draw head circle
+		context.beginPath();
+		context.fillStyle = "#E2FFB0"/*"#CEF988";*/
+		context.arc(34, 6, 4,0,2*Math.PI, false);
+		context.fill();
+		context.stroke();
+
+		context.closePath();
+		context.restore();
+
+		</script>
+ 		 
+		 <div class="header_border_with_radius">
+			<div class = "header_menu">
+			 <span><a href="../Tangenta.html">TANGENTA</a></span>,
+			 <span><a href="../Invoice.html">RAČUNI</a></span>,
+			 <span><a href="../ProformaInvoice.html">PREDRAČUNI</a></span>,
+			 <span><a href="../Stock.html">ZALOGE</a></span>,
+			 <span><a href="../PriceList.html">CENIKI</a></span>,
+			 <span><a href="../Printing.html">TISKANJE RAČUNOV</a></span>,
+			 <span><a href="../InvoicingOverview.html">PREGLED FAKTUR</a></span>,
+			 <span><a href="../Support.html">PODPORA</a></span>,
+			 <span><a href="../News.html">NOVICE</a></span>,
+			 <span><a href="../About.html">O PROGRAMU</a></span>
+			 </div>
+		</div>		
+	</div>
+	<h1 class= "Title">
+	/ProformaInvoice
+	</h1>
+	<div class= "About">
+	 Napišite nekaj o /ProformaInvoice
+	</div>
+</body>
+</html>

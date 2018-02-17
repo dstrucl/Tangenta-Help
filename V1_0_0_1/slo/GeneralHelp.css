@@ -1,0 +1,111 @@
+@import url("reset.css");
+
+	body {
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 13px;
+		background-color:whitesmoke;
+		color:#333
+	}
+	
+	a{
+		color: #936b20;
+	}
+	
+	div.header_menu {
+		position: relative;
+		top: 10px;
+		left: 10px;
+		color: #936b20;
+		font-size: 100%;
+		font-weight: bold;
+		/*border: 3px solid #000000;*/
+	}	
+
+	
+
+	div.header_border_with_radius {
+		display:block;
+		position: absolute;
+		top: 0px;
+		left: 36px;
+		width: 780px;
+		height: 45px;
+		
+		/* IE10+ */ 
+	background-image: -ms-linear-gradient(top, #f8ffe8 0%, #DBF5A7 100%, #E8FFD4 100%);
+
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(top, #f8ffe8 0%, #DBF5A7 100%, #E8FFD4 100%);
+
+	/* Opera */ 
+	background-image: -o-linear-gradient(top, #f8ffe8 0%, #DBF5A7 100%, #E8FFD4 100%);
+
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, top top, left top, color-stop(0, #f8ffe8), color-stop(100, #DBF5A7), color-stop(100, #E8FFD4));
+
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(top, #f8ffe8 0%, #DBF5A7 100%, #E8FFD4 100%);
+
+	/* W3C Markup */ 
+	background-image: linear-gradient(to top, #f8ffe8 0%, #DBF5A7 100%, #E8FFD4 100%);
+		
+	/*    background: #E2FFB0;*/
+		border-radius: 25px;
+	/*    border: 1px solid #ceeb9c;*/
+		margin: 5px;
+		
+		color: brown;
+		font-size: 80%;
+	}
+
+     h1.Title {
+	color: #936b20;
+	font-size: 110%;
+        padding-top: 0.5cm;
+        padding-left: 0.5cm;
+        padding-right: 0.5cm;
+        padding-bottom: 0cm;
+    }
+
+    h2.Title {
+	color: #936b20;
+        font-size: 100%;
+        line-height: 2.4em;
+        padding-top: 0.6cm;
+        padding-left: 0.5cm;
+        padding-right: 0.5cm;
+    }
+
+	
+    h3.Title {
+	color: #936b20;
+        font-size: 90%;
+        padding-top: 0.6cm;
+        padding-left: 0.5cm;
+        padding-right: 10px;
+	}
+	
+    div.About{
+	color: #936b20;
+        font-size: 90%;
+        padding-top: 0.5cm;
+        padding-left: 0.8cm;
+        padding-right: 0.5cm;
+        padding-bottom: 0.2cm;
+	}
+	
+   div.Description{
+	color: #936b20;
+        font-size: 90%;
+        padding-top: 0.5cm;
+        padding-left: 0.8cm;
+        padding-right: 0.5cm;
+        padding-bottom: 0.2cm;
+	}
+	
+	img {
+        padding-top: 0.5cm;
+        padding-left: 0.5cm;
+	}
+
+
