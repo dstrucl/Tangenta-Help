@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <title>Tangenta.Form_DBSettings</title>
+  </head>
+  <body>
+    <THeader>
+      <div class="header">
+        <canvas id="TangentaLogo" width="60" height="50"></canvas>
+        <script type="text/javascript">
+        var canvas, context, canvaso, contexto;
+        canvaso = document.getElementById('TangentaLogo');
+        context = canvaso.getContext('2d');
+        context.lineWidth = 1;
+
+        // Draw vertical line
+        context.strokeStyle ='#936b20';
+        context.beginPath();
+        context.moveTo(30, 0);
+        context.lineTo(30, 50);
+        context.stroke();
+
+        // Draw large arc
+        context.beginPath();
+        context.arc(54, 26, 24,0.6*Math.PI,1.5*Math.PI, false);
+        context.stroke();
+
+        // Draw head circle
+        context.beginPath();
+        context.fillStyle = "#E2FFB0"/*"#CEF988";*/
+        context.arc(34, 6, 4,0,2*Math.PI, false);
+        context.fill();
+        context.stroke();
+
+        context.closePath();
+        context.restore();
+
+        </script>
+        <div class="header_border_with_radius">
+          <div class="header_menu">
+            <span>
+              <a href="../Tangenta.html">TANGENTA</a>
+            </span>,
+             <span><a href="../Invoice.html">RAČUNI</a></span>,
+             <span><a href="../ProformaInvoice.html">PREDRAČUNI</a></span>,
+             <span><a href="../Stock.html">ZALOGE</a></span>,
+             <span><a href="../PriceList.html">CENIKI</a></span>,
+             <span><a href="../Printing.html">TISKANJE RAČUNOV</a></span>,
+             <span><a href="../InvoicingOverview.html">PREGLED FAKTUR</a></span>,
+             <span><a href="../Support.html">PODPORA</a></span></div>
+        </div>
+      </div>
+    </THeader>
+    <TControl name="nav_Form_DBSettings" imageincluded="1" link="" margin="4" heading="h1">
+      <div class="Title">
+        <h1 class="Title" id="44d95cbf-a696-4eae-af7e-ecaec0ff3884">Nastavitve delovanja programa Tangenta v podatkovni bazi</h1>
+        <div class="About">Nastavitve delovanja programa Tangenta v podatkovni bazi imajo prednost
+pred lokalnimi nastavitvami programa. Nastavitve delovanja v podatkovni bazi določajo
+način delovanja programa za vse instalacije programa Tangenta na vseh računalnikih in vseh uporabnikih, 
+ki se povežejo na izbrano podatkovno bazo.
+</div>
+        <img src="nav_Form_DBSettings.png" width="409" height="350" />
+        <div class="Description">Sprememba nastavitev delovanja programa Tangenta v podatkovni bazi vpliva na način delovanja
+ne glede na to iz katerega računalnika se povežemo na podatkovno bazo in velja za vse uporabnike!
+
+</div>
+      </div>
+      <TControl name="nav_Form_DBSettings.usrc_NavigationButtons1" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="nav_Form_DBSettings.usrc_NavigationButtons1.btn1" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="nav_Form_DBSettings.usrc_NavigationButtons1.btn2" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="nav_Form_DBSettings.usrc_NavigationButtons1.btn3" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="nav_Form_DBSettings.usrc_NavigationButtons1.usrc_Help1" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="nav_Form_DBSettings.usrc_NavigationButtons1.usrc_Help1.btn_Help" imageincluded="1" link="" margin="4" heading="h2" />
+        </TControl>
+      </TControl>
+      <TControl name="nav_Form_DBSettings.lbl_DataBaseVersion" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="nav_Form_DBSettings.grp_OperationMode" imageincluded="1" link="" margin="4" heading="h2">
+        <div class="Title">
+          <h2 class="Title" id="dc32f84f-aeaa-471e-a9b2-4108be401fbe">Način delovanja</h2>
+          <img src="nav_Form_DBSettings_grp_OperationMode.png" width="377" height="168" />
+          <div class="Description">Spodaj nadaljevanju so razloženi načini delovanja programa.</div>
+        </div>
+        <TControl name="nav_Form_DBSettings.grp_OperationMode.rdb_MultiUserOperation" imageincluded="1" link="" margin="4" heading="h2">
+          <div class="Title">
+            <h2 class="Title" id="87f55ccf-e4f1-4ef1-af72-4bf99681a40d">Večuporabniško delovanje</h2>
+            <img src="nav_Form_DBSettings_grp_OperationMode_rdb_MultiUserOperation.png" width="106" height="17" />
+            <div class="Description">Če kliknete (postavite krogec) na Več uporabnikov, bo program Tangenta deloval v večuporabniškem načinu.
+
+</div>
+          </div>
+        </TControl>
+        <TControl name="nav_Form_DBSettings.grp_OperationMode.rdb_SingleUser" imageincluded="1" link="" margin="4" heading="h2">
+          <div class="Title">
+            <h2 class="Title" id="07e3c875-fbef-414f-9f88-414652c78cab">En sam uporabnik</h2>
+            <img src="nav_Form_DBSettings_grp_OperationMode_rdb_SingleUser.png" width="110" height="17" />
+          </div>
+        </TControl>
+        <TControl name="nav_Form_DBSettings.grp_OperationMode.chk_SingleUserLoginAsAdministrator" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="nav_Form_DBSettings.grp_OperationMode.lbl_Administrator_Password" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="nav_Form_DBSettings.grp_OperationMode.usrc_Password1" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="nav_Form_DBSettings.grp_OperationMode.usrc_Password1.txt_Password" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="nav_Form_DBSettings.grp_OperationMode.usrc_Password1.lbl_Retype_Password" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="nav_Form_DBSettings.grp_OperationMode.usrc_Password1.btn_PasswordView" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="nav_Form_DBSettings.grp_OperationMode.usrc_Password1.txt_Password_Retyped" imageincluded="1" link="" margin="4" heading="h2" />
+        </TControl>
+      </TControl>
+      <TControl name="nav_Form_DBSettings.chk_StockCheckAtStartup" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="nav_Form_DBSettings.chk_ShopC_ExclusivelySellFromStock" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="nav_Form_DBSettings.chk_MultiCurrency" imageincluded="1" link="" margin="4" heading="h2" />
+    </TControl>
+  </body>
+</html>
