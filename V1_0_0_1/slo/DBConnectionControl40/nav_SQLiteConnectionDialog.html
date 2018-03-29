@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <title>Izberite datoteko podatkovne baze</title>
+  </head>
+  <body>
+    <THeader>
+      <div class="header">
+        <canvas id="TangentaLogo" width="60" height="50"></canvas>
+        <script type="text/javascript">
+        var canvas, context, canvaso, contexto;
+        canvaso = document.getElementById('TangentaLogo');
+        context = canvaso.getContext('2d');
+        context.lineWidth = 1;
+
+        // Draw vertical line
+        context.strokeStyle ='#936b20';
+        context.beginPath();
+        context.moveTo(30, 0);
+        context.lineTo(30, 50);
+        context.stroke();
+
+        // Draw large arc
+        context.beginPath();
+        context.arc(54, 26, 24,0.6*Math.PI,1.5*Math.PI, false);
+        context.stroke();
+
+        // Draw head circle
+        context.beginPath();
+        context.fillStyle = "#E2FFB0"/*"#CEF988";*/
+        context.arc(34, 6, 4,0,2*Math.PI, false);
+        context.fill();
+        context.stroke();
+
+        context.closePath();
+        context.restore();
+
+        </script>
+        <div class="header_border_with_radius">
+          <div class="header_menu">
+            <span>
+              <a href="../Tangenta.html">TANGENTA</a>
+            </span>,
+             <span><a href="../Invoice.html">RAČUNI</a></span>,
+             <span><a href="../ProformaInvoice.html">PREDRAČUNI</a></span>,
+             <span><a href="../Stock.html">ZALOGE</a></span>,
+             <span><a href="../PriceList.html">CENIKI</a></span>,
+             <span><a href="../Printing.html">TISKANJE RAČUNOV</a></span>,
+             <span><a href="../InvoicingOverview.html">PREGLED FAKTUR</a></span>,
+             <span><a href="../Support.html">PODPORA</a></span></div>
+        </div>
+      </div>
+    </THeader>
+    <TControl name="nav_SQLiteConnectionDialog" imageincluded="1" link="" margin="4" heading="h1">
+      <div class="Title">
+        <h1 class="Title" id="cb4c1f20-989d-416c-89f4-85d2f805e237">Izbira datoteke podatkovne baze tipa SQLite</h1>
+        <div class="About">SQLite podatkovna baza je samostojna datoteka. Spodaj prikazani dialog vam omogoča, da poljudno nastavite ime
+podatkovne baze in lokacij (mapo) le te.
+</div>
+        <img src="nav_SQLiteConnectionDialog.png" />
+        <div class="Description">Lokacija daoteke SQLIte podatkovne baze se privzeto nastavi tako da se naredi mapa C:\TangentaDB\
+Zaradi lažjega servisiranja in morebitne pomoči na daljavo, vam priporočamo da podatkovno bazo shranite v mapo C:\TangentaDB\.
+V kolikor vam to ne ustreza lahko izberete tudi katero koli drugo mapo.
+
+Danes so na voljo brezplačne oblačne storitve kot so Micrsoftov <a href="https://onedrive.live.com/about/sl-si/">OneDrive</a>, Googlova storitev <a href="https://www.google.com/drive/">Drive</a>.
+Glede na to da prgram Tangenta tvori zelo komapktno in kompresirano padatkovno bazo, ki je običajno tudi po več letih še vedno relativno majhna, se sinhizacija
+
+
+</div>
+      </div>
+      <TControl name="nav_SQLiteConnectionDialog.usrc_NavigationButtons1" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="nav_SQLiteConnectionDialog.usrc_NavigationButtons1.btn1" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="nav_SQLiteConnectionDialog.usrc_NavigationButtons1.btn2" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="nav_SQLiteConnectionDialog.usrc_NavigationButtons1.btn3" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="nav_SQLiteConnectionDialog.usrc_NavigationButtons1.usrc_Help1" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="nav_SQLiteConnectionDialog.usrc_NavigationButtons1.usrc_Help1.btn_Help" imageincluded="1" link="" margin="4" heading="h2" />
+        </TControl>
+      </TControl>
+      <TControl name="nav_SQLiteConnectionDialog.lbl_Folder" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="nav_SQLiteConnectionDialog.cmbR_FilePath" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="nav_SQLiteConnectionDialog.btn_SelectFolder" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="nav_SQLiteConnectionDialog.lbl_FileName" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="nav_SQLiteConnectionDialog.cmbR_FileName" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="nav_SQLiteConnectionDialog.btn_SelectFile" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="nav_SQLiteConnectionDialog.btn_SQLiteInfo" imageincluded="1" link="" margin="4" heading="h2" />
+    </TControl>
+  </body>
+</html>
