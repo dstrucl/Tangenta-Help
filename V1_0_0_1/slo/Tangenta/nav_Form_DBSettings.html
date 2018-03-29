@@ -96,15 +96,36 @@ ne glede na to iz katerega računalnika se povežemo na podatkovno bazo in velja
         <TControl name="nav_Form_DBSettings.grp_OperationMode.rdb_SingleUser" imageincluded="1" link="" margin="4" heading="h2">
           <div class="Title">
             <h2 class="Title" id="07e3c875-fbef-414f-9f88-414652c78cab">En sam uporabnik</h2>
-            <div class="About">V enouporabniškem načinu je zahtevana prijava z skrbniškim geslom, v kolikor odkljukate
+            <img src="nav_Form_DBSettings_grp_OperationMode_rdb_SingleUser.png" />
+            <div class="Description">V enouporabniškem načinu je zahtevana prijava z skrbniškim geslom, v kolikor odkljukate
 'Prijava z skrbniškim geslom', V kolikor ne odkljukate 'Prijava z skrbniškim geslom' se bo program
 zagnal brez prijave
 </div>
-            <img src="nav_Form_DBSettings_grp_OperationMode_rdb_SingleUser.png" />
           </div>
         </TControl>
-        <TControl name="nav_Form_DBSettings.grp_OperationMode.chk_SingleUserLoginAsAdministrator" imageincluded="1" link="" margin="4" heading="h2" />
-        <TControl name="nav_Form_DBSettings.grp_OperationMode.lbl_Administrator_Password" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="nav_Form_DBSettings.grp_OperationMode.chk_SingleUserLoginAsAdministrator" imageincluded="1" link="" margin="4" heading="h2">
+          <div class="Title">
+            <h2 class="Title" id="62afd998-d4c8-478c-88d1-0892bab03edb">Prijava z skrbniškim geslom</h2>
+            <div class="About">Prijava z skrbniškim geslom pomeni, da se boste morali
+ob zagonu vedno prijaviti z skrbniškim geslom.
+Izbira te opicije je dodana kot dodatna varnast da ne bi 
+nezaželjena oseba uprabila program in kaj spremenila.
+</div>
+            <img src="nav_Form_DBSettings_grp_OperationMode_chk_SingleUserLoginAsAdministrator.png" />
+          </div>
+        </TControl>
+        <TControl name="nav_Form_DBSettings.grp_OperationMode.lbl_Administrator_Password" imageincluded="1" link="nav_Form_DBSettings.grp_OperationMode.usrc_Password1,nav_Form_DBSettings.grp_OperationMode.usrc_Password1" margin="4" heading="h2">
+          <div class="Title">
+            <h2 class="Title" id="ba801e58-7afc-476d-b78b-79df901c8ad7">Skrbniško Geslo</h2>
+            <img src="nav_Form_DBSettings_grp_OperationMode_lbl_Administrator_Password.png" />
+            <div class="Description">Skrbniško geslo je pomembno za delovanje programa samo v Eno-uporabniškem načinu.
+Programske nastavitve,nastavitve v podatkovni bazi, nastavitve tiskanja, oblike predlog za račune in predračune itd. lahko spremenimo samo tako, da pred tem vnesemo skrbniško geslo.
+Privzeto skrbniško geslo je 12345, zato to geslo spremenite ob namestitvi programa.
+Skrbniško geslo mora biti dolgo vsaj pet znakov.
+
+</div>
+          </div>
+        </TControl>
         <TControl name="nav_Form_DBSettings.grp_OperationMode.usrc_Password1" imageincluded="1" link="" margin="4" heading="h2">
           <TControl name="nav_Form_DBSettings.grp_OperationMode.usrc_Password1.txt_Password" imageincluded="1" link="" margin="4" heading="h2" />
           <TControl name="nav_Form_DBSettings.grp_OperationMode.usrc_Password1.lbl_Retype_Password" imageincluded="1" link="" margin="4" heading="h2" />
@@ -112,9 +133,48 @@ zagnal brez prijave
           <TControl name="nav_Form_DBSettings.grp_OperationMode.usrc_Password1.txt_Password_Retyped" imageincluded="1" link="" margin="4" heading="h2" />
         </TControl>
       </TControl>
-      <TControl name="nav_Form_DBSettings.chk_StockCheckAtStartup" imageincluded="1" link="" margin="4" heading="h2" />
-      <TControl name="nav_Form_DBSettings.chk_ShopC_ExclusivelySellFromStock" imageincluded="1" link="" margin="4" heading="h2" />
-      <TControl name="nav_Form_DBSettings.chk_MultiCurrency" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="nav_Form_DBSettings.chk_StockCheckAtStartup" imageincluded="1" link="" margin="4" heading="h2">
+        <div class="Title">
+          <h2 class="Title" id="da8d85b0-3b11-48d2-a6a9-b456e2ea9df4">Preverjanje zalog ob zagonu programa</h2>
+          <img src="nav_Form_DBSettings_chk_StockCheckAtStartup.png" />
+          <div class="Description">V kolikor postavimo kljukico pri "Preverjanje zalog ob zagonu programa" bo program
+Tangenta vsakič preveril zaloge artiklov v prodajlni C.
+Postavljanje kljukice pri "Preverjanje zalog ob zagonu programa" je smiselno samo, 
+če uporabljamo prodajalno C.
+
+Pri preverjanju zalog se preverja ali je rok trajanja nekga artikla
+že potekel oziroma se bliža konec roka uporabe.
+
+
+
+
+
+</div>
+        </div>
+      </TControl>
+      <TControl name="nav_Form_DBSettings.chk_ShopC_ExclusivelySellFromStock" imageincluded="1" link="" margin="4" heading="h2">
+        <div class="Title">
+          <h2 class="Title" id="e5fabd21-d574-4cf7-9cb5-803b962e5b00">V prodajalni C je omogočena samo prodaja iz zalog</h2>
+          <div class="About" />
+          <img src="nav_Form_DBSettings_chk_ShopC_ExclusivelySellFromStock.png" />
+          <div class="Description">Nekateri poslovanja so lahko takšna, da je možna oziroma dovoljena samo prodaja artikla
+ki se nahaja v zalogah. V kolikor artikel imamo, ni pa vpisan v zalogah, moramo najprej napisati prevzemnico
+s katero artikel vnesemo v zalogo. Šele nato ga lahko prodamo.
+
+V kolikor ne odkljukamo "V prodajalni C je omogočena samo prodaja iz zalog"
+lahko prodamo artikel tudi mimo zaloge. 
+</div>
+        </div>
+      </TControl>
+      <TControl name="nav_Form_DBSettings.chk_MultiCurrency" imageincluded="1" link="" margin="4" heading="h2">
+        <div class="Title">
+          <h2 class="Title" id="a4edbc13-60c9-4120-bd55-9151a556dd08">Več valutno poslovanje</h2>
+          <img src="nav_Form_DBSettings_chk_MultiCurrency.png" />
+          <div class="Description">Trenutno večvalutno poslovanje še ni podrpto v smislu, da lahko en račun izstavimo v eni valuti drug račun pa v drugi.
+Program trenutno omogoča večvalutno poslovanje tako da ob namstitvi izberemo valuto poslovanja.
+</div>
+        </div>
+      </TControl>
     </TControl>
   </body>
 </html>
