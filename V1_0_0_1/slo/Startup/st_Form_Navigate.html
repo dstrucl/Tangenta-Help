@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <title>Izberi</title>
+  </head>
+  <body>
+    <THeader>
+      <div class="header">
+        <canvas id="TangentaLogo" width="60" height="50"></canvas>
+        <script type="text/javascript">
+        var canvas, context, canvaso, contexto;
+        canvaso = document.getElementById('TangentaLogo');
+        context = canvaso.getContext('2d');
+        context.lineWidth = 1;
+
+        // Draw vertical line
+        context.strokeStyle ='#936b20';
+        context.beginPath();
+        context.moveTo(30, 0);
+        context.lineTo(30, 50);
+        context.stroke();
+
+        // Draw large arc
+        context.beginPath();
+        context.arc(54, 26, 24,0.6*Math.PI,1.5*Math.PI, false);
+        context.stroke();
+
+        // Draw head circle
+        context.beginPath();
+        context.fillStyle = "#E2FFB0"/*"#CEF988";*/
+        context.arc(34, 6, 4,0,2*Math.PI, false);
+        context.fill();
+        context.stroke();
+
+        context.closePath();
+        context.restore();
+
+        </script>
+        <div class="header_border_with_radius">
+          <div class="header_menu">
+            <span>
+              <a href="../Tangenta.html">TANGENTA</a>
+            </span>,
+             <span><a href="../Invoice.html">RAČUNI</a></span>,
+             <span><a href="../ProformaInvoice.html">PREDRAČUNI</a></span>,
+             <span><a href="../Stock.html">ZALOGE</a></span>,
+             <span><a href="../PriceList.html">CENIKI</a></span>,
+             <span><a href="../Printing.html">TISKANJE RAČUNOV</a></span>,
+             <span><a href="../InvoicingOverview.html">PREGLED FAKTUR</a></span>,
+             <span><a href="../Support.html">PODPORA</a></span></div>
+        </div>
+      </div>
+    </THeader>
+    <TControl name="st_Form_Navigate" imageincluded="1" link="" margin="4" heading="h1">
+      <div class="Title">
+        <h1 class="Title" id="f468c865-0137-4ed2-88c8-a4240b49577b">Izberi</h1>
+        <img src="st_Form_Navigate.png" />
+      </div>
+      <TControl name="st_Form_Navigate.usrc_NavigationButtons1" imageincluded="1" link="" margin="4" heading="h2">
+        <div class="Title">
+          <h2 class="Title" id="378e4963-73db-46fd-8413-e32f654b1207">Navigacisjki gumbi</h2>
+          <img src="st_Form_Navigate_usrc_NavigationButtons1.png" />
+          <div class="Description">Navigacijski gumbi se prikazujejo tekom namestitve programa Tangenta.
+
+Navigacijski gumbi so:
+</div>
+        </div>
+        <TControl name="st_Form_Navigate.usrc_NavigationButtons1.btn1" imageincluded="1" link="" margin="4" heading="h2">
+          <div class="Title">
+            <h2 class="Title" id="e6331070-b299-4a35-b4ac-3f2f7354e9c2">Nazaj</h2>
+            <img src="st_Form_Navigate_usrc_NavigationButtons1_btn1.png" />
+            <div class="Description">Z gumbom Nazaj se vrnemo korak nazaj v instalaciji programa.
+Pri nekaterih korakih, korak nazaj ni možen, saj bi to pomenilo izbris že vnešenih podatkov.
+Če ste ugotovili, da ste v predhodnih zmotili, lahko izvedete vedno ponovno deviško
+instalacijo s komandno vrstičnim parametrom <a href="../CommandLineHelp/nav_CommandLineHelp_Form.html">/RESETNEW </a>.
+
+</div>
+          </div>
+        </TControl>
+        <TControl name="st_Form_Navigate.usrc_NavigationButtons1.btn2" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="st_Form_Navigate.usrc_NavigationButtons1.btn3" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="st_Form_Navigate.usrc_NavigationButtons1.usrc_Help1" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="st_Form_Navigate.usrc_NavigationButtons1.usrc_Help1.btn_Help" imageincluded="1" link="" margin="4" heading="h2" />
+        </TControl>
+      </TControl>
+    </TControl>
+  </body>
+</html>
