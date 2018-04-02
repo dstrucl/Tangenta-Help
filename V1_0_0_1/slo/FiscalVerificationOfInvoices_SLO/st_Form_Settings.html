@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <title>Nastavitve za komunikacijo z DAVČNO UPRAVO</title>
+  </head>
+  <body>
+    <THeader>
+      <div class="header">
+        <canvas id="TangentaLogo" width="60" height="50"></canvas>
+        <script type="text/javascript">
+        var canvas, context, canvaso, contexto;
+        canvaso = document.getElementById('TangentaLogo');
+        context = canvaso.getContext('2d');
+        context.lineWidth = 1;
+
+        // Draw vertical line
+        context.strokeStyle ='#936b20';
+        context.beginPath();
+        context.moveTo(30, 0);
+        context.lineTo(30, 50);
+        context.stroke();
+
+        // Draw large arc
+        context.beginPath();
+        context.arc(54, 26, 24,0.6*Math.PI,1.5*Math.PI, false);
+        context.stroke();
+
+        // Draw head circle
+        context.beginPath();
+        context.fillStyle = "#E2FFB0"/*"#CEF988";*/
+        context.arc(34, 6, 4,0,2*Math.PI, false);
+        context.fill();
+        context.stroke();
+
+        context.closePath();
+        context.restore();
+
+        </script>
+        <div class="header_border_with_radius">
+          <div class="header_menu">
+            <span>
+              <a href="../Tangenta.html">TANGENTA</a>
+            </span>,
+             <span><a href="../Invoice.html">RAČUNI</a></span>,
+             <span><a href="../ProformaInvoice.html">PREDRAČUNI</a></span>,
+             <span><a href="../Stock.html">ZALOGE</a></span>,
+             <span><a href="../PriceList.html">CENIKI</a></span>,
+             <span><a href="../Printing.html">TISKANJE RAČUNOV</a></span>,
+             <span><a href="../InvoicingOverview.html">PREGLED FAKTUR</a></span>,
+             <span><a href="../Support.html">PODPORA</a></span></div>
+        </div>
+      </div>
+    </THeader>
+    <TControl name="st_Form_Settings" imageincluded="1" link="" margin="4" heading="h1">
+      <div class="Title">
+        <h1 class="Title" id="7e54466c-9ce1-4994-ad16-628c55bb4a38">Nastavitve za komunikacijo z DAVČNO UPRAVO</h1>
+        <img src="st_Form_Settings.png" />
+      </div>
+      <TControl name="st_Form_Settings.usrc_NavigationButtons1" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="st_Form_Settings.usrc_NavigationButtons1.btn1" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="st_Form_Settings.usrc_NavigationButtons1.btn2" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="st_Form_Settings.usrc_NavigationButtons1.btn3" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="st_Form_Settings.usrc_NavigationButtons1.usrc_Help1" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="st_Form_Settings.usrc_NavigationButtons1.usrc_Help1.btn_Help" imageincluded="1" link="" margin="4" heading="h2" />
+        </TControl>
+      </TControl>
+      <TControl name="st_Form_Settings.lbl_TimeToShowFURSSuccessfulResult" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="st_Form_Settings.nm_TimeToShoqSuccessfulFURS_Transaction" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="st_Form_Settings.nm_TimeToShoqSuccessfulFURS_Transaction.nm_TimeToShoqSuccessfulFURS_Transaction_System_Windows_Forms_UpDownBase+UpDownEdit" imageincluded="1" link="" margin="4" heading="h1" />
+      </TControl>
+      <TControl name="st_Form_Settings.lbl_QRSizeWidth" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="st_Form_Settings.nm_QRSizeWidth" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="st_Form_Settings.nm_QRSizeWidth.nm_QRSizeWidth_System_Windows_Forms_UpDownBase+UpDownEdit" imageincluded="1" link="" margin="4" heading="h1" />
+      </TControl>
+      <TControl name="st_Form_Settings.usrc_Help1" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="st_Form_Settings.usrc_Help1.btn_Help" imageincluded="1" link="" margin="4" heading="h2" />
+      </TControl>
+      <TControl name="st_Form_Settings.lbl_timeOutInSec" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="st_Form_Settings.nm_UpDown_timeOutInSec" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="st_Form_Settings.nm_UpDown_timeOutInSec.nm_UpDown_timeOutInSec_System_Windows_Forms_UpDownBase+UpDownEdit" imageincluded="1" link="" margin="4" heading="h1" />
+      </TControl>
+      <TControl name="st_Form_Settings.chk_DebugAndTest" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="st_Form_Settings.rdb_FURS_Environment" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="st_Form_Settings.rdb_FURS_TEST_Environment" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="st_Form_Settings.splitContainer1" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="st_Form_Settings.splitContainer1.spl1" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="st_Form_Settings.splitContainer1.spl1.usrc_FURS_environment_settings" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="st_Form_Settings.splitContainer1.spl1.usrc_FURS_environment_settings.lbl_Environment" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_Settings.splitContainer1.spl1.usrc_FURS_environment_settings.lbl_CertificateFileName" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_Settings.splitContainer1.spl1.usrc_FURS_environment_settings.txt_CertificateFile" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_Settings.splitContainer1.spl1.usrc_FURS_environment_settings.btn_BrowseCertificateFile" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_Settings.splitContainer1.spl1.usrc_FURS_environment_settings.lbl_Certificate_Password" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_Settings.splitContainer1.spl1.usrc_FURS_environment_settings.txt_CertificatePassword" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_Settings.splitContainer1.spl1.usrc_FURS_environment_settings.lbl_fursWebServiceURL" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_Settings.splitContainer1.spl1.usrc_FURS_environment_settings.txt_fursWebServiceURL" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_Settings.splitContainer1.spl1.usrc_FURS_environment_settings.lbl_fursXmlNamespace" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_Settings.splitContainer1.spl1.usrc_FURS_environment_settings.txt_fursXmlNamespace" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_Settings.splitContainer1.spl1.usrc_FURS_environment_settings.lbl_fursWWW_check_invoice" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_Settings.splitContainer1.spl1.usrc_FURS_environment_settings.txt_fursWWW_check_invoice" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_Settings.splitContainer1.spl1.usrc_FURS_environment_settings.usrc_FURS_BussinesPremiseData1" imageincluded="1" link="" margin="4" heading="h2">
+              <TControl name="st_Form_Settings.splitContainer1.spl1.usrc_FURS_environment_settings.usrc_FURS_BussinesPremiseData1.lbl_FURS_BussinesData" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_Settings.splitContainer1.spl1.usrc_FURS_environment_settings.usrc_FURS_BussinesPremiseData1.lbl_StreetName" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_Settings.splitContainer1.spl1.usrc_FURS_environment_settings.usrc_FURS_BussinesPremiseData1.txt_StreetName" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_Settings.splitContainer1.spl1.usrc_FURS_environment_settings.usrc_FURS_BussinesPremiseData1.lbl_BussinesPremiseID" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_Settings.splitContainer1.spl1.usrc_FURS_environment_settings.usrc_FURS_BussinesPremiseData1.txt_BussinesPremiseID" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_Settings.splitContainer1.spl1.usrc_FURS_environment_settings.usrc_FURS_BussinesPremiseData1.lbl_Street_Number" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_Settings.splitContainer1.spl1.usrc_FURS_environment_settings.usrc_FURS_BussinesPremiseData1.txt_StreetNumber" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_Settings.splitContainer1.spl1.usrc_FURS_environment_settings.usrc_FURS_BussinesPremiseData1.txt_StreetNumberAdt" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_Settings.splitContainer1.spl1.usrc_FURS_environment_settings.usrc_FURS_BussinesPremiseData1.lbl_MyOrganisation_TaxID" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_Settings.splitContainer1.spl1.usrc_FURS_environment_settings.usrc_FURS_BussinesPremiseData1.txt_MyOrganisation_TaxID" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_Settings.splitContainer1.spl1.usrc_FURS_environment_settings.usrc_FURS_BussinesPremiseData1.lbl_City" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_Settings.splitContainer1.spl1.usrc_FURS_environment_settings.usrc_FURS_BussinesPremiseData1.txt_City" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_Settings.splitContainer1.spl1.usrc_FURS_environment_settings.usrc_FURS_BussinesPremiseData1.lbl_InvoiceAuthor_TaxID" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_Settings.splitContainer1.spl1.usrc_FURS_environment_settings.usrc_FURS_BussinesPremiseData1.txt_InvoiceAuthor_TaxID" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_Settings.splitContainer1.spl1.usrc_FURS_environment_settings.usrc_FURS_BussinesPremiseData1.lbl_Post" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_Settings.splitContainer1.spl1.usrc_FURS_environment_settings.usrc_FURS_BussinesPremiseData1.txt_PostNumber" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_Settings.splitContainer1.spl1.usrc_FURS_environment_settings.usrc_FURS_BussinesPremiseData1.lbl_SoftwareSupplier_TaxNumber" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_Settings.splitContainer1.spl1.usrc_FURS_environment_settings.usrc_FURS_BussinesPremiseData1.txt_SoftwareSupplier_TaxNumber" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_Settings.splitContainer1.spl1.usrc_FURS_environment_settings.usrc_FURS_BussinesPremiseData1.lbl_Community" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_Settings.splitContainer1.spl1.usrc_FURS_environment_settings.usrc_FURS_BussinesPremiseData1.txt_Community" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_Settings.splitContainer1.spl1.usrc_FURS_environment_settings.usrc_FURS_BussinesPremiseData1.lbl_ValidityDate" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_Settings.splitContainer1.spl1.usrc_FURS_environment_settings.usrc_FURS_BussinesPremiseData1.dt_ValidityDate" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_Settings.splitContainer1.spl1.usrc_FURS_environment_settings.usrc_FURS_BussinesPremiseData1.lbl_CadastralNumber" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_Settings.splitContainer1.spl1.usrc_FURS_environment_settings.usrc_FURS_BussinesPremiseData1.txt_CadastralNumber" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_Settings.splitContainer1.spl1.usrc_FURS_environment_settings.usrc_FURS_BussinesPremiseData1.lbl_BuildingNumber" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_Settings.splitContainer1.spl1.usrc_FURS_environment_settings.usrc_FURS_BussinesPremiseData1.txt_BuildingNumber" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_Settings.splitContainer1.spl1.usrc_FURS_environment_settings.usrc_FURS_BussinesPremiseData1.lbl_PremiseType" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_Settings.splitContainer1.spl1.usrc_FURS_environment_settings.usrc_FURS_BussinesPremiseData1.txt_PremiseType" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_Settings.splitContainer1.spl1.usrc_FURS_environment_settings.usrc_FURS_BussinesPremiseData1.lbl_BuildingSectionNumber" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_Settings.splitContainer1.spl1.usrc_FURS_environment_settings.usrc_FURS_BussinesPremiseData1.txt_BuildingSectionNumber" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_Settings.splitContainer1.spl1.usrc_FURS_environment_settings.usrc_FURS_BussinesPremiseData1.Btn_Add_PP_to_FURS" imageincluded="1" link="" margin="4" heading="h2" />
+            </TControl>
+          </TControl>
+        </TControl>
+        <TControl name="st_Form_Settings.splitContainer1.spl2" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.lbl_Environment" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.lbl_CertificateFileName" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.txt_CertificateFile" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.btn_BrowseCertificateFile" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.lbl_Certificate_Password" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.txt_CertificatePassword" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.lbl_fursWebServiceURL" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.txt_fursWebServiceURL" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.lbl_fursXmlNamespace" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.txt_fursXmlNamespace" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.lbl_fursWWW_check_invoice" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.txt_fursWWW_check_invoice" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.usrc_FURS_BussinesPremiseData1" imageincluded="1" link="" margin="4" heading="h2">
+              <div class="Title">
+                <h2 class="Title" id="f6c77cbb-1c0c-47f4-ab29-1f7a5cb1d899">FURS poslovni podatki</h2>
+                <img src="st_Form_Settings_splitContainer1_spl2_usrc_FURS_environment_settings_TEST_usrc_FURS_BussinesPremiseData1.png" />
+              </div>
+              <TControl name="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.usrc_FURS_BussinesPremiseData1.lbl_FURS_BussinesData" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.usrc_FURS_BussinesPremiseData1.lbl_StreetName" imageincluded="1" link="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.usrc_FURS_BussinesPremiseData1.txt_StreetName" margin="4" heading="h2">
+                <div class="Title">
+                  <h2 class="Title" id="e4723614-d5fd-4b1d-8ddb-c7e1df3dd7cd">Naslov</h2>
+                  <img src="st_Form_Settings_splitContainer1_spl2_usrc_FURS_environment_settings_TEST_usrc_FURS_BussinesPremiseData1_lbl_StreetName.png" />
+                </div>
+              </TControl>
+              <TControl name="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.usrc_FURS_BussinesPremiseData1.txt_StreetName" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.usrc_FURS_BussinesPremiseData1.lbl_BussinesPremiseID" imageincluded="1" link="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.usrc_FURS_BussinesPremiseData1.txt_BussinesPremiseID" margin="4" heading="h2">
+                <div class="Title">
+                  <h2 class="Title" id="be6ee398-6ec0-488f-8eaa-352c36157111">Oznaka poslovnega prostora</h2>
+                  <img src="hashname_-1559261686.png" />
+                </div>
+              </TControl>
+              <TControl name="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.usrc_FURS_BussinesPremiseData1.txt_BussinesPremiseID" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.usrc_FURS_BussinesPremiseData1.lbl_Street_Number" imageincluded="1" link="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.usrc_FURS_BussinesPremiseData1.txt_StreetNumber" margin="4" heading="h2">
+                <div class="Title">
+                  <h2 class="Title" id="cfc10232-e1f9-4d3b-9423-f96dcf32b6d3">Hišna številka</h2>
+                  <img src="st_Form_Settings_splitContainer1_spl2_usrc_FURS_environment_settings_TEST_usrc_FURS_BussinesPremiseData1_lbl_Street_Number.png" />
+                </div>
+              </TControl>
+              <TControl name="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.usrc_FURS_BussinesPremiseData1.txt_StreetNumber" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.usrc_FURS_BussinesPremiseData1.txt_StreetNumberAdt" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.usrc_FURS_BussinesPremiseData1.lbl_MyOrganisation_TaxID" imageincluded="1" link="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.usrc_FURS_BussinesPremiseData1.txt_MyOrganisation_TaxID" margin="4" heading="h2">
+                <div class="Title">
+                  <h2 class="Title" id="82d4f079-213a-44a9-86dd-978df7928d39">Davčna številka moje organizacije</h2>
+                  <img src="hashname_1483796235.png" />
+                </div>
+              </TControl>
+              <TControl name="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.usrc_FURS_BussinesPremiseData1.txt_MyOrganisation_TaxID" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.usrc_FURS_BussinesPremiseData1.lbl_City" imageincluded="1" link="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.usrc_FURS_BussinesPremiseData1.txt_City" margin="4" heading="h2">
+                <div class="Title">
+                  <h2 class="Title" id="a3ce048d-70f0-4383-8d5f-e04bd524d14e">Kraj</h2>
+                  <img src="st_Form_Settings_splitContainer1_spl2_usrc_FURS_environment_settings_TEST_usrc_FURS_BussinesPremiseData1_lbl_City.png" />
+                </div>
+              </TControl>
+              <TControl name="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.usrc_FURS_BussinesPremiseData1.txt_City" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.usrc_FURS_BussinesPremiseData1.lbl_InvoiceAuthor_TaxID" imageincluded="1" link="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.usrc_FURS_BussinesPremiseData1.txt_InvoiceAuthor_TaxID" margin="4" heading="h2">
+                <div class="Title">
+                  <h2 class="Title" id="4718a2d4-7c2e-4efc-ac09-61d31ee5f850">Davčna številka izdajatelja računa</h2>
+                  <img src="hashname_427319321.png" />
+                </div>
+              </TControl>
+              <TControl name="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.usrc_FURS_BussinesPremiseData1.txt_InvoiceAuthor_TaxID" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.usrc_FURS_BussinesPremiseData1.lbl_Post" imageincluded="1" link="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.usrc_FURS_BussinesPremiseData1.txt_PostNumber" margin="4" heading="h2">
+                <div class="Title">
+                  <h2 class="Title" id="e726f4a2-957f-4c79-a64f-38d542c2a9a0">Poštna številka</h2>
+                  <img src="st_Form_Settings_splitContainer1_spl2_usrc_FURS_environment_settings_TEST_usrc_FURS_BussinesPremiseData1_lbl_Post.png" />
+                </div>
+              </TControl>
+              <TControl name="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.usrc_FURS_BussinesPremiseData1.txt_PostNumber" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.usrc_FURS_BussinesPremiseData1.lbl_SoftwareSupplier_TaxNumber" imageincluded="1" link="" margin="4" heading="h2">
+                <div class="Title">
+                  <h2 class="Title" id="0143c46b-c656-46b8-a88f-846c9fac537e">Davčna številka dobavitelja programske opreme</h2>
+                  <img src="hashname_57195307.png" />
+                </div>
+              </TControl>
+              <TControl name="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.usrc_FURS_BussinesPremiseData1.txt_SoftwareSupplier_TaxNumber" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.usrc_FURS_BussinesPremiseData1.lbl_Community" imageincluded="1" link="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.usrc_FURS_BussinesPremiseData1.txt_Community" margin="4" heading="h2">
+                <div class="Title">
+                  <h2 class="Title" id="4441551b-227b-4463-b4a3-f42937d24fda">Naselje</h2>
+                  <img src="st_Form_Settings_splitContainer1_spl2_usrc_FURS_environment_settings_TEST_usrc_FURS_BussinesPremiseData1_lbl_Community.png" />
+                </div>
+              </TControl>
+              <TControl name="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.usrc_FURS_BussinesPremiseData1.txt_Community" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.usrc_FURS_BussinesPremiseData1.lbl_ValidityDate" imageincluded="1" link="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.usrc_FURS_BussinesPremiseData1.dt_ValidityDate" margin="4" heading="h2">
+                <div class="Title">
+                  <h2 class="Title" id="955f12e6-c7f6-4dcb-a551-21b7294a912c">Datum veljavnosti</h2>
+                  <img src="st_Form_Settings_splitContainer1_spl2_usrc_FURS_environment_settings_TEST_usrc_FURS_BussinesPremiseData1_lbl_ValidityDate.png" />
+                </div>
+              </TControl>
+              <TControl name="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.usrc_FURS_BussinesPremiseData1.dt_ValidityDate" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.usrc_FURS_BussinesPremiseData1.lbl_CadastralNumber" imageincluded="1" link="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.usrc_FURS_BussinesPremiseData1.txt_CadastralNumber" margin="4" heading="h2">
+                <div class="Title">
+                  <h2 class="Title" id="7120c6ae-bdb0-48dc-b43d-72f3907e2113">Katastrska številka</h2>
+                  <img src="hashname_-2037309295.png" />
+                </div>
+              </TControl>
+              <TControl name="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.usrc_FURS_BussinesPremiseData1.txt_CadastralNumber" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.usrc_FURS_BussinesPremiseData1.lbl_BuildingNumber" imageincluded="1" link="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.usrc_FURS_BussinesPremiseData1.txt_BuildingNumber" margin="4" heading="h2">
+                <div class="Title">
+                  <h2 class="Title" id="54848778-dbac-4c8b-82d4-a50f5a414b90">Številka stavbe</h2>
+                  <img src="st_Form_Settings_splitContainer1_spl2_usrc_FURS_environment_settings_TEST_usrc_FURS_BussinesPremiseData1_lbl_BuildingNumber.png" />
+                </div>
+              </TControl>
+              <TControl name="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.usrc_FURS_BussinesPremiseData1.txt_BuildingNumber" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.usrc_FURS_BussinesPremiseData1.lbl_PremiseType" imageincluded="1" link="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.usrc_FURS_BussinesPremiseData1.txt_PremiseType" margin="4" heading="h2">
+                <div class="Title">
+                  <h2 class="Title" id="1e4ba236-e8a0-4c3b-a68c-1ea3740ba12e">Vrsta poslovnega prostora</h2>
+                  <img src="st_Form_Settings_splitContainer1_spl2_usrc_FURS_environment_settings_TEST_usrc_FURS_BussinesPremiseData1_lbl_PremiseType.png" />
+                </div>
+              </TControl>
+              <TControl name="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.usrc_FURS_BussinesPremiseData1.txt_PremiseType" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.usrc_FURS_BussinesPremiseData1.lbl_BuildingSectionNumber" imageincluded="1" link="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.usrc_FURS_BussinesPremiseData1.txt_BuildingSectionNumber" margin="4" heading="h2">
+                <div class="Title">
+                  <h2 class="Title" id="0ca9707a-24e7-4c2a-a218-2263f581dc4f">Številka dela stavbe</h2>
+                  <img src="hashname_1331740912.png" />
+                </div>
+              </TControl>
+              <TControl name="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.usrc_FURS_BussinesPremiseData1.txt_BuildingSectionNumber" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="st_Form_Settings.splitContainer1.spl2.usrc_FURS_environment_settings_TEST.usrc_FURS_BussinesPremiseData1.Btn_Add_PP_to_FURS" imageincluded="1" link="" margin="4" heading="h2">
+                <div class="Title">
+                  <h2 class="Title" id="e36604d7-b3b3-4d23-85ad-baa4c88b8e0b">Registracija prostora</h2>
+                  <img src="st_Form_Settings_splitContainer1_spl2_usrc_FURS_environment_settings_TEST_usrc_FURS_BussinesPremiseData1_Btn_Add_PP_to_FURS.png" />
+                </div>
+              </TControl>
+            </TControl>
+          </TControl>
+        </TControl>
+      </TControl>
+    </TControl>
+  </body>
+</html>

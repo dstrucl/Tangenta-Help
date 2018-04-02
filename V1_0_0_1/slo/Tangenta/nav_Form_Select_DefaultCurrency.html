@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <title>Izberi privzeto valuto</title>
+  </head>
+  <body>
+    <THeader>
+      <div class="header">
+        <canvas id="TangentaLogo" width="60" height="50"></canvas>
+        <script type="text/javascript">
+        var canvas, context, canvaso, contexto;
+        canvaso = document.getElementById('TangentaLogo');
+        context = canvaso.getContext('2d');
+        context.lineWidth = 1;
+
+        // Draw vertical line
+        context.strokeStyle ='#936b20';
+        context.beginPath();
+        context.moveTo(30, 0);
+        context.lineTo(30, 50);
+        context.stroke();
+
+        // Draw large arc
+        context.beginPath();
+        context.arc(54, 26, 24,0.6*Math.PI,1.5*Math.PI, false);
+        context.stroke();
+
+        // Draw head circle
+        context.beginPath();
+        context.fillStyle = "#E2FFB0"/*"#CEF988";*/
+        context.arc(34, 6, 4,0,2*Math.PI, false);
+        context.fill();
+        context.stroke();
+
+        context.closePath();
+        context.restore();
+
+        </script>
+        <div class="header_border_with_radius">
+          <div class="header_menu">
+            <span>
+              <a href="../Tangenta.html">TANGENTA</a>
+            </span>,
+             <span><a href="../Invoice.html">RAČUNI</a></span>,
+             <span><a href="../ProformaInvoice.html">PREDRAČUNI</a></span>,
+             <span><a href="../Stock.html">ZALOGE</a></span>,
+             <span><a href="../PriceList.html">CENIKI</a></span>,
+             <span><a href="../Printing.html">TISKANJE RAČUNOV</a></span>,
+             <span><a href="../InvoicingOverview.html">PREGLED FAKTUR</a></span>,
+             <span><a href="../Support.html">PODPORA</a></span></div>
+        </div>
+      </div>
+    </THeader>
+    <TControl name="nav_Form_Select_DefaultCurrency" imageincluded="1" link="" margin="4" heading="h1">
+      <div class="Title">
+        <h1 class="Title" id="4f6a8f29-fc6e-431b-b10a-aae35b339b6c">Izberi privzeto valuto</h1>
+        <img src="nav_Form_Select_DefaultCurrency.png" />
+      </div>
+      <TControl name="nav_Form_Select_DefaultCurrency.usrc_NavigationButtons1" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="nav_Form_Select_DefaultCurrency.usrc_NavigationButtons1.btn2" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="nav_Form_Select_DefaultCurrency.usrc_NavigationButtons1.btn3" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="nav_Form_Select_DefaultCurrency.usrc_NavigationButtons1.usrc_Help1" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="nav_Form_Select_DefaultCurrency.usrc_NavigationButtons1.usrc_Help1.btn_Help" imageincluded="1" link="" margin="4" heading="h2" />
+        </TControl>
+      </TControl>
+      <TControl name="nav_Form_Select_DefaultCurrency.lbl_SelectedCurrency" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="nav_Form_Select_DefaultCurrency.txt_SelectedCurrency" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="nav_Form_Select_DefaultCurrency.dgvx_Currency" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="nav_Form_Select_DefaultCurrency.dgvx_Currency.ID" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="727ee38f-f1da-4acc-8740-3a1182439e64">ID</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_Form_Select_DefaultCurrency.dgvx_Currency.Abbreviation" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="44a3674d-e67f-4549-ba1c-f5e7003b7416">Oznaka valute</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_Form_Select_DefaultCurrency.dgvx_Currency.Name" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="5151fb40-1394-4d9a-afb0-8abc6135364b">Ime Valute</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_Form_Select_DefaultCurrency.dgvx_Currency.Symbol" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="d8fd883a-67fd-4a5c-82c7-9599df778aa7">Znak valute</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_Form_Select_DefaultCurrency.dgvx_Currency.CurrencyCode" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="a0c3f572-acf3-4bcc-a18e-000dbd43279f">Šifra valute</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_Form_Select_DefaultCurrency.dgvx_Currency.DecimalPlaces" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="5984e4e9-0a15-4051-ad16-d9aea986187d">Število decimalk</h3>
+          </div>
+        </TControl>
+      </TControl>
+    </TControl>
+  </body>
+</html>

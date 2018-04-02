@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <title>Ceniki</title>
+  </head>
+  <body>
+    <THeader>
+      <div class="header">
+        <canvas id="TangentaLogo" width="60" height="50"></canvas>
+        <script type="text/javascript">
+        var canvas, context, canvaso, contexto;
+        canvaso = document.getElementById('TangentaLogo');
+        context = canvaso.getContext('2d');
+        context.lineWidth = 1;
+
+        // Draw vertical line
+        context.strokeStyle ='#936b20';
+        context.beginPath();
+        context.moveTo(30, 0);
+        context.lineTo(30, 50);
+        context.stroke();
+
+        // Draw large arc
+        context.beginPath();
+        context.arc(54, 26, 24,0.6*Math.PI,1.5*Math.PI, false);
+        context.stroke();
+
+        // Draw head circle
+        context.beginPath();
+        context.fillStyle = "#E2FFB0"/*"#CEF988";*/
+        context.arc(34, 6, 4,0,2*Math.PI, false);
+        context.fill();
+        context.stroke();
+
+        context.closePath();
+        context.restore();
+
+        </script>
+        <div class="header_border_with_radius">
+          <div class="header_menu">
+            <span>
+              <a href="../Tangenta.html">TANGENTA</a>
+            </span>,
+             <span><a href="../Invoice.html">RAČUNI</a></span>,
+             <span><a href="../ProformaInvoice.html">PREDRAČUNI</a></span>,
+             <span><a href="../Stock.html">ZALOGE</a></span>,
+             <span><a href="../PriceList.html">CENIKI</a></span>,
+             <span><a href="../Printing.html">TISKANJE RAČUNOV</a></span>,
+             <span><a href="../InvoicingOverview.html">PREGLED FAKTUR</a></span>,
+             <span><a href="../Support.html">PODPORA</a></span></div>
+        </div>
+      </div>
+    </THeader>
+    <TControl name="st_Form_PriceList_Edit" imageincluded="1" link="" margin="4" heading="h1">
+      <div class="Title">
+        <h1 class="Title" id="2a2813d2-d59a-426e-9044-aca74f98114a">Ceniki</h1>
+        <img src="st_Form_PriceList_Edit.png" />
+      </div>
+      <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.usrc_NavigationButtons1" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.usrc_NavigationButtons1.btn2" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.usrc_NavigationButtons1.btn3" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.usrc_NavigationButtons1.usrc_Help1" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.usrc_NavigationButtons1.usrc_Help1.btn_Help" imageincluded="1" link="" margin="4" heading="h2" />
+          </TControl>
+        </TControl>
+        <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList" imageincluded="1" link="" margin="4" heading="h2">
+              <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1" imageincluded="1" link="" margin="4" heading="h2">
+                <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2" imageincluded="1" link="" margin="4" heading="h2">
+                  <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow" imageincluded="1" link="" margin="4" heading="h2">
+                    <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.lbl_Title" imageincluded="1" link="" margin="4" heading="h2" />
+                    <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.btn_New" imageincluded="1" link="" margin="4" heading="h2" />
+                    <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.btn_Insert" imageincluded="1" link="" margin="4" heading="h2" />
+                    <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor" imageincluded="1" link="" margin="4" heading="h2">
+                      <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1" imageincluded="1" link="" margin="4" heading="h2">
+                        <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                          <div class="Title">
+                            <h2 class="Title" id="f758b776-492f-4944-b6e4-137113da8595">Cenik</h2>
+                            <img src="hashname_1339418943.png" />
+                          </div>
+                          <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                          <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.btnex_1" imageincluded="1" link="" margin="4" heading="h2" />
+                          <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2" imageincluded="1" link="" margin="4" heading="h2">
+                            <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                              <div class="Title">
+                                <h2 class="Title" id="7a144035-7165-45b7-a98a-785f881fa617">Ime cenika</h2>
+                                <img src="hashname_272535792.png" />
+                              </div>
+                              <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.btnex_3" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.uinpctrl_lbl_1" imageincluded="1" link="" margin="4" heading="h2">
+                                <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.uinpctrl_lbl_1.xlbl_1" imageincluded="1" link="" margin="4" heading="h2" />
+                              </TControl>
+                              <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.ixt_1" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.btnex_4" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl1" imageincluded="1" link="" margin="4" heading="h2">
+                                <div class="Title">
+                                  <h2 class="Title" id="a92f767e-58a0-48a7-845d-6a01024488e4">Ime cenika</h2>
+                                  <img src="hashname_-1674439702.png" />
+                                </div>
+                                <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl1.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl1.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl1.usrc_lbl.xlbl_2" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                                <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl1.txt_2" imageincluded="1" link="" margin="4" heading="h2" />
+                              </TControl>
+                            </TControl>
+                          </TControl>
+                          <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl2" imageincluded="1" link="" margin="4" heading="h2">
+                            <div class="Title">
+                              <h2 class="Title" id="25433553-d6f6-45af-a13b-da7c761e9413">Veljaven</h2>
+                              <img src="hashname_-311458384.png" />
+                            </div>
+                            <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl2.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl2.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl2.usrc_lbl.xlbl_3" imageincluded="1" link="" margin="4" heading="h2" />
+                            </TControl>
+                            <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl2.uchk_1" imageincluded="1" link="" margin="4" heading="h2" />
+                          </TControl>
+                          <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3" imageincluded="1" link="" margin="4" heading="h2">
+                            <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                              <div class="Title">
+                                <h2 class="Title" id="77ca498e-9b60-4fcd-b812-ecc796ae3b86">Valute</h2>
+                                <img src="hashname_-910525233.png" />
+                              </div>
+                              <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.btnex_5" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.uinpctrl_lbl_2" imageincluded="1" link="" margin="4" heading="h2">
+                                <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.uinpctrl_lbl_2.xlbl_4" imageincluded="1" link="" margin="4" heading="h2" />
+                              </TControl>
+                              <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.ixt_3" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.btnex_6" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl3" imageincluded="1" link="" margin="4" heading="h2">
+                                <div class="Title">
+                                  <h2 class="Title" id="04284f49-e0b8-4b3e-98a7-b65bd9538121">Oznaka valute</h2>
+                                  <img src="hashname_-305649989.png" />
+                                </div>
+                                <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl3.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl3.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl3.usrc_lbl.picUnique" imageincluded="1" link="" margin="4" heading="h2" />
+                                  <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl3.usrc_lbl.xlbl_5" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                                <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl3.txt_4" imageincluded="1" link="" margin="4" heading="h2" />
+                              </TControl>
+                              <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl4" imageincluded="1" link="" margin="4" heading="h2">
+                                <div class="Title">
+                                  <h2 class="Title" id="bd0d54b3-6be1-44e1-ae4f-e90d8fd1bd1a">Ime Valute</h2>
+                                  <img src="hashname_-305649832.png" />
+                                </div>
+                                <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl4.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl4.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl4.usrc_lbl.xlbl_6" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                                <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl4.txt_5" imageincluded="1" link="" margin="4" heading="h2" />
+                              </TControl>
+                              <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl5" imageincluded="1" link="" margin="4" heading="h2">
+                                <div class="Title">
+                                  <h2 class="Title" id="b82f1457-c68b-40d5-af08-ae153ea41681">Znak valute</h2>
+                                  <img src="hashname_-305649799.png" />
+                                </div>
+                                <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl5.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl5.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl5.usrc_lbl.xlbl_7" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                                <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl5.txt_6" imageincluded="1" link="" margin="4" heading="h2" />
+                              </TControl>
+                              <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl6" imageincluded="1" link="" margin="4" heading="h2">
+                                <div class="Title">
+                                  <h2 class="Title" id="17ae0173-1919-4b0b-becc-b4736ea58332">Šifra valute</h2>
+                                  <img src="hashname_-305649882.png" />
+                                </div>
+                                <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl6.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl6.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl6.usrc_lbl.xlbl_8" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                                <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl6.unmUpDn_1" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl6.unmUpDn_1.txt_Value" imageincluded="1" link="" margin="4" heading="h2" />
+                                  <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl6.unmUpDn_1.btn_Plus" imageincluded="1" link="" margin="4" heading="h2" />
+                                  <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl6.unmUpDn_1.btn_Minus" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                              </TControl>
+                              <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl7" imageincluded="1" link="" margin="4" heading="h2">
+                                <div class="Title">
+                                  <h2 class="Title" id="d7add40e-f7b2-45a3-9ca6-8683899a6061">Število decimalk</h2>
+                                  <img src="hashname_-305649865.png" />
+                                </div>
+                                <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl7.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl7.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl7.usrc_lbl.xlbl_9" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                                <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl7.unmUpDn_2" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl7.unmUpDn_2.txt_Value" imageincluded="1" link="" margin="4" heading="h2" />
+                                  <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl7.unmUpDn_2.btn_Plus" imageincluded="1" link="" margin="4" heading="h2" />
+                                  <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl7.unmUpDn_2.btn_Minus" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                              </TControl>
+                            </TControl>
+                          </TControl>
+                          <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl8" imageincluded="1" link="" margin="4" heading="h2">
+                            <div class="Title">
+                              <h2 class="Title" id="8df553fe-caa1-4087-bbe0-7917f601eccf">Velja od</h2>
+                              <img src="hashname_-294025808.png" />
+                            </div>
+                            <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl8.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl8.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl8.usrc_lbl.urdb_1" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl8.usrc_lbl.urdb_2" imageincluded="1" link="" margin="4" heading="h2" />
+                            </TControl>
+                          </TControl>
+                          <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl9" imageincluded="1" link="" margin="4" heading="h2">
+                            <div class="Title">
+                              <h2 class="Title" id="e3f9c7fd-13eb-456d-9f22-99f02de9b29a">Velja do</h2>
+                              <img src="hashname_-308640336.png" />
+                            </div>
+                            <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl9.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl9.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl9.usrc_lbl.urdb_3" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl9.usrc_lbl.urdb_4" imageincluded="1" link="" margin="4" heading="h2" />
+                            </TControl>
+                          </TControl>
+                          <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl10" imageincluded="1" link="" margin="4" heading="h2">
+                            <div class="Title">
+                              <h2 class="Title" id="66c133ca-5e7a-43df-b430-85c4691cc8c8">Čas nastanka</h2>
+                              <img src="hashname_2121124459.png" />
+                            </div>
+                            <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl10.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl10.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl10.usrc_lbl.urdb_5" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl10.usrc_lbl.urdb_6" imageincluded="1" link="" margin="4" heading="h2" />
+                            </TControl>
+                          </TControl>
+                          <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl11" imageincluded="1" link="" margin="4" heading="h2">
+                            <div class="Title">
+                              <h2 class="Title" id="69692a37-a99d-4fd0-b381-eaccdfebe469">Opis</h2>
+                              <img src="hashname_1979961958.png" />
+                            </div>
+                            <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl11.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl11.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl11.usrc_lbl.urdb_7" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl11.usrc_lbl.urdb_8" imageincluded="1" link="" margin="4" heading="h2" />
+                            </TControl>
+                          </TControl>
+                        </TControl>
+                      </TControl>
+                    </TControl>
+                  </TControl>
+                </TControl>
+                <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl3" imageincluded="1" link="" margin="4" heading="h2">
+                  <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl3.dgvx_Table" imageincluded="1" link="" margin="4" heading="h2">
+                    <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl3.dgvx_Table.ID" imageincluded="0" link="" margin="4" heading="h3">
+                      <div class="Title">
+                        <h3 class="Title" id="5e959934-bc7d-4732-9ab2-2b5d66d792b6">ID</h3>
+                      </div>
+                    </TControl>
+                    <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl3.dgvx_Table.PriceList_$_pln_$$Name" imageincluded="0" link="" margin="4" heading="h3">
+                      <div class="Title">
+                        <h3 class="Title" id="7ed0f3b7-3a37-4f00-a67e-f797811a7b99">Ime cenika</h3>
+                      </div>
+                    </TControl>
+                    <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl3.dgvx_Table.PriceList_$_Cur_$$Abbreviation" imageincluded="0" link="" margin="4" heading="h3">
+                      <div class="Title">
+                        <h3 class="Title" id="8ef3e23b-dee6-4410-b5ad-0acdc37c8fac">Oznaka valute</h3>
+                      </div>
+                    </TControl>
+                    <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl3.dgvx_Table.PriceList_$_Cur_$$Name" imageincluded="0" link="" margin="4" heading="h3">
+                      <div class="Title">
+                        <h3 class="Title" id="592b66d4-a4c8-4bf2-bed5-527653ed5e27">Ime Valute</h3>
+                      </div>
+                    </TControl>
+                    <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl3.dgvx_Table.PriceList_$$CreationDate" imageincluded="0" link="" margin="4" heading="h3">
+                      <div class="Title">
+                        <h3 class="Title" id="8d24ea5d-b845-40b3-ab67-2ada8f87c9ae">Čas nastanka</h3>
+                      </div>
+                    </TControl>
+                    <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl3.dgvx_Table.PriceList_$$Description" imageincluded="0" link="" margin="4" heading="h3">
+                      <div class="Title">
+                        <h3 class="Title" id="6fe1ac44-886f-4200-9e43-615241d2c915">Opis</h3>
+                      </div>
+                    </TControl>
+                    <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl3.dgvx_Table.PriceList_$$Valid" imageincluded="0" link="" margin="4" heading="h3">
+                      <div class="Title">
+                        <h3 class="Title" id="64b6dfbf-a0c9-4fa3-950b-39d3f3cc5e44">Veljaven</h3>
+                      </div>
+                    </TControl>
+                    <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl3.dgvx_Table.PriceList_$$ValidFrom" imageincluded="0" link="" margin="4" heading="h3">
+                      <div class="Title">
+                        <h3 class="Title" id="18d52027-7ae0-4446-ab1a-96189b165afe">Velja od</h3>
+                      </div>
+                    </TControl>
+                    <TControl name="st_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl3.dgvx_Table.PriceList_$$ValidTo" imageincluded="0" link="" margin="4" heading="h3">
+                      <div class="Title">
+                        <h3 class="Title" id="ac019aef-c78a-41c1-b5e3-e3a97b728684">Velja do</h3>
+                      </div>
+                    </TControl>
+                  </TControl>
+                </TControl>
+              </TControl>
+            </TControl>
+          </TControl>
+        </TControl>
+      </TControl>
+    </TControl>
+  </body>
+</html>
