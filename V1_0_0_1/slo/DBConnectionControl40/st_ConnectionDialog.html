@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <title>Prijava na podatkovno bazo:"</title>
+  </head>
+  <body>
+    <THeader>
+      <div class="header">
+        <canvas id="TangentaLogo" width="60" height="50"></canvas>
+        <script type="text/javascript">
+        var canvas, context, canvaso, contexto;
+        canvaso = document.getElementById('TangentaLogo');
+        context = canvaso.getContext('2d');
+        context.lineWidth = 1;
+
+        // Draw vertical line
+        context.strokeStyle ='#936b20';
+        context.beginPath();
+        context.moveTo(30, 0);
+        context.lineTo(30, 50);
+        context.stroke();
+
+        // Draw large arc
+        context.beginPath();
+        context.arc(54, 26, 24,0.6*Math.PI,1.5*Math.PI, false);
+        context.stroke();
+
+        // Draw head circle
+        context.beginPath();
+        context.fillStyle = "#E2FFB0"/*"#CEF988";*/
+        context.arc(34, 6, 4,0,2*Math.PI, false);
+        context.fill();
+        context.stroke();
+
+        context.closePath();
+        context.restore();
+
+        </script>
+        <div class="header_border_with_radius">
+          <div class="header_menu">
+            <span>
+              <a href="../Tangenta.html">TANGENTA</a>
+            </span>,
+             <span><a href="../Invoice.html">RAČUNI</a></span>,
+             <span><a href="../ProformaInvoice.html">PREDRAČUNI</a></span>,
+             <span><a href="../Stock.html">ZALOGE</a></span>,
+             <span><a href="../PriceList.html">CENIKI</a></span>,
+             <span><a href="../Printing.html">TISKANJE RAČUNOV</a></span>,
+             <span><a href="../InvoicingOverview.html">PREGLED FAKTUR</a></span>,
+             <span><a href="../Support.html">PODPORA</a></span></div>
+        </div>
+      </div>
+    </THeader>
+    <TControl name="st_ConnectionDialog" imageincluded="1" link="" margin="4" heading="h1">
+      <div class="Title">
+        <h1 class="Title" id="2a378221-b0bc-4874-823b-477834985b7b">Prijava na podatkovno bazo MSSQL</h1>
+        <img src="st_ConnectionDialog.png" />
+      </div>
+      <TControl name="st_ConnectionDialog.usrc_NavigationButtons1" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="st_ConnectionDialog.usrc_NavigationButtons1.btn1" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="st_ConnectionDialog.usrc_NavigationButtons1.btn2" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="st_ConnectionDialog.usrc_NavigationButtons1.btn3" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="st_ConnectionDialog.usrc_NavigationButtons1.usrc_Help1" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="st_ConnectionDialog.usrc_NavigationButtons1.usrc_Help1.btn_Help" imageincluded="1" link="" margin="4" heading="h2" />
+        </TControl>
+      </TControl>
+      <TControl name="st_ConnectionDialog.lbl_Instruction" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="st_ConnectionDialog.lbl_Server" imageincluded="1" link="st_ConnectionDialog.cmb_ServerName,st_ConnectionDialog.btn_Browse_servers" margin="4" heading="h2">
+        <div class="Title">
+          <h2 class="Title" id="1841fa44-7dc5-4ce0-977b-6762c8710436">Strežnik MSSQL</h2>
+          <img src="st_ConnectionDialog_lbl_Server.png" />
+          <div class="Description">Vpišite ali izberite izmed že izbranih MSSQL strežnik. S klikom na gumb Poiši, bo program Tangenta sam poiskal MSSQL strežnike na lokalnem računalniku in v lokalnem omrežju.
+
+</div>
+        </div>
+      </TControl>
+      <TControl name="st_ConnectionDialog.cmb_ServerName" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="st_ConnectionDialog.btn_Browse_servers" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="st_ConnectionDialog.rdb_UseWindowsAuthentication" imageincluded="1" link="" margin="4" heading="h2">
+        <div class="Title">
+          <h2 class="Title" id="4f1bd679-d50e-4a4c-86f9-1b77431ec37f">Windows prijava</h2>
+          <img src="st_ConnectionDialog_rdb_UseWindowsAuthentication.png" />
+          <div class="Description">Izbira Windows prijava pomeni, da se boste neposredno prijavili na MSSQL strežnik z uporabniškim imenom in geslom.
+MSSQL strežnik vas v tem primeru ne bo spraševal za uporabniško ime in geslo, saj se zanaša na varnost in dostopne pravice
+operacijskega sistema.</div>
+        </div>
+      </TControl>
+      <TControl name="st_ConnectionDialog.rdb_SQL_Server_Authentication" imageincluded="1" link="" margin="4" heading="h2">
+        <div class="Title">
+          <h2 class="Title" id="f0bc587c-e1c3-481a-8c89-1b87f516e128">SQL strežniška prijava</h2>
+          <img src="st_ConnectionDialog_rdb_SQL_Server_Authentication.png" />
+          <div class="Description">SQL strežniška prijava pomeni, da ste na strežniku sami določili uporabnike, njihova gesla in njihove pravice.
+Za določanje uporabnikov, njihovih gesel in njihove pravic so potrebna računalniško administratorska znanja.
+
+</div>
+        </div>
+      </TControl>
+      <TControl name="st_ConnectionDialog.lbl_UserName" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="st_ConnectionDialog.cmb_UserName" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="st_ConnectionDialog.lbl_Password" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="st_ConnectionDialog.txt_Password" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="st_ConnectionDialog.lbl_DataBase" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="st_ConnectionDialog.cmb_DataBaseName" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="st_ConnectionDialog.btn_Browse_Databases_onServer" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="st_ConnectionDialog.btn_Action" imageincluded="1" link="" margin="4" heading="h2" />
+    </TControl>
+  </body>
+</html>

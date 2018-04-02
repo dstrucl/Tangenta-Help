@@ -57,13 +57,21 @@
         <h1 class="Title" id="51ff1eec-3739-45b5-ae80-917200b353c5">Izbira strežnika</h1>
         <div class="About">Program Tangenta, je koncipiran tako, da lahko raste z vami tako kot vaše podjetje.
 Vsak začetek je težak in podjetniki začetniki za pisanje računov in ponudb običajno
-uporabljajo pisarniška orodja kot so Excel ali Word, ko pa podjetje zraste pa nastane potreba
+uporabljajo pisarniška orodja kot so Excel ali Word. Ko podjetje zraste pa nastane potreba
 po programu za vodenju poslovanja (fakturiranje, vodenje strank, izdaja ponudb..),
 ki dela s podatkovno bazo.
 
-Ideja tega programa je, da podjetnik že v samem začetku gradi bazo podatkov o svojih strankah
+Ideja tega programa je, da podjetnik že v samem začetku gradi bazo podatkov o svojih strankah,
 izdanih računih, ponudbah itd..
 To pa je tisto, zakar je namenjen program TANGENTA
+
+V začetni podjetniški fazi, ko ste sami ali vas je samo nekaj zaposlenih je najbolj primeren v program Tangenta integriran strežnik SQLite. 
+SQLite podatkovna baza je samostojna datoteka, ki jo morate skrbno hraniti.
+Seveda pa lahko že takoj program Tangenta povežete MSSQL strežnikom, kar pa zahteva dodatna računalniška znanja.
+
+
+
+
 
 
 
@@ -71,7 +79,7 @@ To pa je tisto, zakar je namenjen program TANGENTA
 
 
 </div>
-        <img src="st_Form_GetDBType.png" width="342" height="139" />
+        <img src="st_Form_GetDBType.png" />
       </div>
       <TControl name="st_Form_GetDBType.usrc_NavigationButtons1" imageincluded="1" link="" margin="4" heading="h2">
         <TControl name="st_Form_GetDBType.usrc_NavigationButtons1.btn1" imageincluded="1" link="" margin="4" heading="h2" />
@@ -82,8 +90,22 @@ To pa je tisto, zakar je namenjen program TANGENTA
         </TControl>
       </TControl>
       <TControl name="st_Form_GetDBType.lbl_SelectDataBase" imageincluded="1" link="" margin="4" heading="h2" />
-      <TControl name="st_Form_GetDBType.rdb_SQLite" imageincluded="1" link="" margin="4" heading="h2" />
-      <TControl name="st_Form_GetDBType.rdb_MSSQL" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="st_Form_GetDBType.rdb_SQLite" imageincluded="1" link="" margin="4" heading="h2">
+        <div class="Title">
+          <h2 class="Title" id="8450624c-d976-4f0d-a445-7439965ae7c9">SQLite</h2>
+          <img src="st_Form_GetDBType_rdb_SQLite.png" />
+          <div class="Description">V kolikor bo program Tangenta tekel v enouporabniškem načinu samo na enem računalniku potem je smiselno izbrati SQLite. Za večuporabniško delovanje, je smiselna povezava na MSSQL strežnik</div>
+        </div>
+      </TControl>
+      <TControl name="st_Form_GetDBType.rdb_MSSQL" imageincluded="1" link="" margin="4" heading="h2">
+        <div class="Title">
+          <h2 class="Title" id="041c215c-eaff-49b1-b17d-417617e45c47">MSSQL</h2>
+          <img src="st_Form_GetDBType_rdb_MSSQL.png" />
+          <div class="Description">Obstaja zastonjska verzija MSSQL strežnika, ki se ji reče "Express edition", ki jo lahko naložite iz naslova <a href="https://www.microsoft.com/en-us/sql-server/sql-server-downloads">https://www.microsoft.com/en-us/sql-server/sql-server-downloads</a> 
+Zastonjska verzija MSSQL strežnika, ki se ji reče "Express edition" omogoča delo s podatkovnimi bazami velikimi do 10GB, kar bi za program Tangenta pomenilo, da z njim lahko napišemo več kot milion računov in predračunov skupaj preden bi dosegli velikost MSSSQL podatkovne baze 10GB.
+</div>
+        </div>
+      </TControl>
     </TControl>
   </body>
 </html>
