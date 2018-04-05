@@ -114,7 +114,7 @@ nezaželjena oseba uprabila program in kaj spremenila.
             <img src="nav_Form_DBSettings_grp_OperationMode_chk_SingleUserLoginAsAdministrator.png" />
           </div>
         </TControl>
-        <TControl name="nav_Form_DBSettings.grp_OperationMode.lbl_Administrator_Password" imageincluded="1" link="nav_Form_DBSettings.grp_OperationMode.usrc_Password1,nav_Form_DBSettings.grp_OperationMode.usrc_Password1" margin="4" heading="h2">
+        <TControl name="nav_Form_DBSettings.grp_OperationMode.lbl_Administrator_Password" imageincluded="1" link="nav_Form_DBSettings.grp_OperationMode.usrc_Password1,nav_Form_DBSettings.grp_OperationMode.usrc_Password1,nav_Form_DBSettings.grp_OperationMode.usrc_Password1,nav_Form_DBSettings.grp_OperationMode.usrc_Password1" margin="4" heading="h2">
           <div class="Title">
             <h2 class="Title" id="ba801e58-7afc-476d-b78b-79df901c8ad7">Skrbniško Geslo</h2>
             <img src="nav_Form_DBSettings_grp_OperationMode_lbl_Administrator_Password.png" />
@@ -137,13 +137,17 @@ Skrbniško geslo mora biti dolgo vsaj pet znakov.
         <div class="Title">
           <h2 class="Title" id="da8d85b0-3b11-48d2-a6a9-b456e2ea9df4">Preverjanje zalog ob zagonu programa</h2>
           <img src="nav_Form_DBSettings_chk_StockCheckAtStartup.png" />
-          <div class="Description">V kolikor postavimo kljukico pri "Preverjanje zalog ob zagonu programa" bo program
+          <div class="Description">V kolikor postavimo kljukico pri "Preverjanje zalog ob zagonu programa", bo program
 Tangenta vsakič preveril zaloge artiklov v prodajlni C.
 Postavljanje kljukice pri "Preverjanje zalog ob zagonu programa" je smiselno samo, 
 če uporabljamo prodajalno C.
 
-Pri preverjanju zalog se preverja ali je rok trajanja nekga artikla
-že potekel oziroma se bliža konec roka uporabe.
+Pri preverjanju zalog se preverja ali je rok trajanja nekega artikla
+že potekel, oziroma se jim bliža konec roka uporabe.
+Program Tangenta nas bo ob zagonu opozoril s prikazom vseh artiklov,
+ki so še v zalogah in jim je potekel rok uporabe ali pa sem jim bliža konec roka uporabe.
+
+
 
 
 
@@ -155,7 +159,6 @@ Pri preverjanju zalog se preverja ali je rok trajanja nekga artikla
       <TControl name="nav_Form_DBSettings.chk_ShopC_ExclusivelySellFromStock" imageincluded="1" link="" margin="4" heading="h2">
         <div class="Title">
           <h2 class="Title" id="e5fabd21-d574-4cf7-9cb5-803b962e5b00">V prodajalni C je omogočena samo prodaja iz zalog</h2>
-          <div class="About" />
           <img src="nav_Form_DBSettings_chk_ShopC_ExclusivelySellFromStock.png" />
           <div class="Description">Nekateri poslovanja so lahko takšna, da je možna oziroma dovoljena samo prodaja artikla
 ki se nahaja v zalogah. V kolikor artikel imamo, ni pa vpisan v zalogah, moramo najprej napisati prevzemnico
