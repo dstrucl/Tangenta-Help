@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <title>Prijava na podatkovno bazo:"</title>
+  </head>
+  <body>
+    <THeader>
+      <div class="header">
+        <canvas id="TangentaLogo" width="60" height="50"></canvas>
+        <script type="text/javascript">
+        var canvas, context, canvaso, contexto;
+        canvaso = document.getElementById('TangentaLogo');
+        context = canvaso.getContext('2d');
+        context.lineWidth = 1;
+
+        // Draw vertical line
+        context.strokeStyle ='#936b20';
+        context.beginPath();
+        context.moveTo(30, 0);
+        context.lineTo(30, 50);
+        context.stroke();
+
+        // Draw large arc
+        context.beginPath();
+        context.arc(54, 26, 24,0.6*Math.PI,1.5*Math.PI, false);
+        context.stroke();
+
+        // Draw head circle
+        context.beginPath();
+        context.fillStyle = "#E2FFB0"/*"#CEF988";*/
+        context.arc(34, 6, 4,0,2*Math.PI, false);
+        context.fill();
+        context.stroke();
+
+        context.closePath();
+        context.restore();
+
+        </script>
+        <div class="header_border_with_radius">
+          <div class="header_menu">
+            <span>
+              <a href="../Tangenta.html">TANGENTA</a>
+            </span>,
+             <span><a href="../Invoice.html">RAČUNI</a></span>,
+             <span><a href="../ProformaInvoice.html">PREDRAČUNI</a></span>,
+             <span><a href="../Stock.html">ZALOGE</a></span>,
+             <span><a href="../PriceList.html">CENIKI</a></span>,
+             <span><a href="../Printing.html">TISKANJE RAČUNOV</a></span>,
+             <span><a href="../InvoicingOverview.html">PREGLED FAKTUR</a></span>,
+             <span><a href="../Support.html">PODPORA</a></span></div>
+        </div>
+      </div>
+    </THeader>
+    <TControl name="Select_DataBase_Form" imageincluded="1" link="" margin="4" heading="h1">
+      <div class="Title">
+        <h1 class="Title" id="b09dc93e-085d-4bc5-9975-0e0c164bf5f8">Prijava na podatkovno bazo:"</h1>
+        <img src="Select_DataBase_Form.png" />
+      </div>
+      <TControl name="Select_DataBase_Form.lbl_Server" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Select_DataBase_Form.txt_ServerName" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Select_DataBase_Form.grpbox_LogOnToTheServer" imageincluded="1" link="" margin="4" heading="h2">
+        <div class="Title">
+          <h2 class="Title" id="25c764f8-1c61-4e98-9969-9bb6c0e72550"> Prijava na strežnik </h2>
+          <img src="Select_DataBase_Form_grpbox_LogOnToTheServer.png" />
+        </div>
+        <TControl name="Select_DataBase_Form.grpbox_LogOnToTheServer.usrc_Help1" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="Select_DataBase_Form.grpbox_LogOnToTheServer.usrc_Help1.btn_Help" imageincluded="1" link="" margin="4" heading="h2" />
+        </TControl>
+        <TControl name="Select_DataBase_Form.grpbox_LogOnToTheServer.radioButton_UseWindowsAuthentication" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="Select_DataBase_Form.grpbox_LogOnToTheServer.radioButton_UseSQLServerAuthentication" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="Select_DataBase_Form.grpbox_LogOnToTheServer.lbl_UserName" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="Select_DataBase_Form.grpbox_LogOnToTheServer.txt_UserName" imageincluded="1" link="" margin="4" heading="h2" />
+      </TControl>
+      <TControl name="Select_DataBase_Form.grpbox_ConnectToDatabaseName" imageincluded="1" link="" margin="4" heading="h2">
+        <div class="Title">
+          <h2 class="Title" id="5aa14c38-df1a-4e24-b35e-cf5b8356b345">Poveži se na podatkovno bazo</h2>
+          <img src="Select_DataBase_Form_grpbox_ConnectToDatabaseName.png" />
+        </div>
+        <TControl name="Select_DataBase_Form.grpbox_ConnectToDatabaseName.btn_GetDataBaseList" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="Select_DataBase_Form.grpbox_ConnectToDatabaseName.lbl_Database" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="Select_DataBase_Form.grpbox_ConnectToDatabaseName.txt_DataBaseName" imageincluded="1" link="" margin="4" heading="h2" />
+      </TControl>
+      <TControl name="Select_DataBase_Form.btn_CreateNewDatabase" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Select_DataBase_Form.Btn_TestConnection" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Select_DataBase_Form.btn_ViewRights" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Select_DataBase_Form.btn_Connect" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Select_DataBase_Form.btn_Cancel" imageincluded="1" link="" margin="4" heading="h2" />
+    </TControl>
+  </body>
+</html>
