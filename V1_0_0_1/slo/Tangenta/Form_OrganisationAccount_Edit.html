@@ -1,0 +1,428 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <title>Bančni računi organizacije</title>
+  </head>
+  <body>
+    <THeader>
+      <div class="header">
+        <canvas id="TangentaLogo" width="60" height="50"></canvas>
+        <script type="text/javascript">
+        var canvas, context, canvaso, contexto;
+        canvaso = document.getElementById('TangentaLogo');
+        context = canvaso.getContext('2d');
+        context.lineWidth = 1;
+
+        // Draw vertical line
+        context.strokeStyle ='#936b20';
+        context.beginPath();
+        context.moveTo(30, 0);
+        context.lineTo(30, 50);
+        context.stroke();
+
+        // Draw large arc
+        context.beginPath();
+        context.arc(54, 26, 24,0.6*Math.PI,1.5*Math.PI, false);
+        context.stroke();
+
+        // Draw head circle
+        context.beginPath();
+        context.fillStyle = "#E2FFB0"/*"#CEF988";*/
+        context.arc(34, 6, 4,0,2*Math.PI, false);
+        context.fill();
+        context.stroke();
+
+        context.closePath();
+        context.restore();
+
+        </script>
+        <div class="header_border_with_radius">
+          <div class="header_menu">
+            <span>
+              <a href="../Tangenta.html">TANGENTA</a>
+            </span>,
+             <span><a href="../Invoice.html">RAČUNI</a></span>,
+             <span><a href="../ProformaInvoice.html">PREDRAČUNI</a></span>,
+             <span><a href="../Stock.html">ZALOGE</a></span>,
+             <span><a href="../PriceList.html">CENIKI</a></span>,
+             <span><a href="../Printing.html">TISKANJE RAČUNOV</a></span>,
+             <span><a href="../InvoicingOverview.html">PREGLED FAKTUR</a></span>,
+             <span><a href="../Support.html">PODPORA</a></span></div>
+        </div>
+      </div>
+    </THeader>
+    <TControl name="Form_OrganisationAccount_Edit" imageincluded="1" link="" margin="4" heading="h1">
+      <div class="Title">
+        <h1 class="Title" id="f240ad31-b200-4f44-8584-0d7299894274">Bančni računi organizacije</h1>
+        <img src="Form_OrganisationAccount_Edit.png" />
+      </div>
+      <TControl name="Form_OrganisationAccount_Edit.btn_OK" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_OrganisationAccount_Edit.btn_Cancel" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_OrganisationAccount_Edit.usrc_Help1" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="Form_OrganisationAccount_Edit.usrc_Help1.btn_Help" imageincluded="1" link="" margin="4" heading="h2" />
+      </TControl>
+      <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow" imageincluded="1" link="" margin="4" heading="h2">
+              <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.lbl_Title" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.btn_New" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.btn_Update" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor" imageincluded="1" link="" margin="4" heading="h2">
+                <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1" imageincluded="1" link="" margin="4" heading="h2">
+                  <div class="Title">
+                    <h2 class="Title" id="e07a264a-729b-4c6d-8faf-be03b018e1fd">Račun organizacije</h2>
+                    <img src="Form_OrganisationAccount_Edit_usrc_EditTable_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1.png" />
+                    <div class="Description">Ime tabele v podatkovni bazi je "OrganisationAccount".</div>
+                  </div>
+                  <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                    <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                    <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.btnex_1" imageincluded="1" link="" margin="4" heading="h2" />
+                    <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.ixt_14" imageincluded="1" link="" margin="4" heading="h2" />
+                    <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2" imageincluded="1" link="" margin="4" heading="h2">
+                      <div class="Title">
+                        <h2 class="Title" id="ad1205e0-a64e-4df6-b535-7c74fb836a14">Bančni račun</h2>
+                        <img src="Form_OrganisationAccount_Edit_usrc_EditTable_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1_grpBox_myGrp_2.png" />
+                        <div class="Description">Ime tabele v podatkovni bazi je "BankAccount".</div>
+                      </div>
+                      <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                        <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                        <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.btnex_3" imageincluded="1" link="" margin="4" heading="h2" />
+                        <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.uinpctrl_lbl_1" imageincluded="1" link="" margin="4" heading="h2">
+                          <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.uinpctrl_lbl_1.xlbl_1" imageincluded="1" link="" margin="4" heading="h2" />
+                        </TControl>
+                        <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.ixt_1" imageincluded="1" link="" margin="4" heading="h2" />
+                        <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.btnex_4" imageincluded="1" link="" margin="4" heading="h2" />
+                        <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl1" imageincluded="1" link="" margin="4" heading="h2">
+                          <div class="Title">
+                            <h2 class="Title" id="8c3ed56d-6002-4f59-86f5-819a51e71d9e">TRR</h2>
+                            <img src="hashname_-1597171212.png" />
+                            <div class="Description">
+Največja možna dolžina besedila je 264 znakov.
+Ime stolpca v tabeli podatkovne baze "BankAccount":"TRR".</div>
+                          </div>
+                          <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl1.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                          <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl1.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                            <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl1.usrc_lbl.xlbl_2" imageincluded="1" link="" margin="4" heading="h2" />
+                          </TControl>
+                          <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl1.txt_2" imageincluded="1" link="" margin="4" heading="h2" />
+                        </TControl>
+                        <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl2" imageincluded="1" link="" margin="4" heading="h2">
+                          <div class="Title">
+                            <h2 class="Title" id="2e8e3fd4-f326-4d4c-919a-6f823c10ff8e">Aktiven</h2>
+                            <img src="hashname_-1597171385.png" />
+                            <div class="Description">
+Ime stolpca v tabeli podatkovne baze "BankAccount":"Active".</div>
+                          </div>
+                          <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl2.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                          <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl2.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                            <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl2.usrc_lbl.xlbl_3" imageincluded="1" link="" margin="4" heading="h2" />
+                          </TControl>
+                          <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl2.uchk_1" imageincluded="1" link="" margin="4" heading="h2" />
+                        </TControl>
+                        <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl3" imageincluded="1" link="" margin="4" heading="h2">
+                          <div class="Title">
+                            <h2 class="Title" id="95e4884c-af3e-46db-bf39-b7cc357237f6">Opis</h2>
+                            <img src="hashname_-1597171418.png" />
+                            <div class="Description">
+Podatek ni obvezen.
+Največja možna dolžina besedila je 2000 znakov.
+Ime stolpca v tabeli podatkovne baze "BankAccount":"Description".</div>
+                          </div>
+                          <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl3.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                          <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl3.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                            <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl3.usrc_lbl.urdb_1" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl3.usrc_lbl.urdb_2" imageincluded="1" link="" margin="4" heading="h2" />
+                          </TControl>
+                          <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl3.rtxt_1" imageincluded="1" link="" margin="4" heading="h2" />
+                        </TControl>
+                        <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3" imageincluded="1" link="" margin="4" heading="h2">
+                          <div class="Title">
+                            <h2 class="Title" id="a267a415-b7fc-459f-9052-b963cf33834e">Banka</h2>
+                            <img src="hashname_-1259965207.png" />
+                            <div class="Description">Ime tabele v podatkovni bazi je "Bank".</div>
+                          </div>
+                          <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                            <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.btnex_5" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.uinpctrl_lbl_2" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.uinpctrl_lbl_2.xlbl_4" imageincluded="1" link="" margin="4" heading="h2" />
+                            </TControl>
+                            <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.ixt_3" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.btnex_6" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4" imageincluded="1" link="" margin="4" heading="h2">
+                              <div class="Title">
+                                <h2 class="Title" id="8b61d989-81d0-43f9-97a2-86733ee3dfce">Organizacija</h2>
+                                <img src="hashname_-1410264782.png" />
+                                <div class="Description">Ime tabele v podatkovni bazi je "Organisation".</div>
+                              </div>
+                              <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                                <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.btnex_7" imageincluded="1" link="" margin="4" heading="h2" />
+                                <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.uinpctrl_lbl_3" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.uinpctrl_lbl_3.picUnique" imageincluded="1" link="" margin="4" heading="h2" />
+                                  <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.uinpctrl_lbl_3.xlbl_5" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                                <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.ixt_4" imageincluded="1" link="" margin="4" heading="h2" />
+                                <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.btnex_8" imageincluded="1" link="" margin="4" heading="h2" />
+                                <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.inp_ctrl4" imageincluded="1" link="" margin="4" heading="h2">
+                                  <div class="Title">
+                                    <h2 class="Title" id="04633118-47cf-47e6-abcd-edc69b1cf654">Ime Firme</h2>
+                                    <img src="hashname_-171427579.png" />
+                                    <div class="Description">
+Največja možna dolžina besedila je 264 znakov.
+Ime stolpca v tabeli podatkovne baze "Organisation":"Name".</div>
+                                  </div>
+                                  <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.inp_ctrl4.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                  <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.inp_ctrl4.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                    <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.inp_ctrl4.usrc_lbl.xlbl_6" imageincluded="1" link="" margin="4" heading="h2" />
+                                  </TControl>
+                                  <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.inp_ctrl4.txt_5" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                                <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.inp_ctrl5" imageincluded="1" link="" margin="4" heading="h2">
+                                  <div class="Title">
+                                    <h2 class="Title" id="4e41a1a3-0f93-498f-908b-c71369ee937c">Davčna številka</h2>
+                                    <img src="hashname_-1515795446.png" />
+                                    <div class="Description">
+Največja možna dolžina besedila je 32 znakov.
+Ime stolpca v tabeli podatkovne baze "Organisation":"Tax_ID".</div>
+                                  </div>
+                                  <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.inp_ctrl5.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                  <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.inp_ctrl5.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                    <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.inp_ctrl5.usrc_lbl.xlbl_7" imageincluded="1" link="" margin="4" heading="h2" />
+                                  </TControl>
+                                  <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.inp_ctrl5.txt_6" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                                <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.inp_ctrl6" imageincluded="1" link="" margin="4" heading="h2">
+                                  <div class="Title">
+                                    <h2 class="Title" id="45ed4cf9-bce7-4590-b9b0-dda55ee89fb3">Matična številka</h2>
+                                    <img src="hashname_-1166213301.png" />
+                                    <div class="Description">
+Podatek ni obvezen.
+Največja možna dolžina besedila je 50 znakov.
+Ime stolpca v tabeli podatkovne baze "Organisation":"Registration_ID".</div>
+                                  </div>
+                                  <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.inp_ctrl6.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                  <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.inp_ctrl6.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                    <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.inp_ctrl6.usrc_lbl.urdb_3" imageincluded="1" link="" margin="4" heading="h2" />
+                                    <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.inp_ctrl6.usrc_lbl.urdb_4" imageincluded="1" link="" margin="4" heading="h2" />
+                                  </TControl>
+                                  <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.inp_ctrl6.txt_7" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                                <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.inp_ctrl7" imageincluded="1" link="" margin="4" heading="h2">
+                                  <div class="Title">
+                                    <h2 class="Title" id="7a83ed20-d6d9-40a8-b38f-5e4cd81bd2ac">Davčni zavezanec</h2>
+                                    <img src="hashname_-1025050800.png" />
+                                    <div class="Description">
+Podatek ni obvezen.
+Ime stolpca v tabeli podatkovne baze "Organisation":"TaxPayer".</div>
+                                  </div>
+                                  <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.inp_ctrl7.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                  <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.inp_ctrl7.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                    <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.inp_ctrl7.usrc_lbl.urdb_5" imageincluded="1" link="" margin="4" heading="h2" />
+                                    <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.inp_ctrl7.usrc_lbl.urdb_6" imageincluded="1" link="" margin="4" heading="h2" />
+                                  </TControl>
+                                  <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.inp_ctrl7.uchk_2" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                                <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.myGrp_5" imageincluded="1" link="" margin="4" heading="h2">
+                                  <div class="Title">
+                                    <h2 class="Title" id="07beb516-a73c-4da3-9bfb-336fac50f513">Komentar 1</h2>
+                                    <img src="hashname_632683428.png" />
+                                    <div class="Description">Ime tabele v podatkovni bazi je "Comment1".</div>
+                                  </div>
+                                  <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.myGrp_5.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                                    <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.myGrp_5.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                    <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.myGrp_5.grpBox.uinpctrl_lbl_4" imageincluded="1" link="" margin="4" heading="h2">
+                                      <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.myGrp_5.grpBox.uinpctrl_lbl_4.urdb_7" imageincluded="1" link="" margin="4" heading="h2" />
+                                      <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.myGrp_5.grpBox.uinpctrl_lbl_4.urdb_8" imageincluded="1" link="" margin="4" heading="h2" />
+                                    </TControl>
+                                  </TControl>
+                                </TControl>
+                              </TControl>
+                            </TControl>
+                          </TControl>
+                        </TControl>
+                      </TControl>
+                    </TControl>
+                    <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_6" imageincluded="1" link="" margin="4" heading="h2">
+                      <div class="Title">
+                        <h2 class="Title" id="a226d7c7-4fe1-4c51-bc2c-9ec36f513520">Organizacija</h2>
+                        <img src="Form_OrganisationAccount_Edit_usrc_EditTable_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1_grpBox_myGrp_6.png" />
+                        <div class="Description">Ime tabele v podatkovni bazi je "Organisation".</div>
+                      </div>
+                      <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_6.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                        <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_6.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                        <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_6.grpBox.btnex_11" imageincluded="1" link="" margin="4" heading="h2" />
+                        <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_6.grpBox.uinpctrl_lbl_5" imageincluded="1" link="" margin="4" heading="h2">
+                          <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_6.grpBox.uinpctrl_lbl_5.xlbl_9" imageincluded="1" link="" margin="4" heading="h2" />
+                        </TControl>
+                        <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_6.grpBox.ixt_9" imageincluded="1" link="" margin="4" heading="h2" />
+                        <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_6.grpBox.btnex_12" imageincluded="1" link="" margin="4" heading="h2" />
+                        <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_6.grpBox.inp_ctrl9" imageincluded="1" link="" margin="4" heading="h2">
+                          <div class="Title">
+                            <h2 class="Title" id="8f0e8b28-19da-4f11-b1e2-a50804615d5b">Ime Firme</h2>
+                            <img src="hashname_2102098140.png" />
+                            <div class="Description">
+Največja možna dolžina besedila je 264 znakov.
+Ime stolpca v tabeli podatkovne baze "Organisation":"Name".</div>
+                          </div>
+                          <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_6.grpBox.inp_ctrl9.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                          <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_6.grpBox.inp_ctrl9.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                            <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_6.grpBox.inp_ctrl9.usrc_lbl.xlbl_10" imageincluded="1" link="" margin="4" heading="h2" />
+                          </TControl>
+                          <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_6.grpBox.inp_ctrl9.txt_10" imageincluded="1" link="" margin="4" heading="h2" />
+                        </TControl>
+                        <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_6.grpBox.inp_ctrl10" imageincluded="1" link="" margin="4" heading="h2">
+                          <div class="Title">
+                            <h2 class="Title" id="29f1f268-e103-4e3a-900a-e1ffeb3d18a0">Davčna številka</h2>
+                            <img src="hashname_-80396239.png" />
+                            <div class="Description">
+Največja možna dolžina besedila je 32 znakov.
+Ime stolpca v tabeli podatkovne baze "Organisation":"Tax_ID".</div>
+                          </div>
+                          <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_6.grpBox.inp_ctrl10.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                          <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_6.grpBox.inp_ctrl10.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                            <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_6.grpBox.inp_ctrl10.usrc_lbl.xlbl_11" imageincluded="1" link="" margin="4" heading="h2" />
+                          </TControl>
+                          <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_6.grpBox.inp_ctrl10.txt_11" imageincluded="1" link="" margin="4" heading="h2" />
+                        </TControl>
+                        <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_6.grpBox.inp_ctrl11" imageincluded="1" link="" margin="4" heading="h2">
+                          <div class="Title">
+                            <h2 class="Title" id="4c4aeaec-6ccc-4a94-b602-2eb8c300920e">Matična številka</h2>
+                            <img src="hashname_-82558927.png" />
+                            <div class="Description">
+Podatek ni obvezen.
+Največja možna dolžina besedila je 50 znakov.
+Ime stolpca v tabeli podatkovne baze "Organisation":"Registration_ID".</div>
+                          </div>
+                          <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_6.grpBox.inp_ctrl11.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                          <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_6.grpBox.inp_ctrl11.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                            <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_6.grpBox.inp_ctrl11.usrc_lbl.urdb_9" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_6.grpBox.inp_ctrl11.usrc_lbl.urdb_10" imageincluded="1" link="" margin="4" heading="h2" />
+                          </TControl>
+                          <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_6.grpBox.inp_ctrl11.txt_12" imageincluded="1" link="" margin="4" heading="h2" />
+                        </TControl>
+                        <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_6.grpBox.inp_ctrl12" imageincluded="1" link="" margin="4" heading="h2">
+                          <div class="Title">
+                            <h2 class="Title" id="80d0a830-ac7a-48ad-94ee-fc0daeebdd50">Davčni zavezanec</h2>
+                            <img src="hashname_-77119439.png" />
+                            <div class="Description">
+Podatek ni obvezen.
+Ime stolpca v tabeli podatkovne baze "Organisation":"TaxPayer".</div>
+                          </div>
+                          <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_6.grpBox.inp_ctrl12.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                          <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_6.grpBox.inp_ctrl12.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                            <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_6.grpBox.inp_ctrl12.usrc_lbl.urdb_11" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_6.grpBox.inp_ctrl12.usrc_lbl.urdb_12" imageincluded="1" link="" margin="4" heading="h2" />
+                          </TControl>
+                          <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_6.grpBox.inp_ctrl12.uchk_3" imageincluded="1" link="" margin="4" heading="h2" />
+                        </TControl>
+                        <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_6.grpBox.myGrp_7" imageincluded="1" link="" margin="4" heading="h2">
+                          <div class="Title">
+                            <h2 class="Title" id="3ebfe84e-74e6-4daa-b3a4-0e772d151272">Komentar 1</h2>
+                            <img src="hashname_-77354991.png" />
+                            <div class="Description">Ime tabele v podatkovni bazi je "Comment1".</div>
+                          </div>
+                          <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_6.grpBox.myGrp_7.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                            <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_6.grpBox.myGrp_7.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_6.grpBox.myGrp_7.grpBox.btnex_13" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_6.grpBox.myGrp_7.grpBox.uinpctrl_lbl_6" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_6.grpBox.myGrp_7.grpBox.uinpctrl_lbl_6.urdb_13" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_6.grpBox.myGrp_7.grpBox.uinpctrl_lbl_6.urdb_14" imageincluded="1" link="" margin="4" heading="h2" />
+                            </TControl>
+                            <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_6.grpBox.myGrp_7.grpBox.ixt_13" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_6.grpBox.myGrp_7.grpBox.btnex_14" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_6.grpBox.myGrp_7.grpBox.inp_ctrl13" imageincluded="1" link="" margin="4" heading="h2">
+                              <div class="Title">
+                                <h2 class="Title" id="8062265d-4c5e-4cf6-ab05-8de619a5512f">Komentar</h2>
+                                <img src="hashname_-1387595709.png" />
+                                <div class="Description">
+Največja možna dolžina besedila je 2000 znakov.
+Ime stolpca v tabeli podatkovne baze "Comment1":"Comment".</div>
+                              </div>
+                              <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_6.grpBox.myGrp_7.grpBox.inp_ctrl13.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_6.grpBox.myGrp_7.grpBox.inp_ctrl13.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_6.grpBox.myGrp_7.grpBox.inp_ctrl13.usrc_lbl.xlbl_12" imageincluded="1" link="" margin="4" heading="h2" />
+                              </TControl>
+                              <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_6.grpBox.myGrp_7.grpBox.inp_ctrl13.rtxt_3" imageincluded="1" link="" margin="4" heading="h2" />
+                            </TControl>
+                          </TControl>
+                        </TControl>
+                      </TControl>
+                    </TControl>
+                    <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl14" imageincluded="1" link="" margin="4" heading="h2">
+                      <div class="Title">
+                        <h2 class="Title" id="c14c820d-7b15-44a8-8e2e-b2b9c0e141f8">Opis</h2>
+                        <img src="Form_OrganisationAccount_Edit_usrc_EditTable_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1_grpBox_inp_ctrl14.png" />
+                        <div class="Description">
+Podatek ni obvezen.
+Največja možna dolžina besedila je 2000 znakov.
+Ime stolpca v tabeli podatkovne baze "OrganisationAccount":"Description".</div>
+                      </div>
+                      <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl14.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                      <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl14.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                        <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl14.usrc_lbl.urdb_15" imageincluded="1" link="" margin="4" heading="h2" />
+                        <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl14.usrc_lbl.urdb_16" imageincluded="1" link="" margin="4" heading="h2" />
+                      </TControl>
+                      <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl14.rtxt_4" imageincluded="1" link="" margin="4" heading="h2" />
+                    </TControl>
+                  </TControl>
+                </TControl>
+              </TControl>
+            </TControl>
+          </TControl>
+          <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl2" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl2.dgvx_Table" imageincluded="1" link="" margin="4" heading="h2">
+              <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl2.dgvx_Table.OrganisationAccount_$_bankacc_$$TRR" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="b9aee3fb-56a1-4d1d-aec8-cd03c1b4c51c">TRR</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl2.dgvx_Table.OrganisationAccount_$_bankacc_$_bank_$_org_$$Name" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="53577349-5eb9-49b4-a9d6-ff93bd81a136">Ime Firme</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl2.dgvx_Table.OrganisationAccount_$_bankacc_$_bank_$_org_$$Tax_ID" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="2bf91089-0dc3-4433-885e-8376067e9351">Davčna številka</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl2.dgvx_Table.OrganisationAccount_$_bankacc_$_bank_$_org_$$Registration_ID" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="5f28b520-67f3-4e38-86de-779dd36cd8c8">Matična številka</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl2.dgvx_Table.OrganisationAccount_$_bankacc_$$Active" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="83d5aa5c-456c-4936-8b9b-d7e9339ee8d2">Aktiven</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl2.dgvx_Table.OrganisationAccount_$_bankacc_$$Description" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="3872c936-7f17-4182-a65b-7807bb337065">Opis</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl2.dgvx_Table.OrganisationAccount_$$Description" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="0df5392d-63b4-4a4f-bf28-ad741e675f65">Opis</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl2.dgvx_Table.OrganisationAccount_$_bankacc_$$ID" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="b15136ff-a1b8-43b6-81ce-fa091da1e3cf">ID</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_OrganisationAccount_Edit.usrc_EditTable.splitContainer1.spl2.dgvx_Table.ID" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="dc9910d2-f293-41c0-b6e3-492476d49236">ID</h3>
+                </div>
+              </TControl>
+            </TControl>
+          </TControl>
+        </TControl>
+      </TControl>
+    </TControl>
+  </body>
+</html>

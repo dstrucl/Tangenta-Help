@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <title>Skupine enostavnih Artiklov</title>
+  </head>
+  <body>
+    <THeader>
+      <div class="header">
+        <canvas id="TangentaLogo" width="60" height="50"></canvas>
+        <script type="text/javascript">
+        var canvas, context, canvaso, contexto;
+        canvaso = document.getElementById('TangentaLogo');
+        context = canvaso.getContext('2d');
+        context.lineWidth = 1;
+
+        // Draw vertical line
+        context.strokeStyle ='#936b20';
+        context.beginPath();
+        context.moveTo(30, 0);
+        context.lineTo(30, 50);
+        context.stroke();
+
+        // Draw large arc
+        context.beginPath();
+        context.arc(54, 26, 24,0.6*Math.PI,1.5*Math.PI, false);
+        context.stroke();
+
+        // Draw head circle
+        context.beginPath();
+        context.fillStyle = "#E2FFB0"/*"#CEF988";*/
+        context.arc(34, 6, 4,0,2*Math.PI, false);
+        context.fill();
+        context.stroke();
+
+        context.closePath();
+        context.restore();
+
+        </script>
+        <div class="header_border_with_radius">
+          <div class="header_menu">
+            <span>
+              <a href="../Tangenta.html">TANGENTA</a>
+            </span>,
+             <span><a href="../Invoice.html">RAČUNI</a></span>,
+             <span><a href="../ProformaInvoice.html">PREDRAČUNI</a></span>,
+             <span><a href="../Stock.html">ZALOGE</a></span>,
+             <span><a href="../PriceList.html">CENIKI</a></span>,
+             <span><a href="../Printing.html">TISKANJE RAČUNOV</a></span>,
+             <span><a href="../InvoicingOverview.html">PREGLED FAKTUR</a></span>,
+             <span><a href="../Support.html">PODPORA</a></span></div>
+        </div>
+      </div>
+    </THeader>
+    <TControl name="Form_SimpleItemGroups_Edit" imageincluded="1" link="" margin="4" heading="h1">
+      <div class="Title">
+        <h1 class="Title" id="c032ea37-578e-4e40-8bfe-2c6fef76415c">Skupine enostavnih Artiklov</h1>
+        <img src="Form_SimpleItemGroups_Edit.png" />
+      </div>
+      <TControl name="Form_SimpleItemGroups_Edit.btn_OK" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_SimpleItemGroups_Edit.btn_Cancel" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_SimpleItemGroups_Edit.usrc_Help1" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="Form_SimpleItemGroups_Edit.usrc_Help1.btn_Help" imageincluded="1" link="" margin="4" heading="h2" />
+      </TControl>
+      <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl1" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow" imageincluded="1" link="" margin="4" heading="h2">
+              <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.lbl_Title" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.btn_New" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.btn_Insert" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor" imageincluded="1" link="" margin="4" heading="h2">
+                <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1" imageincluded="1" link="" margin="4" heading="h2">
+                  <div class="Title">
+                    <h2 class="Title" id="fef27476-edb7-453d-8670-e483e0939950">skupina</h2>
+                    <img src="Form_SimpleItemGroups_Edit_usrc_EditTable_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1.png" />
+                    <div class="Description">Ime tabele v podatkovni bazi je "SimpleItem_ParentGroup1".</div>
+                  </div>
+                  <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                    <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                    <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.btnex_1" imageincluded="1" link="" margin="4" heading="h2" />
+                    <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.btnex_2" imageincluded="1" link="" margin="4" heading="h2" />
+                    <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl1" imageincluded="1" link="" margin="4" heading="h2">
+                      <div class="Title">
+                        <h2 class="Title" id="7c021fe7-088d-47d6-8700-bc03ede57879">Ime skupine 1</h2>
+                        <img src="Form_SimpleItemGroups_Edit_usrc_EditTable_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1_grpBox_inp_ctrl1.png" />
+                        <div class="Description">
+Največja možna dolžina besedila je 264 znakov.
+Ime stolpca v tabeli podatkovne baze "SimpleItem_ParentGroup1":"Name".</div>
+                      </div>
+                      <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl1.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                      <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl1.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                        <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl1.usrc_lbl.xlbl_1" imageincluded="1" link="" margin="4" heading="h2" />
+                      </TControl>
+                      <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl1.txt_1" imageincluded="1" link="" margin="4" heading="h2" />
+                    </TControl>
+                    <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2" imageincluded="1" link="" margin="4" heading="h2">
+                      <div class="Title">
+                        <h2 class="Title" id="87f8b0c4-08e3-4fb1-808f-04f451a2b79b">pod-skupina</h2>
+                        <img src="Form_SimpleItemGroups_Edit_usrc_EditTable_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1_grpBox_myGrp_2.png" />
+                        <div class="Description">Ime tabele v podatkovni bazi je "SimpleItem_ParentGroup2".</div>
+                      </div>
+                      <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                        <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                        <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.btnex_3" imageincluded="1" link="" margin="4" heading="h2" />
+                        <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.uinpctrl_lbl_1" imageincluded="1" link="" margin="4" heading="h2">
+                          <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.uinpctrl_lbl_1.urdb_1" imageincluded="1" link="" margin="4" heading="h2" />
+                          <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.uinpctrl_lbl_1.urdb_2" imageincluded="1" link="" margin="4" heading="h2" />
+                        </TControl>
+                        <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.ixt_2" imageincluded="1" link="" margin="4" heading="h2" />
+                        <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.btnex_4" imageincluded="1" link="" margin="4" heading="h2" />
+                        <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl2" imageincluded="1" link="" margin="4" heading="h2">
+                          <div class="Title">
+                            <h2 class="Title" id="95977327-91a5-43fb-ae8f-269388ffe6e6">Ime skupine 2</h2>
+                            <img src="hashname_884633461.png" />
+                            <div class="Description">
+Največja možna dolžina besedila je 264 znakov.
+Ime stolpca v tabeli podatkovne baze "SimpleItem_ParentGroup2":"Name".</div>
+                          </div>
+                          <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl2.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                          <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl2.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                            <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl2.usrc_lbl.xlbl_2" imageincluded="1" link="" margin="4" heading="h2" />
+                          </TControl>
+                          <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl2.txt_3" imageincluded="1" link="" margin="4" heading="h2" />
+                        </TControl>
+                        <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3" imageincluded="1" link="" margin="4" heading="h2">
+                          <div class="Title">
+                            <h2 class="Title" id="e5ae1acb-14da-4ddd-b9d1-44e6b985afb2">pod-pod-skupina</h2>
+                            <img src="hashname_786777319.png" />
+                            <div class="Description">Ime tabele v podatkovni bazi je "SimpleItem_ParentGroup3".</div>
+                          </div>
+                          <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                            <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.btnex_5" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.uinpctrl_lbl_2" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.uinpctrl_lbl_2.urdb_3" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.uinpctrl_lbl_2.urdb_4" imageincluded="1" link="" margin="4" heading="h2" />
+                            </TControl>
+                            <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.ixt_4" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.btnex_6" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.inp_ctrl3" imageincluded="1" link="" margin="4" heading="h2">
+                              <div class="Title">
+                                <h2 class="Title" id="4ea14605-6bdd-48d9-af8b-5bf4492762e8">Ime skupine 3</h2>
+                                <img src="hashname_-198584318.png" />
+                                <div class="Description">Podatek, ki ga vpišete, mora biti unikaten!
+Največja možna dolžina besedila je 264 znakov.
+Ime stolpca v tabeli podatkovne baze "SimpleItem_ParentGroup3":"Name".</div>
+                              </div>
+                              <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.inp_ctrl3.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.inp_ctrl3.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.inp_ctrl3.usrc_lbl.picUnique" imageincluded="1" link="" margin="4" heading="h2" />
+                                <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.inp_ctrl3.usrc_lbl.xlbl_3" imageincluded="1" link="" margin="4" heading="h2" />
+                              </TControl>
+                              <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.inp_ctrl3.txt_5" imageincluded="1" link="" margin="4" heading="h2" />
+                            </TControl>
+                          </TControl>
+                        </TControl>
+                      </TControl>
+                    </TControl>
+                  </TControl>
+                </TControl>
+              </TControl>
+            </TControl>
+          </TControl>
+          <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl2" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl2.dgvx_Table" imageincluded="1" link="" margin="4" heading="h2">
+              <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl2.dgvx_Table.ID" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="9c8bc2dc-6a72-4641-af08-1eee5e839ed6">ID</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl2.dgvx_Table.SimpleItem_ParentGroup1_$$Name" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="4c1b6301-a7f6-4b57-8355-6d399063b0ff">Ime skupine 1</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl2.dgvx_Table.SimpleItem_ParentGroup1_$_sipg2_$$ID" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="b4c4ea45-466e-47da-8fab-0395b8c7d266">ID</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl2.dgvx_Table.SimpleItem_ParentGroup1_$_sipg2_$$Name" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="6202da42-3bec-48d8-b883-ba42c64ecda9">Ime skupine 2</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl2.dgvx_Table.SimpleItem_ParentGroup1_$_sipg2_$_sipg3_$$ID" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="199e7051-7b6a-4e1d-9c04-4d14dcb30c43">ID</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_SimpleItemGroups_Edit.usrc_EditTable.splitContainer1.spl2.dgvx_Table.SimpleItem_ParentGroup1_$_sipg2_$_sipg3_$$Name" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="93bc3166-6621-49b1-ad40-1b152f673c3a">Ime skupine 3</h3>
+                </div>
+              </TControl>
+            </TControl>
+          </TControl>
+        </TControl>
+      </TControl>
+    </TControl>
+  </body>
+</html>

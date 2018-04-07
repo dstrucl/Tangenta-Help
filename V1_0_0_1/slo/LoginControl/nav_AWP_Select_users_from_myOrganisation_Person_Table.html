@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <title>LoginControl.AWP_Select_users_from_myOrganisation_Person_Table</title>
+  </head>
+  <body>
+    <THeader>
+      <div class="header">
+        <canvas id="TangentaLogo" width="60" height="50"></canvas>
+        <script type="text/javascript">
+        var canvas, context, canvaso, contexto;
+        canvaso = document.getElementById('TangentaLogo');
+        context = canvaso.getContext('2d');
+        context.lineWidth = 1;
+
+        // Draw vertical line
+        context.strokeStyle ='#936b20';
+        context.beginPath();
+        context.moveTo(30, 0);
+        context.lineTo(30, 50);
+        context.stroke();
+
+        // Draw large arc
+        context.beginPath();
+        context.arc(54, 26, 24,0.6*Math.PI,1.5*Math.PI, false);
+        context.stroke();
+
+        // Draw head circle
+        context.beginPath();
+        context.fillStyle = "#E2FFB0"/*"#CEF988";*/
+        context.arc(34, 6, 4,0,2*Math.PI, false);
+        context.fill();
+        context.stroke();
+
+        context.closePath();
+        context.restore();
+
+        </script>
+        <div class="header_border_with_radius">
+          <div class="header_menu">
+            <span>
+              <a href="../Tangenta.html">TANGENTA</a>
+            </span>,
+             <span><a href="../Invoice.html">RAČUNI</a></span>,
+             <span><a href="../ProformaInvoice.html">PREDRAČUNI</a></span>,
+             <span><a href="../Stock.html">ZALOGE</a></span>,
+             <span><a href="../PriceList.html">CENIKI</a></span>,
+             <span><a href="../Printing.html">TISKANJE RAČUNOV</a></span>,
+             <span><a href="../InvoicingOverview.html">PREGLED FAKTUR</a></span>,
+             <span><a href="../Support.html">PODPORA</a></span></div>
+        </div>
+      </div>
+    </THeader>
+    <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table" imageincluded="1" link="" margin="4" heading="h1">
+      <div class="Title">
+        <h1 class="Title" id="24234104-61e0-4a43-beca-9a6fe433b5df">Uporabniški računi</h1>
+        <img src="nav_AWP_Select_users_from_myOrganisation_Person_Table.png" />
+      </div>
+      <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.usrc_NavigationButtons1" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.usrc_NavigationButtons1.btn2" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.usrc_NavigationButtons1.btn3" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.usrc_NavigationButtons1.usrc_Help1" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.usrc_NavigationButtons1.usrc_Help1.btn_Help" imageincluded="1" link="" margin="4" heading="h2" />
+        </TControl>
+      </TControl>
+      <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.lbl_Instruction" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson.myOrganisation_Person_$_office_$$Name" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="1f4dbd9b-238e-4f7a-a6bc-be2da6effc0a">Poslovna enota*</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson.myOrganisation_Person_$$Active" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="7bf3c5ec-b282-4b4c-bfb7-cf94876b3b4e">Oseba je aktivna*</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson.myOrganisation_Person_$_per_$_cfn_$$FirstName" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="0fa74659-7f80-4855-a9c5-b1c317aabbab">Ime*</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson.myOrganisation_Person_$_per_$_cln_$$LastName" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="40b25fe6-8b94-4ef3-841f-edaac2fc1ea6">Priimek*</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson.myOrganisation_Person_$$Job" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="5d14c625-d4a0-48c4-99ce-9103b767c8d4">Delovno mesto</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson.myOrganisation_Person_$_per_$$Tax_ID" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="124ec8db-6988-499b-8aff-4a4f14575051">Davčna št.*</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson.myOrganisation_Person_$_per_$$Registration_ID" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="0894831d-0eab-498a-b7d5-031b869e8aef">EMŠO</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson.myOrganisation_Person_$$Description" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="72e6da13-b368-4cc2-9168-925f150115fc">Opis</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson.myOrganisation_Person_$_per_$$DateOfBirth" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="1c9c2856-a087-40a3-bb5d-3e7c41cbb246">Datum rojstva</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson.myOrganisation_Person_$_per_$$Gender" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="e33677cb-ffda-452f-ab8c-1ce53f3862cc">Spol*</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson.PersonData_$_cemailper_$$Email" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="f52b2baa-e772-4c97-a70d-22a05a4f3ce3">Email</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson.PersonData_$_cgsmnper_$$GsmNumber" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="49ab031b-b360-4365-83b0-ff1d19f4442d">GSM</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson.PersonData_$_cphnnper_$$PhoneNumber" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="a03d8eb2-c5ad-409f-a5a7-4c47a201abb3">TEL</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson.PersonData_$_cadrper_$_cstrnper_$$StreetName" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="664d02b7-852d-433c-8cf8-9b03350cf13b">Cesta</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson.PersonData_$_cadrper_$_chounper_$$HouseNumber" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="a3ba148f-9245-46d2-b278-711511e21e9f">Hišna št.</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson.PersonData_$_cadrper_$_zipper_$$ZIP" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="261626b2-4052-4bcc-8517-dafd838aaad8">Poštna št.</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson.PersonData_$_cadrper_$_ccitper_$$City" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="b45b416b-4cb2-45a3-b49b-5fa0a1bcde4e">Mesto</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson.PersonData_$_cadrper_$_cstper_$$Country" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="c9bf0452-6703-4c30-99f6-701c7c01f0ee">Država</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson.PersonData_$_cadrper_$_ccouper_$$State" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="36cef4bf-31f2-4341-b851-563c68247178">Dežela</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson.PersonData_$$Description" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="953a8291-48f6-4a86-bc86-22821c788528">Opis2</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson.PersonData_$_cardtper_$$CardType" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="8055e256-1c23-4f82-aa23-200b091cb10a">Vrsta kartice</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson.PersonData_$$CardNumber" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="7e988834-d8e1-44c2-bec8-4c2c22990f2f">Številka kartice</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson.myOrganisation_Person_$_office_$$ShortName" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="0ce7c5c3-c344-4186-aac9-a04e664b5228">Poslovna enota okrajšava</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson.Selected" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="ad324205-f231-4a8a-ba77-5434d309bfcd">Izbrano</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson.Administrator" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="61e4dca6-25c4-4c07-b543-2e47b4ee6b5a">Skrbnik</h3>
+          </div>
+        </TControl>
+      </TControl>
+    </TControl>
+  </body>
+</html>

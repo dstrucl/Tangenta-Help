@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <title>Davki</title>
+  </head>
+  <body>
+    <THeader>
+      <div class="header">
+        <canvas id="TangentaLogo" width="60" height="50"></canvas>
+        <script type="text/javascript">
+        var canvas, context, canvaso, contexto;
+        canvaso = document.getElementById('TangentaLogo');
+        context = canvaso.getContext('2d');
+        context.lineWidth = 1;
+
+        // Draw vertical line
+        context.strokeStyle ='#936b20';
+        context.beginPath();
+        context.moveTo(30, 0);
+        context.lineTo(30, 50);
+        context.stroke();
+
+        // Draw large arc
+        context.beginPath();
+        context.arc(54, 26, 24,0.6*Math.PI,1.5*Math.PI, false);
+        context.stroke();
+
+        // Draw head circle
+        context.beginPath();
+        context.fillStyle = "#E2FFB0"/*"#CEF988";*/
+        context.arc(34, 6, 4,0,2*Math.PI, false);
+        context.fill();
+        context.stroke();
+
+        context.closePath();
+        context.restore();
+
+        </script>
+        <div class="header_border_with_radius">
+          <div class="header_menu">
+            <span>
+              <a href="../Tangenta.html">TANGENTA</a>
+            </span>,
+             <span><a href="../Invoice.html">RAČUNI</a></span>,
+             <span><a href="../ProformaInvoice.html">PREDRAČUNI</a></span>,
+             <span><a href="../Stock.html">ZALOGE</a></span>,
+             <span><a href="../PriceList.html">CENIKI</a></span>,
+             <span><a href="../Printing.html">TISKANJE RAČUNOV</a></span>,
+             <span><a href="../InvoicingOverview.html">PREGLED FAKTUR</a></span>,
+             <span><a href="../Support.html">PODPORA</a></span></div>
+        </div>
+      </div>
+    </THeader>
+    <TControl name="Form_Taxation_Edit" imageincluded="1" link="" margin="4" heading="h1">
+      <div class="Title">
+        <h1 class="Title" id="67d5707a-4416-4cf1-91a5-9d0f96248f2d">Davki</h1>
+        <img src="Form_Taxation_Edit.png" />
+      </div>
+      <TControl name="Form_Taxation_Edit.btn_OK" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_Taxation_Edit.btn_Cancel" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_Taxation_Edit.usrc_Help1" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="Form_Taxation_Edit.usrc_Help1.btn_Help" imageincluded="1" link="" margin="4" heading="h2" />
+      </TControl>
+      <TControl name="Form_Taxation_Edit.usrc_EditTable" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="Form_Taxation_Edit.usrc_EditTable.splitContainer1" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="Form_Taxation_Edit.usrc_EditTable.splitContainer1.spl1" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="Form_Taxation_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow" imageincluded="1" link="" margin="4" heading="h2">
+              <TControl name="Form_Taxation_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.lbl_Title" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="Form_Taxation_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.btn_New" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="Form_Taxation_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.btn_Update" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="Form_Taxation_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor" imageincluded="1" link="" margin="4" heading="h2">
+                <TControl name="Form_Taxation_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1" imageincluded="1" link="" margin="4" heading="h2">
+                  <div class="Title">
+                    <h2 class="Title" id="4c921b84-d2c2-46e3-97a3-beedd647e7de">Davki</h2>
+                    <img src="Form_Taxation_Edit_usrc_EditTable_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1.png" />
+                    <div class="Description">Ime tabele v podatkovni bazi je "Taxation".</div>
+                  </div>
+                  <TControl name="Form_Taxation_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                    <TControl name="Form_Taxation_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                    <TControl name="Form_Taxation_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.btnex_1" imageincluded="1" link="" margin="4" heading="h2" />
+                    <TControl name="Form_Taxation_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.ixt_2" imageincluded="1" link="" margin="4" heading="h2" />
+                    <TControl name="Form_Taxation_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.btnex_2" imageincluded="1" link="" margin="4" heading="h2" />
+                    <TControl name="Form_Taxation_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl1" imageincluded="1" link="" margin="4" heading="h2">
+                      <div class="Title">
+                        <h2 class="Title" id="dd0479d7-c8cb-48d5-bddd-9a17ab0b81e2">Ime</h2>
+                        <img src="Form_Taxation_Edit_usrc_EditTable_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1_grpBox_inp_ctrl1.png" />
+                        <div class="Description">Podatek, ki ga vpišete, mora biti unikaten!
+Največja možna dolžina besedila je 264 znakov.
+Ime stolpca v tabeli podatkovne baze "Taxation":"Name".</div>
+                      </div>
+                      <TControl name="Form_Taxation_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl1.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                      <TControl name="Form_Taxation_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl1.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                        <TControl name="Form_Taxation_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl1.usrc_lbl.picUnique" imageincluded="1" link="" margin="4" heading="h2" />
+                        <TControl name="Form_Taxation_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl1.usrc_lbl.xlbl_1" imageincluded="1" link="" margin="4" heading="h2" />
+                      </TControl>
+                      <TControl name="Form_Taxation_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl1.txt_1" imageincluded="1" link="" margin="4" heading="h2" />
+                    </TControl>
+                    <TControl name="Form_Taxation_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl2" imageincluded="1" link="" margin="4" heading="h2">
+                      <div class="Title">
+                        <h2 class="Title" id="711da94c-4b35-49ce-970b-cbe4647da8f1">Stopnja</h2>
+                        <img src="Form_Taxation_Edit_usrc_EditTable_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1_grpBox_inp_ctrl2.png" />
+                        <div class="Description">
+Ime stolpca v tabeli podatkovne baze "Taxation":"Rate".</div>
+                      </div>
+                      <TControl name="Form_Taxation_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl2.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                      <TControl name="Form_Taxation_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl2.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                        <TControl name="Form_Taxation_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl2.usrc_lbl.xlbl_2" imageincluded="1" link="" margin="4" heading="h2" />
+                      </TControl>
+                      <TControl name="Form_Taxation_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl2.unmUpDn_1" imageincluded="1" link="" margin="4" heading="h2">
+                        <TControl name="Form_Taxation_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl2.unmUpDn_1.txt_Value" imageincluded="1" link="" margin="4" heading="h2" />
+                        <TControl name="Form_Taxation_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl2.unmUpDn_1.btn_Plus" imageincluded="1" link="" margin="4" heading="h2" />
+                        <TControl name="Form_Taxation_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl2.unmUpDn_1.btn_Minus" imageincluded="1" link="" margin="4" heading="h2" />
+                      </TControl>
+                    </TControl>
+                  </TControl>
+                </TControl>
+              </TControl>
+            </TControl>
+          </TControl>
+          <TControl name="Form_Taxation_Edit.usrc_EditTable.splitContainer1.spl2" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="Form_Taxation_Edit.usrc_EditTable.splitContainer1.spl2.dgvx_Table" imageincluded="1" link="" margin="4" heading="h2">
+              <TControl name="Form_Taxation_Edit.usrc_EditTable.splitContainer1.spl2.dgvx_Table.ID" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="29b570b1-2d0f-4656-98fb-f57d398d6731">ID</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_Taxation_Edit.usrc_EditTable.splitContainer1.spl2.dgvx_Table.Name" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="205665c5-bbab-4962-af63-1c96d3d694f1">Ime</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_Taxation_Edit.usrc_EditTable.splitContainer1.spl2.dgvx_Table.Rate" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="33126d45-c6c4-446f-a388-b097208fdd55">Stopnja</h3>
+                </div>
+              </TControl>
+            </TControl>
+          </TControl>
+        </TControl>
+      </TControl>
+    </TControl>
+  </body>
+</html>

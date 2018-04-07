@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <title>Vnesite prejeti znesek</title>
+  </head>
+  <body>
+    <THeader>
+      <div class="header">
+        <canvas id="TangentaLogo" width="60" height="50"></canvas>
+        <script type="text/javascript">
+        var canvas, context, canvaso, contexto;
+        canvaso = document.getElementById('TangentaLogo');
+        context = canvaso.getContext('2d');
+        context.lineWidth = 1;
+
+        // Draw vertical line
+        context.strokeStyle ='#936b20';
+        context.beginPath();
+        context.moveTo(30, 0);
+        context.lineTo(30, 50);
+        context.stroke();
+
+        // Draw large arc
+        context.beginPath();
+        context.arc(54, 26, 24,0.6*Math.PI,1.5*Math.PI, false);
+        context.stroke();
+
+        // Draw head circle
+        context.beginPath();
+        context.fillStyle = "#E2FFB0"/*"#CEF988";*/
+        context.arc(34, 6, 4,0,2*Math.PI, false);
+        context.fill();
+        context.stroke();
+
+        context.closePath();
+        context.restore();
+
+        </script>
+        <div class="header_border_with_radius">
+          <div class="header_menu">
+            <span>
+              <a href="../Tangenta.html">TANGENTA</a>
+            </span>,
+             <span><a href="../Invoice.html">RAČUNI</a></span>,
+             <span><a href="../ProformaInvoice.html">PREDRAČUNI</a></span>,
+             <span><a href="../Stock.html">ZALOGE</a></span>,
+             <span><a href="../PriceList.html">CENIKI</a></span>,
+             <span><a href="../Printing.html">TISKANJE RAČUNOV</a></span>,
+             <span><a href="../InvoicingOverview.html">PREGLED FAKTUR</a></span>,
+             <span><a href="../Support.html">PODPORA</a></span></div>
+        </div>
+      </div>
+    </THeader>
+    <TControl name="Form_DocInvoice_PaymentCash" imageincluded="1" link="" margin="4" heading="h1">
+      <div class="Title">
+        <h1 class="Title" id="16ea1ce8-b5a0-44b9-9bb2-d8e463437133">Vnesite prejeti znesek</h1>
+        <img src="Form_DocInvoice_PaymentCash.png" />
+      </div>
+      <TControl name="Form_DocInvoice_PaymentCash.btn_Amount" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_DocInvoice_PaymentCash.txt_Display" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_DocInvoice_PaymentCash.btn_BackSpace" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_DocInvoice_PaymentCash.btn_Delete" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_DocInvoice_PaymentCash.usrc_Help1" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="Form_DocInvoice_PaymentCash.usrc_Help1.btn_Help" imageincluded="1" link="" margin="4" heading="h2" />
+      </TControl>
+      <TControl name="Form_DocInvoice_PaymentCash.btn_7" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_DocInvoice_PaymentCash.btn_8" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_DocInvoice_PaymentCash.btn_9" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_DocInvoice_PaymentCash.btn_10" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_DocInvoice_PaymentCash.btn_15" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_DocInvoice_PaymentCash.btn_20" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_DocInvoice_PaymentCash.button1" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_DocInvoice_PaymentCash.btn_4" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_DocInvoice_PaymentCash.btn_5" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_DocInvoice_PaymentCash.btn_6" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_DocInvoice_PaymentCash.btn_30" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_DocInvoice_PaymentCash.btn_35" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_DocInvoice_PaymentCash.btn_40" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_DocInvoice_PaymentCash.btn_45" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_DocInvoice_PaymentCash.btn_1" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_DocInvoice_PaymentCash.btn_2" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_DocInvoice_PaymentCash.btn_3" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_DocInvoice_PaymentCash.btn_50" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_DocInvoice_PaymentCash.btn_60" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_DocInvoice_PaymentCash.btn_70" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_DocInvoice_PaymentCash.btn_80" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_DocInvoice_PaymentCash.btn_0" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_DocInvoice_PaymentCash.btn_comma" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_DocInvoice_PaymentCash.btn_100" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_DocInvoice_PaymentCash.btn_120" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_DocInvoice_PaymentCash.btn_150" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_DocInvoice_PaymentCash.btn_200" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_DocInvoice_PaymentCash.btn_250" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_DocInvoice_PaymentCash.btn_300" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_DocInvoice_PaymentCash.btn_400" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_DocInvoice_PaymentCash.btn_500" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_DocInvoice_PaymentCash.lbl_Amount" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_DocInvoice_PaymentCash.txt__Amount" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_DocInvoice_PaymentCash.lbl_AmountReceived" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_DocInvoice_PaymentCash.txt_AmountReceived" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_DocInvoice_PaymentCash.btn_OK" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_DocInvoice_PaymentCash.lbl_ToReturn" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_DocInvoice_PaymentCash.txt_ToReturn" imageincluded="1" link="" margin="4" heading="h2" />
+    </TControl>
+  </body>
+</html>

@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <title>Dolžine rokov uporabe</title>
+  </head>
+  <body>
+    <THeader>
+      <div class="header">
+        <canvas id="TangentaLogo" width="60" height="50"></canvas>
+        <script type="text/javascript">
+        var canvas, context, canvaso, contexto;
+        canvaso = document.getElementById('TangentaLogo');
+        context = canvaso.getContext('2d');
+        context.lineWidth = 1;
+
+        // Draw vertical line
+        context.strokeStyle ='#936b20';
+        context.beginPath();
+        context.moveTo(30, 0);
+        context.lineTo(30, 50);
+        context.stroke();
+
+        // Draw large arc
+        context.beginPath();
+        context.arc(54, 26, 24,0.6*Math.PI,1.5*Math.PI, false);
+        context.stroke();
+
+        // Draw head circle
+        context.beginPath();
+        context.fillStyle = "#E2FFB0"/*"#CEF988";*/
+        context.arc(34, 6, 4,0,2*Math.PI, false);
+        context.fill();
+        context.stroke();
+
+        context.closePath();
+        context.restore();
+
+        </script>
+        <div class="header_border_with_radius">
+          <div class="header_menu">
+            <span>
+              <a href="../Tangenta.html">TANGENTA</a>
+            </span>,
+             <span><a href="../Invoice.html">RAČUNI</a></span>,
+             <span><a href="../ProformaInvoice.html">PREDRAČUNI</a></span>,
+             <span><a href="../Stock.html">ZALOGE</a></span>,
+             <span><a href="../PriceList.html">CENIKI</a></span>,
+             <span><a href="../Printing.html">TISKANJE RAČUNOV</a></span>,
+             <span><a href="../InvoicingOverview.html">PREGLED FAKTUR</a></span>,
+             <span><a href="../Support.html">PODPORA</a></span></div>
+        </div>
+      </div>
+    </THeader>
+    <TControl name="Form_Expiry_Edit" imageincluded="1" link="" margin="4" heading="h1">
+      <div class="Title">
+        <h1 class="Title" id="ef377c9b-38a5-48e9-9c35-4077d0c12ac8">Dolžine rokov uporabe</h1>
+        <img src="Form_Expiry_Edit.png" />
+      </div>
+      <TControl name="Form_Expiry_Edit.btn_OK" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_Expiry_Edit.btn_Cancel" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_Expiry_Edit.usrc_Help1" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="Form_Expiry_Edit.usrc_Help1.btn_Help" imageincluded="1" link="" margin="4" heading="h2" />
+      </TControl>
+      <TControl name="Form_Expiry_Edit.usrc_EditTable" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="Form_Expiry_Edit.usrc_EditTable.splitContainer1" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="Form_Expiry_Edit.usrc_EditTable.splitContainer1.spl1" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="Form_Expiry_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow" imageincluded="1" link="" margin="4" heading="h2">
+              <TControl name="Form_Expiry_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.lbl_Title" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="Form_Expiry_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.btn_New" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="Form_Expiry_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.btn_Update" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="Form_Expiry_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor" imageincluded="1" link="" margin="4" heading="h2">
+                <TControl name="Form_Expiry_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1" imageincluded="1" link="" margin="4" heading="h2">
+                  <div class="Title">
+                    <h2 class="Title" id="8b671769-4b83-4ea1-a604-04019e240028">Rok uporabe</h2>
+                    <img src="Form_Expiry_Edit_usrc_EditTable_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1.png" />
+                    <div class="Description">Ime tabele v podatkovni bazi je "Expiry".</div>
+                  </div>
+                  <TControl name="Form_Expiry_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                    <TControl name="Form_Expiry_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                    <TControl name="Form_Expiry_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.btnex_1" imageincluded="1" link="" margin="4" heading="h2" />
+                    <TControl name="Form_Expiry_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.ixt_1" imageincluded="1" link="" margin="4" heading="h2" />
+                    <TControl name="Form_Expiry_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.btnex_2" imageincluded="1" link="" margin="4" heading="h2" />
+                    <TControl name="Form_Expiry_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl1" imageincluded="1" link="" margin="4" heading="h2">
+                      <div class="Title">
+                        <h2 class="Title" id="2290c8ab-805b-4008-a278-74e1a2d819de">Pričakovani rok uporabe (v dneh)</h2>
+                        <img src="Form_Expiry_Edit_usrc_EditTable_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1_grpBox_inp_ctrl1.png" />
+                        <div class="Description">
+Ime stolpca v tabeli podatkovne baze "Expiry":"ExpectedShelfLifeInDays".</div>
+                      </div>
+                      <TControl name="Form_Expiry_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl1.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                      <TControl name="Form_Expiry_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl1.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                        <TControl name="Form_Expiry_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl1.usrc_lbl.xlbl_1" imageincluded="1" link="" margin="4" heading="h2" />
+                      </TControl>
+                      <TControl name="Form_Expiry_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl1.unmUpDn_1" imageincluded="1" link="" margin="4" heading="h2">
+                        <TControl name="Form_Expiry_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl1.unmUpDn_1.txt_Value" imageincluded="1" link="" margin="4" heading="h2" />
+                        <TControl name="Form_Expiry_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl1.unmUpDn_1.btn_Plus" imageincluded="1" link="" margin="4" heading="h2" />
+                        <TControl name="Form_Expiry_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl1.unmUpDn_1.btn_Minus" imageincluded="1" link="" margin="4" heading="h2" />
+                      </TControl>
+                    </TControl>
+                    <TControl name="Form_Expiry_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl2" imageincluded="1" link="" margin="4" heading="h2">
+                      <div class="Title">
+                        <h2 class="Title" id="daee1174-a667-4947-bfcb-a1764f4e5079">Razprodaja zaloge pred rokom uporabe (v dnevih)</h2>
+                        <img src="Form_Expiry_Edit_usrc_EditTable_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1_grpBox_inp_ctrl2.png" />
+                        <div class="Description">
+Ime stolpca v tabeli podatkovne baze "Expiry":"SaleBeforeExpiryDateInDays".</div>
+                      </div>
+                      <TControl name="Form_Expiry_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl2.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                      <TControl name="Form_Expiry_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl2.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                        <TControl name="Form_Expiry_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl2.usrc_lbl.xlbl_2" imageincluded="1" link="" margin="4" heading="h2" />
+                      </TControl>
+                      <TControl name="Form_Expiry_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl2.unmUpDn_2" imageincluded="1" link="" margin="4" heading="h2">
+                        <TControl name="Form_Expiry_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl2.unmUpDn_2.txt_Value" imageincluded="1" link="" margin="4" heading="h2" />
+                        <TControl name="Form_Expiry_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl2.unmUpDn_2.btn_Plus" imageincluded="1" link="" margin="4" heading="h2" />
+                        <TControl name="Form_Expiry_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl2.unmUpDn_2.btn_Minus" imageincluded="1" link="" margin="4" heading="h2" />
+                      </TControl>
+                    </TControl>
+                    <TControl name="Form_Expiry_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl3" imageincluded="1" link="" margin="4" heading="h2">
+                      <div class="Title">
+                        <h2 class="Title" id="bcc70bfa-3b9c-424b-a89a-d97d84280f5e">Znebitev zaloge pred rokom uporabe (v dnevih)</h2>
+                        <img src="Form_Expiry_Edit_usrc_EditTable_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1_grpBox_inp_ctrl3.png" />
+                        <div class="Description">
+Ime stolpca v tabeli podatkovne baze "Expiry":"DiscardBeforeExpiryDateInDays".</div>
+                      </div>
+                      <TControl name="Form_Expiry_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl3.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                      <TControl name="Form_Expiry_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl3.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                        <TControl name="Form_Expiry_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl3.usrc_lbl.xlbl_3" imageincluded="1" link="" margin="4" heading="h2" />
+                      </TControl>
+                      <TControl name="Form_Expiry_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl3.unmUpDn_3" imageincluded="1" link="" margin="4" heading="h2">
+                        <TControl name="Form_Expiry_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl3.unmUpDn_3.txt_Value" imageincluded="1" link="" margin="4" heading="h2" />
+                        <TControl name="Form_Expiry_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl3.unmUpDn_3.btn_Plus" imageincluded="1" link="" margin="4" heading="h2" />
+                        <TControl name="Form_Expiry_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl3.unmUpDn_3.btn_Minus" imageincluded="1" link="" margin="4" heading="h2" />
+                      </TControl>
+                    </TControl>
+                    <TControl name="Form_Expiry_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl4" imageincluded="1" link="" margin="4" heading="h2">
+                      <div class="Title">
+                        <h2 class="Title" id="66061c99-0988-46b3-bd08-3bf6bb400110">Opis roka uporabe</h2>
+                        <img src="Form_Expiry_Edit_usrc_EditTable_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1_grpBox_inp_ctrl4.png" />
+                        <div class="Description">
+Podatek ni obvezen.
+Največja možna dolžina besedila je 2000 znakov.
+Ime stolpca v tabeli podatkovne baze "Expiry":"ExpiryDescription".</div>
+                      </div>
+                      <TControl name="Form_Expiry_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl4.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                      <TControl name="Form_Expiry_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl4.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                        <TControl name="Form_Expiry_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl4.usrc_lbl.urdb_1" imageincluded="1" link="" margin="4" heading="h2" />
+                        <TControl name="Form_Expiry_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl4.usrc_lbl.urdb_2" imageincluded="1" link="" margin="4" heading="h2" />
+                      </TControl>
+                    </TControl>
+                  </TControl>
+                </TControl>
+              </TControl>
+            </TControl>
+          </TControl>
+          <TControl name="Form_Expiry_Edit.usrc_EditTable.splitContainer1.spl2" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="Form_Expiry_Edit.usrc_EditTable.splitContainer1.spl2.dgvx_Table" imageincluded="1" link="" margin="4" heading="h2">
+              <TControl name="Form_Expiry_Edit.usrc_EditTable.splitContainer1.spl2.dgvx_Table.ID" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="ed0b9009-c94d-442b-ae04-174a54d4dd53">ID</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_Expiry_Edit.usrc_EditTable.splitContainer1.spl2.dgvx_Table.ExpectedShelfLifeInDays" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="6580e1e5-5052-49e6-96a8-b33a3e5a69da">Pričakovani rok uporabe (v dneh)</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_Expiry_Edit.usrc_EditTable.splitContainer1.spl2.dgvx_Table.SaleBeforeExpiryDateInDays" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="e228011e-67f4-47f6-b7ad-e09d92721f32">Razprodaja zaloge pred rokom uporabe (v dnevih)</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_Expiry_Edit.usrc_EditTable.splitContainer1.spl2.dgvx_Table.DiscardBeforeExpiryDateInDays" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="1ddf028f-1fe5-4c2b-a6f1-3cdb87942a6b">Znebitev zaloge pred rokom uporabe (v dnevih)</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_Expiry_Edit.usrc_EditTable.splitContainer1.spl2.dgvx_Table.ExpiryDescription" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="6ecfc097-d80e-4f9e-9f78-2ca2cb6013eb">Opis roka uporabe</h3>
+                </div>
+              </TControl>
+            </TControl>
+          </TControl>
+        </TControl>
+      </TControl>
+    </TControl>
+  </body>
+</html>

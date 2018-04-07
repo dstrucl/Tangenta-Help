@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <title>ShopC.Form_Atom_Item_View</title>
+  </head>
+  <body>
+    <THeader>
+      <div class="header">
+        <canvas id="TangentaLogo" width="60" height="50"></canvas>
+        <script type="text/javascript">
+        var canvas, context, canvaso, contexto;
+        canvaso = document.getElementById('TangentaLogo');
+        context = canvaso.getContext('2d');
+        context.lineWidth = 1;
+
+        // Draw vertical line
+        context.strokeStyle ='#936b20';
+        context.beginPath();
+        context.moveTo(30, 0);
+        context.lineTo(30, 50);
+        context.stroke();
+
+        // Draw large arc
+        context.beginPath();
+        context.arc(54, 26, 24,0.6*Math.PI,1.5*Math.PI, false);
+        context.stroke();
+
+        // Draw head circle
+        context.beginPath();
+        context.fillStyle = "#E2FFB0"/*"#CEF988";*/
+        context.arc(34, 6, 4,0,2*Math.PI, false);
+        context.fill();
+        context.stroke();
+
+        context.closePath();
+        context.restore();
+
+        </script>
+        <div class="header_border_with_radius">
+          <div class="header_menu">
+            <span>
+              <a href="../Tangenta.html">TANGENTA</a>
+            </span>,
+             <span><a href="../Invoice.html">RAČUNI</a></span>,
+             <span><a href="../ProformaInvoice.html">PREDRAČUNI</a></span>,
+             <span><a href="../Stock.html">ZALOGE</a></span>,
+             <span><a href="../PriceList.html">CENIKI</a></span>,
+             <span><a href="../Printing.html">TISKANJE RAČUNOV</a></span>,
+             <span><a href="../InvoicingOverview.html">PREGLED FAKTUR</a></span>,
+             <span><a href="../Support.html">PODPORA</a></span></div>
+        </div>
+      </div>
+    </THeader>
+    <TControl name="Form_Atom_Item_View" imageincluded="1" link="" margin="4" heading="h1">
+      <div class="Title">
+        <h1 class="Title" id="f7fb3195-46bf-4709-b41a-bc8607c91139">Informacije o artiklu</h1>
+        <img src="Form_Atom_Item_View.png" />
+      </div>
+      <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl1" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl1.pic_Atom_Item" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl1.lbl_Atom_Item_Name" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl1.txt_Atom_Item_Name" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl1.usrc_Help1" imageincluded="1" link="" margin="4" heading="h2">
+              <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl1.usrc_Help1.btn_Help" imageincluded="1" link="" margin="4" heading="h2" />
+            </TControl>
+            <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl1.lbl_Atom_Item_RetailPricePerUnit" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl1.lbl_V_RetailPricePerUnit" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl1.lbl_Quantity" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl1.lbl_V_Quantity" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl1.lbl_Taxation_Name" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl1.lbl_V_Taxation_Name" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl1.lbl_Taxation_Rate" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl1.lbl_V_Taxation_Rate" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl1.lbl_Discount" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl1.lbl_V_Discount" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl1.lbl_TaxPrice" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl1.lbl_V_TaxPrice" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl1.lblč_RetailPriceWithDiscount" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl1.lbl_V_RetailPriceWithDiscount" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl1.lbl_NetPrice" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl1.lbl_V_NetPrice" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl1.lbl_barcode" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl1.txt_barcode_value" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl1.chk_V_NeverExpires" imageincluded="1" link="" margin="4" heading="h2">
+              <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl1.chk_V_NeverExpires.pic" imageincluded="1" link="" margin="4" heading="h2" />
+            </TControl>
+            <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl1.lbl_Expiry" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl1.lbl_ExpiriyDescription" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl1.txt_V_ExpiryDescription" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl1.lbl_ExpectedShelfLifeInDays" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl1.lbl_V_ExpectedShelfLifeInDays" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl1.lbl_SaleBeforeExpiryDateInDays" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl1.lbl_V_SaleBeforeExpiryDateInDays" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl1.lbl_DiscardBeforeExpiryDateInDays" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl1.lbl_V_DiscardBeforeExpiryDateInDays" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl1.grp_Waranty" imageincluded="1" link="" margin="4" heading="h2">
+              <div class="Title">
+                <h2 class="Title" id="965870f1-dcc0-407d-8ea5-000f4ff40ef8">Garancija</h2>
+                <img src="Form_Atom_Item_View_usrc_Atom_Item_View_splitContainer1_spl1_grp_Waranty.png" />
+              </div>
+              <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl1.grp_Waranty.chk_V_Warranty" imageincluded="1" link="" margin="4" heading="h2">
+                <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl1.grp_Waranty.chk_V_Warranty.pic" imageincluded="1" link="" margin="4" heading="h2" />
+              </TControl>
+              <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl1.grp_Waranty.lbl_Warranty" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl1.grp_Waranty.lbl_Waranty" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl1.grp_Waranty.lbl_V_WarantyDuration" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl1.grp_Waranty.txt_V_WarrantyConditions" imageincluded="1" link="" margin="4" heading="h2" />
+            </TControl>
+            <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl1.lbl_ItemDescription" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl1.txt_V_Atom_Item_Description" imageincluded="1" link="" margin="4" heading="h2" />
+          </TControl>
+          <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl2" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl2.lbl_FromStock" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl2.txt_V_FromStock" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl2.lbl_FromFactory" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl2.txt_V_FromFactory" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl2.dgvx_DocInvoice_Atom_Item_Stock" imageincluded="1" link="" margin="4" heading="h2">
+              <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl2.dgvx_DocInvoice_Atom_Item_Stock.dQuantity" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="94b2279b-a0b4-4046-b340-c6b5af851f64">Količina:</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl2.dgvx_DocInvoice_Atom_Item_Stock.Stock_ID" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="f6aba9ea-8285-4147-b276-7ef5bdc2ea6f">ID v Zalogah</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl2.dgvx_DocInvoice_Atom_Item_Stock.ExpiryDate" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="62dce70f-48db-40ba-8ded-e19e17c48159">Rok uporabe</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl2.dgvx_DocInvoice_Atom_Item_Stock.RetailPricePerUnit" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="572ab9ca-4611-4f2e-8258-d7bfb52ea26b">Prodajna cena na enoto</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl2.dgvx_DocInvoice_Atom_Item_Stock.PurchasePricePerUnit" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="e2c65eae-0475-4c59-9952-785256570938">Nabavna cena na enoto</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl2.dgvx_DocInvoice_Atom_Item_Stock.Stock_ImportTime" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="a5d7eeda-a8b6-49bd-9352-eed2503dc3b6">Čas vnosa v zalogo</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl2.dgvx_DocInvoice_Atom_Item_Stock.Stock_dQuantity" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="e00da300-5c9a-4e9d-8270-4b0f2253d76e">Kol. v skladišču</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl2.dgvx_DocInvoice_Atom_Item_Stock.Stock_ExpiryDate" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="6a99a2cc-6121-426b-b1bb-2d55807adca5">Rok uporabe v zalogi</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl2.dgvx_DocInvoice_Atom_Item_Stock.StockTake_Name" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="70572250-ad5d-4881-baf5-65d338e4e51e">Ime prevzemnice</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl2.dgvx_DocInvoice_Atom_Item_Stock.StockTakeDate" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="b309adea-6dc9-42c0-96cc-6a511592b6c6">Čas prevzema v zalogo</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl2.dgvx_DocInvoice_Atom_Item_Stock.StockTakePriceTotal" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="19894a29-a5f3-4b6a-891d-016279c6dee8">Skupna cena prevzemnice</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl2.dgvx_DocInvoice_Atom_Item_Stock.StockTake_ReferenceNote" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="94a98ec0-7434-4916-952e-8db8484c0757">Sklic na dokument</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl2.dgvx_DocInvoice_Atom_Item_Stock.Supplier_Organisation_Name" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="54934be6-0861-458e-809d-122ca5c837c9">Ime dobavitelja</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl2.dgvx_DocInvoice_Atom_Item_Stock.Supplier_Organisation_Tax_ID" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="f4cc34d8-14f0-4869-88e5-40e601be916e">Davčna št. Dobavitelja</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl2.dgvx_DocInvoice_Atom_Item_Stock.Supplier_Organisation_PhoneNumber" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="53c4cf9d-c137-42da-a5b3-bb3a1ccf326a">Dobavitelj (org.) Telefon</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl2.dgvx_DocInvoice_Atom_Item_Stock.Supplier_Organisation_Email" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="e854f5ee-a27b-4652-9b01-53f05a4fe165">Dobavitelj (org.) Email</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl2.dgvx_DocInvoice_Atom_Item_Stock.Supplier_Organisation_HomePage" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="fcbc8f3c-329b-4c7d-8f5a-d585bf6e876a">Dobavitelj (org.) Domača Stran</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl2.dgvx_DocInvoice_Atom_Item_Stock.Supplier_Person_First_Name" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="b1a9291c-c8b4-4d49-a4af-9bb013247a9a">Kontaktna oseba dobavitelja Ime</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl2.dgvx_DocInvoice_Atom_Item_Stock.Supplier_Person_Last_Name" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="d7772e05-9b3c-4aba-aee9-91b5f398d72f">Kontaktna oseba dobavitelja Priimek</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl2.dgvx_DocInvoice_Atom_Item_Stock.Supplier_Person_GsmNumber" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="cfe3ff37-1ff5-4e5b-8509-8e50a87a0d93">Kontaktna oseba dobavitelja Mobilni telefon številka</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl2.dgvx_DocInvoice_Atom_Item_Stock.Supplier_Person_PhoneNumber" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="0bf567cd-70d3-4b8d-bb19-2e383607c59c">Kontaktna oseba dobavitelja telefon številka</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_Atom_Item_View.usrc_Atom_Item_View.splitContainer1.spl2.dgvx_DocInvoice_Atom_Item_Stock.Supplier_Person_Email" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="bf3d0be9-f75c-4187-a2e9-5c5ab49ae11d">Kontaktna oseba dobavitelja Email</h3>
+                </div>
+              </TControl>
+            </TControl>
+          </TControl>
+        </TControl>
+      </TControl>
+      <TControl name="Form_Atom_Item_View.btn_OK" imageincluded="1" link="" margin="4" heading="h2" />
+    </TControl>
+  </body>
+</html>

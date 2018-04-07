@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <title>Urejanje uporabnikov</title>
+  </head>
+  <body>
+    <THeader>
+      <div class="header">
+        <canvas id="TangentaLogo" width="60" height="50"></canvas>
+        <script type="text/javascript">
+        var canvas, context, canvaso, contexto;
+        canvaso = document.getElementById('TangentaLogo');
+        context = canvaso.getContext('2d');
+        context.lineWidth = 1;
+
+        // Draw vertical line
+        context.strokeStyle ='#936b20';
+        context.beginPath();
+        context.moveTo(30, 0);
+        context.lineTo(30, 50);
+        context.stroke();
+
+        // Draw large arc
+        context.beginPath();
+        context.arc(54, 26, 24,0.6*Math.PI,1.5*Math.PI, false);
+        context.stroke();
+
+        // Draw head circle
+        context.beginPath();
+        context.fillStyle = "#E2FFB0"/*"#CEF988";*/
+        context.arc(34, 6, 4,0,2*Math.PI, false);
+        context.fill();
+        context.stroke();
+
+        context.closePath();
+        context.restore();
+
+        </script>
+        <div class="header_border_with_radius">
+          <div class="header_menu">
+            <span>
+              <a href="../Tangenta.html">TANGENTA</a>
+            </span>,
+             <span><a href="../Invoice.html">RAČUNI</a></span>,
+             <span><a href="../ProformaInvoice.html">PREDRAČUNI</a></span>,
+             <span><a href="../Stock.html">ZALOGE</a></span>,
+             <span><a href="../PriceList.html">CENIKI</a></span>,
+             <span><a href="../Printing.html">TISKANJE RAČUNOV</a></span>,
+             <span><a href="../InvoicingOverview.html">PREGLED FAKTUR</a></span>,
+             <span><a href="../Support.html">PODPORA</a></span></div>
+        </div>
+      </div>
+    </THeader>
+    <TControl name="AWP_UserInfo_Form" imageincluded="1" link="" margin="4" heading="h1">
+      <div class="Title">
+        <h1 class="Title" id="a72388b1-eb43-4a20-8c98-a3d2df9e56f0">Urejanje uporabnikov</h1>
+        <img src="AWP_UserInfo_Form.png" />
+      </div>
+      <TControl name="AWP_UserInfo_Form.splitContainer3" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="AWP_UserInfo_Form.splitContainer3.spl1" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="AWP_UserInfo_Form.splitContainer3.spl1.lbl_UserName" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="AWP_UserInfo_Form.splitContainer3.spl1.txtUserName" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="AWP_UserInfo_Form.splitContainer3.spl1.chkp_Enabled" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="AWP_UserInfo_Form.splitContainer3.spl1.usrc_Help1" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="AWP_UserInfo_Form.splitContainer3.spl1.usrc_Help1.btn_Help" imageincluded="1" link="" margin="4" heading="h2" />
+          </TControl>
+          <TControl name="AWP_UserInfo_Form.splitContainer3.spl1.lbl_Enabled" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="AWP_UserInfo_Form.splitContainer3.spl1.usrc_PasswordBytes1" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="AWP_UserInfo_Form.splitContainer3.spl1.usrc_PasswordBytes1.lblPassword" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="AWP_UserInfo_Form.splitContainer3.spl1.usrc_PasswordBytes1.txtPassword" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="AWP_UserInfo_Form.splitContainer3.spl1.usrc_PasswordBytes1.lbl_ConfirmPasword" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="AWP_UserInfo_Form.splitContainer3.spl1.usrc_PasswordBytes1.txtConfirmPassword" imageincluded="1" link="" margin="4" heading="h2" />
+          </TControl>
+          <TControl name="AWP_UserInfo_Form.splitContainer3.spl1.chkp_ChangePasswordOnFirstLogin" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="AWP_UserInfo_Form.splitContainer3.spl1.lbl_ChangePasswordOnFirstLogIn" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="AWP_UserInfo_Form.splitContainer3.spl1.grp_PasswordExpires" imageincluded="1" link="" margin="4" heading="h2">
+            <div class="Title">
+              <h2 class="Title" id="7c8f076b-617b-4d9a-977b-c553bab687b5">Geslo preneha veljati :</h2>
+              <img src="AWP_UserInfo_Form_splitContainer3_spl1_grp_PasswordExpires.png" />
+            </div>
+            <TControl name="AWP_UserInfo_Form.splitContainer3.spl1.grp_PasswordExpires.chkp_PasswordNeverExpires" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="AWP_UserInfo_Form.splitContainer3.spl1.grp_PasswordExpires.lbl_PaswordExpires_Never" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="AWP_UserInfo_Form.splitContainer3.spl1.grp_PasswordExpires.chkp_PasswordExpiresAfterNumbersOfDays" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="AWP_UserInfo_Form.splitContainer3.spl1.grp_PasswordExpires.lbl_AfterNumberOfDays" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="AWP_UserInfo_Form.splitContainer3.spl1.grp_PasswordExpires.chkp_PasswordNotActiveAfterNumberOfDays" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="AWP_UserInfo_Form.splitContainer3.spl1.grp_PasswordExpires.lbl_DeactivateAfterNumberOfDays" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="AWP_UserInfo_Form.splitContainer3.spl1.grp_PasswordExpires.lbl_Max_Password_Age" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="AWP_UserInfo_Form.splitContainer3.spl1.grp_PasswordExpires.nmUpDn_MaxPasswordAge" imageincluded="1" link="" margin="4" heading="h2">
+              <TControl name="AWP_UserInfo_Form.splitContainer3.spl1.grp_PasswordExpires.nmUpDn_MaxPasswordAge.nmUpDn_MaxPasswordAge_System_Windows_Forms_UpDownBase+UpDownEdit" imageincluded="1" link="" margin="4" heading="h2" />
+            </TControl>
+          </TControl>
+          <TControl name="AWP_UserInfo_Form.splitContainer3.spl1.webBrowser1" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="AWP_UserInfo_Form.splitContainer3.spl1.btn_LoginHistory" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="AWP_UserInfo_Form.splitContainer3.spl1.btn_Cancel" imageincluded="1" link="" margin="4" heading="h2" />
+        </TControl>
+        <TControl name="AWP_UserInfo_Form.splitContainer3.spl2" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="AWP_UserInfo_Form.splitContainer3.spl2.dgvx_UserRoles" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="AWP_UserInfo_Form.splitContainer3.spl2.dgvx_UserRoles.Role" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="79573c04-0f7d-4fd7-bcdc-2004ecab1897">Uporabnikove pravice</h3>
+              </div>
+            </TControl>
+          </TControl>
+        </TControl>
+      </TControl>
+    </TControl>
+  </body>
+</html>

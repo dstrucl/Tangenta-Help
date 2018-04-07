@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <title>Zgodovina prijav za uporabnika::admin1</title>
+  </head>
+  <body>
+    <THeader>
+      <div class="header">
+        <canvas id="TangentaLogo" width="60" height="50"></canvas>
+        <script type="text/javascript">
+        var canvas, context, canvaso, contexto;
+        canvaso = document.getElementById('TangentaLogo');
+        context = canvaso.getContext('2d');
+        context.lineWidth = 1;
+
+        // Draw vertical line
+        context.strokeStyle ='#936b20';
+        context.beginPath();
+        context.moveTo(30, 0);
+        context.lineTo(30, 50);
+        context.stroke();
+
+        // Draw large arc
+        context.beginPath();
+        context.arc(54, 26, 24,0.6*Math.PI,1.5*Math.PI, false);
+        context.stroke();
+
+        // Draw head circle
+        context.beginPath();
+        context.fillStyle = "#E2FFB0"/*"#CEF988";*/
+        context.arc(34, 6, 4,0,2*Math.PI, false);
+        context.fill();
+        context.stroke();
+
+        context.closePath();
+        context.restore();
+
+        </script>
+        <div class="header_border_with_radius">
+          <div class="header_menu">
+            <span>
+              <a href="../Tangenta.html">TANGENTA</a>
+            </span>,
+             <span><a href="../Invoice.html">RAČUNI</a></span>,
+             <span><a href="../ProformaInvoice.html">PREDRAČUNI</a></span>,
+             <span><a href="../Stock.html">ZALOGE</a></span>,
+             <span><a href="../PriceList.html">CENIKI</a></span>,
+             <span><a href="../Printing.html">TISKANJE RAČUNOV</a></span>,
+             <span><a href="../InvoicingOverview.html">PREGLED FAKTUR</a></span>,
+             <span><a href="../Support.html">PODPORA</a></span></div>
+        </div>
+      </div>
+    </THeader>
+    <TControl name="AWPLoginHistoryForm" imageincluded="1" link="" margin="4" heading="h1">
+      <div class="Title">
+        <h1 class="Title" id="c70b4db6-1b34-4283-883a-7f5ac31f255d">Zgodovina prijav za uporabnika::admin1</h1>
+        <img src="AWPLoginHistoryForm.png" />
+      </div>
+      <TControl name="AWPLoginHistoryForm.lbl_LoginHistory" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="AWPLoginHistoryForm.usrc_Help1" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="AWPLoginHistoryForm.usrc_Help1.btn_Help" imageincluded="1" link="" margin="4" heading="h2" />
+      </TControl>
+      <TControl name="AWPLoginHistoryForm.lbl_From" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="AWPLoginHistoryForm.dtp_From" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="AWPLoginHistoryForm.lbl_To" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="AWPLoginHistoryForm.dtp_To" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="AWPLoginHistoryForm.btn_Refresh" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="AWPLoginHistoryForm.lbl_TotalTimeSpan" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="AWPLoginHistoryForm.lbl_WorkHoursResult" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="AWPLoginHistoryForm.dgv_LoginHistory" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="AWPLoginHistoryForm.dgv_LoginHistory.Atom_WorkPeriod_$$LoginTime" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="a3250f91-53be-4814-86a8-bab16d0a48bc">Čas prijave</h3>
+          </div>
+        </TControl>
+        <TControl name="AWPLoginHistoryForm.dgv_LoginHistory.Atom_WorkPeriod_$$LogoutTime" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="c6123e81-3510-4ce2-a99b-678b90da0134">Čas odjave</h3>
+          </div>
+        </TControl>
+        <TControl name="AWPLoginHistoryForm.dgv_LoginHistory.Atom_WorkPeriod_$_aed_$$Name" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="122f5975-9931-4381-b216-f6c2b41ca365">Ime elektronske blagajne</h3>
+          </div>
+        </TControl>
+        <TControl name="AWPLoginHistoryForm.dgv_LoginHistory.Atom_WorkPeriod_$_amcper_$_aoffice_$$Name" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="eaf58935-5840-42ba-b321-2db775035649">Ime poslovne enote</h3>
+          </div>
+        </TControl>
+        <TControl name="AWPLoginHistoryForm.dgv_LoginHistory.Atom_WorkPeriod_$_amcper_$_aoffice_$$ShortName" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="543852ae-8876-4829-940c-39a3927a8f13">Ime poslovne enote okrajšano</h3>
+          </div>
+        </TControl>
+        <TControl name="AWPLoginHistoryForm.dgv_LoginHistory.Atom_WorkPeriod_$_acomp_$$Name" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="1ef9d71c-1e3b-49f7-b0b9-47aa4ef93bd9">Računalnik:</h3>
+          </div>
+        </TControl>
+        <TControl name="AWPLoginHistoryForm.dgv_LoginHistory.Atom_WorkPeriod_$_acomp_$$UserName" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="d9aad773-3bf1-4133-9733-bf7dd2b828f1">Uporabniško ime za prijavo v računalnik.</h3>
+          </div>
+        </TControl>
+        <TControl name="AWPLoginHistoryForm.dgv_LoginHistory.Atom_WorkPeriod_$_acomp_$$IP_address" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="0bfac3c9-e016-41b8-bd62-63243b64bd21">Lokalni IP naslov računalnika</h3>
+          </div>
+        </TControl>
+        <TControl name="AWPLoginHistoryForm.dgv_LoginHistory.Atom_WorkPeriod_$_acomp_$$MAC_address" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="cdbe92e0-cf38-45ba-b208-1e7c99c539ae">Lokalni MAC naslov računalnika</h3>
+          </div>
+        </TControl>
+        <TControl name="AWPLoginHistoryForm.dgv_LoginHistory.Atom_WorkPeriod_$_amcper_$_aper_$_acfn_$$FirstName" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="47f1d44b-0f2d-4e06-afb7-0e4e7ca6c6b7">Ime</h3>
+          </div>
+        </TControl>
+        <TControl name="AWPLoginHistoryForm.dgv_LoginHistory.Atom_WorkPeriod_$_amcper_$_aper_$_acln_$$LastName" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="0dcb4937-d08a-4dcb-bc09-d3bb1db4da31">Priimenk</h3>
+          </div>
+        </TControl>
+        <TControl name="AWPLoginHistoryForm.dgv_LoginHistory.Duration" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="0f0ad544-b9ec-4bd0-8093-3a0bbbae972a">Trajanje</h3>
+          </div>
+        </TControl>
+      </TControl>
+      <TControl name="AWPLoginHistoryForm.btn_Cancel" imageincluded="1" link="" margin="4" heading="h2" />
+    </TControl>
+  </body>
+</html>

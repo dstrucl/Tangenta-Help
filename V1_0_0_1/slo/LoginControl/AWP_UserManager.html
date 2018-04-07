@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <title>Urejanje uporabnikov</title>
+  </head>
+  <body>
+    <THeader>
+      <div class="header">
+        <canvas id="TangentaLogo" width="60" height="50"></canvas>
+        <script type="text/javascript">
+        var canvas, context, canvaso, contexto;
+        canvaso = document.getElementById('TangentaLogo');
+        context = canvaso.getContext('2d');
+        context.lineWidth = 1;
+
+        // Draw vertical line
+        context.strokeStyle ='#936b20';
+        context.beginPath();
+        context.moveTo(30, 0);
+        context.lineTo(30, 50);
+        context.stroke();
+
+        // Draw large arc
+        context.beginPath();
+        context.arc(54, 26, 24,0.6*Math.PI,1.5*Math.PI, false);
+        context.stroke();
+
+        // Draw head circle
+        context.beginPath();
+        context.fillStyle = "#E2FFB0"/*"#CEF988";*/
+        context.arc(34, 6, 4,0,2*Math.PI, false);
+        context.fill();
+        context.stroke();
+
+        context.closePath();
+        context.restore();
+
+        </script>
+        <div class="header_border_with_radius">
+          <div class="header_menu">
+            <span>
+              <a href="../Tangenta.html">TANGENTA</a>
+            </span>,
+             <span><a href="../Invoice.html">RAČUNI</a></span>,
+             <span><a href="../ProformaInvoice.html">PREDRAČUNI</a></span>,
+             <span><a href="../Stock.html">ZALOGE</a></span>,
+             <span><a href="../PriceList.html">CENIKI</a></span>,
+             <span><a href="../Printing.html">TISKANJE RAČUNOV</a></span>,
+             <span><a href="../InvoicingOverview.html">PREGLED FAKTUR</a></span>,
+             <span><a href="../Support.html">PODPORA</a></span></div>
+        </div>
+      </div>
+    </THeader>
+    <TControl name="AWP_UserManager" imageincluded="1" link="" margin="4" heading="h1">
+      <div class="Title">
+        <h1 class="Title" id="d05b8fa5-6abe-4918-b70b-d062051424b7">Urejanje uporabnikov</h1>
+        <img src="AWP_UserManager.png" />
+      </div>
+      <TControl name="AWP_UserManager.usrc_NavigationButtons1" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="AWP_UserManager.usrc_NavigationButtons1.btn1" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="AWP_UserManager.usrc_NavigationButtons1.btn3" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="AWP_UserManager.usrc_NavigationButtons1.usrc_Help1" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="AWP_UserManager.usrc_NavigationButtons1.usrc_Help1.btn_Help" imageincluded="1" link="" margin="4" heading="h2" />
+        </TControl>
+      </TControl>
+      <TControl name="AWP_UserManager.splitContainer1" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="AWP_UserManager.splitContainer1.spl1" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="AWP_UserManager.splitContainer1.spl1.lbl_UserName" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="AWP_UserManager.splitContainer1.spl1.txtUserName" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="AWP_UserManager.splitContainer1.spl1.chk_Enabled" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="AWP_UserManager.splitContainer1.spl1.usrc_PasswordBytes1" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="AWP_UserManager.splitContainer1.spl1.usrc_PasswordBytes1.lblPassword" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="AWP_UserManager.splitContainer1.spl1.usrc_PasswordBytes1.txtPassword" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="AWP_UserManager.splitContainer1.spl1.usrc_PasswordBytes1.lbl_ConfirmPasword" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="AWP_UserManager.splitContainer1.spl1.usrc_PasswordBytes1.txtConfirmPassword" imageincluded="1" link="" margin="4" heading="h2" />
+          </TControl>
+          <TControl name="AWP_UserManager.splitContainer1.spl1.chk_ChangePasswordOnFirstLogIn" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="AWP_UserManager.splitContainer1.spl1.grp_PasswordExpires" imageincluded="1" link="" margin="4" heading="h2">
+            <div class="Title">
+              <h2 class="Title" id="cc2a9907-1309-45ec-adc6-c38518640c9b">Geslo preneha veljati :</h2>
+              <img src="AWP_UserManager_splitContainer1_spl1_grp_PasswordExpires.png" />
+            </div>
+            <TControl name="AWP_UserManager.splitContainer1.spl1.grp_PasswordExpires.rdb_PaswordExpires_Never" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="AWP_UserManager.splitContainer1.spl1.grp_PasswordExpires.rdb_AfterNumberOfDays" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="AWP_UserManager.splitContainer1.spl1.grp_PasswordExpires.rdb_DeactivateAfterNumberOfDays" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="AWP_UserManager.splitContainer1.spl1.grp_PasswordExpires.lbl_Max_Password_Age" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="AWP_UserManager.splitContainer1.spl1.grp_PasswordExpires.nmUpDn_MaxPasswordAge" imageincluded="1" link="" margin="4" heading="h2">
+              <TControl name="AWP_UserManager.splitContainer1.spl1.grp_PasswordExpires.nmUpDn_MaxPasswordAge.nmUpDn_MaxPasswordAge_System_Windows_Forms_UpDownBase+UpDownEdit" imageincluded="1" link="" margin="4" heading="h2" />
+            </TControl>
+          </TControl>
+          <TControl name="AWP_UserManager.splitContainer1.spl1.btn_Edit_myOrganisation_Person" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="AWP_UserManager.splitContainer1.spl1.btn_LoginHistory" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="AWP_UserManager.splitContainer1.spl1.splitContainer3" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="AWP_UserManager.splitContainer1.spl1.splitContainer3.spl2" imageincluded="1" link="" margin="4" heading="h2">
+              <TControl name="AWP_UserManager.splitContainer1.spl1.splitContainer3.spl2.webBrowser1" imageincluded="1" link="" margin="4" heading="h2" />
+            </TControl>
+            <TControl name="AWP_UserManager.splitContainer1.spl1.splitContainer3.spl3" imageincluded="1" link="" margin="4" heading="h2">
+              <TControl name="AWP_UserManager.splitContainer1.spl1.splitContainer3.spl3.splitContainer2" imageincluded="1" link="" margin="4" heading="h2">
+                <TControl name="AWP_UserManager.splitContainer1.spl1.splitContainer3.spl3.splitContainer2.spl4" imageincluded="1" link="" margin="4" heading="h2">
+                  <TControl name="AWP_UserManager.splitContainer1.spl1.splitContainer3.spl3.splitContainer2.spl4.lbl_UserRoles" imageincluded="1" link="" margin="4" heading="h2" />
+                  <TControl name="AWP_UserManager.splitContainer1.spl1.splitContainer3.spl3.splitContainer2.spl4.dgvx_UserRoles" imageincluded="1" link="" margin="4" heading="h2">
+                    <TControl name="AWP_UserManager.splitContainer1.spl1.splitContainer3.spl3.splitContainer2.spl4.dgvx_UserRoles.Role" imageincluded="0" link="" margin="4" heading="h3">
+                      <div class="Title">
+                        <h3 class="Title" id="f7be27ed-e6e9-4af1-b983-58f7448ab35c">Role</h3>
+                      </div>
+                    </TControl>
+                    <TControl name="AWP_UserManager.splitContainer1.spl1.splitContainer3.spl3.splitContainer2.spl4.dgvx_UserRoles.MoveRight" imageincluded="0" link="" margin="4" heading="h3">
+                      <div class="Title">
+                        <h3 class="Title" id="9aa8393e-75ee-4648-85fa-0aaab07b432a">=&gt;</h3>
+                      </div>
+                    </TControl>
+                  </TControl>
+                </TControl>
+                <TControl name="AWP_UserManager.splitContainer1.spl1.splitContainer3.spl3.splitContainer2.spl5" imageincluded="1" link="" margin="4" heading="h2">
+                  <TControl name="AWP_UserManager.splitContainer1.spl1.splitContainer3.spl3.splitContainer2.spl5.lbl_OtherRoles" imageincluded="1" link="" margin="4" heading="h2" />
+                  <TControl name="AWP_UserManager.splitContainer1.spl1.splitContainer3.spl3.splitContainer2.spl5.dgvx_OtherRoles" imageincluded="1" link="" margin="4" heading="h2">
+                    <TControl name="AWP_UserManager.splitContainer1.spl1.splitContainer3.spl3.splitContainer2.spl5.dgvx_OtherRoles.MoveLeft" imageincluded="0" link="" margin="4" heading="h3">
+                      <div class="Title">
+                        <h3 class="Title" id="bb6c2b70-6056-4285-bccd-cd0a91445bff" />
+                      </div>
+                    </TControl>
+                    <TControl name="AWP_UserManager.splitContainer1.spl1.splitContainer3.spl3.splitContainer2.spl5.dgvx_OtherRoles.Role" imageincluded="0" link="" margin="4" heading="h3">
+                      <div class="Title">
+                        <h3 class="Title" id="11fd14cd-071b-4c81-871a-3a883b1fab20">Role</h3>
+                      </div>
+                    </TControl>
+                  </TControl>
+                </TControl>
+              </TControl>
+            </TControl>
+          </TControl>
+        </TControl>
+        <TControl name="AWP_UserManager.splitContainer1.spl6" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="AWP_UserManager.splitContainer1.spl6.dgv_LoginUsers" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="AWP_UserManager.splitContainer1.spl6.dgv_LoginUsers.PasswordNeverExpires" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="7d4bb047-1f48-45b2-9c3c-84a49ef8eefd">PasswordNeverExpires</h3>
+              </div>
+            </TControl>
+            <TControl name="AWP_UserManager.splitContainer1.spl6.dgv_LoginUsers.Enabled" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="13290d19-9413-4015-8f55-03b59b848b1d">Prijava Omogočena</h3>
+              </div>
+            </TControl>
+            <TControl name="AWP_UserManager.splitContainer1.spl6.dgv_LoginUsers.UserName" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="2268d725-f095-4d69-911a-604a182890ef">Uporabniško ime*</h3>
+              </div>
+            </TControl>
+            <TControl name="AWP_UserManager.splitContainer1.spl6.dgv_LoginUsers.Time_When_AdministratorSetsPassword" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="674bd53e-3041-49cd-8484-0b00fde7827e">Time_When_AdministratorSetsPassword</h3>
+              </div>
+            </TControl>
+            <TControl name="AWP_UserManager.splitContainer1.spl6.dgv_LoginUsers.Time_When_UserSetsItsOwnPassword_FirstTime" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="b9d849c6-4352-46e7-a623-6a426aa4b202">Time_When_UserSetsItsOwnPassword_FirstTime</h3>
+              </div>
+            </TControl>
+            <TControl name="AWP_UserManager.splitContainer1.spl6.dgv_LoginUsers.Time_When_UserSetsItsOwnPassword_LastTime" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="a155b7ee-ccf2-4982-9f9d-5270ac086adb">Time_When_UserSetsItsOwnPassword_LastTime</h3>
+              </div>
+            </TControl>
+            <TControl name="AWP_UserManager.splitContainer1.spl6.dgv_LoginUsers.Administrator_LoginUsers_ID" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="18812feb-a657-4233-bd0e-eef0e1ac6ac6">Administrator_LoginUsers_ID</h3>
+              </div>
+            </TControl>
+            <TControl name="AWP_UserManager.splitContainer1.spl6.dgv_LoginUsers.ChangePasswordOnFirstLogin" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="31519b7f-724a-4b3f-83a1-237d18556f2d">ChangePasswordOnFirstLogin</h3>
+              </div>
+            </TControl>
+            <TControl name="AWP_UserManager.splitContainer1.spl6.dgv_LoginUsers.Maximum_password_age_in_days" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="930ed9bf-6a0c-4b33-a5e7-f4759888b3b6">Maximum_password_age_in_days</h3>
+              </div>
+            </TControl>
+            <TControl name="AWP_UserManager.splitContainer1.spl6.dgv_LoginUsers.NotActiveAfterPasswordExpires" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="d8bf978d-26c1-496e-b556-653124556bb9">NotActiveAfterPasswordExpires</h3>
+              </div>
+            </TControl>
+            <TControl name="AWP_UserManager.splitContainer1.spl6.dgv_LoginUsers.myOrganisation_Person_ID" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="d12b6608-ffd4-4ee1-a79d-3e213394ee35">myOrganisation_Person_ID</h3>
+              </div>
+            </TControl>
+            <TControl name="AWP_UserManager.splitContainer1.spl6.dgv_LoginUsers.myOrganisation_Person_$$Job" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="551d5cf8-7547-4587-9203-2e21132accf2">Delovno mesto</h3>
+              </div>
+            </TControl>
+            <TControl name="AWP_UserManager.splitContainer1.spl6.dgv_LoginUsers.myOrganisation_Person_$$Active" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="2b1ad2eb-ac66-4466-803a-425978ffc81d">Oseba je aktivna*</h3>
+              </div>
+            </TControl>
+            <TControl name="AWP_UserManager.splitContainer1.spl6.dgv_LoginUsers.myOrganisation_Person_$$Description" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="e9bcf0a8-74bf-48e9-bb9f-628a337891c8">Opis</h3>
+              </div>
+            </TControl>
+            <TControl name="AWP_UserManager.splitContainer1.spl6.dgv_LoginUsers.myOrganisation_Person_$_per_$$Gender" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="c172392e-8a8a-4ff3-94e3-662690616c40">Spol*</h3>
+              </div>
+            </TControl>
+            <TControl name="AWP_UserManager.splitContainer1.spl6.dgv_LoginUsers.myOrganisation_Person_$_per_$_cfn_$$FirstName" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="87461d0e-a266-46dc-b0ea-1ca9fc3b6c6d">Ime*</h3>
+              </div>
+            </TControl>
+            <TControl name="AWP_UserManager.splitContainer1.spl6.dgv_LoginUsers.myOrganisation_Person_$_per_$_cln_$$LastName" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="7c99a328-7b8c-4cda-b6f6-119aebeccbc4">Priimek*</h3>
+              </div>
+            </TControl>
+            <TControl name="AWP_UserManager.splitContainer1.spl6.dgv_LoginUsers.myOrganisation_Person_$_per_$$DateOfBirth" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="4df45873-4208-45fc-a153-c314f86b5869">Datum rojstva</h3>
+              </div>
+            </TControl>
+            <TControl name="AWP_UserManager.splitContainer1.spl6.dgv_LoginUsers.myOrganisation_Person_$_per_$$Tax_ID" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="ac88fcda-a1b2-4a57-a39b-62cdbf9adb47">Davčna št.*</h3>
+              </div>
+            </TControl>
+            <TControl name="AWP_UserManager.splitContainer1.spl6.dgv_LoginUsers.myOrganisation_Person_$_per_$$Registration_ID" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="7d40a9b9-ea0a-4efe-bb15-ec6493013b6c">EMŠO</h3>
+              </div>
+            </TControl>
+            <TControl name="AWP_UserManager.splitContainer1.spl6.dgv_LoginUsers.myOrganisation_Person_$_office_$$Name" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="7f1f5b61-8f8c-4485-a568-a9d5f821bb74">Poslovna enota*</h3>
+              </div>
+            </TControl>
+            <TControl name="AWP_UserManager.splitContainer1.spl6.dgv_LoginUsers.myOrganisation_Person_$_office_$$ShortName" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="1c5177cf-1aa6-4f4f-94c6-4315e18ddb1c">Poslovna enota okrajšava</h3>
+              </div>
+            </TControl>
+            <TControl name="AWP_UserManager.splitContainer1.spl6.dgv_LoginUsers.PersonData_$$CardNumber" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="970c1ea0-fe4b-4cd1-a39c-646fd842212f">Številka kartice</h3>
+              </div>
+            </TControl>
+            <TControl name="AWP_UserManager.splitContainer1.spl6.dgv_LoginUsers.PersonData_$$Description" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="5f8569b0-79a2-4ae8-8bdb-539c877f56fd">Opis2</h3>
+              </div>
+            </TControl>
+            <TControl name="AWP_UserManager.splitContainer1.spl6.dgv_LoginUsers.PersonData_$_cgsmnper_$$GsmNumber" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="3addc413-1647-40a9-9b8c-d045a421deef">GSM</h3>
+              </div>
+            </TControl>
+            <TControl name="AWP_UserManager.splitContainer1.spl6.dgv_LoginUsers.PersonData_$_cphnnper_$$PhoneNumber" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="8655ca20-b12b-4a5e-82d5-c983d04cb7bc">TEL</h3>
+              </div>
+            </TControl>
+            <TControl name="AWP_UserManager.splitContainer1.spl6.dgv_LoginUsers.PersonData_$_cemailper_$$Email" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="3e093df0-7605-4d66-a2bb-a68bcde965da">Email</h3>
+              </div>
+            </TControl>
+            <TControl name="AWP_UserManager.splitContainer1.spl6.dgv_LoginUsers.PersonData_$_cadrper_$_cstrnper_$$StreetName" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="dd75209e-90a6-4c2f-a40f-2f1c6aafe1da">Cesta</h3>
+              </div>
+            </TControl>
+            <TControl name="AWP_UserManager.splitContainer1.spl6.dgv_LoginUsers.PersonData_$_cadrper_$_chounper_$$HouseNumber" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="d4f2344d-8376-4794-a3fc-23e39925605b">Hišna št.</h3>
+              </div>
+            </TControl>
+            <TControl name="AWP_UserManager.splitContainer1.spl6.dgv_LoginUsers.PersonData_$_cadrper_$_ccitper_$$City" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="ac670487-3a8d-4466-8bf3-28b097f38740">Mesto</h3>
+              </div>
+            </TControl>
+            <TControl name="AWP_UserManager.splitContainer1.spl6.dgv_LoginUsers.PersonData_$_cadrper_$_zipper_$$ZIP" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="b0104620-9488-4d29-a86d-0bf63b78f83d">Poštna št.</h3>
+              </div>
+            </TControl>
+            <TControl name="AWP_UserManager.splitContainer1.spl6.dgv_LoginUsers.PersonData_$_cadrper_$_cstper_$$Country" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="14da61d4-99ad-4468-b8ce-b616c1c0d1f6">Država</h3>
+              </div>
+            </TControl>
+            <TControl name="AWP_UserManager.splitContainer1.spl6.dgv_LoginUsers.PersonData_$_cadrper_$_ccouper_$$State" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="aae36899-0a21-454f-82bd-7ad30ccd2c35">Dežela</h3>
+              </div>
+            </TControl>
+            <TControl name="AWP_UserManager.splitContainer1.spl6.dgv_LoginUsers.PersonData_$_cardtper_$$CardType" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="b37b8c92-8a0c-4731-a2ec-d1b93add18b2">Vrsta kartice</h3>
+              </div>
+            </TControl>
+          </TControl>
+        </TControl>
+      </TControl>
+      <TControl name="AWP_UserManager.btnAddUser" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="AWP_UserManager.btnChangeData" imageincluded="1" link="" margin="4" heading="h2" />
+    </TControl>
+  </body>
+</html>

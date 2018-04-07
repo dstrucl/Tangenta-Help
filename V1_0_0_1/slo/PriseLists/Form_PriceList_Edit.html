@@ -1,0 +1,834 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <title>Ceniki</title>
+  </head>
+  <body>
+    <THeader>
+      <div class="header">
+        <canvas id="TangentaLogo" width="60" height="50"></canvas>
+        <script type="text/javascript">
+        var canvas, context, canvaso, contexto;
+        canvaso = document.getElementById('TangentaLogo');
+        context = canvaso.getContext('2d');
+        context.lineWidth = 1;
+
+        // Draw vertical line
+        context.strokeStyle ='#936b20';
+        context.beginPath();
+        context.moveTo(30, 0);
+        context.lineTo(30, 50);
+        context.stroke();
+
+        // Draw large arc
+        context.beginPath();
+        context.arc(54, 26, 24,0.6*Math.PI,1.5*Math.PI, false);
+        context.stroke();
+
+        // Draw head circle
+        context.beginPath();
+        context.fillStyle = "#E2FFB0"/*"#CEF988";*/
+        context.arc(34, 6, 4,0,2*Math.PI, false);
+        context.fill();
+        context.stroke();
+
+        context.closePath();
+        context.restore();
+
+        </script>
+        <div class="header_border_with_radius">
+          <div class="header_menu">
+            <span>
+              <a href="../Tangenta.html">TANGENTA</a>
+            </span>,
+             <span><a href="../Invoice.html">RAČUNI</a></span>,
+             <span><a href="../ProformaInvoice.html">PREDRAČUNI</a></span>,
+             <span><a href="../Stock.html">ZALOGE</a></span>,
+             <span><a href="../PriceList.html">CENIKI</a></span>,
+             <span><a href="../Printing.html">TISKANJE RAČUNOV</a></span>,
+             <span><a href="../InvoicingOverview.html">PREGLED FAKTUR</a></span>,
+             <span><a href="../Support.html">PODPORA</a></span></div>
+        </div>
+      </div>
+    </THeader>
+    <TControl name="Form_PriceList_Edit" imageincluded="1" link="" margin="4" heading="h1">
+      <div class="Title">
+        <h1 class="Title" id="9293216e-780a-401e-bc41-80787c2c53ae">Ceniki</h1>
+        <img src="Form_PriceList_Edit.png" />
+      </div>
+      <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.usrc_NavigationButtons1" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.usrc_NavigationButtons1.btn1" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.usrc_NavigationButtons1.btn3" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.usrc_NavigationButtons1.usrc_Help1" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.usrc_NavigationButtons1.usrc_Help1.btn_Help" imageincluded="1" link="" margin="4" heading="h2" />
+          </TControl>
+        </TControl>
+        <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.rdb_OnlyValid" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.rdb_OnlyUnvalid" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.rdb_All" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList" imageincluded="1" link="" margin="4" heading="h2">
+              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1" imageincluded="1" link="" margin="4" heading="h2">
+                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2" imageincluded="1" link="" margin="4" heading="h2">
+                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow" imageincluded="1" link="" margin="4" heading="h2">
+                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.lbl_Title" imageincluded="1" link="" margin="4" heading="h2" />
+                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.btn_New" imageincluded="1" link="" margin="4" heading="h2" />
+                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.btn_Update" imageincluded="1" link="" margin="4" heading="h2" />
+                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor" imageincluded="1" link="" margin="4" heading="h2">
+                      <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1" imageincluded="1" link="" margin="4" heading="h2">
+                        <div class="Title">
+                          <h2 class="Title" id="0b86528f-90d0-4424-81ad-d950541d8339">Cenik</h2>
+                          <img src="hashname_-1448891671.png" />
+                          <div class="Description">Ime tabele v podatkovni bazi je "PriceList".</div>
+                        </div>
+                        <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                          <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                          <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.btnex_1" imageincluded="1" link="" margin="4" heading="h2" />
+                          <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.ixt_7" imageincluded="1" link="" margin="4" heading="h2" />
+                          <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2" imageincluded="1" link="" margin="4" heading="h2">
+                            <div class="Title">
+                              <h2 class="Title" id="08a86e7a-1d9e-4a51-a196-8763ee44166a">Ime cenika</h2>
+                              <img src="hashname_-923563866.png" />
+                              <div class="Description">Ime tabele v podatkovni bazi je "PriceList_Name".</div>
+                            </div>
+                            <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.btnex_3" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.uinpctrl_lbl_1" imageincluded="1" link="" margin="4" heading="h2">
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.uinpctrl_lbl_1.xlbl_1" imageincluded="1" link="" margin="4" heading="h2" />
+                              </TControl>
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.ixt_1" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.btnex_4" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl1" imageincluded="1" link="" margin="4" heading="h2">
+                                <div class="Title">
+                                  <h2 class="Title" id="dcf79782-af5c-4173-be46-d0e5f45c11ff">Ime cenika</h2>
+                                  <img src="hashname_1868966362.png" />
+                                  <div class="Description">
+Največja možna dolžina besedila je 264 znakov.
+Ime stolpca v tabeli podatkovne baze "PriceList_Name":"Name".</div>
+                                </div>
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl1.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl1.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl1.usrc_lbl.xlbl_2" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl1.txt_2" imageincluded="1" link="" margin="4" heading="h2" />
+                              </TControl>
+                            </TControl>
+                          </TControl>
+                          <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl2" imageincluded="1" link="" margin="4" heading="h2">
+                            <div class="Title">
+                              <h2 class="Title" id="a32394ad-d4b5-4ae6-aeb1-e00b5df10b8e">Veljaven</h2>
+                              <img src="hashname_-1190007788.png" />
+                              <div class="Description">
+Ime stolpca v tabeli podatkovne baze "PriceList":"Valid".</div>
+                            </div>
+                            <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl2.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl2.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl2.usrc_lbl.xlbl_3" imageincluded="1" link="" margin="4" heading="h2" />
+                            </TControl>
+                            <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl2.uchk_1" imageincluded="1" link="" margin="4" heading="h2" />
+                          </TControl>
+                          <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3" imageincluded="1" link="" margin="4" heading="h2">
+                            <div class="Title">
+                              <h2 class="Title" id="d311b383-feab-46d1-9968-356e8181883b">Valute</h2>
+                              <img src="hashname_-923563899.png" />
+                              <div class="Description">Ime tabele v podatkovni bazi je "Currency".</div>
+                            </div>
+                            <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.btnex_5" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.uinpctrl_lbl_2" imageincluded="1" link="" margin="4" heading="h2">
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.uinpctrl_lbl_2.xlbl_4" imageincluded="1" link="" margin="4" heading="h2" />
+                              </TControl>
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.ixt_3" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.btnex_6" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl3" imageincluded="1" link="" margin="4" heading="h2">
+                                <div class="Title">
+                                  <h2 class="Title" id="407f5c2f-8d2e-4459-9cfa-61a70e61c658">Oznaka valute</h2>
+                                  <img src="hashname_2043953719.png" />
+                                  <div class="Description">Podatek, ki ga vpišete, mora biti unikaten!
+Največja možna dolžina besedila je 50 znakov.
+Ime stolpca v tabeli podatkovne baze "Currency":"Abbreviation".</div>
+                                </div>
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl3.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl3.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl3.usrc_lbl.picUnique" imageincluded="1" link="" margin="4" heading="h2" />
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl3.usrc_lbl.xlbl_5" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl3.txt_4" imageincluded="1" link="" margin="4" heading="h2" />
+                              </TControl>
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl4" imageincluded="1" link="" margin="4" heading="h2">
+                                <div class="Title">
+                                  <h2 class="Title" id="e8601cd6-5354-408b-ad6c-c7138a93d600">Ime Valute</h2>
+                                  <img src="hashname_2020164151.png" />
+                                  <div class="Description">
+Največja možna dolžina besedila je 264 znakov.
+Ime stolpca v tabeli podatkovne baze "Currency":"Name".</div>
+                                </div>
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl4.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl4.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl4.usrc_lbl.xlbl_6" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl4.txt_5" imageincluded="1" link="" margin="4" heading="h2" />
+                              </TControl>
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl5" imageincluded="1" link="" margin="4" heading="h2">
+                                <div class="Title">
+                                  <h2 class="Title" id="8ef9e318-1c03-4bab-a50d-50ddbb23f273">Znak valute</h2>
+                                  <img src="hashname_2022326839.png" />
+                                  <div class="Description">
+Največja možna dolžina besedila je 5 znakov.
+Ime stolpca v tabeli podatkovne baze "Currency":"Symbol".</div>
+                                </div>
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl5.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl5.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl5.usrc_lbl.xlbl_7" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl5.txt_6" imageincluded="1" link="" margin="4" heading="h2" />
+                              </TControl>
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl6" imageincluded="1" link="" margin="4" heading="h2">
+                                <div class="Title">
+                                  <h2 class="Title" id="234b2316-5b93-461c-8237-41ca4745cd9b">Šifra valute</h2>
+                                  <img src="hashname_2032615991.png" />
+                                  <div class="Description">
+Ime stolpca v tabeli podatkovne baze "Currency":"CurrencyCode".</div>
+                                </div>
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl6.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl6.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl6.usrc_lbl.xlbl_8" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl6.unmUpDn_1" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl6.unmUpDn_1.txt_Value" imageincluded="1" link="" margin="4" heading="h2" />
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl6.unmUpDn_1.btn_Plus" imageincluded="1" link="" margin="4" heading="h2" />
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl6.unmUpDn_1.btn_Minus" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                              </TControl>
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl7" imageincluded="1" link="" margin="4" heading="h2">
+                                <div class="Title">
+                                  <h2 class="Title" id="aa891a04-10ff-480f-9d09-b0a89bf34e25">Število decimalk</h2>
+                                  <img src="hashname_2034778679.png" />
+                                  <div class="Description">
+Ime stolpca v tabeli podatkovne baze "Currency":"DecimalPlaces".</div>
+                                </div>
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl7.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl7.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl7.usrc_lbl.xlbl_9" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl7.unmUpDn_2" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl7.unmUpDn_2.txt_Value" imageincluded="1" link="" margin="4" heading="h2" />
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl7.unmUpDn_2.btn_Plus" imageincluded="1" link="" margin="4" heading="h2" />
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl7.unmUpDn_2.btn_Minus" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                              </TControl>
+                            </TControl>
+                          </TControl>
+                          <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl8" imageincluded="1" link="" margin="4" heading="h2">
+                            <div class="Title">
+                              <h2 class="Title" id="a0e0e4d3-7e4c-4f26-9157-c6d2571ed057">Velja od</h2>
+                              <img src="hashname_221617222.png" />
+                              <div class="Description">
+Podatek ni obvezen.
+Ime stolpca v tabeli podatkovne baze "PriceList":"ValidFrom".</div>
+                            </div>
+                            <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl8.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl8.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl8.usrc_lbl.urdb_1" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl8.usrc_lbl.urdb_2" imageincluded="1" link="" margin="4" heading="h2" />
+                            </TControl>
+                          </TControl>
+                          <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl9" imageincluded="1" link="" margin="4" heading="h2">
+                            <div class="Title">
+                              <h2 class="Title" id="3ecf04e9-05c6-4736-a500-0bb0c0f04511">Velja do</h2>
+                              <img src="hashname_80454721.png" />
+                              <div class="Description">
+Podatek ni obvezen.
+Ime stolpca v tabeli podatkovne baze "PriceList":"ValidTo".</div>
+                            </div>
+                            <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl9.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl9.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl9.usrc_lbl.urdb_3" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl9.usrc_lbl.urdb_4" imageincluded="1" link="" margin="4" heading="h2" />
+                            </TControl>
+                          </TControl>
+                          <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl10" imageincluded="1" link="" margin="4" heading="h2">
+                            <div class="Title">
+                              <h2 class="Title" id="015595ba-4b5d-4344-8f1c-1de261b63cc7">Čas nastanka</h2>
+                              <img src="hashname_2067706918.png" />
+                              <div class="Description">
+Podatek ni obvezen.
+Ime stolpca v tabeli podatkovne baze "PriceList":"CreationDate".</div>
+                            </div>
+                            <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl10.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl10.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl10.usrc_lbl.urdb_5" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl10.usrc_lbl.urdb_6" imageincluded="1" link="" margin="4" heading="h2" />
+                            </TControl>
+                            <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl10.uDateTimePick_3" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl10.uDateTimePick_3.dateTimePicker" imageincluded="1" link="" margin="4" heading="h2" />
+                            </TControl>
+                          </TControl>
+                          <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl11" imageincluded="1" link="" margin="4" heading="h2">
+                            <div class="Title">
+                              <h2 class="Title" id="914a3db3-4bfa-456d-8632-8c1cfba23856">Opis</h2>
+                              <img src="hashname_-398871514.png" />
+                              <div class="Description">
+Podatek ni obvezen.
+Največja možna dolžina besedila je 2000 znakov.
+Ime stolpca v tabeli podatkovne baze "PriceList":"Description".</div>
+                            </div>
+                            <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl11.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl11.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl11.usrc_lbl.urdb_7" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl11.usrc_lbl.urdb_8" imageincluded="1" link="" margin="4" heading="h2" />
+                            </TControl>
+                          </TControl>
+                        </TControl>
+                      </TControl>
+                    </TControl>
+                  </TControl>
+                </TControl>
+                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl3" imageincluded="1" link="" margin="4" heading="h2">
+                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl3.dgvx_Table" imageincluded="1" link="" margin="4" heading="h2">
+                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl3.dgvx_Table.ID" imageincluded="0" link="" margin="4" heading="h3">
+                      <div class="Title">
+                        <h3 class="Title" id="936cf9dc-2c87-4db2-9ada-f173af5c0db9">ID</h3>
+                      </div>
+                    </TControl>
+                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl3.dgvx_Table.PriceList_$_pln_$$Name" imageincluded="0" link="" margin="4" heading="h3">
+                      <div class="Title">
+                        <h3 class="Title" id="0a1afe6f-0eaa-4b3e-a986-a2f97f9f384f">Ime cenika</h3>
+                      </div>
+                    </TControl>
+                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl3.dgvx_Table.PriceList_$_Cur_$$Abbreviation" imageincluded="0" link="" margin="4" heading="h3">
+                      <div class="Title">
+                        <h3 class="Title" id="2322a47d-07a1-4b39-9c3c-ecae61f8b07b">Oznaka valute</h3>
+                      </div>
+                    </TControl>
+                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl3.dgvx_Table.PriceList_$_Cur_$$Name" imageincluded="0" link="" margin="4" heading="h3">
+                      <div class="Title">
+                        <h3 class="Title" id="9b84915a-b6b5-4a5d-bc01-34a5d61b91a6">Ime Valute</h3>
+                      </div>
+                    </TControl>
+                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl3.dgvx_Table.PriceList_$$CreationDate" imageincluded="0" link="" margin="4" heading="h3">
+                      <div class="Title">
+                        <h3 class="Title" id="92b21ad4-f099-44ce-9835-5f675cc8f440">Čas nastanka</h3>
+                      </div>
+                    </TControl>
+                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl3.dgvx_Table.PriceList_$$Description" imageincluded="0" link="" margin="4" heading="h3">
+                      <div class="Title">
+                        <h3 class="Title" id="63038699-9dac-4a55-a415-6c54fdc3052c">Opis</h3>
+                      </div>
+                    </TControl>
+                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl3.dgvx_Table.PriceList_$$Valid" imageincluded="0" link="" margin="4" heading="h3">
+                      <div class="Title">
+                        <h3 class="Title" id="126a8c99-38cb-4b9b-975a-d1bacb1fc93c">Veljaven</h3>
+                      </div>
+                    </TControl>
+                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl3.dgvx_Table.PriceList_$$ValidFrom" imageincluded="0" link="" margin="4" heading="h3">
+                      <div class="Title">
+                        <h3 class="Title" id="e899461d-1578-4f74-bca6-c2e2e94b3835">Velja od</h3>
+                      </div>
+                    </TControl>
+                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl3.dgvx_Table.PriceList_$$ValidTo" imageincluded="0" link="" margin="4" heading="h3">
+                      <div class="Title">
+                        <h3 class="Title" id="b72a73bf-dc5c-4534-9ab2-2e13f533ebf1">Velja do</h3>
+                      </div>
+                    </TControl>
+                  </TControl>
+                </TControl>
+              </TControl>
+            </TControl>
+          </TControl>
+          <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.lbl_PriceList_Name" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.txt_PriceList_Name" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices" imageincluded="1" link="" margin="4" heading="h2">
+              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1" imageincluded="1" link="" margin="4" heading="h2">
+                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5" imageincluded="1" link="" margin="4" heading="h2">
+                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow" imageincluded="1" link="" margin="4" heading="h2">
+                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.lbl_Title" imageincluded="1" link="" margin="4" heading="h2" />
+                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.btn_Update" imageincluded="1" link="" margin="4" heading="h2" />
+                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor" imageincluded="1" link="" margin="4" heading="h2">
+                      <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1" imageincluded="1" link="" margin="4" heading="h2">
+                        <div class="Title">
+                          <h2 class="Title" id="743caa5a-2b39-40fc-b2ad-2a83f80e04ff">Cenik storitev</h2>
+                          <img src="hashname_1012725181.png" />
+                          <div class="Description">Ime tabele v podatkovni bazi je "Price_SimpleItem".</div>
+                        </div>
+                        <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                          <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                          <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.btnex_1" imageincluded="1" link="" margin="4" heading="h2" />
+                          <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.ixt_21" imageincluded="1" link="" margin="4" heading="h2" />
+                          <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl1" imageincluded="1" link="" margin="4" heading="h2">
+                            <div class="Title">
+                              <h2 class="Title" id="01e67f41-7557-4e9e-97ce-21b91189ee64">Prodajna cena</h2>
+                              <img src="hashname_-582325526.png" />
+                              <div class="Description">
+Ime stolpca v tabeli podatkovne baze "Price_SimpleItem":"RetailSimpleItemPrice".</div>
+                            </div>
+                            <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl1.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl1.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl1.usrc_lbl.xlbl_1" imageincluded="1" link="" margin="4" heading="h2" />
+                            </TControl>
+                            <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl1.unmUpDn_1" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl1.unmUpDn_1.txt_Value" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl1.unmUpDn_1.btn_Plus" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl1.unmUpDn_1.btn_Minus" imageincluded="1" link="" margin="4" heading="h2" />
+                            </TControl>
+                          </TControl>
+                          <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl2" imageincluded="1" link="" margin="4" heading="h2">
+                            <div class="Title">
+                              <h2 class="Title" id="46588daa-4b41-446a-a7e5-19cf382d8bdd">Veljavno</h2>
+                              <img src="hashname_-582325559.png" />
+                              <div class="Description">
+Podatek ni obvezen.
+Ime stolpca v tabeli podatkovne baze "Price_SimpleItem":"Discount".</div>
+                            </div>
+                            <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl2.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl2.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl2.usrc_lbl.urdb_1" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl2.usrc_lbl.urdb_2" imageincluded="1" link="" margin="4" heading="h2" />
+                            </TControl>
+                          </TControl>
+                          <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2" imageincluded="1" link="" margin="4" heading="h2">
+                            <div class="Title">
+                              <h2 class="Title" id="c1a973dc-ad40-499d-84a8-5d267f7469dc">Davki</h2>
+                              <img src="hashname_1919950411.png" />
+                              <div class="Description">Ime tabele v podatkovni bazi je "Taxation".</div>
+                            </div>
+                            <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.btnex_3" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.uinpctrl_lbl_1" imageincluded="1" link="" margin="4" heading="h2">
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.uinpctrl_lbl_1.xlbl_2" imageincluded="1" link="" margin="4" heading="h2" />
+                              </TControl>
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.ixt_1" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.btnex_4" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl3" imageincluded="1" link="" margin="4" heading="h2">
+                                <div class="Title">
+                                  <h2 class="Title" id="38924a7f-2611-4e7f-a1ee-d3e8e0b06550">Ime</h2>
+                                  <img src="hashname_367595800.png" />
+                                  <div class="Description">Podatek, ki ga vpišete, mora biti unikaten!
+Največja možna dolžina besedila je 264 znakov.
+Ime stolpca v tabeli podatkovne baze "Taxation":"Name".</div>
+                                </div>
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl3.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl3.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl3.usrc_lbl.picUnique" imageincluded="1" link="" margin="4" heading="h2" />
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl3.usrc_lbl.xlbl_3" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl3.txt_2" imageincluded="1" link="" margin="4" heading="h2" />
+                              </TControl>
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl4" imageincluded="1" link="" margin="4" heading="h2">
+                                <div class="Title">
+                                  <h2 class="Title" id="5bddcb89-79e7-4ee3-9abd-8576bfbb8d4f">Stopnja</h2>
+                                  <img src="hashname_922489112.png" />
+                                  <div class="Description">
+Ime stolpca v tabeli podatkovne baze "Taxation":"Rate".</div>
+                                </div>
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl4.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl4.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl4.usrc_lbl.xlbl_4" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl4.unmUpDn_3" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl4.unmUpDn_3.txt_Value" imageincluded="1" link="" margin="4" heading="h2" />
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl4.unmUpDn_3.btn_Plus" imageincluded="1" link="" margin="4" heading="h2" />
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl4.unmUpDn_3.btn_Minus" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                              </TControl>
+                            </TControl>
+                          </TControl>
+                          <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3" imageincluded="1" link="" margin="4" heading="h2">
+                            <div class="Title">
+                              <h2 class="Title" id="027696f9-4b63-4a7e-bf71-c1cd70023403">Storitev</h2>
+                              <img src="hashname_-1743109738.png" />
+                              <div class="Description">Ime tabele v podatkovni bazi je "SimpleItem".</div>
+                            </div>
+                            <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.btnex_5" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.uinpctrl_lbl_2" imageincluded="1" link="" margin="4" heading="h2">
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.uinpctrl_lbl_2.xlbl_5" imageincluded="1" link="" margin="4" heading="h2" />
+                              </TControl>
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.ixt_3" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl5" imageincluded="1" link="" margin="4" heading="h2">
+                                <div class="Title">
+                                  <h2 class="Title" id="2bde12cd-4bf7-4afc-87fb-82ada94b7e88">Ime</h2>
+                                  <img src="hashname_-1692745911.png" />
+                                  <div class="Description">Podatek, ki ga vpišete, mora biti unikaten!
+Največja možna dolžina besedila je 264 znakov.
+Ime stolpca v tabeli podatkovne baze "SimpleItem":"Name".</div>
+                                </div>
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl5.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl5.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl5.usrc_lbl.picUnique" imageincluded="1" link="" margin="4" heading="h2" />
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl5.usrc_lbl.xlbl_6" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl5.txt_4" imageincluded="1" link="" margin="4" heading="h2" />
+                              </TControl>
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl6" imageincluded="1" link="" margin="4" heading="h2">
+                                <div class="Title">
+                                  <h2 class="Title" id="86ed6b87-93a3-4f4a-8e9e-da0ec4450ec4">Kratica</h2>
+                                  <img src="hashname_-1240481975.png" />
+                                  <div class="Description">Podatek, ki ga vpišete, mora biti unikaten!
+Največja možna dolžina besedila je 50 znakov.
+Ime stolpca v tabeli podatkovne baze "SimpleItem":"Abbreviation".</div>
+                                </div>
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl6.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl6.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl6.usrc_lbl.picUnique" imageincluded="1" link="" margin="4" heading="h2" />
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl6.usrc_lbl.xlbl_7" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl6.txt_5" imageincluded="1" link="" margin="4" heading="h2" />
+                              </TControl>
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl7" imageincluded="1" link="" margin="4" heading="h2">
+                                <div class="Title">
+                                  <h2 class="Title" id="da4ee88e-7dd5-4895-8e40-5f76bbd42d91">V ponudbi</h2>
+                                  <img src="hashname_1226096457.png" />
+                                  <div class="Description">
+Ime stolpca v tabeli podatkovne baze "SimpleItem":"ToOffer".</div>
+                                </div>
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl7.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl7.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl7.usrc_lbl.xlbl_8" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl7.uchk_1" imageincluded="1" link="" margin="4" heading="h2" />
+                              </TControl>
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.myGrp_4" imageincluded="1" link="" margin="4" heading="h2">
+                                <div class="Title">
+                                  <h2 class="Title" id="41452a56-0f86-4489-b5f2-8d905e75db1d">Slika storitve</h2>
+                                  <img src="hashname_1935572750.png" />
+                                  <div class="Description">Ime tabele v podatkovni bazi je "SimpleItem_Image".</div>
+                                </div>
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.myGrp_4.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.uinpctrl_lbl_3" imageincluded="1" link="" margin="4" heading="h2">
+                                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.uinpctrl_lbl_3.urdb_3" imageincluded="1" link="" margin="4" heading="h2" />
+                                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.uinpctrl_lbl_3.urdb_4" imageincluded="1" link="" margin="4" heading="h2" />
+                                  </TControl>
+                                </TControl>
+                              </TControl>
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl10" imageincluded="1" link="" margin="4" heading="h2">
+                                <div class="Title">
+                                  <h2 class="Title" id="c4d3d467-ec79-4cf7-afe5-6f5fa73fd2b7">Št.storitve</h2>
+                                  <img src="hashname_129933674.png" />
+                                  <div class="Description">
+Podatek ni obvezen.
+Ime stolpca v tabeli podatkovne baze "SimpleItem":"Code".</div>
+                                </div>
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl10.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl10.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl10.usrc_lbl.urdb_5" imageincluded="1" link="" margin="4" heading="h2" />
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl10.usrc_lbl.urdb_6" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                              </TControl>
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.myGrp_5" imageincluded="1" link="" margin="4" heading="h2">
+                                <div class="Title">
+                                  <h2 class="Title" id="3b0280df-4e85-41c1-9eba-5ec0d71f37bd">skupina</h2>
+                                  <img src="hashname_1933410062.png" />
+                                  <div class="Description">Ime tabele v podatkovni bazi je "SimpleItem_ParentGroup1".</div>
+                                </div>
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.myGrp_5.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.myGrp_5.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.myGrp_5.grpBox.uinpctrl_lbl_4" imageincluded="1" link="" margin="4" heading="h2">
+                                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.myGrp_5.grpBox.uinpctrl_lbl_4.urdb_7" imageincluded="1" link="" margin="4" heading="h2" />
+                                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.myGrp_5.grpBox.uinpctrl_lbl_4.urdb_8" imageincluded="1" link="" margin="4" heading="h2" />
+                                  </TControl>
+                                </TControl>
+                              </TControl>
+                            </TControl>
+                          </TControl>
+                          <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8" imageincluded="1" link="" margin="4" heading="h2">
+                            <div class="Title">
+                              <h2 class="Title" id="ecf66e35-c66d-4054-847a-3146c096820b">Cenik</h2>
+                              <img src="hashname_1281395049.png" />
+                              <div class="Description">Ime tabele v podatkovni bazi je "PriceList".</div>
+                            </div>
+                            <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.btnex_10" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.uinpctrl_lbl_7" imageincluded="1" link="" margin="4" heading="h2">
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.uinpctrl_lbl_7.xlbl_14" imageincluded="1" link="" margin="4" heading="h2" />
+                              </TControl>
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.ixt_14" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.myGrp_9" imageincluded="1" link="" margin="4" heading="h2">
+                                <div class="Title">
+                                  <h2 class="Title" id="28f2f363-2f2a-4bba-83ef-2abcd78d9496">Ime cenika</h2>
+                                  <img src="hashname_1148683393.png" />
+                                  <div class="Description">Ime tabele v podatkovni bazi je "PriceList_Name".</div>
+                                </div>
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.myGrp_9.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.myGrp_9.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.myGrp_9.grpBox.btnex_11" imageincluded="1" link="" margin="4" heading="h2" />
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.myGrp_9.grpBox.uinpctrl_lbl_8" imageincluded="1" link="" margin="4" heading="h2">
+                                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.myGrp_9.grpBox.uinpctrl_lbl_8.xlbl_15" imageincluded="1" link="" margin="4" heading="h2" />
+                                  </TControl>
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.myGrp_9.grpBox.ixt_15" imageincluded="1" link="" margin="4" heading="h2" />
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.myGrp_9.grpBox.inp_ctrl14" imageincluded="1" link="" margin="4" heading="h2">
+                                    <div class="Title">
+                                      <h2 class="Title" id="8b28682e-aff2-49d9-86e6-0f7fe40e7332">Ime cenika</h2>
+                                      <img src="hashname_740158582.png" />
+                                      <div class="Description">
+Največja možna dolžina besedila je 264 znakov.
+Ime stolpca v tabeli podatkovne baze "PriceList_Name":"Name".</div>
+                                    </div>
+                                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.myGrp_9.grpBox.inp_ctrl14.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.myGrp_9.grpBox.inp_ctrl14.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                      <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.myGrp_9.grpBox.inp_ctrl14.usrc_lbl.xlbl_16" imageincluded="1" link="" margin="4" heading="h2" />
+                                    </TControl>
+                                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.myGrp_9.grpBox.inp_ctrl14.txt_16" imageincluded="1" link="" margin="4" heading="h2" />
+                                  </TControl>
+                                </TControl>
+                              </TControl>
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.inp_ctrl15" imageincluded="1" link="" margin="4" heading="h2">
+                                <div class="Title">
+                                  <h2 class="Title" id="de82625e-aa4a-4c8f-8d07-3b2b45dcb8a2">Veljaven</h2>
+                                  <img src="hashname_697833324.png" />
+                                  <div class="Description">
+Ime stolpca v tabeli podatkovne baze "PriceList":"Valid".</div>
+                                </div>
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.inp_ctrl15.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.inp_ctrl15.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.inp_ctrl15.usrc_lbl.xlbl_17" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.inp_ctrl15.uchk_2" imageincluded="1" link="" margin="4" heading="h2" />
+                              </TControl>
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.myGrp_10" imageincluded="1" link="" margin="4" heading="h2">
+                                <div class="Title">
+                                  <h2 class="Title" id="6f369e53-d61e-4041-995b-55136895c1e8">Valute</h2>
+                                  <img src="hashname_1777523450.png" />
+                                  <div class="Description">Ime tabele v podatkovni bazi je "Currency".</div>
+                                </div>
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.myGrp_10.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.myGrp_10.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.myGrp_10.grpBox.btnex_12" imageincluded="1" link="" margin="4" heading="h2" />
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.myGrp_10.grpBox.uinpctrl_lbl_9" imageincluded="1" link="" margin="4" heading="h2">
+                                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.myGrp_10.grpBox.uinpctrl_lbl_9.xlbl_18" imageincluded="1" link="" margin="4" heading="h2" />
+                                  </TControl>
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.myGrp_10.grpBox.ixt_17" imageincluded="1" link="" margin="4" heading="h2" />
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.myGrp_10.grpBox.inp_ctrl16" imageincluded="1" link="" margin="4" heading="h2">
+                                    <div class="Title">
+                                      <h2 class="Title" id="51b604db-f7f3-49e4-8a8a-68aacb982bee">Oznaka valute</h2>
+                                      <img src="hashname_-1663758109.png" />
+                                      <div class="Description">Podatek, ki ga vpišete, mora biti unikaten!
+Največja možna dolžina besedila je 50 znakov.
+Ime stolpca v tabeli podatkovne baze "Currency":"Abbreviation".</div>
+                                    </div>
+                                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.myGrp_10.grpBox.inp_ctrl16.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.myGrp_10.grpBox.inp_ctrl16.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                      <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.myGrp_10.grpBox.inp_ctrl16.usrc_lbl.picUnique" imageincluded="1" link="" margin="4" heading="h2" />
+                                      <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.myGrp_10.grpBox.inp_ctrl16.usrc_lbl.xlbl_19" imageincluded="1" link="" margin="4" heading="h2" />
+                                    </TControl>
+                                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.myGrp_10.grpBox.inp_ctrl16.txt_18" imageincluded="1" link="" margin="4" heading="h2" />
+                                  </TControl>
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.myGrp_10.grpBox.inp_ctrl17" imageincluded="1" link="" margin="4" heading="h2">
+                                    <div class="Title">
+                                      <h2 class="Title" id="37115cf3-af2b-425d-acd3-77e78ab90cc5">Ime Valute</h2>
+                                      <img src="hashname_-1663758126.png" />
+                                      <div class="Description">
+Največja možna dolžina besedila je 264 znakov.
+Ime stolpca v tabeli podatkovne baze "Currency":"Name".</div>
+                                    </div>
+                                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.myGrp_10.grpBox.inp_ctrl17.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.myGrp_10.grpBox.inp_ctrl17.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                      <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.myGrp_10.grpBox.inp_ctrl17.usrc_lbl.xlbl_20" imageincluded="1" link="" margin="4" heading="h2" />
+                                    </TControl>
+                                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.myGrp_10.grpBox.inp_ctrl17.txt_19" imageincluded="1" link="" margin="4" heading="h2" />
+                                  </TControl>
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.myGrp_10.grpBox.inp_ctrl18" imageincluded="1" link="" margin="4" heading="h2">
+                                    <div class="Title">
+                                      <h2 class="Title" id="de2b12e4-8f2b-442c-86fc-f9d43688d207">Znak valute</h2>
+                                      <img src="hashname_-1663758299.png" />
+                                      <div class="Description">
+Največja možna dolžina besedila je 5 znakov.
+Ime stolpca v tabeli podatkovne baze "Currency":"Symbol".</div>
+                                    </div>
+                                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.myGrp_10.grpBox.inp_ctrl18.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.myGrp_10.grpBox.inp_ctrl18.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                      <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.myGrp_10.grpBox.inp_ctrl18.usrc_lbl.xlbl_21" imageincluded="1" link="" margin="4" heading="h2" />
+                                    </TControl>
+                                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.myGrp_10.grpBox.inp_ctrl18.txt_20" imageincluded="1" link="" margin="4" heading="h2" />
+                                  </TControl>
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.myGrp_10.grpBox.inp_ctrl19" imageincluded="1" link="" margin="4" heading="h2">
+                                    <div class="Title">
+                                      <h2 class="Title" id="d7b35d89-efcc-4929-8fcc-f0fd3cafe8cd">Šifra valute</h2>
+                                      <img src="hashname_-1663758332.png" />
+                                      <div class="Description">
+Ime stolpca v tabeli podatkovne baze "Currency":"CurrencyCode".</div>
+                                    </div>
+                                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.myGrp_10.grpBox.inp_ctrl19.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.myGrp_10.grpBox.inp_ctrl19.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                      <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.myGrp_10.grpBox.inp_ctrl19.usrc_lbl.xlbl_22" imageincluded="1" link="" margin="4" heading="h2" />
+                                    </TControl>
+                                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.myGrp_10.grpBox.inp_ctrl19.unmUpDn_5" imageincluded="1" link="" margin="4" heading="h2">
+                                      <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.myGrp_10.grpBox.inp_ctrl19.unmUpDn_5.txt_Value" imageincluded="1" link="" margin="4" heading="h2" />
+                                    </TControl>
+                                  </TControl>
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.myGrp_10.grpBox.inp_ctrl20" imageincluded="1" link="" margin="4" heading="h2">
+                                    <div class="Title">
+                                      <h2 class="Title" id="803564bc-fdfe-4b4d-bd7a-e7462a60bd11">Število decimalk</h2>
+                                      <img src="hashname_1185157421.png" />
+                                      <div class="Description">
+Ime stolpca v tabeli podatkovne baze "Currency":"DecimalPlaces".</div>
+                                    </div>
+                                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.myGrp_10.grpBox.inp_ctrl20.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.myGrp_10.grpBox.inp_ctrl20.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                      <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.myGrp_10.grpBox.inp_ctrl20.usrc_lbl.xlbl_23" imageincluded="1" link="" margin="4" heading="h2" />
+                                    </TControl>
+                                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.myGrp_10.grpBox.inp_ctrl20.unmUpDn_6" imageincluded="1" link="" margin="4" heading="h2">
+                                      <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.myGrp_10.grpBox.inp_ctrl20.unmUpDn_6.txt_Value" imageincluded="1" link="" margin="4" heading="h2" />
+                                    </TControl>
+                                  </TControl>
+                                </TControl>
+                              </TControl>
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.inp_ctrl21" imageincluded="1" link="" margin="4" heading="h2">
+                                <div class="Title">
+                                  <h2 class="Title" id="e2e6fb86-9859-43ac-9c94-d0f57a9323d1">Velja od</h2>
+                                  <img src="hashname_-328656712.png" />
+                                  <div class="Description">
+Podatek ni obvezen.
+Ime stolpca v tabeli podatkovne baze "PriceList":"ValidFrom".</div>
+                                </div>
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.inp_ctrl21.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.inp_ctrl21.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.inp_ctrl21.usrc_lbl.urdb_13" imageincluded="1" link="" margin="4" heading="h2" />
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.inp_ctrl21.usrc_lbl.urdb_14" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                              </TControl>
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.inp_ctrl22" imageincluded="1" link="" margin="4" heading="h2">
+                                <div class="Title">
+                                  <h2 class="Title" id="beea7efb-82ea-42b1-8a61-1df7e9f2997f">Velja do</h2>
+                                  <img src="hashname_-328656935.png" />
+                                  <div class="Description">
+Podatek ni obvezen.
+Ime stolpca v tabeli podatkovne baze "PriceList":"ValidTo".</div>
+                                </div>
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.inp_ctrl22.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.inp_ctrl22.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.inp_ctrl22.usrc_lbl.urdb_15" imageincluded="1" link="" margin="4" heading="h2" />
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.inp_ctrl22.usrc_lbl.urdb_16" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                              </TControl>
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.inp_ctrl23" imageincluded="1" link="" margin="4" heading="h2">
+                                <div class="Title">
+                                  <h2 class="Title" id="09c22da1-15bf-4262-a93b-73dd0d672b72">Čas nastanka</h2>
+                                  <img src="hashname_-328656902.png" />
+                                  <div class="Description">
+Podatek ni obvezen.
+Ime stolpca v tabeli podatkovne baze "PriceList":"CreationDate".</div>
+                                </div>
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.inp_ctrl23.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.inp_ctrl23.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.inp_ctrl23.usrc_lbl.urdb_17" imageincluded="1" link="" margin="4" heading="h2" />
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.inp_ctrl23.usrc_lbl.urdb_18" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.inp_ctrl23.uDateTimePick_3" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.inp_ctrl23.uDateTimePick_3.txtDateTimeROnly1" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                              </TControl>
+                              <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.inp_ctrl24" imageincluded="1" link="" margin="4" heading="h2">
+                                <div class="Title">
+                                  <h2 class="Title" id="9bf5bff4-b6df-40c5-8788-9a53651df4ed">Opis</h2>
+                                  <img src="hashname_-328656821.png" />
+                                  <div class="Description">
+Podatek ni obvezen.
+Največja možna dolžina besedila je 2000 znakov.
+Ime stolpca v tabeli podatkovne baze "PriceList":"Description".</div>
+                                </div>
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.inp_ctrl24.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.inp_ctrl24.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.inp_ctrl24.usrc_lbl.urdb_19" imageincluded="1" link="" margin="4" heading="h2" />
+                                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl5.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.inp_ctrl24.usrc_lbl.urdb_20" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                              </TControl>
+                            </TControl>
+                          </TControl>
+                        </TControl>
+                      </TControl>
+                    </TControl>
+                  </TControl>
+                </TControl>
+                <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl6" imageincluded="1" link="" margin="4" heading="h2">
+                  <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl6.dgvx_Table" imageincluded="1" link="" margin="4" heading="h2">
+                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl6.dgvx_Table.Price_SimpleItem_$_si_$$Name" imageincluded="0" link="" margin="4" heading="h3">
+                      <div class="Title">
+                        <h3 class="Title" id="5334db00-edc4-4ec2-aad6-a31dab96531c">Ime</h3>
+                      </div>
+                    </TControl>
+                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl6.dgvx_Table.Price_SimpleItem_$$RetailSimpleItemPrice" imageincluded="0" link="" margin="4" heading="h3">
+                      <div class="Title">
+                        <h3 class="Title" id="814f948d-d266-4da5-8a82-9cd6a833f490">Prodajna cena</h3>
+                      </div>
+                    </TControl>
+                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl6.dgvx_Table.Price_SimpleItem_$_si_$_sipg1_$$Name" imageincluded="0" link="" margin="4" heading="h3">
+                      <div class="Title">
+                        <h3 class="Title" id="493bb8c2-8814-4613-9c0e-ecd2ad3ca27c">Ime skupine 1</h3>
+                      </div>
+                    </TControl>
+                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl6.dgvx_Table.Price_SimpleItem_$_si_$_sipg1_$_sipg2_$$Name" imageincluded="0" link="" margin="4" heading="h3">
+                      <div class="Title">
+                        <h3 class="Title" id="e20566ad-d0da-4b4c-bf67-20303c623786">Ime skupine 2</h3>
+                      </div>
+                    </TControl>
+                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl6.dgvx_Table.Price_SimpleItem_$_si_$_sipg1_$_sipg2_$_sipg3_$$Name" imageincluded="0" link="" margin="4" heading="h3">
+                      <div class="Title">
+                        <h3 class="Title" id="b8e19655-ddda-42d9-83c7-11cc7d53a515">Ime skupine 3</h3>
+                      </div>
+                    </TControl>
+                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl6.dgvx_Table.Price_SimpleItem_$_si_$_siimg_$$Image_Data" imageincluded="0" link="" margin="4" heading="h3">
+                      <div class="Title">
+                        <h3 class="Title" id="b8d97174-8640-425e-a00b-d1396bd6287a">Slika artikla/storitve</h3>
+                      </div>
+                    </TControl>
+                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl6.dgvx_Table.Price_SimpleItem_$$Discount" imageincluded="0" link="" margin="4" heading="h3">
+                      <div class="Title">
+                        <h3 class="Title" id="e348778e-f1fa-4d5d-90ae-2722fcc485a5">Veljavno</h3>
+                      </div>
+                    </TControl>
+                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl6.dgvx_Table.Price_SimpleItem_$_tax_$$Name" imageincluded="0" link="" margin="4" heading="h3">
+                      <div class="Title">
+                        <h3 class="Title" id="2346f6f0-b5c8-48db-bb1a-a57b439293b2">Ime</h3>
+                      </div>
+                    </TControl>
+                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl6.dgvx_Table.Price_SimpleItem_$_tax_$$Rate" imageincluded="0" link="" margin="4" heading="h3">
+                      <div class="Title">
+                        <h3 class="Title" id="7cd187c3-e51d-4483-8c44-99eb6535ba52">Stopnja</h3>
+                      </div>
+                    </TControl>
+                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl6.dgvx_Table.Price_SimpleItem_$_pl_$_Cur_$$Symbol" imageincluded="0" link="" margin="4" heading="h3">
+                      <div class="Title">
+                        <h3 class="Title" id="bfdfc712-4de4-4a77-bf5b-1f6f499a453e">Znak valute</h3>
+                      </div>
+                    </TControl>
+                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl6.dgvx_Table.Price_SimpleItem_$_pl_$_Cur_$$Abbreviation" imageincluded="0" link="" margin="4" heading="h3">
+                      <div class="Title">
+                        <h3 class="Title" id="50f1c356-b20b-4c1f-ad2e-6c324fa15eb6">Oznaka valute</h3>
+                      </div>
+                    </TControl>
+                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl6.dgvx_Table.Price_SimpleItem_$_pl_$_pln_$$Name" imageincluded="0" link="" margin="4" heading="h3">
+                      <div class="Title">
+                        <h3 class="Title" id="2441aa82-a494-4f76-ac77-84cac94411b8">Ime cenika</h3>
+                      </div>
+                    </TControl>
+                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl6.dgvx_Table.Price_SimpleItem_$_si_$$Code" imageincluded="0" link="" margin="4" heading="h3">
+                      <div class="Title">
+                        <h3 class="Title" id="0cb7762a-c81d-4c17-b008-9079bf31983c">Št.storitve</h3>
+                      </div>
+                    </TControl>
+                    <TControl name="Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl4.usrc_EditTable_Shop_Prices.splitContainer1.spl6.dgvx_Table.ID" imageincluded="0" link="" margin="4" heading="h3">
+                      <div class="Title">
+                        <h3 class="Title" id="de8eb203-2cd6-4c18-a7df-24b4c5485268">ID</h3>
+                      </div>
+                    </TControl>
+                  </TControl>
+                </TControl>
+              </TControl>
+            </TControl>
+          </TControl>
+        </TControl>
+      </TControl>
+    </TControl>
+  </body>
+</html>
