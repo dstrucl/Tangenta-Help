@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <title>Code tables</title>
+  </head>
+  <body>
+    <THeader>
+      <div class="header">
+        <canvas id="TangentaLogo" width="60" height="50"></canvas>
+        <script type="text/javascript">
+        var canvas, context, canvaso, contexto;
+        canvaso = document.getElementById('TangentaLogo');
+        context = canvaso.getContext('2d');
+        context.lineWidth = 1;
+
+        // Draw vertical line
+        context.strokeStyle ='#936b20';
+        context.beginPath();
+        context.moveTo(30, 0);
+        context.lineTo(30, 50);
+        context.stroke();
+
+        // Draw large arc
+        context.beginPath();
+        context.arc(54, 26, 24,0.6*Math.PI,1.5*Math.PI, false);
+        context.stroke();
+
+        // Draw head circle
+        context.beginPath();
+        context.fillStyle = "#E2FFB0"/*"#CEF988";*/
+        context.arc(34, 6, 4,0,2*Math.PI, false);
+        context.fill();
+        context.stroke();
+
+        context.closePath();
+        context.restore();
+
+        </script>
+        <div class="header_border_with_radius">
+          <div class="header_menu">
+            <span>
+              <a href="../Tangenta.html">TANGENTA</a>
+            </span>,
+             <span><a href="../Invoice.html">INVOICES</a></span>,
+             <span><a href="../ProformaInvoice.html">PROFORMA INVOICES</a></span>,
+             <span><a href="../Stock.html">STOCK</a></span>,
+             <span><a href="../PriceList.html">PRICE LISTS</a></span>,
+             <span><a href="../Printing.html">PRINTING</a></span>,
+             <span><a href="../InvoicingOverview.html">OVERVIEW</a></span>,
+             <span><a href="../Support.html">SUPPORT</a></span>,
+             <span><a href="../News.html">NEWS</a></span>,
+             <span><a href="../About.html">ABOUT</a></span></div>
+        </div>
+      </div>
+    </THeader>
+    <TControl name="Form_CodeTables" imageincluded="1" link="" margin="4" heading="h1">
+      <div class="Title">
+        <h1 class="Title" id="c8e6335d-de01-4657-b2b9-0d0daa7aa54c">Code tables</h1>
+        <img src="Form_CodeTables.png" />
+      </div>
+      <TControl name="Form_CodeTables.usrc_Help1" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="Form_CodeTables.usrc_Help1.btn_Help" imageincluded="1" link="" margin="4" heading="h2" />
+      </TControl>
+      <TControl name="Form_CodeTables.usrc_CodeTables1" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="Form_CodeTables.usrc_CodeTables1.btn_Taxation" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="Form_CodeTables.usrc_CodeTables1.btn_Currency" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="Form_CodeTables.usrc_CodeTables1.btn_Units" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="Form_CodeTables.usrc_CodeTables1.btn_WorkingPlace" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="Form_CodeTables.usrc_CodeTables1.btn_Expiry" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="Form_CodeTables.usrc_CodeTables1.btn_Warranty" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="Form_CodeTables.usrc_CodeTables1.btn_TermsOfPayment" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="Form_CodeTables.usrc_CodeTables1.btn_Stock_Address" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="Form_CodeTables.usrc_CodeTables1.btn_DBSettings" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="Form_CodeTables.usrc_CodeTables1.btn_Logo" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="Form_CodeTables.usrc_CodeTables1.btn_ItemGroups" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="Form_CodeTables.usrc_CodeTables1.btn_SimpleItem_Groups" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="Form_CodeTables.usrc_CodeTables1.btn_OK" imageincluded="1" link="" margin="4" heading="h2" />
+      </TControl>
+    </TControl>
+  </body>
+</html>

@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <title>Price List Type</title>
+  </head>
+  <body>
+    <THeader>
+      <div class="header">
+        <canvas id="TangentaLogo" width="60" height="50"></canvas>
+        <script type="text/javascript">
+        var canvas, context, canvaso, contexto;
+        canvaso = document.getElementById('TangentaLogo');
+        context = canvaso.getContext('2d');
+        context.lineWidth = 1;
+
+        // Draw vertical line
+        context.strokeStyle ='#936b20';
+        context.beginPath();
+        context.moveTo(30, 0);
+        context.lineTo(30, 50);
+        context.stroke();
+
+        // Draw large arc
+        context.beginPath();
+        context.arc(54, 26, 24,0.6*Math.PI,1.5*Math.PI, false);
+        context.stroke();
+
+        // Draw head circle
+        context.beginPath();
+        context.fillStyle = "#E2FFB0"/*"#CEF988";*/
+        context.arc(34, 6, 4,0,2*Math.PI, false);
+        context.fill();
+        context.stroke();
+
+        context.closePath();
+        context.restore();
+
+        </script>
+        <div class="header_border_with_radius">
+          <div class="header_menu">
+            <span>
+              <a href="../Tangenta.html">TANGENTA</a>
+            </span>,
+             <span><a href="../Invoice.html">INVOICES</a></span>,
+             <span><a href="../ProformaInvoice.html">PROFORMA INVOICES</a></span>,
+             <span><a href="../Stock.html">STOCK</a></span>,
+             <span><a href="../PriceList.html">PRICE LISTS</a></span>,
+             <span><a href="../Printing.html">PRINTING</a></span>,
+             <span><a href="../InvoicingOverview.html">OVERVIEW</a></span>,
+             <span><a href="../Support.html">SUPPORT</a></span>,
+             <span><a href="../News.html">NEWS</a></span>,
+             <span><a href="../About.html">ABOUT</a></span></div>
+        </div>
+      </div>
+    </THeader>
+    <TControl name="nav_Form_PriceList_Edit" imageincluded="1" link="" margin="4" heading="h1">
+      <div class="Title">
+        <h1 class="Title" id="bff4a8b2-2ded-4961-9fa0-7d008a2ca898">Price List Type</h1>
+        <img src="nav_Form_PriceList_Edit.png" />
+      </div>
+      <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.usrc_NavigationButtons1" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.usrc_NavigationButtons1.btn2" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.usrc_NavigationButtons1.btn3" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.usrc_NavigationButtons1.usrc_Help1" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.usrc_NavigationButtons1.usrc_Help1.btn_Help" imageincluded="1" link="" margin="4" heading="h2" />
+          </TControl>
+        </TControl>
+        <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList" imageincluded="1" link="" margin="4" heading="h2">
+              <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1" imageincluded="1" link="" margin="4" heading="h2">
+                <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2" imageincluded="1" link="" margin="4" heading="h2">
+                  <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow" imageincluded="1" link="" margin="4" heading="h2">
+                    <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.lbl_Title" imageincluded="1" link="" margin="4" heading="h2" />
+                    <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.btn_New" imageincluded="1" link="" margin="4" heading="h2" />
+                    <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.btn_Insert" imageincluded="1" link="" margin="4" heading="h2" />
+                    <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor" imageincluded="1" link="" margin="4" heading="h2">
+                      <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1" imageincluded="1" link="" margin="4" heading="h2">
+                        <div class="Title">
+                          <h2 class="Title" id="d7b6e93a-2ac2-494f-a295-9213b34971bb">Price list</h2>
+                          <img src="hashname_-989820465.png" />
+                          <div class="Description">Name of table in database is "PriceList".</div>
+                        </div>
+                        <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                          <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                          <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.btnex_1" imageincluded="1" link="" margin="4" heading="h2" />
+                          <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2" imageincluded="1" link="" margin="4" heading="h2">
+                            <div class="Title">
+                              <h2 class="Title" id="bd9c6c98-25f1-4ebb-a10f-8e3e762ba56e">Price List Name</h2>
+                              <img src="hashname_-996267685.png" />
+                              <div class="Description">Name of table in database is "PriceList_Name".</div>
+                            </div>
+                            <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.btnex_3" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.uinpctrl_lbl_1" imageincluded="1" link="" margin="4" heading="h2">
+                                <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.uinpctrl_lbl_1.xlbl_1" imageincluded="1" link="" margin="4" heading="h2" />
+                              </TControl>
+                              <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.ixt_1" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.btnex_4" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl1" imageincluded="1" link="" margin="4" heading="h2">
+                                <div class="Title">
+                                  <h2 class="Title" id="a71a94e6-2853-466b-bd28-7431fc515087">Price list name</h2>
+                                  <img src="hashname_1725743018.png" />
+                                  <div class="Description">
+Max text length is  264 characters.
+Name of column in database table "PriceList_Name":"Name".</div>
+                                </div>
+                                <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl1.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl1.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl1.usrc_lbl.xlbl_2" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                                <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl1.txt_2" imageincluded="1" link="" margin="4" heading="h2" />
+                              </TControl>
+                            </TControl>
+                          </TControl>
+                          <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl2" imageincluded="1" link="" margin="4" heading="h2">
+                            <div class="Title">
+                              <h2 class="Title" id="8fdc49b1-c6d3-4278-902c-185827d67128">Valid</h2>
+                              <img src="hashname_-810021959.png" />
+                              <div class="Description">
+Name of column in database table "PriceList":"Valid".</div>
+                            </div>
+                            <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl2.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl2.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl2.usrc_lbl.xlbl_3" imageincluded="1" link="" margin="4" heading="h2" />
+                            </TControl>
+                            <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl2.uchk_1" imageincluded="1" link="" margin="4" heading="h2" />
+                          </TControl>
+                          <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3" imageincluded="1" link="" margin="4" heading="h2">
+                            <div class="Title">
+                              <h2 class="Title" id="f2d4e799-f3c3-4e48-b12d-dcafad4a6543">Currency</h2>
+                              <img src="hashname_-996267718.png" />
+                              <div class="Description">Name of table in database is "Currency".</div>
+                            </div>
+                            <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.btnex_5" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.uinpctrl_lbl_2" imageincluded="1" link="" margin="4" heading="h2">
+                                <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.uinpctrl_lbl_2.xlbl_4" imageincluded="1" link="" margin="4" heading="h2" />
+                              </TControl>
+                              <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.ixt_3" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.btnex_6" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl3" imageincluded="1" link="" margin="4" heading="h2">
+                                <div class="Title">
+                                  <h2 class="Title" id="0c8a10f1-0973-449e-ad9e-2d16a05d53e8">Currency letter code</h2>
+                                  <img src="hashname_1632155527.png" />
+                                  <div class="Description">Write unique value
+Max text length is  50 characters.
+Name of column in database table "Currency":"Abbreviation".</div>
+                                </div>
+                                <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl3.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl3.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl3.usrc_lbl.picUnique" imageincluded="1" link="" margin="4" heading="h2" />
+                                  <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl3.usrc_lbl.xlbl_5" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                                <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl3.txt_4" imageincluded="1" link="" margin="4" heading="h2" />
+                              </TControl>
+                              <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl4" imageincluded="1" link="" margin="4" heading="h2">
+                                <div class="Title">
+                                  <h2 class="Title" id="95955c1c-d752-4f6e-b4fe-dfb9b8c12269">Currency Name</h2>
+                                  <img src="hashname_1612691335.png" />
+                                  <div class="Description">
+Max text length is  264 characters.
+Name of column in database table "Currency":"Name".</div>
+                                </div>
+                                <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl4.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl4.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl4.usrc_lbl.xlbl_6" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                                <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl4.txt_5" imageincluded="1" link="" margin="4" heading="h2" />
+                              </TControl>
+                              <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl5" imageincluded="1" link="" margin="4" heading="h2">
+                                <div class="Title">
+                                  <h2 class="Title" id="14f0698e-8619-4f4d-a106-a2b3fbbd1734">Currency Symbol</h2>
+                                  <img src="hashname_1628354439.png" />
+                                  <div class="Description">
+Max text length is  5 characters.
+Name of column in database table "Currency":"Symbol".</div>
+                                </div>
+                                <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl5.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl5.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl5.usrc_lbl.xlbl_7" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                                <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl5.txt_6" imageincluded="1" link="" margin="4" heading="h2" />
+                              </TControl>
+                              <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl6" imageincluded="1" link="" margin="4" heading="h2">
+                                <div class="Title">
+                                  <h2 class="Title" id="40cc21d7-18f7-43b2-b973-b040b0e0e436">Currency Code</h2>
+                                  <img src="hashname_1626191751.png" />
+                                  <div class="Description">
+Name of column in database table "Currency":"CurrencyCode".</div>
+                                </div>
+                                <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl6.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl6.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl6.usrc_lbl.xlbl_8" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                                <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl6.unmUpDn_1" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl6.unmUpDn_1.txt_Value" imageincluded="1" link="" margin="4" heading="h2" />
+                                  <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl6.unmUpDn_1.btn_Plus" imageincluded="1" link="" margin="4" heading="h2" />
+                                  <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl6.unmUpDn_1.btn_Minus" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                              </TControl>
+                              <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl7" imageincluded="1" link="" margin="4" heading="h2">
+                                <div class="Title">
+                                  <h2 class="Title" id="b20ae808-4490-4232-aeed-f560bb5b3d3b">Decimal places</h2>
+                                  <img src="hashname_1624029063.png" />
+                                  <div class="Description">
+Name of column in database table "Currency":"DecimalPlaces".</div>
+                                </div>
+                                <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl7.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl7.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl7.usrc_lbl.xlbl_9" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                                <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl7.unmUpDn_2" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl7.unmUpDn_2.txt_Value" imageincluded="1" link="" margin="4" heading="h2" />
+                                  <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl7.unmUpDn_2.btn_Plus" imageincluded="1" link="" margin="4" heading="h2" />
+                                  <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_3.grpBox.inp_ctrl7.unmUpDn_2.btn_Minus" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                              </TControl>
+                            </TControl>
+                          </TControl>
+                          <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl8" imageincluded="1" link="" margin="4" heading="h2">
+                            <div class="Title">
+                              <h2 class="Title" id="0477ca76-1384-452f-8f03-7f3046bd7a4b">Valid from</h2>
+                              <img src="hashname_-843521365.png" />
+                              <div class="Description">
+This information is optional.
+Name of column in database table "PriceList":"ValidFrom".</div>
+                            </div>
+                            <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl8.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl8.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl8.usrc_lbl.urdb_1" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl8.usrc_lbl.urdb_2" imageincluded="1" link="" margin="4" heading="h2" />
+                            </TControl>
+                          </TControl>
+                          <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl9" imageincluded="1" link="" margin="4" heading="h2">
+                            <div class="Title">
+                              <h2 class="Title" id="dff22fff-1c22-42f7-8499-fb7022923220">Valid to</h2>
+                              <img src="hashname_-702358864.png" />
+                              <div class="Description">
+This information is optional.
+Name of column in database table "PriceList":"ValidTo".</div>
+                            </div>
+                            <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl9.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl9.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl9.usrc_lbl.urdb_3" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl9.usrc_lbl.urdb_4" imageincluded="1" link="" margin="4" heading="h2" />
+                            </TControl>
+                          </TControl>
+                          <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl10" imageincluded="1" link="" margin="4" heading="h2">
+                            <div class="Title">
+                              <h2 class="Title" id="83bf6037-b802-45e7-8b16-6b2ef950eb97">Creation time</h2>
+                              <img src="hashname_-1358295827.png" />
+                              <div class="Description">
+This information is optional.
+Name of column in database table "PriceList":"CreationDate".</div>
+                            </div>
+                            <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl10.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl10.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl10.usrc_lbl.urdb_5" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl10.usrc_lbl.urdb_6" imageincluded="1" link="" margin="4" heading="h2" />
+                            </TControl>
+                          </TControl>
+                          <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl11" imageincluded="1" link="" margin="4" heading="h2">
+                            <div class="Title">
+                              <h2 class="Title" id="03778a90-bf34-4891-9d3c-3e606303f9bb">Description</h2>
+                              <img src="hashname_-1224405779.png" />
+                              <div class="Description">
+This information is optional.
+Max text length is  2000 characters.
+Name of column in database table "PriceList":"Description".</div>
+                            </div>
+                            <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl11.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl11.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl11.usrc_lbl.urdb_7" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl2.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl11.usrc_lbl.urdb_8" imageincluded="1" link="" margin="4" heading="h2" />
+                            </TControl>
+                          </TControl>
+                        </TControl>
+                      </TControl>
+                    </TControl>
+                  </TControl>
+                </TControl>
+                <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl3" imageincluded="1" link="" margin="4" heading="h2">
+                  <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl3.dgvx_Table" imageincluded="1" link="" margin="4" heading="h2">
+                    <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl3.dgvx_Table.ID" imageincluded="0" link="" margin="4" heading="h3">
+                      <div class="Title">
+                        <h3 class="Title" id="9428fed5-0aa3-483f-ad63-89afe776abf0">ID</h3>
+                      </div>
+                    </TControl>
+                    <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl3.dgvx_Table.PriceList_$_pln_$$Name" imageincluded="0" link="" margin="4" heading="h3">
+                      <div class="Title">
+                        <h3 class="Title" id="a114a0ec-f770-4995-97d4-460d78301475">Price list name</h3>
+                      </div>
+                    </TControl>
+                    <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl3.dgvx_Table.PriceList_$_Cur_$$Abbreviation" imageincluded="0" link="" margin="4" heading="h3">
+                      <div class="Title">
+                        <h3 class="Title" id="8c37b2a1-a734-4a61-9457-3766c470cb8e">Currency letter code</h3>
+                      </div>
+                    </TControl>
+                    <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl3.dgvx_Table.PriceList_$_Cur_$$Name" imageincluded="0" link="" margin="4" heading="h3">
+                      <div class="Title">
+                        <h3 class="Title" id="139f9410-a041-499b-b08c-f46f06d134d4">Currency Name</h3>
+                      </div>
+                    </TControl>
+                    <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl3.dgvx_Table.PriceList_$$CreationDate" imageincluded="0" link="" margin="4" heading="h3">
+                      <div class="Title">
+                        <h3 class="Title" id="8c63ac1e-1e68-4ab7-9413-45a5ee0f1a75">Creation time</h3>
+                      </div>
+                    </TControl>
+                    <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl3.dgvx_Table.PriceList_$$Description" imageincluded="0" link="" margin="4" heading="h3">
+                      <div class="Title">
+                        <h3 class="Title" id="88c9f7f6-fe85-4bbc-9c38-afef51f40ecf">Description</h3>
+                      </div>
+                    </TControl>
+                    <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl3.dgvx_Table.PriceList_$$Valid" imageincluded="0" link="" margin="4" heading="h3">
+                      <div class="Title">
+                        <h3 class="Title" id="2c340a07-0c0c-4464-acb9-951ba95d8788">Valid</h3>
+                      </div>
+                    </TControl>
+                    <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl3.dgvx_Table.PriceList_$$ValidFrom" imageincluded="0" link="" margin="4" heading="h3">
+                      <div class="Title">
+                        <h3 class="Title" id="6c77cea4-207d-42b9-91f1-14c68aac0fd6">Valid from</h3>
+                      </div>
+                    </TControl>
+                    <TControl name="nav_Form_PriceList_Edit.usrc_PriceList_Edit.splitContainer1.spl1.usrc_EditTable_PriceList.splitContainer1.spl3.dgvx_Table.PriceList_$$ValidTo" imageincluded="0" link="" margin="4" heading="h3">
+                      <div class="Title">
+                        <h3 class="Title" id="cf06c151-3811-4515-b8b0-be91c0d3e913">Valid to</h3>
+                      </div>
+                    </TControl>
+                  </TControl>
+                </TControl>
+              </TControl>
+            </TControl>
+          </TControl>
+        </TControl>
+      </TControl>
+    </TControl>
+  </body>
+</html>

@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <title>Customer person</title>
+  </head>
+  <body>
+    <THeader>
+      <div class="header">
+        <canvas id="TangentaLogo" width="60" height="50"></canvas>
+        <script type="text/javascript">
+        var canvas, context, canvaso, contexto;
+        canvaso = document.getElementById('TangentaLogo');
+        context = canvaso.getContext('2d');
+        context.lineWidth = 1;
+
+        // Draw vertical line
+        context.strokeStyle ='#936b20';
+        context.beginPath();
+        context.moveTo(30, 0);
+        context.lineTo(30, 50);
+        context.stroke();
+
+        // Draw large arc
+        context.beginPath();
+        context.arc(54, 26, 24,0.6*Math.PI,1.5*Math.PI, false);
+        context.stroke();
+
+        // Draw head circle
+        context.beginPath();
+        context.fillStyle = "#E2FFB0"/*"#CEF988";*/
+        context.arc(34, 6, 4,0,2*Math.PI, false);
+        context.fill();
+        context.stroke();
+
+        context.closePath();
+        context.restore();
+
+        </script>
+        <div class="header_border_with_radius">
+          <div class="header_menu">
+            <span>
+              <a href="../Tangenta.html">TANGENTA</a>
+            </span>,
+             <span><a href="../Invoice.html">INVOICES</a></span>,
+             <span><a href="../ProformaInvoice.html">PROFORMA INVOICES</a></span>,
+             <span><a href="../Stock.html">STOCK</a></span>,
+             <span><a href="../PriceList.html">PRICE LISTS</a></span>,
+             <span><a href="../Printing.html">PRINTING</a></span>,
+             <span><a href="../InvoicingOverview.html">OVERVIEW</a></span>,
+             <span><a href="../Support.html">SUPPORT</a></span>,
+             <span><a href="../News.html">NEWS</a></span>,
+             <span><a href="../About.html">ABOUT</a></span></div>
+        </div>
+      </div>
+    </THeader>
+    <TControl name="Form_Customer_Person_Edit" imageincluded="1" link="" margin="4" heading="h1">
+      <div class="Title">
+        <h1 class="Title" id="bdc1495a-83a6-4a93-84d0-e6bfa62d80ee">Customer person</h1>
+        <img src="Form_Customer_Person_Edit.png" />
+      </div>
+      <TControl name="Form_Customer_Person_Edit.btn_BankAccounts" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_Customer_Person_Edit.btn_OK" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_Customer_Person_Edit.btn_Cancel" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_Customer_Person_Edit.usrc_Help1" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="Form_Customer_Person_Edit.usrc_Help1.btn_Help" imageincluded="1" link="" margin="4" heading="h2" />
+      </TControl>
+      <TControl name="Form_Customer_Person_Edit.usrc_EditTable" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow" imageincluded="1" link="" margin="4" heading="h2">
+              <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.lbl_Title" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.btn_New" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.btn_Insert" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor" imageincluded="1" link="" margin="4" heading="h2">
+                <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1" imageincluded="1" link="" margin="4" heading="h2">
+                  <div class="Title">
+                    <h2 class="Title" id="b0877f89-8377-4b11-9d30-43aaf9dbeaae">Person Data</h2>
+                    <img src="Form_Customer_Person_Edit_usrc_EditTable_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1.png" />
+                    <div class="Description">Name of table in database is "PersonData".</div>
+                  </div>
+                  <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                    <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                    <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.btnex_1" imageincluded="1" link="" margin="4" heading="h2" />
+                    <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2" imageincluded="1" link="" margin="4" heading="h2">
+                      <div class="Title">
+                        <h2 class="Title" id="5b803bf7-29cc-43ff-9f99-1daad2813845">Person</h2>
+                        <img src="Form_Customer_Person_Edit_usrc_EditTable_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1_grpBox_myGrp_2.png" />
+                        <div class="Description">Name of table in database is "Person".</div>
+                      </div>
+                      <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                        <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                        <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.btnex_3" imageincluded="1" link="" margin="4" heading="h2" />
+                        <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.uinpctrl_lbl_1" imageincluded="1" link="" margin="4" heading="h2">
+                          <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.uinpctrl_lbl_1.xlbl_1" imageincluded="1" link="" margin="4" heading="h2" />
+                        </TControl>
+                        <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.ixt_1" imageincluded="1" link="" margin="4" heading="h2" />
+                        <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.btnex_4" imageincluded="1" link="" margin="4" heading="h2" />
+                        <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl1" imageincluded="1" link="" margin="4" heading="h2">
+                          <div class="Title">
+                            <h2 class="Title" id="3b30fa08-aec9-427b-a661-63673347d5b6">Gender:Female/Male</h2>
+                            <img src="hashname_-393454428.png" />
+                            <div class="Description">
+Name of column in database table "Person":"Gender".</div>
+                          </div>
+                          <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl1.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                          <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl1.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                            <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl1.usrc_lbl.xlbl_2" imageincluded="1" link="" margin="4" heading="h2" />
+                          </TControl>
+                          <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl1.urdb_1" imageincluded="1" link="" margin="4" heading="h2" />
+                          <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl1.urdb_2" imageincluded="1" link="" margin="4" heading="h2" />
+                        </TControl>
+                        <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3" imageincluded="1" link="" margin="4" heading="h2">
+                          <div class="Title">
+                            <h2 class="Title" id="0fb02c97-da7c-4db8-b460-4743bed51b12">First Name</h2>
+                            <img src="Form_Customer_Person_Edit_usrc_EditTable_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1_grpBox_myGrp_2_grpBox_myGrp_3.png" />
+                            <div class="Description">Name of table in database is "cFirstName".</div>
+                          </div>
+                          <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                            <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.btnex_5" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.uinpctrl_lbl_2" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.uinpctrl_lbl_2.xlbl_3" imageincluded="1" link="" margin="4" heading="h2" />
+                            </TControl>
+                            <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.ixt_2" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.btnex_6" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.inp_ctrl2" imageincluded="1" link="" margin="4" heading="h2">
+                              <div class="Title">
+                                <h2 class="Title" id="68884f46-831d-4d32-bb67-eff2496788c0">First Name</h2>
+                                <img src="hashname_-285311932.png" />
+                                <div class="Description">Write unique value
+Max text length is  264 characters.
+Name of column in database table "cFirstName":"FirstName".</div>
+                              </div>
+                              <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.inp_ctrl2.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.inp_ctrl2.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.inp_ctrl2.usrc_lbl.picUnique" imageincluded="1" link="" margin="4" heading="h2" />
+                                <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.inp_ctrl2.usrc_lbl.xlbl_4" imageincluded="1" link="" margin="4" heading="h2" />
+                              </TControl>
+                              <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.inp_ctrl2.txt_3" imageincluded="1" link="" margin="4" heading="h2" />
+                            </TControl>
+                          </TControl>
+                        </TControl>
+                        <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_4" imageincluded="1" link="" margin="4" heading="h2">
+                          <div class="Title">
+                            <h2 class="Title" id="488e829c-8edb-41cb-9d33-59af9bf46db2">Last Name</h2>
+                            <img src="Form_Customer_Person_Edit_usrc_EditTable_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1_grpBox_myGrp_2_grpBox_myGrp_4.png" />
+                            <div class="Description">Name of table in database is "cLastName".</div>
+                          </div>
+                          <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_4.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                            <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_4.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_4.grpBox.uinpctrl_lbl_3" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_4.grpBox.uinpctrl_lbl_3.urdb_3" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_4.grpBox.uinpctrl_lbl_3.urdb_4" imageincluded="1" link="" margin="4" heading="h2" />
+                            </TControl>
+                          </TControl>
+                        </TControl>
+                        <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl4" imageincluded="1" link="" margin="4" heading="h2">
+                          <div class="Title">
+                            <h2 class="Title" id="22f33a60-ca0a-4648-a11a-6d346b6f34d5">Date of Birth</h2>
+                            <img src="hashname_-393454271.png" />
+                            <div class="Description">
+This information is optional.
+Name of column in database table "Person":"DateOfBirth".</div>
+                          </div>
+                          <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl4.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                          <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl4.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                            <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl4.usrc_lbl.urdb_5" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl4.usrc_lbl.urdb_6" imageincluded="1" link="" margin="4" heading="h2" />
+                          </TControl>
+                        </TControl>
+                        <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl5" imageincluded="1" link="" margin="4" heading="h2">
+                          <div class="Title">
+                            <h2 class="Title" id="7894b0e2-9a39-48d9-8526-b9e9739ae8d7">Tax number</h2>
+                            <img src="hashname_-393454288.png" />
+                            <div class="Description">
+This information is optional.
+Max text length is  32 characters.
+Name of column in database table "Person":"Tax_ID".</div>
+                          </div>
+                          <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl5.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                          <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl5.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                            <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl5.usrc_lbl.urdb_7" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl5.usrc_lbl.urdb_8" imageincluded="1" link="" margin="4" heading="h2" />
+                          </TControl>
+                        </TControl>
+                        <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl6" imageincluded="1" link="" margin="4" heading="h2">
+                          <div class="Title">
+                            <h2 class="Title" id="d1cf4855-cba7-4a35-b619-6f7f40a8660f">Registration number</h2>
+                            <img src="hashname_-393454205.png" />
+                            <div class="Description">
+This information is optional.
+Max text length is  50 characters.
+Name of column in database table "Person":"Registration_ID".</div>
+                          </div>
+                          <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl6.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                          <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl6.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                            <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl6.usrc_lbl.urdb_9" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.inp_ctrl6.usrc_lbl.urdb_10" imageincluded="1" link="" margin="4" heading="h2" />
+                          </TControl>
+                        </TControl>
+                      </TControl>
+                    </TControl>
+                    <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_5" imageincluded="1" link="" margin="4" heading="h2">
+                      <div class="Title">
+                        <h2 class="Title" id="740cff10-e26c-4a76-80e9-8375af294b13">Gsm Number</h2>
+                        <img src="Form_Customer_Person_Edit_usrc_EditTable_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1_grpBox_myGrp_5.png" />
+                        <div class="Description">Name of table in database is "cGsmNumber_Person".</div>
+                      </div>
+                      <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_5.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                        <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_5.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                        <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_5.grpBox.uinpctrl_lbl_4" imageincluded="1" link="" margin="4" heading="h2">
+                          <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_5.grpBox.uinpctrl_lbl_4.urdb_11" imageincluded="1" link="" margin="4" heading="h2" />
+                          <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_5.grpBox.uinpctrl_lbl_4.urdb_12" imageincluded="1" link="" margin="4" heading="h2" />
+                        </TControl>
+                      </TControl>
+                    </TControl>
+                    <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_6" imageincluded="1" link="" margin="4" heading="h2">
+                      <div class="Title">
+                        <h2 class="Title" id="1c3d4738-bd8e-4d82-9b78-4eedce903128">Phone Number</h2>
+                        <img src="Form_Customer_Person_Edit_usrc_EditTable_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1_grpBox_myGrp_6.png" />
+                        <div class="Description">Name of table in database is "cPhoneNumber_Person".</div>
+                      </div>
+                      <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_6.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                        <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_6.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                        <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_6.grpBox.uinpctrl_lbl_5" imageincluded="1" link="" margin="4" heading="h2">
+                          <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_6.grpBox.uinpctrl_lbl_5.urdb_13" imageincluded="1" link="" margin="4" heading="h2" />
+                          <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_6.grpBox.uinpctrl_lbl_5.urdb_14" imageincluded="1" link="" margin="4" heading="h2" />
+                        </TControl>
+                      </TControl>
+                    </TControl>
+                    <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_7" imageincluded="1" link="" margin="4" heading="h2">
+                      <div class="Title">
+                        <h2 class="Title" id="e9b1dd11-0f66-424d-9db8-93084d3bbbfd">Email</h2>
+                        <img src="Form_Customer_Person_Edit_usrc_EditTable_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1_grpBox_myGrp_7.png" />
+                        <div class="Description">Name of table in database is "cEmail_Person".</div>
+                      </div>
+                      <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_7.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                        <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_7.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                        <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_7.grpBox.uinpctrl_lbl_6" imageincluded="1" link="" margin="4" heading="h2">
+                          <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_7.grpBox.uinpctrl_lbl_6.urdb_15" imageincluded="1" link="" margin="4" heading="h2" />
+                          <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_7.grpBox.uinpctrl_lbl_6.urdb_16" imageincluded="1" link="" margin="4" heading="h2" />
+                        </TControl>
+                      </TControl>
+                    </TControl>
+                    <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8" imageincluded="1" link="" margin="4" heading="h2">
+                      <div class="Title">
+                        <h2 class="Title" id="a508a7c8-ae6c-4bab-912a-5998cb847788">Address Person</h2>
+                        <img src="Form_Customer_Person_Edit_usrc_EditTable_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1_grpBox_myGrp_8.png" />
+                        <div class="Description">Name of table in database is "cAddress_Person".</div>
+                      </div>
+                      <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                        <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                        <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.uinpctrl_lbl_7" imageincluded="1" link="" margin="4" heading="h2">
+                          <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.uinpctrl_lbl_7.urdb_17" imageincluded="1" link="" margin="4" heading="h2" />
+                          <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_8.grpBox.uinpctrl_lbl_7.urdb_18" imageincluded="1" link="" margin="4" heading="h2" />
+                        </TControl>
+                      </TControl>
+                    </TControl>
+                    <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl19" imageincluded="1" link="" margin="4" heading="h2">
+                      <div class="Title">
+                        <h2 class="Title" id="ccc1613b-be7e-4406-839d-666c4789d8e2">Card Number</h2>
+                        <img src="Form_Customer_Person_Edit_usrc_EditTable_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1_grpBox_inp_ctrl19.png" />
+                        <div class="Description">
+This information is optional.
+Max text length is  50 characters.
+Name of column in database table "PersonData":"CardNumber".</div>
+                      </div>
+                      <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl19.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                      <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl19.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                        <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl19.usrc_lbl.urdb_21" imageincluded="1" link="" margin="4" heading="h2" />
+                        <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl19.usrc_lbl.urdb_22" imageincluded="1" link="" margin="4" heading="h2" />
+                      </TControl>
+                    </TControl>
+                    <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_15" imageincluded="1" link="" margin="4" heading="h2">
+                      <div class="Title">
+                        <h2 class="Title" id="e136947e-f4a6-46fe-8f0a-273351f98eff">Card Type</h2>
+                        <img src="Form_Customer_Person_Edit_usrc_EditTable_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1_grpBox_myGrp_15.png" />
+                        <div class="Description">Name of table in database is "cCardType_Person".</div>
+                      </div>
+                      <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_15.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                        <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_15.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                        <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_15.grpBox.uinpctrl_lbl_14" imageincluded="1" link="" margin="4" heading="h2">
+                          <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_15.grpBox.uinpctrl_lbl_14.urdb_23" imageincluded="1" link="" margin="4" heading="h2" />
+                          <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_15.grpBox.uinpctrl_lbl_14.urdb_24" imageincluded="1" link="" margin="4" heading="h2" />
+                        </TControl>
+                      </TControl>
+                    </TControl>
+                    <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_16" imageincluded="1" link="" margin="4" heading="h2">
+                      <div class="Title">
+                        <h2 class="Title" id="a733b0e8-bc86-45ab-810d-50a6d0ed9a6c">Person Image</h2>
+                        <img src="Form_Customer_Person_Edit_usrc_EditTable_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1_grpBox_myGrp_16.png" />
+                        <div class="Description">Name of table in database is "PersonImage".</div>
+                      </div>
+                      <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_16.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                        <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_16.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                        <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_16.grpBox.uinpctrl_lbl_15" imageincluded="1" link="" margin="4" heading="h2">
+                          <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_16.grpBox.uinpctrl_lbl_15.urdb_25" imageincluded="1" link="" margin="4" heading="h2" />
+                          <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_16.grpBox.uinpctrl_lbl_15.urdb_26" imageincluded="1" link="" margin="4" heading="h2" />
+                        </TControl>
+                      </TControl>
+                    </TControl>
+                    <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl23" imageincluded="1" link="" margin="4" heading="h2">
+                      <div class="Title">
+                        <h2 class="Title" id="44ce80de-9d4f-4efc-bef9-6e500c548512">Description</h2>
+                        <img src="Form_Customer_Person_Edit_usrc_EditTable_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1_grpBox_inp_ctrl23.png" />
+                        <div class="Description">
+This information is optional.
+Max text length is  2000 characters.
+Name of column in database table "PersonData":"Description".</div>
+                      </div>
+                      <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl23.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                      <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl23.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                        <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl23.usrc_lbl.urdb_27" imageincluded="1" link="" margin="4" heading="h2" />
+                        <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.inp_ctrl23.usrc_lbl.urdb_28" imageincluded="1" link="" margin="4" heading="h2" />
+                      </TControl>
+                    </TControl>
+                  </TControl>
+                </TControl>
+              </TControl>
+            </TControl>
+          </TControl>
+          <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl2" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl2.dgvx_Table" imageincluded="1" link="" margin="4" heading="h2">
+              <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl2.dgvx_Table.ID" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="bf044773-4b76-45e6-823e-1c8db805a1a7">ID</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl2.dgvx_Table.PersonData_$_per_$$Gender" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="f684f67d-7bae-4037-b4c4-8902f135fc4a">Gender:Female/Male</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl2.dgvx_Table.PersonData_$_per_$_cfn_$$FirstName" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="c548e07f-569e-4db0-a0e0-871c5515e8e7">First Name</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl2.dgvx_Table.PersonData_$_per_$_cln_$$LastName" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="e808b920-d8a7-480c-b809-73677828f4f4">Last Name</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl2.dgvx_Table.PersonData_$_per_$$DateOfBirth" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="8982a8e8-8303-4b80-996c-586984f17e79">Date of Birth</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl2.dgvx_Table.PersonData_$_per_$$Tax_ID" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="ae422deb-1ccd-4da3-a21d-29671f0a12dc">Tax number</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl2.dgvx_Table.PersonData_$_per_$$Registration_ID" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="b24998fb-218d-4722-a5ae-2e624a0384fe">Registration number</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl2.dgvx_Table.PersonData_$_cgsmnper_$$GsmNumber" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="a9e48cf4-7812-4744-acec-c16ca75f0f59">GSM:</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl2.dgvx_Table.PersonData_$_cphnnper_$$PhoneNumber" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="ed2e2568-cd00-45a6-8a04-c80be6204c63">Phone Number</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl2.dgvx_Table.PersonData_$_cemailper_$$Email" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="196ec8c3-2944-46aa-a3ce-8c408ae6d2f3">Email</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl2.dgvx_Table.PersonData_$_cadrper_$_cstrnper_$$StreetName" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="c4a63eaa-0ab6-429c-ae86-225ae29ff09e">Street Name</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl2.dgvx_Table.PersonData_$_cadrper_$_chounper_$$HouseNumber" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="0d051ced-03a8-4b43-8f62-11c60dde0599">House Number</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl2.dgvx_Table.PersonData_$_cadrper_$_zipper_$$ZIP" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="fe072c46-bf7f-4c17-85cd-9bae95267e9d">ZIP</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl2.dgvx_Table.PersonData_$_cadrper_$_ccitper_$$City" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="00c7b744-9d16-4d17-8a95-e360d199a56d">City</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl2.dgvx_Table.PersonData_$_cadrper_$_ccouper_$$State" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="5bdc6e40-37ac-4850-ac80-9f04686a80d6">State</h3>
+                </div>
+              </TControl>
+              <TControl name="Form_Customer_Person_Edit.usrc_EditTable.splitContainer1.spl2.dgvx_Table.PersonData_$_cadrper_$_cstper_$$Country" imageincluded="0" link="" margin="4" heading="h3">
+                <div class="Title">
+                  <h3 class="Title" id="b31a5781-d8e2-4e86-97ec-1e5fbd8b8d83">Country</h3>
+                </div>
+              </TControl>
+            </TControl>
+          </TControl>
+        </TControl>
+      </TControl>
+    </TControl>
+  </body>
+</html>

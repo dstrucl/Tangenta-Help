@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <title>LoginControl.AWP_Select_users_from_myOrganisation_Person_Table</title>
+  </head>
+  <body>
+    <THeader>
+      <div class="header">
+        <canvas id="TangentaLogo" width="60" height="50"></canvas>
+        <script type="text/javascript">
+        var canvas, context, canvaso, contexto;
+        canvaso = document.getElementById('TangentaLogo');
+        context = canvaso.getContext('2d');
+        context.lineWidth = 1;
+
+        // Draw vertical line
+        context.strokeStyle ='#936b20';
+        context.beginPath();
+        context.moveTo(30, 0);
+        context.lineTo(30, 50);
+        context.stroke();
+
+        // Draw large arc
+        context.beginPath();
+        context.arc(54, 26, 24,0.6*Math.PI,1.5*Math.PI, false);
+        context.stroke();
+
+        // Draw head circle
+        context.beginPath();
+        context.fillStyle = "#E2FFB0"/*"#CEF988";*/
+        context.arc(34, 6, 4,0,2*Math.PI, false);
+        context.fill();
+        context.stroke();
+
+        context.closePath();
+        context.restore();
+
+        </script>
+        <div class="header_border_with_radius">
+          <div class="header_menu">
+            <span>
+              <a href="../Tangenta.html">TANGENTA</a>
+            </span>,
+             <span><a href="../Invoice.html">INVOICES</a></span>,
+             <span><a href="../ProformaInvoice.html">PROFORMA INVOICES</a></span>,
+             <span><a href="../Stock.html">STOCK</a></span>,
+             <span><a href="../PriceList.html">PRICE LISTS</a></span>,
+             <span><a href="../Printing.html">PRINTING</a></span>,
+             <span><a href="../InvoicingOverview.html">OVERVIEW</a></span>,
+             <span><a href="../Support.html">SUPPORT</a></span>,
+             <span><a href="../News.html">NEWS</a></span>,
+             <span><a href="../About.html">ABOUT</a></span></div>
+        </div>
+      </div>
+    </THeader>
+    <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table" imageincluded="1" link="" margin="4" heading="h1">
+      <div class="Title">
+        <h1 class="Title" id="1402c94a-c14f-4474-99bc-6ee56c768af7">Select persons to login user accounts</h1>
+        <img src="nav_AWP_Select_users_from_myOrganisation_Person_Table.png" />
+      </div>
+      <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.usrc_NavigationButtons1" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.usrc_NavigationButtons1.btn2" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.usrc_NavigationButtons1.btn3" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.usrc_NavigationButtons1.usrc_Help1" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.usrc_NavigationButtons1.usrc_Help1.btn_Help" imageincluded="1" link="" margin="4" heading="h2" />
+        </TControl>
+      </TControl>
+      <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.lbl_Instruction" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson.myOrganisation_Person_$_office_$$Name" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="48f039c9-6114-4ce5-9ca6-1a1126016c44">Office*</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson.myOrganisation_Person_$$Active" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="15b176fc-4126-4622-9e82-e90eec8505c1">Active*</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson.myOrganisation_Person_$_per_$_cfn_$$FirstName" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="a07aaa60-cf9c-452b-9fa0-de8e8bbd5128">First name*</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson.myOrganisation_Person_$_per_$_cln_$$LastName" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="e8beccec-06d7-40df-a28b-9974abccdb62">Last name*</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson.myOrganisation_Person_$$Job" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="10dbb89e-fd5a-49a3-859b-f144743b1822">Job</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson.myOrganisation_Person_$_per_$$Tax_ID" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="eecd322d-7dbf-4bd8-92d7-a303dea4a95c">Tax ID*</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson.myOrganisation_Person_$_per_$$Registration_ID" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="45645c01-a46a-4810-9181-4d9ecaf4e307">Registration ID</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson.myOrganisation_Person_$$Description" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="13e30ced-9193-4d33-934d-f60b035e45a0">Description</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson.myOrganisation_Person_$_per_$$DateOfBirth" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="7be726f4-2cdd-460d-9756-0ea6932260b3">Date of birth</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson.myOrganisation_Person_$_per_$$Gender" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="7813c8ce-3398-4796-ab92-1453d3c8318c">Gender*</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson.PersonData_$_cemailper_$$Email" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="8edf184f-c0c7-47de-a1c4-af089c3177b2">Email</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson.PersonData_$_cgsmnper_$$GsmNumber" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="6ea3af55-10fd-4544-b3ed-6bacd4d50b8a">GSM</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson.PersonData_$_cphnnper_$$PhoneNumber" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="17d32c3c-92d6-4204-bf9a-f9246c40405c">TEL</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson.PersonData_$_cadrper_$_cstrnper_$$StreetName" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="458e0b0f-e10f-4829-beb1-13272fe4ade7">Street name</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson.PersonData_$_cadrper_$_chounper_$$HouseNumber" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="f0179879-cb09-4613-9363-bf113f07c796">House number</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson.PersonData_$_cadrper_$_zipper_$$ZIP" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="8c6fa285-708b-4d78-a922-72c5a3fb613b">ZIP</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson.PersonData_$_cadrper_$_ccitper_$$City" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="55e1a6cf-7200-43da-ba50-9e43539c907b">City</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson.PersonData_$_cadrper_$_cstper_$$Country" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="1dfb15ab-15bf-456f-94bb-b64f1e91c599">Country</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson.PersonData_$_cadrper_$_ccouper_$$State" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="04c32982-fd37-4f8a-9354-5f4512dd08a8">State</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson.PersonData_$$Description" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="8439fb4f-f67e-494a-8ffc-f0d6f098b9d4">Description2</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson.PersonData_$_cardtper_$$CardType" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="a0ec97bb-ae5b-46ee-a9fb-c0cc1650219a">Card type</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson.PersonData_$$CardNumber" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="9191b21b-9944-4984-b9b0-cbeb97875c3c">Card number</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson.myOrganisation_Person_$_office_$$ShortName" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="3777dd56-1e09-4874-bdd1-29ff08f4352f">Office short name</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson.Selected" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="a417af79-5c15-49cd-b868-479e953a3a53">Selected</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_AWP_Select_users_from_myOrganisation_Person_Table.dgvx_myOrganisationPerson.Administrator" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="96684986-80b7-4dce-8d9e-f028bac8f73a">Administrator</h3>
+          </div>
+        </TControl>
+      </TControl>
+    </TControl>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <title>Help settings and command line parameters help</title>
+  </head>
+  <body>
+    <THeader>
+      <div class="header">
+        <canvas id="TangentaLogo" width="60" height="50"></canvas>
+        <script type="text/javascript">
+        var canvas, context, canvaso, contexto;
+        canvaso = document.getElementById('TangentaLogo');
+        context = canvaso.getContext('2d');
+        context.lineWidth = 1;
+
+        // Draw vertical line
+        context.strokeStyle ='#936b20';
+        context.beginPath();
+        context.moveTo(30, 0);
+        context.lineTo(30, 50);
+        context.stroke();
+
+        // Draw large arc
+        context.beginPath();
+        context.arc(54, 26, 24,0.6*Math.PI,1.5*Math.PI, false);
+        context.stroke();
+
+        // Draw head circle
+        context.beginPath();
+        context.fillStyle = "#E2FFB0"/*"#CEF988";*/
+        context.arc(34, 6, 4,0,2*Math.PI, false);
+        context.fill();
+        context.stroke();
+
+        context.closePath();
+        context.restore();
+
+        </script>
+        <div class="header_border_with_radius">
+          <div class="header_menu">
+            <span>
+              <a href="../Tangenta.html">TANGENTA</a>
+            </span>,
+             <span><a href="../Invoice.html">INVOICES</a></span>,
+             <span><a href="../ProformaInvoice.html">PROFORMA INVOICES</a></span>,
+             <span><a href="../Stock.html">STOCK</a></span>,
+             <span><a href="../PriceList.html">PRICE LISTS</a></span>,
+             <span><a href="../Printing.html">PRINTING</a></span>,
+             <span><a href="../InvoicingOverview.html">OVERVIEW</a></span>,
+             <span><a href="../Support.html">SUPPORT</a></span>,
+             <span><a href="../News.html">NEWS</a></span>,
+             <span><a href="../About.html">ABOUT</a></span></div>
+        </div>
+      </div>
+    </THeader>
+    <TControl name="nav_CommandLineHelp_Form" imageincluded="1" link="" margin="4" heading="h1">
+      <div class="Title">
+        <h1 class="Title" id="cb5cedf2-4bd2-48ec-9740-f57733219802">Help settings and command line parameters help</h1>
+        <img src="nav_CommandLineHelp_Form.png" />
+      </div>
+      <TControl name="nav_CommandLineHelp_Form.usrc_NavigationButtons1" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="nav_CommandLineHelp_Form.usrc_NavigationButtons1.btn2" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="nav_CommandLineHelp_Form.usrc_NavigationButtons1.btn3" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="nav_CommandLineHelp_Form.usrc_NavigationButtons1.usrc_Help1" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="nav_CommandLineHelp_Form.usrc_NavigationButtons1.usrc_Help1.btn_Help" imageincluded="1" link="" margin="4" heading="h2" />
+        </TControl>
+      </TControl>
+      <TControl name="nav_CommandLineHelp_Form.usrc_HelpSettings1" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="nav_CommandLineHelp_Form.usrc_HelpSettings1.grp_HelpSettings" imageincluded="1" link="" margin="4" heading="h2">
+          <div class="Title">
+            <h2 class="Title" id="8908b6f8-62fe-4b69-ac0c-ac706ca1c7ff">Help addresss settings</h2>
+            <img src="nav_CommandLineHelp_Form_usrc_HelpSettings1_grp_HelpSettings.png" />
+          </div>
+          <TControl name="nav_CommandLineHelp_Form.usrc_HelpSettings1.grp_HelpSettings.lbl_RemoteURL" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="nav_CommandLineHelp_Form.usrc_HelpSettings1.grp_HelpSettings.txt_RemoteHelpURL" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="nav_CommandLineHelp_Form.usrc_HelpSettings1.grp_HelpSettings.usrc_SelectLocalHelpFolder" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="nav_CommandLineHelp_Form.usrc_HelpSettings1.grp_HelpSettings.usrc_SelectLocalHelpFolder.label1" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="nav_CommandLineHelp_Form.usrc_HelpSettings1.grp_HelpSettings.usrc_SelectLocalHelpFolder.txt_Folder" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="nav_CommandLineHelp_Form.usrc_HelpSettings1.grp_HelpSettings.usrc_SelectLocalHelpFolder.btn_SelectFolder" imageincluded="1" link="" margin="4" heading="h2" />
+          </TControl>
+        </TControl>
+      </TControl>
+      <TControl name="nav_CommandLineHelp_Form.grp_CommandLineParameters" imageincluded="1" link="" margin="4" heading="h2">
+        <div class="Title">
+          <h2 class="Title" id="406874bd-0769-4364-94e7-9d623d8f8a4e">Command line paramaters</h2>
+          <img src="nav_CommandLineHelp_Form_grp_CommandLineParameters.png" />
+        </div>
+        <TControl name="nav_CommandLineHelp_Form.grp_CommandLineParameters.panel_Help" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="nav_CommandLineHelp_Form.grp_CommandLineParameters.panel_Help.CommandLineHelp_ItemControl[0]" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="nav_CommandLineHelp_Form.grp_CommandLineParameters.panel_Help.CommandLineHelp_ItemControl[0].txt_Help" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="nav_CommandLineHelp_Form.grp_CommandLineParameters.panel_Help.CommandLineHelp_ItemControl[0].chk_select" imageincluded="1" link="" margin="4" heading="h2" />
+          </TControl>
+          <TControl name="nav_CommandLineHelp_Form.grp_CommandLineParameters.panel_Help.CommandLineHelp_ItemControl[1]" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="nav_CommandLineHelp_Form.grp_CommandLineParameters.panel_Help.CommandLineHelp_ItemControl[1].txt_Help" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="nav_CommandLineHelp_Form.grp_CommandLineParameters.panel_Help.CommandLineHelp_ItemControl[1].chk_select" imageincluded="1" link="" margin="4" heading="h2" />
+          </TControl>
+          <TControl name="nav_CommandLineHelp_Form.grp_CommandLineParameters.panel_Help.CommandLineHelp_ItemControl[2]" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="nav_CommandLineHelp_Form.grp_CommandLineParameters.panel_Help.CommandLineHelp_ItemControl[2].txt_Help" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="nav_CommandLineHelp_Form.grp_CommandLineParameters.panel_Help.CommandLineHelp_ItemControl[2].chk_select" imageincluded="1" link="" margin="4" heading="h2" />
+          </TControl>
+          <TControl name="nav_CommandLineHelp_Form.grp_CommandLineParameters.panel_Help.CommandLineHelp_ItemControl[3]" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="nav_CommandLineHelp_Form.grp_CommandLineParameters.panel_Help.CommandLineHelp_ItemControl[3].txt_Help" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="nav_CommandLineHelp_Form.grp_CommandLineParameters.panel_Help.CommandLineHelp_ItemControl[3].chk_select" imageincluded="1" link="" margin="4" heading="h2" />
+          </TControl>
+        </TControl>
+      </TControl>
+    </TControl>
+  </body>
+</html>

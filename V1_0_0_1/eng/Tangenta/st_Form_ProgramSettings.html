@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <title>Program Settings</title>
+  </head>
+  <body>
+    <THeader>
+      <div class="header">
+        <canvas id="TangentaLogo" width="60" height="50"></canvas>
+        <script type="text/javascript">
+        var canvas, context, canvaso, contexto;
+        canvaso = document.getElementById('TangentaLogo');
+        context = canvaso.getContext('2d');
+        context.lineWidth = 1;
+
+        // Draw vertical line
+        context.strokeStyle ='#936b20';
+        context.beginPath();
+        context.moveTo(30, 0);
+        context.lineTo(30, 50);
+        context.stroke();
+
+        // Draw large arc
+        context.beginPath();
+        context.arc(54, 26, 24,0.6*Math.PI,1.5*Math.PI, false);
+        context.stroke();
+
+        // Draw head circle
+        context.beginPath();
+        context.fillStyle = "#E2FFB0"/*"#CEF988";*/
+        context.arc(34, 6, 4,0,2*Math.PI, false);
+        context.fill();
+        context.stroke();
+
+        context.closePath();
+        context.restore();
+
+        </script>
+        <div class="header_border_with_radius">
+          <div class="header_menu">
+            <span>
+              <a href="../Tangenta.html">TANGENTA</a>
+            </span>,
+             <span><a href="../Invoice.html">INVOICES</a></span>,
+             <span><a href="../ProformaInvoice.html">PROFORMA INVOICES</a></span>,
+             <span><a href="../Stock.html">STOCK</a></span>,
+             <span><a href="../PriceList.html">PRICE LISTS</a></span>,
+             <span><a href="../Printing.html">PRINTING</a></span>,
+             <span><a href="../InvoicingOverview.html">OVERVIEW</a></span>,
+             <span><a href="../Support.html">SUPPORT</a></span>,
+             <span><a href="../News.html">NEWS</a></span>,
+             <span><a href="../About.html">ABOUT</a></span></div>
+        </div>
+      </div>
+    </THeader>
+    <TControl name="st_Form_ProgramSettings" imageincluded="1" link="" margin="4" heading="h1">
+      <div class="Title">
+        <h1 class="Title" id="2ab2419f-9880-44ad-87f4-e7de5665dac7">Program Settings</h1>
+        <img src="st_Form_ProgramSettings.png" />
+      </div>
+      <TControl name="st_Form_ProgramSettings.usrc_NavigationButtons1" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="st_Form_ProgramSettings.usrc_NavigationButtons1.btn2" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="st_Form_ProgramSettings.usrc_NavigationButtons1.btn3" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="st_Form_ProgramSettings.usrc_NavigationButtons1.usrc_Help1" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="st_Form_ProgramSettings.usrc_NavigationButtons1.usrc_Help1.btn_Help" imageincluded="1" link="" margin="4" heading="h2" />
+        </TControl>
+      </TControl>
+      <TControl name="st_Form_ProgramSettings.lbL_ElectronicDevice_ID" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="st_Form_ProgramSettings.txt_ElectronicDevice_ID" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="st_Form_ProgramSettings.lbl_Language" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="st_Form_ProgramSettings.cmb_Language" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="st_Form_ProgramSettings.chk_FullScreen" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="st_Form_ProgramSettings.chk_AllowToEditText" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="st_Form_ProgramSettings.btn_DBSettings" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="st_Form_ProgramSettings.btn_LogFile" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="st_Form_ProgramSettings.usrc_ShopsInuse1" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="st_Form_ProgramSettings.usrc_ShopsInuse1.grp_ShopsInUse" imageincluded="1" link="" margin="4" heading="h2">
+          <div class="Title">
+            <h2 class="Title" id="79a9a0fc-660c-46e8-841a-0c35f99c37de">Shops In Use</h2>
+            <img src="st_Form_ProgramSettings_usrc_ShopsInuse1_grp_ShopsInUse.png" />
+          </div>
+          <TControl name="st_Form_ProgramSettings.usrc_ShopsInuse1.grp_ShopsInUse.chk_A_in_use" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="st_Form_ProgramSettings.usrc_ShopsInuse1.grp_ShopsInUse.lbl_ShopA_Name" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="st_Form_ProgramSettings.usrc_ShopsInuse1.grp_ShopsInUse.txt_ShopA_Name" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="st_Form_ProgramSettings.usrc_ShopsInuse1.grp_ShopsInUse.chk_B_in_use" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="st_Form_ProgramSettings.usrc_ShopsInuse1.grp_ShopsInUse.lbl_ShopB_Name" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="st_Form_ProgramSettings.usrc_ShopsInuse1.grp_ShopsInUse.txt_ShopB_Name" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="st_Form_ProgramSettings.usrc_ShopsInuse1.grp_ShopsInUse.chk_C_in_use" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="st_Form_ProgramSettings.usrc_ShopsInuse1.grp_ShopsInUse.lbl_ShopC_Name" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="st_Form_ProgramSettings.usrc_ShopsInuse1.grp_ShopsInUse.txt_ShopC_Name" imageincluded="1" link="" margin="4" heading="h2" />
+        </TControl>
+      </TControl>
+      <TControl name="st_Form_ProgramSettings.grp_ColorSettings" imageincluded="1" link="" margin="4" heading="h2">
+        <div class="Title">
+          <h2 class="Title" id="54825f41-2e5d-4f3d-9cde-ef54ecf594cc">Color Settings</h2>
+          <img src="st_Form_ProgramSettings_grp_ColorSettings.png" />
+        </div>
+        <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Nature" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Nature.lbl_Col0" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Nature.lbl_Col1" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Nature.lbl_Col2" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Nature.lbl_Col3" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Nature.lbl_Col4" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Nature.lbl_Col5" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Nature.lbl_Col6" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Nature.lbl_Col7" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Nature.lbl_Col8" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Nature.lbl_Col9" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Nature.lbl_Col10" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Nature.lbl_Col11" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Nature.lbl_Col12" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Nature.lbl_Col13" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Nature.lbl_Col14" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Nature.lbl_Col15" imageincluded="1" link="" margin="4" heading="h2" />
+          </TControl>
+          <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.rdb_Nature" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Techno" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Techno.lbl_Col0" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Techno.lbl_Col1" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Techno.lbl_Col2" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Techno.lbl_Col3" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Techno.lbl_Col4" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Techno.lbl_Col5" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Techno.lbl_Col6" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Techno.lbl_Col7" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Techno.lbl_Col8" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Techno.lbl_Col9" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Techno.lbl_Col10" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Techno.lbl_Col11" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Techno.lbl_Col12" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Techno.lbl_Col13" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Techno.lbl_Col14" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Techno.lbl_Col15" imageincluded="1" link="" margin="4" heading="h2" />
+          </TControl>
+          <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.rdb_Techno" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.SunSet" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.SunSet.lbl_Col0" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.SunSet.lbl_Col1" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.SunSet.lbl_Col2" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.SunSet.lbl_Col3" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.SunSet.lbl_Col4" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.SunSet.lbl_Col5" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.SunSet.lbl_Col6" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.SunSet.lbl_Col7" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.SunSet.lbl_Col8" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.SunSet.lbl_Col9" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.SunSet.lbl_Col10" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.SunSet.lbl_Col11" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.SunSet.lbl_Col12" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.SunSet.lbl_Col13" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.SunSet.lbl_Col14" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.SunSet.lbl_Col15" imageincluded="1" link="" margin="4" heading="h2" />
+          </TControl>
+          <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.rdb_SunSet" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Retro" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Retro.lbl_Col0" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Retro.lbl_Col1" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Retro.lbl_Col2" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Retro.lbl_Col3" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Retro.lbl_Col4" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Retro.lbl_Col5" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Retro.lbl_Col6" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Retro.lbl_Col7" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Retro.lbl_Col8" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Retro.lbl_Col9" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Retro.lbl_Col10" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Retro.lbl_Col11" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Retro.lbl_Col12" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Retro.lbl_Col13" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Retro.lbl_Col14" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Retro.lbl_Col15" imageincluded="1" link="" margin="4" heading="h2" />
+          </TControl>
+          <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.rdb_Retro" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Shimmering" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Shimmering.lbl_Col0" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Shimmering.lbl_Col1" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Shimmering.lbl_Col2" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Shimmering.lbl_Col3" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Shimmering.lbl_Col4" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Shimmering.lbl_Col5" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Shimmering.lbl_Col6" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Shimmering.lbl_Col7" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Shimmering.lbl_Col8" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Shimmering.lbl_Col9" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Shimmering.lbl_Col10" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Shimmering.lbl_Col11" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Shimmering.lbl_Col12" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Shimmering.lbl_Col13" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Shimmering.lbl_Col14" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Shimmering.lbl_Col15" imageincluded="1" link="" margin="4" heading="h2" />
+          </TControl>
+          <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.rdb_Shimmering" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.MediterraneanDark" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.MediterraneanDark.lbl_Col0" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.MediterraneanDark.lbl_Col1" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.MediterraneanDark.lbl_Col2" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.MediterraneanDark.lbl_Col3" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.MediterraneanDark.lbl_Col4" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.MediterraneanDark.lbl_Col5" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.MediterraneanDark.lbl_Col6" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.MediterraneanDark.lbl_Col7" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.MediterraneanDark.lbl_Col8" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.MediterraneanDark.lbl_Col9" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.MediterraneanDark.lbl_Col10" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.MediterraneanDark.lbl_Col11" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.MediterraneanDark.lbl_Col12" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.MediterraneanDark.lbl_Col13" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.MediterraneanDark.lbl_Col14" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.MediterraneanDark.lbl_Col15" imageincluded="1" link="" margin="4" heading="h2" />
+          </TControl>
+          <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.rdb_MediterraneanDark" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.MagentasAndYelows" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.MagentasAndYelows.lbl_Col0" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.MagentasAndYelows.lbl_Col1" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.MagentasAndYelows.lbl_Col2" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.MagentasAndYelows.lbl_Col3" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.MagentasAndYelows.lbl_Col4" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.MagentasAndYelows.lbl_Col5" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.MagentasAndYelows.lbl_Col6" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.MagentasAndYelows.lbl_Col7" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.MagentasAndYelows.lbl_Col8" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.MagentasAndYelows.lbl_Col9" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.MagentasAndYelows.lbl_Col10" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.MagentasAndYelows.lbl_Col11" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.MagentasAndYelows.lbl_Col12" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.MagentasAndYelows.lbl_Col13" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.MagentasAndYelows.lbl_Col14" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.MagentasAndYelows.lbl_Col15" imageincluded="1" link="" margin="4" heading="h2" />
+          </TControl>
+          <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.rdb_MagentasAndYelows" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Custom" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Custom.lbl_Col0" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Custom.lbl_Col1" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Custom.lbl_Col2" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Custom.lbl_Col3" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Custom.lbl_Col4" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Custom.lbl_Col5" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Custom.lbl_Col6" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Custom.lbl_Col7" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Custom.lbl_Col8" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Custom.lbl_Col9" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Custom.lbl_Col10" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Custom.lbl_Col11" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Custom.lbl_Col12" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Custom.lbl_Col13" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Custom.lbl_Col14" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Custom.lbl_Col15" imageincluded="1" link="" margin="4" heading="h2" />
+          </TControl>
+          <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.rdb_Custom" imageincluded="1" link="" margin="4" heading="h2" />
+        </TControl>
+      </TControl>
+      <TControl name="st_Form_ProgramSettings.lbl_AppData" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="st_Form_ProgramSettings.txt_ApplicationDataFolder" imageincluded="1" link="" margin="4" heading="h2" />
+    </TControl>
+  </body>
+</html>

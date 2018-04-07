@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <title>Country of tax residency</title>
+  </head>
+  <body>
+    <THeader>
+      <div class="header">
+        <canvas id="TangentaLogo" width="60" height="50"></canvas>
+        <script type="text/javascript">
+        var canvas, context, canvaso, contexto;
+        canvaso = document.getElementById('TangentaLogo');
+        context = canvaso.getContext('2d');
+        context.lineWidth = 1;
+
+        // Draw vertical line
+        context.strokeStyle ='#936b20';
+        context.beginPath();
+        context.moveTo(30, 0);
+        context.lineTo(30, 50);
+        context.stroke();
+
+        // Draw large arc
+        context.beginPath();
+        context.arc(54, 26, 24,0.6*Math.PI,1.5*Math.PI, false);
+        context.stroke();
+
+        // Draw head circle
+        context.beginPath();
+        context.fillStyle = "#E2FFB0"/*"#CEF988";*/
+        context.arc(34, 6, 4,0,2*Math.PI, false);
+        context.fill();
+        context.stroke();
+
+        context.closePath();
+        context.restore();
+
+        </script>
+        <div class="header_border_with_radius">
+          <div class="header_menu">
+            <span>
+              <a href="../Tangenta.html">TANGENTA</a>
+            </span>,
+             <span><a href="../Invoice.html">INVOICES</a></span>,
+             <span><a href="../ProformaInvoice.html">PROFORMA INVOICES</a></span>,
+             <span><a href="../Stock.html">STOCK</a></span>,
+             <span><a href="../PriceList.html">PRICE LISTS</a></span>,
+             <span><a href="../Printing.html">PRINTING</a></span>,
+             <span><a href="../InvoicingOverview.html">OVERVIEW</a></span>,
+             <span><a href="../Support.html">SUPPORT</a></span>,
+             <span><a href="../News.html">NEWS</a></span>,
+             <span><a href="../About.html">ABOUT</a></span></div>
+        </div>
+      </div>
+    </THeader>
+    <TControl name="nav_Form_Select_Country_ISO_3166" imageincluded="1" link="" margin="4" heading="h1">
+      <div class="Title">
+        <h1 class="Title" id="2a436bf2-8067-476b-abcf-cbf304671605">Country of tax residency</h1>
+        <img src="nav_Form_Select_Country_ISO_3166.png" />
+      </div>
+      <TControl name="nav_Form_Select_Country_ISO_3166.usrc_NavigationButtons1" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="nav_Form_Select_Country_ISO_3166.usrc_NavigationButtons1.btn1" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="nav_Form_Select_Country_ISO_3166.usrc_NavigationButtons1.btn2" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="nav_Form_Select_Country_ISO_3166.usrc_NavigationButtons1.btn3" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="nav_Form_Select_Country_ISO_3166.usrc_NavigationButtons1.usrc_Help1" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="nav_Form_Select_Country_ISO_3166.usrc_NavigationButtons1.usrc_Help1.btn_Help" imageincluded="1" link="" margin="4" heading="h2" />
+        </TControl>
+      </TControl>
+      <TControl name="nav_Form_Select_Country_ISO_3166.txt_SelectCountry" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="nav_Form_Select_Country_ISO_3166.dgvx_ISO_3166" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="nav_Form_Select_Country_ISO_3166.dgvx_ISO_3166.Country" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="20a75566-b690-4b8c-902c-b2579bf18ed2">Country</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_Form_Select_Country_ISO_3166.dgvx_ISO_3166.a2" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="62530beb-4c74-4406-9741-5653939ebee7">Abbreviation a2</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_Form_Select_Country_ISO_3166.dgvx_ISO_3166.a3" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="ef2b6ce8-1894-4cb5-8cc6-dbf666498c80">Abbreviation a3</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_Form_Select_Country_ISO_3166.dgvx_ISO_3166.num" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="2e506e78-3d62-43ce-8e07-5abc35572689">Number</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_Form_Select_Country_ISO_3166.dgvx_ISO_3166.Currency Name" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="377e1668-12e3-4660-a9f4-06d8e3b6503e">Currency Name</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_Form_Select_Country_ISO_3166.dgvx_ISO_3166.Currency Abbreviation" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="8fbf0f88-2b40-4adb-837d-4374285cd187">Currency</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_Form_Select_Country_ISO_3166.dgvx_ISO_3166.Currency Symbol" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="5972e35d-7697-43e5-b537-30744bfcd472">Currency Symbol</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_Form_Select_Country_ISO_3166.dgvx_ISO_3166.Currency Code" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="fda3cdbb-5321-411e-94bc-d8e3524509eb">Currency Code</h3>
+          </div>
+        </TControl>
+        <TControl name="nav_Form_Select_Country_ISO_3166.dgvx_ISO_3166.Currency Decimal Places" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="a55fc8ad-07ff-42d6-b7d5-8a3114d802ea">Currency decimal places</h3>
+          </div>
+        </TControl>
+      </TControl>
+    </TControl>
+  </body>
+</html>

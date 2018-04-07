@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <title>Select default currency</title>
+  </head>
+  <body>
+    <THeader>
+      <div class="header">
+        <canvas id="TangentaLogo" width="60" height="50"></canvas>
+        <script type="text/javascript">
+        var canvas, context, canvaso, contexto;
+        canvaso = document.getElementById('TangentaLogo');
+        context = canvaso.getContext('2d');
+        context.lineWidth = 1;
+
+        // Draw vertical line
+        context.strokeStyle ='#936b20';
+        context.beginPath();
+        context.moveTo(30, 0);
+        context.lineTo(30, 50);
+        context.stroke();
+
+        // Draw large arc
+        context.beginPath();
+        context.arc(54, 26, 24,0.6*Math.PI,1.5*Math.PI, false);
+        context.stroke();
+
+        // Draw head circle
+        context.beginPath();
+        context.fillStyle = "#E2FFB0"/*"#CEF988";*/
+        context.arc(34, 6, 4,0,2*Math.PI, false);
+        context.fill();
+        context.stroke();
+
+        context.closePath();
+        context.restore();
+
+        </script>
+        <div class="header_border_with_radius">
+          <div class="header_menu">
+            <span>
+              <a href="../Tangenta.html">TANGENTA</a>
+            </span>,
+             <span><a href="../Invoice.html">INVOICES</a></span>,
+             <span><a href="../ProformaInvoice.html">PROFORMA INVOICES</a></span>,
+             <span><a href="../Stock.html">STOCK</a></span>,
+             <span><a href="../PriceList.html">PRICE LISTS</a></span>,
+             <span><a href="../Printing.html">PRINTING</a></span>,
+             <span><a href="../InvoicingOverview.html">OVERVIEW</a></span>,
+             <span><a href="../Support.html">SUPPORT</a></span>,
+             <span><a href="../News.html">NEWS</a></span>,
+             <span><a href="../About.html">ABOUT</a></span></div>
+        </div>
+      </div>
+    </THeader>
+    <TControl name="st_Form_Select_DefaultCurrency" imageincluded="1" link="" margin="4" heading="h1">
+      <div class="Title">
+        <h1 class="Title" id="87115425-a958-4e49-a959-7e148c311f1c">Select default currency</h1>
+        <img src="st_Form_Select_DefaultCurrency.png" />
+      </div>
+      <TControl name="st_Form_Select_DefaultCurrency.usrc_NavigationButtons1" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="st_Form_Select_DefaultCurrency.usrc_NavigationButtons1.btn2" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="st_Form_Select_DefaultCurrency.usrc_NavigationButtons1.btn3" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="st_Form_Select_DefaultCurrency.usrc_NavigationButtons1.usrc_Help1" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="st_Form_Select_DefaultCurrency.usrc_NavigationButtons1.usrc_Help1.btn_Help" imageincluded="1" link="" margin="4" heading="h2" />
+        </TControl>
+      </TControl>
+      <TControl name="st_Form_Select_DefaultCurrency.lbl_SelectedCurrency" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="st_Form_Select_DefaultCurrency.txt_SelectedCurrency" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="st_Form_Select_DefaultCurrency.dgvx_Currency" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="st_Form_Select_DefaultCurrency.dgvx_Currency.ID" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="6f1c8110-a78c-4953-b4ea-bd4c7930ca97">ID</h3>
+          </div>
+        </TControl>
+        <TControl name="st_Form_Select_DefaultCurrency.dgvx_Currency.Abbreviation" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="c0037696-acef-47d6-b611-f47c0c0389a8">Currency letter code</h3>
+          </div>
+        </TControl>
+        <TControl name="st_Form_Select_DefaultCurrency.dgvx_Currency.Name" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="9bd262b8-3f81-42e8-b271-cf80c43ba243">Currency Name</h3>
+          </div>
+        </TControl>
+        <TControl name="st_Form_Select_DefaultCurrency.dgvx_Currency.Symbol" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="70746bff-3a2b-46e1-b51b-f87ab6b02a49">Currency Symbol</h3>
+          </div>
+        </TControl>
+        <TControl name="st_Form_Select_DefaultCurrency.dgvx_Currency.CurrencyCode" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="0a611405-d98c-4919-8939-ee491e6bae27">Currency Code</h3>
+          </div>
+        </TControl>
+        <TControl name="st_Form_Select_DefaultCurrency.dgvx_Currency.DecimalPlaces" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="520c4e05-9de5-4bcc-a2a5-72d265959a95">Decimal places</h3>
+          </div>
+        </TControl>
+      </TControl>
+    </TControl>
+  </body>
+</html>

@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <title>Login History for user::admin1</title>
+  </head>
+  <body>
+    <THeader>
+      <div class="header">
+        <canvas id="TangentaLogo" width="60" height="50"></canvas>
+        <script type="text/javascript">
+        var canvas, context, canvaso, contexto;
+        canvaso = document.getElementById('TangentaLogo');
+        context = canvaso.getContext('2d');
+        context.lineWidth = 1;
+
+        // Draw vertical line
+        context.strokeStyle ='#936b20';
+        context.beginPath();
+        context.moveTo(30, 0);
+        context.lineTo(30, 50);
+        context.stroke();
+
+        // Draw large arc
+        context.beginPath();
+        context.arc(54, 26, 24,0.6*Math.PI,1.5*Math.PI, false);
+        context.stroke();
+
+        // Draw head circle
+        context.beginPath();
+        context.fillStyle = "#E2FFB0"/*"#CEF988";*/
+        context.arc(34, 6, 4,0,2*Math.PI, false);
+        context.fill();
+        context.stroke();
+
+        context.closePath();
+        context.restore();
+
+        </script>
+        <div class="header_border_with_radius">
+          <div class="header_menu">
+            <span>
+              <a href="../Tangenta.html">TANGENTA</a>
+            </span>,
+             <span><a href="../Invoice.html">INVOICES</a></span>,
+             <span><a href="../ProformaInvoice.html">PROFORMA INVOICES</a></span>,
+             <span><a href="../Stock.html">STOCK</a></span>,
+             <span><a href="../PriceList.html">PRICE LISTS</a></span>,
+             <span><a href="../Printing.html">PRINTING</a></span>,
+             <span><a href="../InvoicingOverview.html">OVERVIEW</a></span>,
+             <span><a href="../Support.html">SUPPORT</a></span>,
+             <span><a href="../News.html">NEWS</a></span>,
+             <span><a href="../About.html">ABOUT</a></span></div>
+        </div>
+      </div>
+    </THeader>
+    <TControl name="AWPLoginHistoryForm" imageincluded="1" link="" margin="4" heading="h1">
+      <div class="Title">
+        <h1 class="Title" id="dff21af0-13b1-45b4-a226-6e34aa7a2d0b">Login History for user::admin1</h1>
+        <img src="AWPLoginHistoryForm.png" />
+      </div>
+      <TControl name="AWPLoginHistoryForm.lbl_LoginHistory" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="AWPLoginHistoryForm.usrc_Help1" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="AWPLoginHistoryForm.usrc_Help1.btn_Help" imageincluded="1" link="" margin="4" heading="h2" />
+      </TControl>
+      <TControl name="AWPLoginHistoryForm.lbl_From" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="AWPLoginHistoryForm.dtp_From" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="AWPLoginHistoryForm.lbl_To" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="AWPLoginHistoryForm.dtp_To" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="AWPLoginHistoryForm.btn_Refresh" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="AWPLoginHistoryForm.lbl_TotalTimeSpan" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="AWPLoginHistoryForm.lbl_WorkHoursResult" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="AWPLoginHistoryForm.dgv_LoginHistory" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="AWPLoginHistoryForm.dgv_LoginHistory.Atom_WorkPeriod_$$LoginTime" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="94d1459e-b7e5-4701-a629-e919ad21463c">Login Time</h3>
+          </div>
+        </TControl>
+        <TControl name="AWPLoginHistoryForm.dgv_LoginHistory.Atom_WorkPeriod_$$LogoutTime" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="b6ecc144-3261-475d-a6e6-d00c3def3c34">Logout Time</h3>
+          </div>
+        </TControl>
+        <TControl name="AWPLoginHistoryForm.dgv_LoginHistory.Atom_WorkPeriod_$_aed_$$Name" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="f332b3d0-8276-4029-97a0-5b8acf06b2d1">Casshier Name</h3>
+          </div>
+        </TControl>
+        <TControl name="AWPLoginHistoryForm.dgv_LoginHistory.Atom_WorkPeriod_$_amcper_$_aoffice_$$Name" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="49cfaa33-5b7e-4141-8c6e-eee91b328521">Office Name</h3>
+          </div>
+        </TControl>
+        <TControl name="AWPLoginHistoryForm.dgv_LoginHistory.Atom_WorkPeriod_$_amcper_$_aoffice_$$ShortName" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="f1ea840a-d809-49bc-b242-5d3221e59755">Short Office Name</h3>
+          </div>
+        </TControl>
+        <TControl name="AWPLoginHistoryForm.dgv_LoginHistory.Atom_WorkPeriod_$_acomp_$$Name" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="63ea376a-1341-4bab-a3d6-86faff06a022">Computer:</h3>
+          </div>
+        </TControl>
+        <TControl name="AWPLoginHistoryForm.dgv_LoginHistory.Atom_WorkPeriod_$_acomp_$$UserName" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="5365d0f2-9dfa-4c1e-93c7-33865ca614aa">UserName for computer login:</h3>
+          </div>
+        </TControl>
+        <TControl name="AWPLoginHistoryForm.dgv_LoginHistory.Atom_WorkPeriod_$_acomp_$$IP_address" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="70ebd50f-6c64-4a33-a0ac-5d4245b25746">Local computer IP address</h3>
+          </div>
+        </TControl>
+        <TControl name="AWPLoginHistoryForm.dgv_LoginHistory.Atom_WorkPeriod_$_acomp_$$MAC_address" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="d957e2e2-f19d-4534-b187-38d0a7e4991a">Local computer MAC address</h3>
+          </div>
+        </TControl>
+        <TControl name="AWPLoginHistoryForm.dgv_LoginHistory.Atom_WorkPeriod_$_amcper_$_aper_$_acfn_$$FirstName" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="f5248329-5ce5-4829-a55c-02c897627942">First Name</h3>
+          </div>
+        </TControl>
+        <TControl name="AWPLoginHistoryForm.dgv_LoginHistory.Atom_WorkPeriod_$_amcper_$_aper_$_acln_$$LastName" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="f1879c20-ef05-4db9-bfe1-620f6da5b005">Last Name</h3>
+          </div>
+        </TControl>
+        <TControl name="AWPLoginHistoryForm.dgv_LoginHistory.Duration" imageincluded="0" link="" margin="4" heading="h3">
+          <div class="Title">
+            <h3 class="Title" id="48821a25-2e95-486f-93a5-0a63dc2b7301">Duration</h3>
+          </div>
+        </TControl>
+      </TControl>
+      <TControl name="AWPLoginHistoryForm.btn_Cancel" imageincluded="1" link="" margin="4" heading="h2" />
+    </TControl>
+  </body>
+</html>

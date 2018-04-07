@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <title>Terms of payment  and print</title>
+  </head>
+  <body>
+    <THeader>
+      <div class="header">
+        <canvas id="TangentaLogo" width="60" height="50"></canvas>
+        <script type="text/javascript">
+        var canvas, context, canvaso, contexto;
+        canvaso = document.getElementById('TangentaLogo');
+        context = canvaso.getContext('2d');
+        context.lineWidth = 1;
+
+        // Draw vertical line
+        context.strokeStyle ='#936b20';
+        context.beginPath();
+        context.moveTo(30, 0);
+        context.lineTo(30, 50);
+        context.stroke();
+
+        // Draw large arc
+        context.beginPath();
+        context.arc(54, 26, 24,0.6*Math.PI,1.5*Math.PI, false);
+        context.stroke();
+
+        // Draw head circle
+        context.beginPath();
+        context.fillStyle = "#E2FFB0"/*"#CEF988";*/
+        context.arc(34, 6, 4,0,2*Math.PI, false);
+        context.fill();
+        context.stroke();
+
+        context.closePath();
+        context.restore();
+
+        </script>
+        <div class="header_border_with_radius">
+          <div class="header_menu">
+            <span>
+              <a href="../Tangenta.html">TANGENTA</a>
+            </span>,
+             <span><a href="../Invoice.html">INVOICES</a></span>,
+             <span><a href="../ProformaInvoice.html">PROFORMA INVOICES</a></span>,
+             <span><a href="../Stock.html">STOCK</a></span>,
+             <span><a href="../PriceList.html">PRICE LISTS</a></span>,
+             <span><a href="../Printing.html">PRINTING</a></span>,
+             <span><a href="../InvoicingOverview.html">OVERVIEW</a></span>,
+             <span><a href="../Support.html">SUPPORT</a></span>,
+             <span><a href="../News.html">NEWS</a></span>,
+             <span><a href="../About.html">ABOUT</a></span></div>
+        </div>
+      </div>
+    </THeader>
+    <TControl name="Form_DocProformaInvoice_AddOn" imageincluded="1" link="" margin="4" heading="h1">
+      <div class="Title">
+        <h1 class="Title" id="58b75294-d6d3-47d7-88eb-ed06a321fa4c">Terms of payment  and print</h1>
+        <img src="Form_DocProformaInvoice_AddOn.png" />
+      </div>
+      <TControl name="Form_DocProformaInvoice_AddOn.usrc_DocProformaInvoice_AddOn1" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="Form_DocProformaInvoice_AddOn.usrc_DocProformaInvoice_AddOn1.lbl_DateOfIssue" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="Form_DocProformaInvoice_AddOn.usrc_DocProformaInvoice_AddOn1.dtP_DateOfIssue" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="Form_DocProformaInvoice_AddOn.usrc_DocProformaInvoice_AddOn1.usrc_Help1" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="Form_DocProformaInvoice_AddOn.usrc_DocProformaInvoice_AddOn1.usrc_Help1.btn_Help" imageincluded="1" link="" margin="4" heading="h2" />
+        </TControl>
+        <TControl name="Form_DocProformaInvoice_AddOn.usrc_DocProformaInvoice_AddOn1.grp_MtehodOfPaymentType" imageincluded="1" link="" margin="4" heading="h2">
+          <div class="Title">
+            <h2 class="Title" id="668e693b-0a90-4f17-a026-307c9eaaa03a">Payment type</h2>
+            <img src="Form_DocProformaInvoice_AddOn_usrc_DocProformaInvoice_AddOn1_grp_MtehodOfPaymentType.png" />
+          </div>
+          <TControl name="Form_DocProformaInvoice_AddOn.usrc_DocProformaInvoice_AddOn1.grp_MtehodOfPaymentType.rdb_BankAccountTransfer" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="Form_DocProformaInvoice_AddOn.usrc_DocProformaInvoice_AddOn1.grp_MtehodOfPaymentType.txt_BankAccount" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="Form_DocProformaInvoice_AddOn.usrc_DocProformaInvoice_AddOn1.grp_MtehodOfPaymentType.btn_Select_BankAccount" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="Form_DocProformaInvoice_AddOn.usrc_DocProformaInvoice_AddOn1.grp_MtehodOfPaymentType.rdb_Payment_by_cash_or_credit_card_on_delivery" imageincluded="1" link="" margin="4" heading="h2" />
+        </TControl>
+        <TControl name="Form_DocProformaInvoice_AddOn.usrc_DocProformaInvoice_AddOn1.grp_TermsOfPayment" imageincluded="1" link="" margin="4" heading="h2">
+          <div class="Title">
+            <h2 class="Title" id="d56d2632-eda9-404a-a901-bce65c4a363c">Terms of payment</h2>
+            <img src="Form_DocProformaInvoice_AddOn_usrc_DocProformaInvoice_AddOn1_grp_TermsOfPayment.png" />
+          </div>
+          <TControl name="Form_DocProformaInvoice_AddOn.usrc_DocProformaInvoice_AddOn1.grp_TermsOfPayment.btn_Select_Terms_of_Payment" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="Form_DocProformaInvoice_AddOn.usrc_DocProformaInvoice_AddOn1.grp_TermsOfPayment.txt_PaymantConditionsDescription" imageincluded="1" link="" margin="4" heading="h2" />
+        </TControl>
+        <TControl name="Form_DocProformaInvoice_AddOn.usrc_DocProformaInvoice_AddOn1.grp_ValidityOfTheTender" imageincluded="1" link="" margin="4" heading="h2">
+          <div class="Title">
+            <h2 class="Title" id="163e671e-c647-4fa4-8a70-c62f966f8920">The duration of the offer</h2>
+            <img src="Form_DocProformaInvoice_AddOn_usrc_DocProformaInvoice_AddOn1_grp_ValidityOfTheTender.png" />
+          </div>
+          <TControl name="Form_DocProformaInvoice_AddOn.usrc_DocProformaInvoice_AddOn1.grp_ValidityOfTheTender.rdb_ValidNumberOf" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="Form_DocProformaInvoice_AddOn.usrc_DocProformaInvoice_AddOn1.grp_ValidityOfTheTender.cmb_DaysOrMonths" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="Form_DocProformaInvoice_AddOn.usrc_DocProformaInvoice_AddOn1.grp_ValidityOfTheTender.nmUpDn_NumberOfDaysOrMonths" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="Form_DocProformaInvoice_AddOn.usrc_DocProformaInvoice_AddOn1.grp_ValidityOfTheTender.nmUpDn_NumberOfDaysOrMonths.nmUpDn_NumberOfDaysOrMonths_System_Windows_Forms_UpDownBase+UpDownEdit" imageincluded="1" link="" margin="4" heading="h2" />
+          </TControl>
+          <TControl name="Form_DocProformaInvoice_AddOn.usrc_DocProformaInvoice_AddOn1.grp_ValidityOfTheTender.rdb_Valid_Tender_Until" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="Form_DocProformaInvoice_AddOn.usrc_DocProformaInvoice_AddOn1.grp_ValidityOfTheTender.dtP_TenderValidUntil" imageincluded="1" link="" margin="4" heading="h2" />
+        </TControl>
+        <TControl name="Form_DocProformaInvoice_AddOn.usrc_DocProformaInvoice_AddOn1.usrc_Notice1" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="Form_DocProformaInvoice_AddOn.usrc_DocProformaInvoice_AddOn1.usrc_Notice1.btn_SelectNotice" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="Form_DocProformaInvoice_AddOn.usrc_DocProformaInvoice_AddOn1.usrc_Notice1.chk_Notice" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="Form_DocProformaInvoice_AddOn.usrc_DocProformaInvoice_AddOn1.usrc_Notice1.txt_Notice" imageincluded="1" link="" margin="4" heading="h2" />
+        </TControl>
+        <TControl name="Form_DocProformaInvoice_AddOn.usrc_DocProformaInvoice_AddOn1.btn_ProformaInvoice_Issue" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="Form_DocProformaInvoice_AddOn.usrc_DocProformaInvoice_AddOn1.btn_Cancel" imageincluded="1" link="" margin="4" heading="h2" />
+      </TControl>
+    </TControl>
+  </body>
+</html>

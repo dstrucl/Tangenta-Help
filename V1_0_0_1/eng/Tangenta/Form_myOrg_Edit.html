@@ -1,0 +1,715 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <title>My organisation</title>
+  </head>
+  <body>
+    <THeader>
+      <div class="header">
+        <canvas id="TangentaLogo" width="60" height="50"></canvas>
+        <script type="text/javascript">
+        var canvas, context, canvaso, contexto;
+        canvaso = document.getElementById('TangentaLogo');
+        context = canvaso.getContext('2d');
+        context.lineWidth = 1;
+
+        // Draw vertical line
+        context.strokeStyle ='#936b20';
+        context.beginPath();
+        context.moveTo(30, 0);
+        context.lineTo(30, 50);
+        context.stroke();
+
+        // Draw large arc
+        context.beginPath();
+        context.arc(54, 26, 24,0.6*Math.PI,1.5*Math.PI, false);
+        context.stroke();
+
+        // Draw head circle
+        context.beginPath();
+        context.fillStyle = "#E2FFB0"/*"#CEF988";*/
+        context.arc(34, 6, 4,0,2*Math.PI, false);
+        context.fill();
+        context.stroke();
+
+        context.closePath();
+        context.restore();
+
+        </script>
+        <div class="header_border_with_radius">
+          <div class="header_menu">
+            <span>
+              <a href="../Tangenta.html">TANGENTA</a>
+            </span>,
+             <span><a href="../Invoice.html">INVOICES</a></span>,
+             <span><a href="../ProformaInvoice.html">PROFORMA INVOICES</a></span>,
+             <span><a href="../Stock.html">STOCK</a></span>,
+             <span><a href="../PriceList.html">PRICE LISTS</a></span>,
+             <span><a href="../Printing.html">PRINTING</a></span>,
+             <span><a href="../InvoicingOverview.html">OVERVIEW</a></span>,
+             <span><a href="../Support.html">SUPPORT</a></span>,
+             <span><a href="../News.html">NEWS</a></span>,
+             <span><a href="../About.html">ABOUT</a></span></div>
+        </div>
+      </div>
+    </THeader>
+    <TControl name="Form_myOrg_Edit" imageincluded="1" link="" margin="4" heading="h1">
+      <div class="Title">
+        <h1 class="Title" id="9b69983c-970b-4747-8bfc-7033366f3aef">My organisation</h1>
+        <img src="Form_myOrg_Edit.png" />
+      </div>
+      <TControl name="Form_myOrg_Edit.usrc_NavigationButtons1" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="Form_myOrg_Edit.usrc_NavigationButtons1.btn1" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="Form_myOrg_Edit.usrc_NavigationButtons1.btn3" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="Form_myOrg_Edit.usrc_NavigationButtons1.usrc_Help1" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="Form_myOrg_Edit.usrc_NavigationButtons1.usrc_Help1.btn_Help" imageincluded="1" link="" margin="4" heading="h2" />
+        </TControl>
+      </TControl>
+      <TControl name="Form_myOrg_Edit.splitContainer1" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="Form_myOrg_Edit.splitContainer1.spl1" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="Form_myOrg_Edit.splitContainer1.spl1.btn_Office" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.lbl_Title" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.btn_Update" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor" imageincluded="1" link="" margin="4" heading="h2">
+              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1" imageincluded="1" link="" margin="4" heading="h2">
+                <div class="Title">
+                  <h2 class="Title" id="1cad85b0-8b5e-4be3-823a-0cafc018940a">My Organisation</h2>
+                  <img src="Form_myOrg_Edit_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1.png" />
+                  <div class="Description">Name of table in database is "myOrganisation".</div>
+                </div>
+                <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                  <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                  <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.btnex_1" imageincluded="1" link="" margin="4" heading="h2" />
+                  <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.ixt_34" imageincluded="1" link="" margin="4" heading="h2" />
+                  <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.btnex_2" imageincluded="1" link="" margin="4" heading="h2" />
+                  <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2" imageincluded="1" link="" margin="4" heading="h2">
+                    <div class="Title">
+                      <h2 class="Title" id="5061af02-7873-4bcd-9e21-f3d011ea4bcd">Organisation Data</h2>
+                      <img src="Form_myOrg_Edit_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1_grpBox_myGrp_2.png" />
+                      <div class="Description">Name of table in database is "OrganisationData".</div>
+                    </div>
+                    <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                      <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                      <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.btnex_3" imageincluded="1" link="" margin="4" heading="h2" />
+                      <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.uinpctrl_lbl_1" imageincluded="1" link="" margin="4" heading="h2">
+                        <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.uinpctrl_lbl_1.picUnique" imageincluded="1" link="" margin="4" heading="h2" />
+                        <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.uinpctrl_lbl_1.xlbl_1" imageincluded="1" link="" margin="4" heading="h2" />
+                      </TControl>
+                      <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.ixt_1" imageincluded="1" link="" margin="4" heading="h2" />
+                      <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.btnex_4" imageincluded="1" link="" margin="4" heading="h2" />
+                      <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3" imageincluded="1" link="" margin="4" heading="h2">
+                        <div class="Title">
+                          <h2 class="Title" id="9db331ec-09fc-4aa9-a520-10e0e3540bd2">Organisation</h2>
+                          <img src="Form_myOrg_Edit_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1_grpBox_myGrp_2_grpBox_myGrp_3.png" />
+                          <div class="Description">Name of table in database is "Organisation".</div>
+                        </div>
+                        <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                          <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                          <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.btnex_5" imageincluded="1" link="" margin="4" heading="h2" />
+                          <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.uinpctrl_lbl_2" imageincluded="1" link="" margin="4" heading="h2">
+                            <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.uinpctrl_lbl_2.xlbl_2" imageincluded="1" link="" margin="4" heading="h2" />
+                          </TControl>
+                          <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.ixt_2" imageincluded="1" link="" margin="4" heading="h2" />
+                          <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.btnex_6" imageincluded="1" link="" margin="4" heading="h2" />
+                          <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.inp_ctrl1" imageincluded="1" link="" margin="4" heading="h2">
+                            <div class="Title">
+                              <h2 class="Title" id="d69d1f77-2f30-4703-87a0-aac321e4fc41">Organisation name</h2>
+                              <img src="Form_myOrg_Edit_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1_grpBox_myGrp_2_grpBox_myGrp_3_grpBox_inp_ctrl1.png" />
+                              <div class="Description">
+Max text length is  264 characters.
+Name of column in database table "Organisation":"Name".</div>
+                            </div>
+                            <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.inp_ctrl1.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.inp_ctrl1.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.inp_ctrl1.usrc_lbl.xlbl_3" imageincluded="1" link="" margin="4" heading="h2" />
+                            </TControl>
+                            <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.inp_ctrl1.txt_3" imageincluded="1" link="" margin="4" heading="h2" />
+                          </TControl>
+                          <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.inp_ctrl2" imageincluded="1" link="" margin="4" heading="h2">
+                            <div class="Title">
+                              <h2 class="Title" id="905c4cdb-543e-4e04-8df0-ffdb3c61b2cf">TAX ID</h2>
+                              <img src="Form_myOrg_Edit_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1_grpBox_myGrp_2_grpBox_myGrp_3_grpBox_inp_ctrl2.png" />
+                              <div class="Description">
+Max text length is  32 characters.
+Name of column in database table "Organisation":"Tax_ID".</div>
+                            </div>
+                            <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.inp_ctrl2.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.inp_ctrl2.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.inp_ctrl2.usrc_lbl.xlbl_4" imageincluded="1" link="" margin="4" heading="h2" />
+                            </TControl>
+                            <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.inp_ctrl2.txt_4" imageincluded="1" link="" margin="4" heading="h2" />
+                          </TControl>
+                          <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.inp_ctrl3" imageincluded="1" link="" margin="4" heading="h2">
+                            <div class="Title">
+                              <h2 class="Title" id="389caf96-3f0c-49c6-91b9-0289a0d7c454">REGISTRATION ID</h2>
+                              <img src="Form_myOrg_Edit_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1_grpBox_myGrp_2_grpBox_myGrp_3_grpBox_inp_ctrl3.png" />
+                              <div class="Description">
+This information is optional.
+Max text length is  50 characters.
+Name of column in database table "Organisation":"Registration_ID".</div>
+                            </div>
+                            <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.inp_ctrl3.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.inp_ctrl3.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.inp_ctrl3.usrc_lbl.urdb_1" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.inp_ctrl3.usrc_lbl.urdb_2" imageincluded="1" link="" margin="4" heading="h2" />
+                            </TControl>
+                            <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.inp_ctrl3.txt_5" imageincluded="1" link="" margin="4" heading="h2" />
+                          </TControl>
+                          <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.inp_ctrl4" imageincluded="1" link="" margin="4" heading="h2">
+                            <div class="Title">
+                              <h2 class="Title" id="5ce9eba6-3cf9-4d04-850f-90583221e280">Tax payer</h2>
+                              <img src="Form_myOrg_Edit_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1_grpBox_myGrp_2_grpBox_myGrp_3_grpBox_inp_ctrl4.png" />
+                              <div class="Description">
+This information is optional.
+Name of column in database table "Organisation":"TaxPayer".</div>
+                            </div>
+                            <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.inp_ctrl4.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.inp_ctrl4.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.inp_ctrl4.usrc_lbl.urdb_3" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.inp_ctrl4.usrc_lbl.urdb_4" imageincluded="1" link="" margin="4" heading="h2" />
+                            </TControl>
+                            <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.inp_ctrl4.uchk_1" imageincluded="1" link="" margin="4" heading="h2" />
+                          </TControl>
+                          <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4" imageincluded="1" link="" margin="4" heading="h2">
+                            <div class="Title">
+                              <h2 class="Title" id="556e4f50-6076-444e-b246-add61ad242e5">Comment 1</h2>
+                              <img src="Form_myOrg_Edit_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1_grpBox_myGrp_2_grpBox_myGrp_3_grpBox_myGrp_4.png" />
+                              <div class="Description">Name of table in database is "Comment1".</div>
+                            </div>
+                            <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.btnex_7" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.uinpctrl_lbl_3" imageincluded="1" link="" margin="4" heading="h2">
+                                <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.uinpctrl_lbl_3.urdb_5" imageincluded="1" link="" margin="4" heading="h2" />
+                                <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.uinpctrl_lbl_3.urdb_6" imageincluded="1" link="" margin="4" heading="h2" />
+                              </TControl>
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.ixt_6" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.btnex_8" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.inp_ctrl5" imageincluded="1" link="" margin="4" heading="h2">
+                                <div class="Title">
+                                  <h2 class="Title" id="05f76cc5-cbea-4076-9f26-2fcfbf4bf62f">Comment</h2>
+                                  <img src="hashname_-978800223.png" />
+                                  <div class="Description">
+Max text length is  2000 characters.
+Name of column in database table "Comment1":"Comment".</div>
+                                </div>
+                                <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.inp_ctrl5.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.inp_ctrl5.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.inp_ctrl5.usrc_lbl.xlbl_5" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                                <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_3.grpBox.myGrp_4.grpBox.inp_ctrl5.rtxt_1" imageincluded="1" link="" margin="4" heading="h2" />
+                              </TControl>
+                            </TControl>
+                          </TControl>
+                        </TControl>
+                      </TControl>
+                      <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_5" imageincluded="1" link="" margin="4" heading="h2">
+                        <div class="Title">
+                          <h2 class="Title" id="2fb3a151-73df-47b9-920a-21b6e3d73144">Organisation Type</h2>
+                          <img src="Form_myOrg_Edit_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1_grpBox_myGrp_2_grpBox_myGrp_5.png" />
+                          <div class="Description">Name of table in database is "cOrgTYPE".</div>
+                        </div>
+                        <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_5.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                          <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_5.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                          <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_5.grpBox.btnex_9" imageincluded="1" link="" margin="4" heading="h2" />
+                          <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_5.grpBox.uinpctrl_lbl_4" imageincluded="1" link="" margin="4" heading="h2">
+                            <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_5.grpBox.uinpctrl_lbl_4.xlbl_6" imageincluded="1" link="" margin="4" heading="h2" />
+                          </TControl>
+                          <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_5.grpBox.ixt_7" imageincluded="1" link="" margin="4" heading="h2" />
+                          <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_5.grpBox.btnex_10" imageincluded="1" link="" margin="4" heading="h2" />
+                          <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_5.grpBox.inp_ctrl6" imageincluded="1" link="" margin="4" heading="h2">
+                            <div class="Title">
+                              <h2 class="Title" id="4701c6ae-2d2f-41a2-8fac-abeb8c84772e">Organisation Type</h2>
+                              <img src="Form_myOrg_Edit_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1_grpBox_myGrp_2_grpBox_myGrp_5_grpBox_inp_ctrl6.png" />
+                              <div class="Description">Write unique value
+Max text length is  32 characters.
+Name of column in database table "cOrgTYPE":"OrganisationTYPE".</div>
+                            </div>
+                            <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_5.grpBox.inp_ctrl6.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_5.grpBox.inp_ctrl6.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_5.grpBox.inp_ctrl6.usrc_lbl.picUnique" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_5.grpBox.inp_ctrl6.usrc_lbl.xlbl_7" imageincluded="1" link="" margin="4" heading="h2" />
+                            </TControl>
+                            <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_5.grpBox.inp_ctrl6.txt_8" imageincluded="1" link="" margin="4" heading="h2" />
+                          </TControl>
+                        </TControl>
+                      </TControl>
+                      <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6" imageincluded="1" link="" margin="4" heading="h2">
+                        <div class="Title">
+                          <h2 class="Title" id="044fa3a3-dab3-4c21-9bc9-f411117342c4">Address Organisation</h2>
+                          <img src="Form_myOrg_Edit_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1_grpBox_myGrp_2_grpBox_myGrp_6.png" />
+                          <div class="Description">Name of table in database is "cAddress_Org".</div>
+                        </div>
+                        <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                          <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                          <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.btnex_11" imageincluded="1" link="" margin="4" heading="h2" />
+                          <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.uinpctrl_lbl_5" imageincluded="1" link="" margin="4" heading="h2">
+                            <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.uinpctrl_lbl_5.xlbl_8" imageincluded="1" link="" margin="4" heading="h2" />
+                          </TControl>
+                          <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.ixt_9" imageincluded="1" link="" margin="4" heading="h2" />
+                          <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.btnex_12" imageincluded="1" link="" margin="4" heading="h2" />
+                          <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_7" imageincluded="1" link="" margin="4" heading="h2">
+                            <div class="Title">
+                              <h2 class="Title" id="bbfe2153-4043-4e62-bf08-f50b18c4660f">Organisation Type</h2>
+                              <img src="Form_myOrg_Edit_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1_grpBox_myGrp_2_grpBox_myGrp_6_grpBox_myGrp_7.png" />
+                              <div class="Description">Name of table in database is "cStreetName_Org".</div>
+                            </div>
+                            <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_7.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_7.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_7.grpBox.btnex_13" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_7.grpBox.uinpctrl_lbl_6" imageincluded="1" link="" margin="4" heading="h2">
+                                <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_7.grpBox.uinpctrl_lbl_6.xlbl_9" imageincluded="1" link="" margin="4" heading="h2" />
+                              </TControl>
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_7.grpBox.ixt_10" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_7.grpBox.btnex_14" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_7.grpBox.inp_ctrl7" imageincluded="1" link="" margin="4" heading="h2">
+                                <div class="Title">
+                                  <h2 class="Title" id="d90bdcbd-8bf4-425d-a3e9-9154d0dc336f">Street Name</h2>
+                                  <img src="hashname_1126123142.png" />
+                                  <div class="Description">Write unique value
+Max text length is  264 characters.
+Name of column in database table "cStreetName_Org":"StreetName".</div>
+                                </div>
+                                <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_7.grpBox.inp_ctrl7.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_7.grpBox.inp_ctrl7.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_7.grpBox.inp_ctrl7.usrc_lbl.picUnique" imageincluded="1" link="" margin="4" heading="h2" />
+                                  <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_7.grpBox.inp_ctrl7.usrc_lbl.xlbl_10" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                                <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_7.grpBox.inp_ctrl7.txt_11" imageincluded="1" link="" margin="4" heading="h2" />
+                              </TControl>
+                            </TControl>
+                          </TControl>
+                          <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_8" imageincluded="1" link="" margin="4" heading="h2">
+                            <div class="Title">
+                              <h2 class="Title" id="77ef9a68-46d9-4ad5-9f11-74685ba04ee8">House Number</h2>
+                              <img src="Form_myOrg_Edit_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1_grpBox_myGrp_2_grpBox_myGrp_6_grpBox_myGrp_8.png" />
+                              <div class="Description">Name of table in database is "cHouseNumber_Org".</div>
+                            </div>
+                            <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_8.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_8.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_8.grpBox.btnex_15" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_8.grpBox.uinpctrl_lbl_7" imageincluded="1" link="" margin="4" heading="h2">
+                                <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_8.grpBox.uinpctrl_lbl_7.xlbl_11" imageincluded="1" link="" margin="4" heading="h2" />
+                              </TControl>
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_8.grpBox.ixt_12" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_8.grpBox.btnex_16" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_8.grpBox.inp_ctrl8" imageincluded="1" link="" margin="4" heading="h2">
+                                <div class="Title">
+                                  <h2 class="Title" id="24c5f168-1215-4a1d-b97e-6d4727a0868a">House Number</h2>
+                                  <img src="hashname_725436009.png" />
+                                  <div class="Description">Write unique value
+Max text length is  32 characters.
+Name of column in database table "cHouseNumber_Org":"HouseNumber".</div>
+                                </div>
+                                <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_8.grpBox.inp_ctrl8.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_8.grpBox.inp_ctrl8.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_8.grpBox.inp_ctrl8.usrc_lbl.picUnique" imageincluded="1" link="" margin="4" heading="h2" />
+                                  <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_8.grpBox.inp_ctrl8.usrc_lbl.xlbl_12" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                                <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_8.grpBox.inp_ctrl8.txt_13" imageincluded="1" link="" margin="4" heading="h2" />
+                              </TControl>
+                            </TControl>
+                          </TControl>
+                          <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_9" imageincluded="1" link="" margin="4" heading="h2">
+                            <div class="Title">
+                              <h2 class="Title" id="8a9d479f-b916-4295-b7c5-f60c61da7f7e">City</h2>
+                              <img src="Form_myOrg_Edit_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1_grpBox_myGrp_2_grpBox_myGrp_6_grpBox_myGrp_9.png" />
+                              <div class="Description">Name of table in database is "cCity_Org".</div>
+                            </div>
+                            <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_9.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_9.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_9.grpBox.btnex_17" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_9.grpBox.uinpctrl_lbl_8" imageincluded="1" link="" margin="4" heading="h2">
+                                <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_9.grpBox.uinpctrl_lbl_8.xlbl_13" imageincluded="1" link="" margin="4" heading="h2" />
+                              </TControl>
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_9.grpBox.ixt_14" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_9.grpBox.btnex_18" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_9.grpBox.inp_ctrl9" imageincluded="1" link="" margin="4" heading="h2">
+                                <div class="Title">
+                                  <h2 class="Title" id="81a2549d-bdde-457d-9ad9-8b560e1cce45">City</h2>
+                                  <img src="hashname_825241348.png" />
+                                  <div class="Description">Write unique value
+Max text length is  264 characters.
+Name of column in database table "cCity_Org":"City".</div>
+                                </div>
+                                <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_9.grpBox.inp_ctrl9.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_9.grpBox.inp_ctrl9.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_9.grpBox.inp_ctrl9.usrc_lbl.picUnique" imageincluded="1" link="" margin="4" heading="h2" />
+                                  <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_9.grpBox.inp_ctrl9.usrc_lbl.xlbl_14" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                                <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_9.grpBox.inp_ctrl9.txt_15" imageincluded="1" link="" margin="4" heading="h2" />
+                              </TControl>
+                            </TControl>
+                          </TControl>
+                          <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_10" imageincluded="1" link="" margin="4" heading="h2">
+                            <div class="Title">
+                              <h2 class="Title" id="869db627-75f3-4861-8a69-f816ac45b61c">ZIP</h2>
+                              <img src="Form_myOrg_Edit_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1_grpBox_myGrp_2_grpBox_myGrp_6_grpBox_myGrp_10.png" />
+                              <div class="Description">Name of table in database is "cZIP_Org".</div>
+                            </div>
+                            <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_10.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_10.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_10.grpBox.btnex_19" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_10.grpBox.uinpctrl_lbl_9" imageincluded="1" link="" margin="4" heading="h2">
+                                <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_10.grpBox.uinpctrl_lbl_9.xlbl_15" imageincluded="1" link="" margin="4" heading="h2" />
+                              </TControl>
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_10.grpBox.ixt_16" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_10.grpBox.btnex_20" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_10.grpBox.inp_ctrl10" imageincluded="1" link="" margin="4" heading="h2">
+                                <div class="Title">
+                                  <h2 class="Title" id="5edc43ba-d846-4ede-a558-faafc1a34b58">ZIP</h2>
+                                  <img src="hashname_-549272148.png" />
+                                  <div class="Description">Write unique value
+Max text length is  32 characters.
+Name of column in database table "cZIP_Org":"ZIP".</div>
+                                </div>
+                                <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_10.grpBox.inp_ctrl10.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_10.grpBox.inp_ctrl10.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_10.grpBox.inp_ctrl10.usrc_lbl.picUnique" imageincluded="1" link="" margin="4" heading="h2" />
+                                  <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_10.grpBox.inp_ctrl10.usrc_lbl.xlbl_16" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                                <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_10.grpBox.inp_ctrl10.txt_17" imageincluded="1" link="" margin="4" heading="h2" />
+                              </TControl>
+                            </TControl>
+                          </TControl>
+                          <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_11" imageincluded="1" link="" margin="4" heading="h2">
+                            <div class="Title">
+                              <h2 class="Title" id="e44ead73-4a5a-4464-8af3-7f0a1c2de93a">Country</h2>
+                              <img src="Form_myOrg_Edit_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1_grpBox_myGrp_2_grpBox_myGrp_6_grpBox_myGrp_11.png" />
+                              <div class="Description">Name of table in database is "cCountry_Org".</div>
+                            </div>
+                            <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_11.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_11.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_11.grpBox.btnex_21" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_11.grpBox.uinpctrl_lbl_10" imageincluded="1" link="" margin="4" heading="h2">
+                                <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_11.grpBox.uinpctrl_lbl_10.xlbl_17" imageincluded="1" link="" margin="4" heading="h2" />
+                              </TControl>
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_11.grpBox.ixt_18" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_11.grpBox.btnex_22" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_11.grpBox.inp_ctrl11" imageincluded="1" link="" margin="4" heading="h2">
+                                <div class="Title">
+                                  <h2 class="Title" id="56725853-c74e-4e73-9945-770b11dbce88">Country</h2>
+                                  <img src="hashname_2068759482.png" />
+                                  <div class="Description">Write unique value
+Max text length is  264 characters.
+Name of column in database table "cCountry_Org":"Country".</div>
+                                </div>
+                                <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_11.grpBox.inp_ctrl11.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_11.grpBox.inp_ctrl11.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_11.grpBox.inp_ctrl11.usrc_lbl.picUnique" imageincluded="1" link="" margin="4" heading="h2" />
+                                  <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_11.grpBox.inp_ctrl11.usrc_lbl.xlbl_18" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                                <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_11.grpBox.inp_ctrl11.txt_19" imageincluded="1" link="" margin="4" heading="h2" />
+                              </TControl>
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_11.grpBox.inp_ctrl12" imageincluded="1" link="" margin="4" heading="h2">
+                                <div class="Title">
+                                  <h2 class="Title" id="778586ed-8037-41a4-831a-a186eb5a7efe">ISO_3166 a2</h2>
+                                  <img src="hashname_-130038854.png" />
+                                  <div class="Description">Write unique value
+Max text length is  5 characters.
+Name of column in database table "cCountry_Org":"Country_ISO_3166_a2".</div>
+                                </div>
+                                <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_11.grpBox.inp_ctrl12.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_11.grpBox.inp_ctrl12.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_11.grpBox.inp_ctrl12.usrc_lbl.picUnique" imageincluded="1" link="" margin="4" heading="h2" />
+                                  <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_11.grpBox.inp_ctrl12.usrc_lbl.xlbl_19" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                                <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_11.grpBox.inp_ctrl12.txt_20" imageincluded="1" link="" margin="4" heading="h2" />
+                              </TControl>
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_11.grpBox.inp_ctrl13" imageincluded="1" link="" margin="4" heading="h2">
+                                <div class="Title">
+                                  <h2 class="Title" id="40b9598b-6802-4523-b897-8fedbc829802">ISO_3166 a3</h2>
+                                  <img src="hashname_-263928902.png" />
+                                  <div class="Description">Write unique value
+Max text length is  5 characters.
+Name of column in database table "cCountry_Org":"Country_ISO_3166_a3".</div>
+                                </div>
+                                <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_11.grpBox.inp_ctrl13.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_11.grpBox.inp_ctrl13.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_11.grpBox.inp_ctrl13.usrc_lbl.picUnique" imageincluded="1" link="" margin="4" heading="h2" />
+                                  <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_11.grpBox.inp_ctrl13.usrc_lbl.xlbl_20" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                                <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_11.grpBox.inp_ctrl13.txt_21" imageincluded="1" link="" margin="4" heading="h2" />
+                              </TControl>
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_11.grpBox.inp_ctrl14" imageincluded="1" link="" margin="4" heading="h2">
+                                <div class="Title">
+                                  <h2 class="Title" id="40d1e414-879a-4e72-b5ad-d6a882321959">ISO_3166 num</h2>
+                                  <img src="hashname_595968954.png" />
+                                  <div class="Description">Write unique value
+Name of column in database table "cCountry_Org":"Country_ISO_3166_num".</div>
+                                </div>
+                                <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_11.grpBox.inp_ctrl14.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                                <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_11.grpBox.inp_ctrl14.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_11.grpBox.inp_ctrl14.usrc_lbl.picUnique" imageincluded="1" link="" margin="4" heading="h2" />
+                                  <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_11.grpBox.inp_ctrl14.usrc_lbl.xlbl_21" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                                <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_11.grpBox.inp_ctrl14.unmUpDn_1" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_11.grpBox.inp_ctrl14.unmUpDn_1.txt_Value" imageincluded="1" link="" margin="4" heading="h2" />
+                                  <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_11.grpBox.inp_ctrl14.unmUpDn_1.btn_Plus" imageincluded="1" link="" margin="4" heading="h2" />
+                                  <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_11.grpBox.inp_ctrl14.unmUpDn_1.btn_Minus" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                              </TControl>
+                            </TControl>
+                          </TControl>
+                          <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_12" imageincluded="1" link="" margin="4" heading="h2">
+                            <div class="Title">
+                              <h2 class="Title" id="7860e15f-3a85-43bd-a5bd-211566170308">State</h2>
+                              <img src="Form_myOrg_Edit_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1_grpBox_myGrp_2_grpBox_myGrp_6_grpBox_myGrp_12.png" />
+                              <div class="Description">Name of table in database is "cState_Org".</div>
+                            </div>
+                            <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_12.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_12.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_12.grpBox.uinpctrl_lbl_11" imageincluded="1" link="" margin="4" heading="h2">
+                                <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_12.grpBox.uinpctrl_lbl_11.urdb_7" imageincluded="1" link="" margin="4" heading="h2" />
+                                <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_6.grpBox.myGrp_12.grpBox.uinpctrl_lbl_11.urdb_8" imageincluded="1" link="" margin="4" heading="h2" />
+                              </TControl>
+                            </TControl>
+                          </TControl>
+                        </TControl>
+                      </TControl>
+                      <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_13" imageincluded="1" link="" margin="4" heading="h2">
+                        <div class="Title">
+                          <h2 class="Title" id="db3332a0-7048-46d1-8411-81001c6be39d">Phone Number</h2>
+                          <img src="Form_myOrg_Edit_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1_grpBox_myGrp_2_grpBox_myGrp_13.png" />
+                          <div class="Description">Name of table in database is "cPhoneNumber_Org".</div>
+                        </div>
+                        <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_13.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                          <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_13.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                          <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_13.grpBox.uinpctrl_lbl_12" imageincluded="1" link="" margin="4" heading="h2">
+                            <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_13.grpBox.uinpctrl_lbl_12.urdb_9" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_13.grpBox.uinpctrl_lbl_12.urdb_10" imageincluded="1" link="" margin="4" heading="h2" />
+                          </TControl>
+                        </TControl>
+                      </TControl>
+                      <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_14" imageincluded="1" link="" margin="4" heading="h2">
+                        <div class="Title">
+                          <h2 class="Title" id="9c988496-abbb-441e-a5d6-06cd225c5a7a">Fax Number</h2>
+                          <img src="Form_myOrg_Edit_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1_grpBox_myGrp_2_grpBox_myGrp_14.png" />
+                          <div class="Description">Name of table in database is "cFaxNumber_Org".</div>
+                        </div>
+                        <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_14.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                          <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_14.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                          <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_14.grpBox.uinpctrl_lbl_13" imageincluded="1" link="" margin="4" heading="h2">
+                            <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_14.grpBox.uinpctrl_lbl_13.urdb_11" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_14.grpBox.uinpctrl_lbl_13.urdb_12" imageincluded="1" link="" margin="4" heading="h2" />
+                          </TControl>
+                        </TControl>
+                      </TControl>
+                      <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_15" imageincluded="1" link="" margin="4" heading="h2">
+                        <div class="Title">
+                          <h2 class="Title" id="2679ac37-8355-472e-bdcd-651559cde321">Email</h2>
+                          <img src="Form_myOrg_Edit_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1_grpBox_myGrp_2_grpBox_myGrp_15.png" />
+                          <div class="Description">Name of table in database is "cEmail_Org".</div>
+                        </div>
+                        <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_15.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                          <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_15.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                          <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_15.grpBox.uinpctrl_lbl_14" imageincluded="1" link="" margin="4" heading="h2">
+                            <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_15.grpBox.uinpctrl_lbl_14.urdb_13" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_15.grpBox.uinpctrl_lbl_14.urdb_14" imageincluded="1" link="" margin="4" heading="h2" />
+                          </TControl>
+                        </TControl>
+                      </TControl>
+                      <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_16" imageincluded="1" link="" margin="4" heading="h2">
+                        <div class="Title">
+                          <h2 class="Title" id="4bcfa7f0-6f91-4783-a28a-aeed00e0be82">Home Page</h2>
+                          <img src="Form_myOrg_Edit_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1_grpBox_myGrp_2_grpBox_myGrp_16.png" />
+                          <div class="Description">Name of table in database is "cHomePage_Org".</div>
+                        </div>
+                        <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_16.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                          <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_16.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                          <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_16.grpBox.uinpctrl_lbl_15" imageincluded="1" link="" margin="4" heading="h2">
+                            <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_16.grpBox.uinpctrl_lbl_15.urdb_15" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_16.grpBox.uinpctrl_lbl_15.urdb_16" imageincluded="1" link="" margin="4" heading="h2" />
+                          </TControl>
+                        </TControl>
+                      </TControl>
+                      <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_17" imageincluded="1" link="" margin="4" heading="h2">
+                        <div class="Title">
+                          <h2 class="Title" id="32c915f8-bce3-420c-ab7f-e3fd1e8f9191">Organisation Logo</h2>
+                          <img src="Form_myOrg_Edit_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1_grpBox_myGrp_2_grpBox_myGrp_17.png" />
+                          <div class="Description">Name of table in database is "Logo".</div>
+                        </div>
+                        <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_17.grpBox" imageincluded="1" link="" margin="4" heading="h2">
+                          <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_17.grpBox.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                          <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_17.grpBox.btnex_33" imageincluded="1" link="" margin="4" heading="h2" />
+                          <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_17.grpBox.uinpctrl_lbl_16" imageincluded="1" link="" margin="4" heading="h2">
+                            <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_17.grpBox.uinpctrl_lbl_16.urdb_17" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_17.grpBox.uinpctrl_lbl_16.urdb_18" imageincluded="1" link="" margin="4" heading="h2" />
+                          </TControl>
+                          <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_17.grpBox.ixt_32" imageincluded="1" link="" margin="4" heading="h2" />
+                          <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_17.grpBox.btnex_34" imageincluded="1" link="" margin="4" heading="h2" />
+                          <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_17.grpBox.inp_ctrl20" imageincluded="1" link="" margin="4" heading="h2">
+                            <div class="Title">
+                              <h2 class="Title" id="c24cc1ff-fbdf-4311-9c15-4e1d75b3ab7c">Image Hash</h2>
+                              <img src="Form_myOrg_Edit_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1_grpBox_myGrp_2_grpBox_myGrp_17_grpBox_inp_ctrl20.png" />
+                              <div class="Description">
+Max text length is  32 characters.
+Name of column in database table "Logo":"Image_Hash".</div>
+                            </div>
+                            <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_17.grpBox.inp_ctrl20.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_17.grpBox.inp_ctrl20.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_17.grpBox.inp_ctrl20.usrc_lbl.xlbl_27" imageincluded="1" link="" margin="4" heading="h2" />
+                            </TControl>
+                            <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_17.grpBox.inp_ctrl20.txt_33" imageincluded="1" link="" margin="4" heading="h2" />
+                          </TControl>
+                          <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_17.grpBox.inp_ctrl21" imageincluded="1" link="" margin="4" heading="h2">
+                            <div class="Title">
+                              <h2 class="Title" id="7a25e9fc-b933-4ee1-bb38-0b59d241c00b">Image</h2>
+                              <img src="Form_myOrg_Edit_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1_grpBox_myGrp_2_grpBox_myGrp_17_grpBox_inp_ctrl21.png" />
+                              <div class="Description">
+Name of column in database table "Logo":"Image_Data".</div>
+                            </div>
+                            <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_17.grpBox.inp_ctrl21.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_17.grpBox.inp_ctrl21.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_17.grpBox.inp_ctrl21.usrc_lbl.xlbl_28" imageincluded="1" link="" margin="4" heading="h2" />
+                            </TControl>
+                            <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_17.grpBox.inp_ctrl21.picbox_1" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_17.grpBox.inp_ctrl21.picbox_1.pic2" imageincluded="1" link="" margin="4" heading="h2" />
+                            </TControl>
+                            <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_17.grpBox.inp_ctrl21.btn35" imageincluded="1" link="" margin="4" heading="h2" />
+                          </TControl>
+                          <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_17.grpBox.inp_ctrl22" imageincluded="1" link="" margin="4" heading="h2">
+                            <div class="Title">
+                              <h2 class="Title" id="1c199349-5ff1-46a9-b635-27b95f954ba7">Description</h2>
+                              <img src="Form_myOrg_Edit_splitContainer1_spl1_usrc_EditRow_pnl_Editor_myGrp_1_grpBox_myGrp_2_grpBox_myGrp_17_grpBox_inp_ctrl22.png" />
+                              <div class="Description">
+This information is optional.
+Max text length is  2000 characters.
+Name of column in database table "Logo":"Description".</div>
+                            </div>
+                            <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_17.grpBox.inp_ctrl22.pic_Changed" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_17.grpBox.inp_ctrl22.usrc_lbl" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_17.grpBox.inp_ctrl22.usrc_lbl.urdb_19" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_myOrg_Edit.splitContainer1.spl1.usrc_EditRow.pnl_Editor.myGrp_1.grpBox.myGrp_2.grpBox.myGrp_17.grpBox.inp_ctrl22.usrc_lbl.urdb_20" imageincluded="1" link="" margin="4" heading="h2" />
+                            </TControl>
+                          </TControl>
+                        </TControl>
+                      </TControl>
+                    </TControl>
+                  </TControl>
+                </TControl>
+              </TControl>
+            </TControl>
+          </TControl>
+          <TControl name="Form_myOrg_Edit.splitContainer1.spl1.btn_BankAccounts" imageincluded="1" link="" margin="4" heading="h2" />
+        </TControl>
+        <TControl name="Form_myOrg_Edit.splitContainer1.spl2" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="Form_myOrg_Edit.splitContainer1.spl2.dgvx_MyOrganisation" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="Form_myOrg_Edit.splitContainer1.spl2.dgvx_MyOrganisation.myOrganisation_$_orgd_$_org_$$Name" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="4ea56c7c-4814-4559-afbd-cf00a875b298">Organisation name</h3>
+              </div>
+            </TControl>
+            <TControl name="Form_myOrg_Edit.splitContainer1.spl2.dgvx_MyOrganisation.myOrganisation_$_orgd_$_org_$$Tax_ID" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="b3628d4f-a9ba-4ef3-a865-f3d388112c00">TAX ID</h3>
+              </div>
+            </TControl>
+            <TControl name="Form_myOrg_Edit.splitContainer1.spl2.dgvx_MyOrganisation.myOrganisation_$_orgd_$_org_$$Registration_ID" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="297beb2d-a478-4509-b4e2-d66414a02c54">REGISTRATION ID</h3>
+              </div>
+            </TControl>
+            <TControl name="Form_myOrg_Edit.splitContainer1.spl2.dgvx_MyOrganisation.myOrganisation_$_orgd_$_org_$$TaxPayer" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="b62d5694-1587-4c3c-8008-8e0cefa75e45">Tax payer</h3>
+              </div>
+            </TControl>
+            <TControl name="Form_myOrg_Edit.splitContainer1.spl2.dgvx_MyOrganisation.myOrganisation_$_orgd_$_org_$_cmt1_$$Comment" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="774a75cd-4a87-4bc7-ad75-220144c8c60d">Comment</h3>
+              </div>
+            </TControl>
+            <TControl name="Form_myOrg_Edit.splitContainer1.spl2.dgvx_MyOrganisation.myOrganisation_$_orgd_$_orgt_$$OrganisationTYPE" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="384b407d-fcbd-48c0-a507-feed97abb8e8">Organisation Type</h3>
+              </div>
+            </TControl>
+            <TControl name="Form_myOrg_Edit.splitContainer1.spl2.dgvx_MyOrganisation.myOrganisation_$_orgd_$_cadrorg_$_cstrnorg_$$StreetName" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="cf8afb08-ec99-4184-872a-2f9ad782e8ee">Street Name</h3>
+              </div>
+            </TControl>
+            <TControl name="Form_myOrg_Edit.splitContainer1.spl2.dgvx_MyOrganisation.myOrganisation_$_orgd_$_cadrorg_$_chounorg_$$HouseNumber" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="545a7fa4-1e3c-478b-b0f2-0f47520c4b83">House Number</h3>
+              </div>
+            </TControl>
+            <TControl name="Form_myOrg_Edit.splitContainer1.spl2.dgvx_MyOrganisation.myOrganisation_$_orgd_$_cadrorg_$_ccitorg_$$City" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="8a236365-08e2-4766-8d7a-15221ee25ba7">City</h3>
+              </div>
+            </TControl>
+            <TControl name="Form_myOrg_Edit.splitContainer1.spl2.dgvx_MyOrganisation.myOrganisation_$_orgd_$_cadrorg_$_cziporg_$$ZIP" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="56cf9ab3-e81b-428e-a7f0-b785a8951643">ZIP</h3>
+              </div>
+            </TControl>
+            <TControl name="Form_myOrg_Edit.splitContainer1.spl2.dgvx_MyOrganisation.myOrganisation_$_orgd_$_cadrorg_$_ccouorg_$$Country" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="09cf40e9-9fdb-4c19-8f7e-ac79a0bf128b">Country</h3>
+              </div>
+            </TControl>
+            <TControl name="Form_myOrg_Edit.splitContainer1.spl2.dgvx_MyOrganisation.myOrganisation_$_orgd_$_cadrorg_$_ccouorg_$$Country_ISO_3166_a2" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="d231b68e-e12d-401b-a829-9bbac5fd8fbe">ISO_3166 a2</h3>
+              </div>
+            </TControl>
+            <TControl name="Form_myOrg_Edit.splitContainer1.spl2.dgvx_MyOrganisation.myOrganisation_$_orgd_$_cadrorg_$_ccouorg_$$Country_ISO_3166_a3" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="3abaabc2-00cf-442d-9518-4bc03ff90784">ISO_3166 a3</h3>
+              </div>
+            </TControl>
+            <TControl name="Form_myOrg_Edit.splitContainer1.spl2.dgvx_MyOrganisation.myOrganisation_$_orgd_$_cadrorg_$_ccouorg_$$Country_ISO_3166_num" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="98ceb403-2c02-44c9-b1fc-3084b2833661">ISO_3166 num</h3>
+              </div>
+            </TControl>
+            <TControl name="Form_myOrg_Edit.splitContainer1.spl2.dgvx_MyOrganisation.myOrganisation_$_orgd_$_cadrorg_$_cstorg_$$State" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="00259467-00de-43f5-af1f-3350dc27a149">State</h3>
+              </div>
+            </TControl>
+            <TControl name="Form_myOrg_Edit.splitContainer1.spl2.dgvx_MyOrganisation.myOrganisation_$_orgd_$_cphnnorg_$$PhoneNumber" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="30ade619-8ad2-4416-842d-48872401c8ab">Phone Number</h3>
+              </div>
+            </TControl>
+            <TControl name="Form_myOrg_Edit.splitContainer1.spl2.dgvx_MyOrganisation.myOrganisation_$_orgd_$_cfaxnorg_$$FaxNumber" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="427a8502-d71c-4bab-b6a9-b5d1ae1af850">Fax Number</h3>
+              </div>
+            </TControl>
+            <TControl name="Form_myOrg_Edit.splitContainer1.spl2.dgvx_MyOrganisation.myOrganisation_$_orgd_$_cemailorg_$$Email" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="66b710ca-beef-4532-b919-e4e8e9fbba23">Email</h3>
+              </div>
+            </TControl>
+            <TControl name="Form_myOrg_Edit.splitContainer1.spl2.dgvx_MyOrganisation.myOrganisation_$_orgd_$_chomepgorg_$$HomePage" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="848a8828-6726-48fa-b6e7-bb14846cd6cc">HomePage</h3>
+              </div>
+            </TControl>
+            <TControl name="Form_myOrg_Edit.splitContainer1.spl2.dgvx_MyOrganisation.myOrganisation_$_orgd_$_logo_$$Image_Hash" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="3ddf7ef9-2c90-49b5-831d-377fb4c208fd">Image Hash</h3>
+              </div>
+            </TControl>
+            <TControl name="Form_myOrg_Edit.splitContainer1.spl2.dgvx_MyOrganisation.myOrganisation_$_orgd_$_logo_$$Image_Data" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="0b167fa8-7f65-4273-9b09-21d7e68703b1">Image</h3>
+              </div>
+            </TControl>
+            <TControl name="Form_myOrg_Edit.splitContainer1.spl2.dgvx_MyOrganisation.myOrganisation_$_orgd_$_logo_$$Description" imageincluded="0" link="" margin="4" heading="h3">
+              <div class="Title">
+                <h3 class="Title" id="4cd63f23-bbde-4130-a622-93fe8403d179">Description</h3>
+              </div>
+            </TControl>
+          </TControl>
+        </TControl>
+      </TControl>
+    </TControl>
+  </body>
+</html>
