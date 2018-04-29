@@ -1,0 +1,485 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../../style.css" />
+    <title>Tangenta</title>
+  </head>
+  <body>
+    <THeader>
+      <div class="header">
+        <canvas id="TangentaLogo" width="60" height="50"></canvas>
+        <script type="text/javascript">
+        var canvas, context, canvaso, contexto;
+        canvaso = document.getElementById('TangentaLogo');
+        context = canvaso.getContext('2d');
+        context.lineWidth = 1;
+
+        // Draw vertical line
+        context.strokeStyle ='#936b20';
+        context.beginPath();
+        context.moveTo(30, 0);
+        context.lineTo(30, 50);
+        context.stroke();
+
+        // Draw large arc
+        context.beginPath();
+        context.arc(54, 26, 24,0.6*Math.PI,1.5*Math.PI, false);
+        context.stroke();
+
+        // Draw head circle
+        context.beginPath();
+        context.fillStyle = "#E2FFB0"/*"#CEF988";*/
+        context.arc(34, 6, 4,0,2*Math.PI, false);
+        context.fill();
+        context.stroke();
+
+        context.closePath();
+        context.restore();
+
+        </script>
+        <div class="header_border_with_radius">
+          <div class="header_menu">
+            <span>
+              <a href="../Tangenta.html">TANGENTA</a>
+            </span>,
+             <span><a href="../Invoice.html">RAČUNI</a></span>,
+             <span><a href="../ProformaInvoice.html">PREDRAČUNI</a></span>,
+             <span><a href="../Stock.html">ZALOGE</a></span>,
+             <span><a href="../PriceList.html">CENIKI</a></span>,
+             <span><a href="../Printing.html">TISKANJE RAČUNOV</a></span>,
+             <span><a href="../InvoicingOverview.html">PREGLED FAKTUR</a></span>,
+             <span><a href="../Support.html">PODPORA</a></span>,
+             <span><a href="../News.html">NOVICE</a></span>,
+             <span><a href="../About.html">O PROGRAMU</a></span></div>
+        </div>
+      </div>
+    </THeader>
+    <TControl name="Form_Document" imageincluded="1" link="" margin="4" heading="h1">
+      <div class="Title">
+        <h1 class="Title" id="#b0">Tangenta Glavni dialog</h1>
+        <div class="About">
+          <HelpWizzardTagDC class="Top$">V Glavnem dialogu urejamo dokumente. V pričujoči verziji programa Tangenta
+beseda dokument pomeni račun ali predračun. Dokler dokument ni izdan mu rečemo
+osnutek. Urejamo in spreminjamo lahko samo osnutke. Že izdane dokumente pa lahko samo pregledujemo.
+Za glavni dialog prikazan na spodnji sliki velja sledeče:
+$lt$ul$gt$
+
+</HelpWizzardTagDC>
+          <HelpWizzardTagDC class="DocType$Invoice">
+            <li>Urejamo ali pregledujemo račune</li>
+          </HelpWizzardTagDC>
+          <HelpWizzardTagDC class="DocType$ProformaInvoice">
+            <li>Urejamo ali pregledujemo predračune</li>
+          </HelpWizzardTagDC>
+          <HelpWizzardTagDC class="DBEmpty$true">
+            <li>Podatkovna baza še nima vnešenih računov ali predračunov oziroma njihovih osnutkov.</li>
+          </HelpWizzardTagDC>
+          <HelpWizzardTagDC class="DBEmpty$false">
+            <li>Podatkovna baza že ima vnešen vsaj en dokument oziroma osnutek.</li>
+          </HelpWizzardTagDC>
+          <HelpWizzardTagDC class="MultiUser$true">
+            <li>Program in podatkovna baza delujeta v večuporabniškem načinu.</li>
+          </HelpWizzardTagDC>
+          <HelpWizzardTagDC class="MultiUser$false">
+            <li>Program in podatkovna baza delujeta v enouporabbniškem načinu.</li>
+          </HelpWizzardTagDC>
+          <HelpWizzardTagDC class="usrc_Invoice_Visible$true">
+            <li>
+              <a href="#b24">Urejevalnik dokumentov</a> je viden</li>
+          </HelpWizzardTagDC>
+          <HelpWizzardTagDC class="usrc_Invoice_Visible$false">
+            <li>Urejevalnik dokumentov ni viden, kar pomeni, da je vidna samo preglednica dokumentov</li>
+          </HelpWizzardTagDC>
+          <HelpWizzardTagDC class="usrc_InvoiceHead_Visible$true">
+            <li>Urejevalnik dokumenta prikazuje tudi glavo dokumenta</li>
+          </HelpWizzardTagDC>
+          <HelpWizzardTagDC class="usrc_InvoiceHead_Visible$false">
+            <li>Urejevalnik dokumenta ne prikazuje glave dokumenta.</li>
+          </HelpWizzardTagDC>
+          <HelpWizzardTagDC class="usrc_InvoiceTable_Visible$true">
+            <li>Preglednica dokumentov je prikazana na glavnem dialogu.</li>
+          </HelpWizzardTagDC>
+          <HelpWizzardTagDC class="usrc_InvoiceTable_Visible$false">
+            <li>Preglednica dokumentov ni prikazana na glavnem dialogu.</li>
+          </HelpWizzardTagDC>
+          <HelpWizzardTagDC class="usrc_Invoice_Mode$ViewMode">
+            <li>Urejevalnik dokumentov prikazuje že izdan dokument.</li>
+          </HelpWizzardTagDC>
+          <HelpWizzardTagDC class="usrc_Invoice_Mode$EditMode">
+            <li>Urejevalnik dokumentov prikazuje osnutek.</li>
+          </HelpWizzardTagDC>
+          <HelpWizzardTagDC class="ShopA$true">
+            <li>Urejevalnik dokumentov prikazuje prodajalno A.</li>
+          </HelpWizzardTagDC>
+          <HelpWizzardTagDC class="ShopA$false">
+            <li>Urejevalnik dokumentov ne prikazuje prodajalne A.</li>
+          </HelpWizzardTagDC>
+          <HelpWizzardTagDC class="ShopB$true">
+            <li>Urejevalnik dokumentov prikazuje prodajalno B.</li>
+          </HelpWizzardTagDC>
+          <HelpWizzardTagDC class="ShopB$false">
+            <li>Urejevalnik dokumentov ne prikazuje prodajalne B.</li>
+          </HelpWizzardTagDC>
+          <HelpWizzardTagDC class="ShopC$true">
+            <li>Urejevalnik dokumentov prikazuje prodajalno C.</li>
+          </HelpWizzardTagDC>
+          <HelpWizzardTagDC class="ShopC$false">
+            <li>Urejevalnik dokumentov ne prikazuje prodajalne C.</li>
+          </HelpWizzardTagDC>
+          <HelpWizzardTagDC class="Bottom$">$lt$/ul$gt$
+</HelpWizzardTagDC>
+        </div>
+        <img src="Form_Document_soKHwyAgDpQasvfZKkor6Z2XKV01.png" />
+      </div>
+      <TControl name="Form_Document.m_usrc_Main" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="Form_Document.m_usrc_Main.panel1" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="Form_Document.m_usrc_Main.panel1.btn_New" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="Form_Document.m_usrc_Main.panel1.cmb_InvoiceType" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="Form_Document.m_usrc_Main.panel1.lbl_FinancialYear" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="Form_Document.m_usrc_Main.panel1.cmb_FinancialYear" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="Form_Document.m_usrc_Main.panel1.btn_SelectPanels" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="Form_Document.m_usrc_Main.panel1.loginControl1" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="Form_Document.m_usrc_Main.panel1.loginControl1.lbl_username" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="Form_Document.m_usrc_Main.panel1.loginControl1.btn_UserInfo" imageincluded="1" link="" margin="4" heading="h2" />
+            <TControl name="Form_Document.m_usrc_Main.panel1.loginControl1.btn_UserManager" imageincluded="1" link="" margin="4" heading="h2" />
+          </TControl>
+          <TControl name="Form_Document.m_usrc_Main.panel1.btn_CodeTables" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="Form_Document.m_usrc_Main.panel1.usrc_FVI_SLO1" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="Form_Document.m_usrc_Main.panel1.usrc_FVI_SLO1.btn_FVI" imageincluded="1" link="" margin="4" heading="h2" />
+          </TControl>
+          <TControl name="Form_Document.m_usrc_Main.panel1.usrc_TangentaPrint1" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="Form_Document.m_usrc_Main.panel1.usrc_TangentaPrint1.btn_Printers" imageincluded="1" link="" margin="4" heading="h2" />
+          </TControl>
+          <TControl name="Form_Document.m_usrc_Main.panel1.btn_Settings" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="Form_Document.m_usrc_Main.panel1.m_usrc_Help" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="Form_Document.m_usrc_Main.panel1.m_usrc_Help.btn_Help" imageincluded="1" link="" margin="4" heading="h2" />
+          </TControl>
+          <TControl name="Form_Document.m_usrc_Main.panel1.btn_Backup" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="Form_Document.m_usrc_Main.panel1.btn_Exit" imageincluded="1" link="" margin="4" heading="h2" />
+        </TControl>
+        <TControl name="Form_Document.m_usrc_Main.splitContainer1" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice" imageincluded="1" link="" margin="4" heading="h2">
+              <div class="Title">
+                <h2 class="Title" id="#b24">Urejevalnik dokumentov</h2>
+                <img src="Form_Document_m_usrc_Main_splitContainer1_spl1_m_usrc_Invoice_VmT8IykmOVXIBrzXN8_-MjTOd1g1.png" />
+              </div>
+              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.lbl_Number" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.txt_Number" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.chk_Head" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.btn_Show_Shops" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.usrc_Currency1" imageincluded="1" link="" margin="4" heading="h2">
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.usrc_Currency1.lbl_Currency" imageincluded="1" link="" margin="4" heading="h2" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.usrc_Currency1.txt_Currency" imageincluded="1" link="" margin="4" heading="h2" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.usrc_Currency1.btn_SelectCurrency" imageincluded="1" link="" margin="4" heading="h2" />
+              </TControl>
+              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2" imageincluded="1" link="" margin="4" heading="h2">
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2" imageincluded="1" link="" margin="4" heading="h2">
+                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.lbl_MyOrganisation" imageincluded="1" link="" margin="4" heading="h2" />
+                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.btn_MyOrganisation" imageincluded="1" link="" margin="4" heading="h2" />
+                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.txt_MyOrganisation" imageincluded="1" link="" margin="4" heading="h2" />
+                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.usrc_Customer" imageincluded="1" link="" margin="4" heading="h2">
+                    <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.usrc_Customer.lbl_Buyer" imageincluded="1" link="" margin="4" heading="h2" />
+                    <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.usrc_Customer.btn_Buyer" imageincluded="1" link="" margin="4" heading="h2" />
+                    <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.usrc_Customer.cmb_BuyerType" imageincluded="1" link="" margin="4" heading="h2" />
+                  </TControl>
+                </TControl>
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3" imageincluded="1" link="" margin="4" heading="h2">
+                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1" imageincluded="1" link="" margin="4" heading="h2">
+                    <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl4" imageincluded="1" link="" margin="4" heading="h2">
+                      <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl4.usrc_ShopA" imageincluded="1" link="" margin="4" heading="h2">
+                        <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl4.usrc_ShopA.splitContainer1" imageincluded="1" link="" margin="4" heading="h2">
+                          <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl4.usrc_ShopA.splitContainer1.spl10" imageincluded="1" link="" margin="4" heading="h2">
+                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl4.usrc_ShopA.splitContainer1.spl10.dgvx_ShopA" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl4.usrc_ShopA.splitContainer1.spl10.dgvx_ShopA.DocProformaInvoice_ShopA_Item_$_aisha_$$Name" imageincluded="0" link="" margin="4" heading="h3">
+                                <div class="Title">
+                                  <h3 class="Title" id="#b49">Ime artikla ali storitve</h3>
+                                  <div class="About">
+                                    <tagdc class="Top$">Write on top</tagdc>
+                                    <tagdc class="MultiUser$true">Operation mode is multi user</tagdc>
+                                    <tagdc class="MultiUser$false">Operation mode is single user</tagdc>
+                                    <tagdc class="usrc_Invoice_Visible$true">Invoice or proforma invoice is visible</tagdc>
+                                    <tagdc class="usrc_Invoice_Visible$false">Invoice or proforma invoice is not visible</tagdc>
+                                    <tagdc class="usrc_InvoiceTable_Visible$true">Table of invoices or proforma invoices is visible</tagdc>
+                                    <tagdc class="usrc_InvoiceTable_Visible$false">Table of invoices or proforma invoices  is not visible</tagdc>
+                                    <tagdc class="usrc_Invoice_Mode$ViewMode">You can only view the selected invoice or proforma invoice</tagdc>
+                                    <tagdc class="usrc_Invoice_Mode$EditMode">You can edit the selected invoice pr profroma inovice</tagdc>
+                                    <tagdc class="ShopA$true">Shop A is shown</tagdc>
+                                    <tagdc class="ShopB$true">Shop B is shown</tagdc>
+                                    <tagdc class="ShopC$true">Shop C is shown</tagdc>
+                                    <tagdc class="Bottom$">Write  on bottom</tagdc>
+                                  </div>
+                                </div>
+                              </TControl>
+                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl4.usrc_ShopA.splitContainer1.spl10.dgvx_ShopA.DocProformaInvoice_ShopA_Item_$_aisha_$$Description" imageincluded="0" link="" margin="4" heading="h3">
+                                <div class="Title">
+                                  <h3 class="Title" id="#b50">Opis artikla ali storitve</h3>
+                                  <div class="About">
+                                    <tagdc class="Top$">Write on top</tagdc>
+                                    <tagdc class="MultiUser$true">Operation mode is multi user</tagdc>
+                                    <tagdc class="MultiUser$false">Operation mode is single user</tagdc>
+                                    <tagdc class="usrc_Invoice_Visible$true">Invoice or proforma invoice is visible</tagdc>
+                                    <tagdc class="usrc_Invoice_Visible$false">Invoice or proforma invoice is not visible</tagdc>
+                                    <tagdc class="usrc_InvoiceTable_Visible$true">Table of invoices or proforma invoices is visible</tagdc>
+                                    <tagdc class="usrc_InvoiceTable_Visible$false">Table of invoices or proforma invoices  is not visible</tagdc>
+                                    <tagdc class="usrc_Invoice_Mode$ViewMode">You can only view the selected invoice or proforma invoice</tagdc>
+                                    <tagdc class="usrc_Invoice_Mode$EditMode">You can edit the selected invoice pr profroma inovice</tagdc>
+                                    <tagdc class="ShopA$true">Shop A is shown</tagdc>
+                                    <tagdc class="ShopB$true">Shop B is shown</tagdc>
+                                    <tagdc class="ShopC$true">Shop C is shown</tagdc>
+                                    <tagdc class="Bottom$">Write  on bottom</tagdc>
+                                  </div>
+                                </div>
+                              </TControl>
+                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl4.usrc_ShopA.splitContainer1.spl10.dgvx_ShopA.DocProformaInvoice_ShopA_Item_$_aisha_$_tax_$$Name" imageincluded="0" link="" margin="4" heading="h3">
+                                <div class="Title">
+                                  <h3 class="Title" id="#b51">Ime</h3>
+                                  <div class="About">
+                                    <tagdc class="Top$">Write on top</tagdc>
+                                    <tagdc class="MultiUser$true">Operation mode is multi user</tagdc>
+                                    <tagdc class="MultiUser$false">Operation mode is single user</tagdc>
+                                    <tagdc class="usrc_Invoice_Visible$true">Invoice or proforma invoice is visible</tagdc>
+                                    <tagdc class="usrc_Invoice_Visible$false">Invoice or proforma invoice is not visible</tagdc>
+                                    <tagdc class="usrc_InvoiceTable_Visible$true">Table of invoices or proforma invoices is visible</tagdc>
+                                    <tagdc class="usrc_InvoiceTable_Visible$false">Table of invoices or proforma invoices  is not visible</tagdc>
+                                    <tagdc class="usrc_Invoice_Mode$ViewMode">You can only view the selected invoice or proforma invoice</tagdc>
+                                    <tagdc class="usrc_Invoice_Mode$EditMode">You can edit the selected invoice pr profroma inovice</tagdc>
+                                    <tagdc class="ShopA$true">Shop A is shown</tagdc>
+                                    <tagdc class="ShopB$true">Shop B is shown</tagdc>
+                                    <tagdc class="ShopC$true">Shop C is shown</tagdc>
+                                    <tagdc class="Bottom$">Write  on bottom</tagdc>
+                                  </div>
+                                </div>
+                              </TControl>
+                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl4.usrc_ShopA.splitContainer1.spl10.dgvx_ShopA.DocProformaInvoice_ShopA_Item_$_aisha_$_tax_$$Rate" imageincluded="0" link="" margin="4" heading="h3">
+                                <div class="Title">
+                                  <h3 class="Title" id="#b52">Stopnja</h3>
+                                  <div class="About">
+                                    <tagdc class="Top$">Write on top</tagdc>
+                                    <tagdc class="MultiUser$true">Operation mode is multi user</tagdc>
+                                    <tagdc class="MultiUser$false">Operation mode is single user</tagdc>
+                                    <tagdc class="usrc_Invoice_Visible$true">Invoice or proforma invoice is visible</tagdc>
+                                    <tagdc class="usrc_Invoice_Visible$false">Invoice or proforma invoice is not visible</tagdc>
+                                    <tagdc class="usrc_InvoiceTable_Visible$true">Table of invoices or proforma invoices is visible</tagdc>
+                                    <tagdc class="usrc_InvoiceTable_Visible$false">Table of invoices or proforma invoices  is not visible</tagdc>
+                                    <tagdc class="usrc_Invoice_Mode$ViewMode">You can only view the selected invoice or proforma invoice</tagdc>
+                                    <tagdc class="usrc_Invoice_Mode$EditMode">You can edit the selected invoice pr profroma inovice</tagdc>
+                                    <tagdc class="ShopA$true">Shop A is shown</tagdc>
+                                    <tagdc class="ShopB$true">Shop B is shown</tagdc>
+                                    <tagdc class="ShopC$true">Shop C is shown</tagdc>
+                                    <tagdc class="Bottom$">Write  on bottom</tagdc>
+                                  </div>
+                                </div>
+                              </TControl>
+                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl4.usrc_ShopA.splitContainer1.spl10.dgvx_ShopA.DocProformaInvoice_ShopA_Item_$_aisha_$_u_$$Name" imageincluded="0" link="" margin="4" heading="h3">
+                                <div class="Title">
+                                  <h3 class="Title" id="#b53">Ime enote</h3>
+                                  <div class="About">
+                                    <tagdc class="Top$">Write on top</tagdc>
+                                    <tagdc class="MultiUser$true">Operation mode is multi user</tagdc>
+                                    <tagdc class="MultiUser$false">Operation mode is single user</tagdc>
+                                    <tagdc class="usrc_Invoice_Visible$true">Invoice or proforma invoice is visible</tagdc>
+                                    <tagdc class="usrc_Invoice_Visible$false">Invoice or proforma invoice is not visible</tagdc>
+                                    <tagdc class="usrc_InvoiceTable_Visible$true">Table of invoices or proforma invoices is visible</tagdc>
+                                    <tagdc class="usrc_InvoiceTable_Visible$false">Table of invoices or proforma invoices  is not visible</tagdc>
+                                    <tagdc class="usrc_Invoice_Mode$ViewMode">You can only view the selected invoice or proforma invoice</tagdc>
+                                    <tagdc class="usrc_Invoice_Mode$EditMode">You can edit the selected invoice pr profroma inovice</tagdc>
+                                    <tagdc class="ShopA$true">Shop A is shown</tagdc>
+                                    <tagdc class="ShopB$true">Shop B is shown</tagdc>
+                                    <tagdc class="ShopC$true">Shop C is shown</tagdc>
+                                    <tagdc class="Bottom$">Write  on bottom</tagdc>
+                                  </div>
+                                </div>
+                              </TControl>
+                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl4.usrc_ShopA.splitContainer1.spl10.dgvx_ShopA.DocProformaInvoice_ShopA_Item_$$Discount" imageincluded="0" link="" margin="4" heading="h3">
+                                <div class="Title">
+                                  <h3 class="Title" id="#b54">Popust</h3>
+                                  <div class="About">
+                                    <tagdc class="Top$">Write on top</tagdc>
+                                    <tagdc class="MultiUser$true">Operation mode is multi user</tagdc>
+                                    <tagdc class="MultiUser$false">Operation mode is single user</tagdc>
+                                    <tagdc class="usrc_Invoice_Visible$true">Invoice or proforma invoice is visible</tagdc>
+                                    <tagdc class="usrc_Invoice_Visible$false">Invoice or proforma invoice is not visible</tagdc>
+                                    <tagdc class="usrc_InvoiceTable_Visible$true">Table of invoices or proforma invoices is visible</tagdc>
+                                    <tagdc class="usrc_InvoiceTable_Visible$false">Table of invoices or proforma invoices  is not visible</tagdc>
+                                    <tagdc class="usrc_Invoice_Mode$ViewMode">You can only view the selected invoice or proforma invoice</tagdc>
+                                    <tagdc class="usrc_Invoice_Mode$EditMode">You can edit the selected invoice pr profroma inovice</tagdc>
+                                    <tagdc class="ShopA$true">Shop A is shown</tagdc>
+                                    <tagdc class="ShopB$true">Shop B is shown</tagdc>
+                                    <tagdc class="ShopC$true">Shop C is shown</tagdc>
+                                    <tagdc class="Bottom$">Write  on bottom</tagdc>
+                                  </div>
+                                </div>
+                              </TControl>
+                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl4.usrc_ShopA.splitContainer1.spl10.dgvx_ShopA.DocProformaInvoice_ShopA_Item_$$dQuantity" imageincluded="0" link="" margin="4" heading="h3">
+                                <div class="Title">
+                                  <h3 class="Title" id="#b55">Količina</h3>
+                                  <div class="About">
+                                    <tagdc class="Top$">Write on top</tagdc>
+                                    <tagdc class="MultiUser$true">Operation mode is multi user</tagdc>
+                                    <tagdc class="MultiUser$false">Operation mode is single user</tagdc>
+                                    <tagdc class="usrc_Invoice_Visible$true">Invoice or proforma invoice is visible</tagdc>
+                                    <tagdc class="usrc_Invoice_Visible$false">Invoice or proforma invoice is not visible</tagdc>
+                                    <tagdc class="usrc_InvoiceTable_Visible$true">Table of invoices or proforma invoices is visible</tagdc>
+                                    <tagdc class="usrc_InvoiceTable_Visible$false">Table of invoices or proforma invoices  is not visible</tagdc>
+                                    <tagdc class="usrc_Invoice_Mode$ViewMode">You can only view the selected invoice or proforma invoice</tagdc>
+                                    <tagdc class="usrc_Invoice_Mode$EditMode">You can edit the selected invoice pr profroma inovice</tagdc>
+                                    <tagdc class="ShopA$true">Shop A is shown</tagdc>
+                                    <tagdc class="ShopB$true">Shop B is shown</tagdc>
+                                    <tagdc class="ShopC$true">Shop C is shown</tagdc>
+                                    <tagdc class="Bottom$">Write  on bottom</tagdc>
+                                  </div>
+                                </div>
+                              </TControl>
+                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl4.usrc_ShopA.splitContainer1.spl10.dgvx_ShopA.DocProformaInvoice_ShopA_Item_$$PricePerUnit" imageincluded="0" link="" margin="4" heading="h3">
+                                <div class="Title">
+                                  <h3 class="Title" id="#b56">Cena na enoto</h3>
+                                  <div class="About">
+                                    <tagdc class="Top$">Write on top</tagdc>
+                                    <tagdc class="MultiUser$true">Operation mode is multi user</tagdc>
+                                    <tagdc class="MultiUser$false">Operation mode is single user</tagdc>
+                                    <tagdc class="usrc_Invoice_Visible$true">Invoice or proforma invoice is visible</tagdc>
+                                    <tagdc class="usrc_Invoice_Visible$false">Invoice or proforma invoice is not visible</tagdc>
+                                    <tagdc class="usrc_InvoiceTable_Visible$true">Table of invoices or proforma invoices is visible</tagdc>
+                                    <tagdc class="usrc_InvoiceTable_Visible$false">Table of invoices or proforma invoices  is not visible</tagdc>
+                                    <tagdc class="usrc_Invoice_Mode$ViewMode">You can only view the selected invoice or proforma invoice</tagdc>
+                                    <tagdc class="usrc_Invoice_Mode$EditMode">You can edit the selected invoice pr profroma inovice</tagdc>
+                                    <tagdc class="ShopA$true">Shop A is shown</tagdc>
+                                    <tagdc class="ShopB$true">Shop B is shown</tagdc>
+                                    <tagdc class="ShopC$true">Shop C is shown</tagdc>
+                                    <tagdc class="Bottom$">Write  on bottom</tagdc>
+                                  </div>
+                                </div>
+                              </TControl>
+                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl4.usrc_ShopA.splitContainer1.spl10.dgvx_ShopA.DocProformaInvoice_ShopA_Item_$$EndPriceWithDiscountAndTax" imageincluded="0" link="" margin="4" heading="h3">
+                                <div class="Title">
+                                  <h3 class="Title" id="#b57">Končna cena</h3>
+                                  <div class="About">
+                                    <tagdc class="Top$">Write on top</tagdc>
+                                    <tagdc class="MultiUser$true">Operation mode is multi user</tagdc>
+                                    <tagdc class="MultiUser$false">Operation mode is single user</tagdc>
+                                    <tagdc class="usrc_Invoice_Visible$true">Invoice or proforma invoice is visible</tagdc>
+                                    <tagdc class="usrc_Invoice_Visible$false">Invoice or proforma invoice is not visible</tagdc>
+                                    <tagdc class="usrc_InvoiceTable_Visible$true">Table of invoices or proforma invoices is visible</tagdc>
+                                    <tagdc class="usrc_InvoiceTable_Visible$false">Table of invoices or proforma invoices  is not visible</tagdc>
+                                    <tagdc class="usrc_Invoice_Mode$ViewMode">You can only view the selected invoice or proforma invoice</tagdc>
+                                    <tagdc class="usrc_Invoice_Mode$EditMode">You can edit the selected invoice pr profroma inovice</tagdc>
+                                    <tagdc class="ShopA$true">Shop A is shown</tagdc>
+                                    <tagdc class="ShopB$true">Shop B is shown</tagdc>
+                                    <tagdc class="ShopC$true">Shop C is shown</tagdc>
+                                    <tagdc class="Bottom$">Write  on bottom</tagdc>
+                                  </div>
+                                </div>
+                              </TControl>
+                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl4.usrc_ShopA.splitContainer1.spl10.dgvx_ShopA.DocProformaInvoice_ShopA_Item_$$TAX" imageincluded="0" link="" margin="4" heading="h3">
+                                <div class="Title">
+                                  <h3 class="Title" id="#b58">Davek</h3>
+                                  <div class="About">
+                                    <tagdc class="Top$">Write on top</tagdc>
+                                    <tagdc class="MultiUser$true">Operation mode is multi user</tagdc>
+                                    <tagdc class="MultiUser$false">Operation mode is single user</tagdc>
+                                    <tagdc class="usrc_Invoice_Visible$true">Invoice or proforma invoice is visible</tagdc>
+                                    <tagdc class="usrc_Invoice_Visible$false">Invoice or proforma invoice is not visible</tagdc>
+                                    <tagdc class="usrc_InvoiceTable_Visible$true">Table of invoices or proforma invoices is visible</tagdc>
+                                    <tagdc class="usrc_InvoiceTable_Visible$false">Table of invoices or proforma invoices  is not visible</tagdc>
+                                    <tagdc class="usrc_Invoice_Mode$ViewMode">You can only view the selected invoice or proforma invoice</tagdc>
+                                    <tagdc class="usrc_Invoice_Mode$EditMode">You can edit the selected invoice pr profroma inovice</tagdc>
+                                    <tagdc class="ShopA$true">Shop A is shown</tagdc>
+                                    <tagdc class="ShopB$true">Shop B is shown</tagdc>
+                                    <tagdc class="ShopC$true">Shop C is shown</tagdc>
+                                    <tagdc class="Bottom$">Write  on bottom</tagdc>
+                                  </div>
+                                </div>
+                              </TControl>
+                            </TControl>
+                          </TControl>
+                        </TControl>
+                      </TControl>
+                    </TControl>
+                    <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11" imageincluded="1" link="" margin="4" heading="h2">
+                      <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3" imageincluded="1" link="" margin="4" heading="h2">
+                        <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12" imageincluded="1" link="" margin="4" heading="h2">
+                          <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopC" imageincluded="1" link="" margin="4" heading="h1">
+                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopC.usrc_PriceList1" imageincluded="1" link="" margin="4" heading="h1">
+                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopC.usrc_PriceList1.lbl_PriceList" imageincluded="1" link="" margin="4" heading="h1" />
+                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopC.usrc_PriceList1.btn_PriceListType" imageincluded="1" link="" margin="4" heading="h1" />
+                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopC.usrc_PriceList1.cmb_PriceListType" imageincluded="1" link="" margin="4" heading="h1" />
+                            </TControl>
+                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopC.lbl_ShopC_Name" imageincluded="1" link="" margin="4" heading="h1" />
+                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopC.lbl_Stock" imageincluded="1" link="" margin="4" heading="h1" />
+                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopC.btn_Stock" imageincluded="1" link="" margin="4" heading="h1" />
+                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopC.chk_AutomaticSelectionOfItemFromStock" imageincluded="1" link="" margin="4" heading="h1" />
+                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopC.lbl_Items" imageincluded="1" link="" margin="4" heading="h1" />
+                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopC.btn_Items" imageincluded="1" link="" margin="4" heading="h1" />
+                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopC.splitContainer3" imageincluded="1" link="" margin="4" heading="h1">
+                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopC.splitContainer3.spl13" imageincluded="1" link="" margin="4" heading="h1">
+                                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopC.splitContainer3.spl13.usrc_Atom_ItemsList" imageincluded="1" link="" margin="4" heading="h1">
+                                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopC.splitContainer3.spl13.usrc_Atom_ItemsList.m_usrc_Item_PageHandler" imageincluded="1" link="" margin="4" heading="h1" />
+                                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopC.splitContainer3.spl13.usrc_Atom_ItemsList.pnl_Atom_Items" imageincluded="1" link="" margin="4" heading="h1" />
+                                </TControl>
+                              </TControl>
+                            </TControl>
+                          </TControl>
+                        </TControl>
+                      </TControl>
+                    </TControl>
+                  </TControl>
+                </TControl>
+              </TControl>
+              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.lbl_Sum" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.usrc_AddOn1" imageincluded="1" link="" margin="4" heading="h2">
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.usrc_AddOn1.btn_Notice" imageincluded="1" link="" margin="4" heading="h2" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.usrc_AddOn1.txt_Notice" imageincluded="1" link="" margin="4" heading="h2" />
+              </TControl>
+            </TControl>
+          </TControl>
+          <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18" imageincluded="1" link="" margin="4" heading="h1">
+            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable" imageincluded="1" link="" margin="4" heading="h1">
+              <div class="Title">
+                <h1 class="Title" id="b260">Preglednica dokumentov</h1>
+                <img src="Form_Document_m_usrc_Main_splitContainer1_spl18_m_usrc_InvoiceTable.png" />
+              </div>
+              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.btn_TimeSpan" imageincluded="1" link="" margin="4" heading="h1" />
+              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.btn_Print" imageincluded="1" link="" margin="4" heading="h1" />
+              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.lbl_From_To" imageincluded="1" link="" margin="4" heading="h1" />
+              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.lbl_Payment1" imageincluded="1" link="" margin="4" heading="h1" />
+              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.lbl_Sum_All" imageincluded="1" link="" margin="4" heading="h1" />
+              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.lbl_Sum_Tax" imageincluded="1" link="" margin="4" heading="h1" />
+              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.lbl_Sum_WithoutTax" imageincluded="1" link="" margin="4" heading="h1" />
+              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.lbl_Payment2" imageincluded="1" link="" margin="4" heading="h1" />
+              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice" imageincluded="1" link="" margin="4" heading="h1">
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocProformaInvoice_$_dpinv_$$NumberInFinancialYear" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocProformaInvoice_$_dpinv_$$GrossSum" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.IssueDate" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocProformaInvoice_$_dpinv_$_acusper_$_aper_$_acfn_$$FirstName" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocProformaInvoice_$_dpinv_$_acusper_$_aper_$_acln_$$LastName" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.PaymentType_Name" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocProformaInvoice_$_dpinv_$$NetSum" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocProformaInvoice_$_dpinv_$$TaxSum" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocProformaInvoice_$_dpinv_$_acusper_$_aper_$_agsmnper_$$GsmNumber" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocProformaInvoice_$_dpinv_$_acusper_$_aper_$_aphnnper_$$PhoneNumber" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocProformaInvoice_$_dpinv_$_acusper_$_aper_$_aemailper_$$Email" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocProformaInvoice_$_dpinv_$_acusper_$_aper_$$DateOfBirth" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocProformaInvoice_$_dpinv_$_acusorg_$_aorg_$$Name" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocProformaInvoice_$_dpinv_$_acusorg_$_aorg_$$Tax_ID" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocProformaInvoice_$_dpinv_$_acusorg_$_aorg_$$Registration_ID" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocProformaInvoice_$_dpinv_$$Discount" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocProformaInvoice_$_dpinv_$$EndSum" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocProformaInvoice_$_awperiod_$_amcper_$_aper_$_acfn_$$FirstName" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocProformaInvoice_$_awperiod_$_amcper_$_aper_$_acln_$$LastName" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocProformaInvoice_$_awperiod_$_amcper_$_aoffice_$$Name" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocProformaInvoice_$_dpinv_$$FinancialYear" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocProformaInvoice_$$EventTime" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocProformaInvoice_$_dpinv_$$Draft" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocProformaInvoice_$_dpinv_$$DraftNumber" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocProformaInvoice_$_awperiod_$_aed_$$Name" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocProformaInvoice_$_dpinv_$$ID" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocProformaInvoice_$_jpinvt_$$ID" imageincluded="0" link="" margin="4" heading="h1" />
+              </TControl>
+            </TControl>
+          </TControl>
+        </TControl>
+      </TControl>
+    </TControl>
+  </body>
+</html>

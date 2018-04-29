@@ -48,13 +48,15 @@
              <span><a href="../PriceList.html">CENIKI</a></span>,
              <span><a href="../Printing.html">TISKANJE RAČUNOV</a></span>,
              <span><a href="../InvoicingOverview.html">PREGLED FAKTUR</a></span>,
-             <span><a href="../Support.html">PODPORA</a></span></div>
+             <span><a href="../Support.html">PODPORA</a></span>,
+             <span><a href="../News.html">NOVICE</a></span>,
+             <span><a href="../About.html">O PROGRAMU</a></span></div>
         </div>
       </div>
     </THeader>
     <TControl name="st_Form_ProgramSettings" imageincluded="1" link="" margin="4" heading="h1">
       <div class="Title">
-        <h1 class="Title" id="0b394b4e-7493-4f56-89e8-16a8001f624c">Programske nastavitve</h1>
+        <h1 class="Title" id="b1193">Programske nastavitve</h1>
         <img src="st_Form_ProgramSettings.png" />
       </div>
       <TControl name="st_Form_ProgramSettings.usrc_NavigationButtons1" imageincluded="1" link="" margin="4" heading="h2">
@@ -65,18 +67,78 @@
         </TControl>
       </TControl>
       <TControl name="st_Form_ProgramSettings.lbL_ElectronicDevice_ID" imageincluded="1" link="" margin="4" heading="h2" />
-      <TControl name="st_Form_ProgramSettings.txt_ElectronicDevice_ID" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="st_Form_ProgramSettings.txt_ElectronicDevice_ID" imageincluded="1" link="st_Form_ProgramSettings.lbL_ElectronicDevice_ID" margin="4" heading="h2">
+        <div class="Title">
+          <h2 class="Title" id="b1200">Oznaka blagajne</h2>
+          <img src="st_Form_ProgramSettings_txt_ElectronicDevice_ID.png" />
+          <div class="Description">Oznaka elektroske naprave pomeni oznako naprave na kateri so izdani dokumenti
+(računi, predračuni itd..).
+Oznaka elektroske naprave se izpisuje v številki računa in je njen sestavni del.
+Glede na to da POS tiskalniki tiskajo večinoma na papirni trak, ki ni širši od 80mm
+predlagamo, da je oznaka elektronske naprave čim krajša. 
+
+
+</div>
+        </div>
+      </TControl>
       <TControl name="st_Form_ProgramSettings.lbl_Language" imageincluded="1" link="" margin="4" heading="h2" />
-      <TControl name="st_Form_ProgramSettings.cmb_Language" imageincluded="1" link="" margin="4" heading="h2" />
-      <TControl name="st_Form_ProgramSettings.chk_FullScreen" imageincluded="1" link="" margin="4" heading="h2" />
-      <TControl name="st_Form_ProgramSettings.chk_AllowToEditText" imageincluded="1" link="" margin="4" heading="h2" />
-      <TControl name="st_Form_ProgramSettings.btn_DBSettings" imageincluded="1" link="" margin="4" heading="h2" />
-      <TControl name="st_Form_ProgramSettings.btn_LogFile" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="st_Form_ProgramSettings.cmb_Language" imageincluded="1" link="st_Form_ProgramSettings.lbl_Language" margin="4" heading="h2">
+        <div class="Title">
+          <h2 class="Title" id="b1202">Izbira jezika</h2>
+          <img src="st_Form_ProgramSettings_cmb_Language.png" />
+          <div class="Description">Zgoraj prikazani spustni meni nam omogoča, da spremenimo jezik programa Tangenta.
+Za sprememba jezika morate potem ponovno zagnati program</div>
+        </div>
+      </TControl>
+      <TControl name="st_Form_ProgramSettings.chk_FullScreen" imageincluded="1" link="" margin="4" heading="h2">
+        <div class="Title">
+          <h2 class="Title" id="b1203">Čez cel zaslon</h2>
+          <img src="st_Form_ProgramSettings_chk_FullScreen.png" />
+          <div class="Description">Če odkljukate kvadratek levo od napisa "Čez cel zaslon" se bo glavni dialog v
+katerem urejamo dokumente (račune in predračune) razširil čez cel zaslon ob vsakokratnem zagonu 
+programa.</div>
+        </div>
+      </TControl>
+      <TControl name="st_Form_ProgramSettings.chk_AllowToEditText" imageincluded="1" link="" margin="4" heading="h2">
+        <div class="Title">
+          <h2 class="Title" id="b1204">Spreminjanje napisov v dialogih programa Tangenta</h2>
+          <img src="st_Form_ProgramSettings_chk_AllowToEditText.png" />
+          <div class="Description">Program Tangenta lahko tudi sami oblikujete tako, da besedila na dialogih lahko
+spremenite sami. V kolikor odkljukate kvadratek na levi strani "Urejanje besedil v oknih"
+se bo aktiviralo delovanje programa Tangenta tako, da vam bo omogočeno neposredno spreminjanje napisov na
+gumbih, oznakah itd..
+
+</div>
+        </div>
+      </TControl>
+      <TControl name="st_Form_ProgramSettings.btn_DBSettings" imageincluded="1" link="" margin="4" heading="h2">
+        <div class="Title">
+          <h2 class="Title" id="b1205">Nastavitve podatkovne baze</h2>
+          <img src="st_Form_ProgramSettings_btn_DBSettings.png" />
+          <div class="Description">S klikom na zgoraj prikazani gumb, se odpre dialog za nastavitve podatkovne baze.</div>
+        </div>
+      </TControl>
+      <TControl name="st_Form_ProgramSettings.btn_LogFile" imageincluded="1" link="" margin="4" heading="h2">
+        <div class="Title">
+          <h2 class="Title" id="b1206">Dnevniška datoteka</h2>
+          <img src="st_Form_ProgramSettings_btn_LogFile.png" />
+          <div class="Description">Dnevniška datoteka, je lokalna datoteka na vašem računalniku v katero se zapisujejo
+kritični dogodki pri uporabi programa Tangenta. 
+Dnevniška datoteka služi v veliko pomoč pri odpravi na novo ugotovljenih napak in pomanjklivosti
+v delovanju programa Tangenta.
+
+</div>
+        </div>
+      </TControl>
       <TControl name="st_Form_ProgramSettings.usrc_ShopsInuse1" imageincluded="1" link="" margin="4" heading="h2">
         <TControl name="st_Form_ProgramSettings.usrc_ShopsInuse1.grp_ShopsInUse" imageincluded="1" link="" margin="4" heading="h2">
           <div class="Title">
-            <h2 class="Title" id="30c44f1e-e04e-4814-9e99-f361bad4e765">Shops In Use</h2>
+            <h2 class="Title" id="b1208">Prodajalne v uporabi</h2>
             <img src="st_Form_ProgramSettings_usrc_ShopsInuse1_grp_ShopsInUse.png" />
+            <div class="Description">Izbrati morate vsaj eno prodajalno.
+Ime prodajalne lahko tudi spremenite. Pri tem pa velja, da se bo v navodilih
+in pomoči programa Tangenta še naprej uporabljalo osnovno ime prodajalne. ki je lahko le A,B ali C.
+</div>
           </div>
           <TControl name="st_Form_ProgramSettings.usrc_ShopsInuse1.grp_ShopsInUse.chk_A_in_use" imageincluded="1" link="" margin="4" heading="h2" />
           <TControl name="st_Form_ProgramSettings.usrc_ShopsInuse1.grp_ShopsInUse.lbl_ShopA_Name" imageincluded="1" link="" margin="4" heading="h2" />
@@ -91,7 +153,8 @@
       </TControl>
       <TControl name="st_Form_ProgramSettings.grp_ColorSettings" imageincluded="1" link="" margin="4" heading="h2">
         <div class="Title">
-          <h2 class="Title" id="ca0958ce-bc8e-4761-9011-175bc05a6095">Barvne nastavitve</h2>
+          <h2 class="Title" id="b1218">Barvne nastavitve</h2>
+          <div class="About">Spodaj so prikazane barvne nastavitve. Barvne nastavitve prvenstveno delujejo na barvno obliko dialogov za vnos podatkov v podatkovno bazo</div>
           <img src="st_Form_ProgramSettings_grp_ColorSettings.png" />
         </div>
         <TControl name="st_Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1" imageincluded="1" link="" margin="4" heading="h2">
