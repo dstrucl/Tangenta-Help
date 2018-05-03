@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../../style.css" />
+    <title>Tangenta</title>
+  </head>
+  <body>
+    <THeader />
+    <TControl name="Form_Document" imageincluded="1" link="" margin="4" heading="h1">
+      <div class="Title">
+        <h1 class="Title" id="b159">Glavni dialog</h1>
+        <div class="About">V glavnem dialogu urejamo dokumente. V pričujoči verziji programa Tangenta
+beseda dokument pomeni račun ali predračun. Dokler dokument ni izdan mu rečemo
+osnutek. Urejamo in spreminjamo lahko samo osnutke. Že izdane dokumente pa lahko samo pregledujemo.
+Za glavni dialog prikazan na spodnji sliki velja sledeče:
+<ul><li>Urejamo ali pregledujemo predračune</li><li>Podatkovna baza še nima vnešenih računov ali predračunov oziroma njihovih osnutkov.</li><li>Program in podatkovna baza delujeta v večuporabniškem načinu.</li><li><a href="#b24">Urejevalnik dokumentov</a> je viden</li><li>Urejevalnik dokumenta prikazuje tudi glavo dokumenta</li><li>Preglednica dokumentov je prikazana na glavnem dialogu.</li><li>Urejevalnik dokumentov prikazuje prodajalno A.</li><li>Urejevalnik dokumentov ne prikazuje prodajalne B.</li><li>Urejevalnik dokumentov prikazuje prodajalno C.</li></ul></div>
+        <img src="Form_Document_PP3HC3YwJ5wHMa_iiZ0VaUP6BsQ1.png" />
+        <div class="Description">Glavni dialog je sestavljen iz treh delov.
+<ul><li>Kontrolne vrstice</li><li>Urejevalnika dokumentov</li><li>Preglednice dokumentov</li></ul>Podatkovna baza je prazna. Nov predračun vpišemo tako, da v kontrolni vrstici
+kliknemo na levi zgornji gumb z napisom "Nov".</div>
+      </div>
+      <TControl name="Form_Document.m_usrc_Main" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="Form_Document.m_usrc_Main.pnl_MainMenu" imageincluded="1" link="" margin="4" heading="h2">
+          <div class="Title">
+            <h2 class="Title" id="b18">Kontrolna vrstica</h2>
+            <div class="About">
+              <li>Urejevalnik dokumentov ne prikazuje prodajalne B.</li>
+            </div>
+            <img src="Form_Document_m_usrc_Main_pnl_MainMenu_-zOMfcETXSzkjCIalKwFWTObCqE1.png" />
+            <div class="Description">Pomen gumbov in kontrol v kontrolni vrstici je razložen spodaj</div>
+          </div>
+          <TControl name="Form_Document.m_usrc_Main.pnl_MainMenu.btn_New" imageincluded="1" link="" margin="4" heading="h2">
+            <div class="Title">
+              <h2 class="Title" id="b19">Nov dokument</h2>
+              <div class="About">
+                <li>Urejevalnik dokumentov ne prikazuje prodajalne B.</li>
+              </div>
+              <img src="Form_Document_m_usrc_Main_pnl_MainMenu_btn_New_m6_Jc7Y0iam92TAjI4u5BqUAsoo1.png" />
+            </div>
+          </TControl>
+          <TControl name="Form_Document.m_usrc_Main.pnl_MainMenu.cmb_InvoiceType" imageincluded="1" link="" margin="4" heading="h2">
+            <div class="Title">
+              <h2 class="Title" id="b20">Sprememba urejanja vrste dokumenta</h2>
+              <img src="Form_Document_m_usrc_Main_pnl_MainMenu_cmb_InvoiceType_UFuyBeRj-3yt7yD7Uhsg8wesAOM1.png" />
+            </div>
+          </TControl>
+          <TControl name="Form_Document.m_usrc_Main.pnl_MainMenu.lbl_FinancialYear" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="Form_Document.m_usrc_Main.pnl_MainMenu.cmb_FinancialYear" imageincluded="1" link="" margin="4" heading="h2">
+            <div class="Title">
+              <h2 class="Title" id="b22">Finančno leto</h2>
+              <img src="Form_Document_m_usrc_Main_pnl_MainMenu_cmb_FinancialYear_AICGwq9d7rybtkpgSxdrZO0U2PI1.png" />
+            </div>
+          </TControl>
+          <TControl name="Form_Document.m_usrc_Main.pnl_MainMenu.btn_SelectPanels" imageincluded="1" link="" margin="4" heading="h2">
+            <div class="Title">
+              <h2 class="Title" id="b23">Vklop in izklop prikaza Urejevalnika dokumentov ali Predglednice dokumentov</h2>
+              <div class="About">
+                <li>Urejevalnik dokumentov ne prikazuje prodajalne B.</li>
+              </div>
+              <img src="Form_Document_m_usrc_Main_pnl_MainMenu_btn_SelectPanels_J8hpOWjcSLslqMR5dAcjY6MKPu81.png" />
+              <div class="Description">S klikom na zgornji gumb se nam <a href="../Form_SelectPanels.html">prikaže dialog</a> za prikazovanje <a href="#b24">Urejavalnika</a> in <a href="#b113">Preglednice Dokumentov</a>.</div>
+            </div>
+          </TControl>
+          <TControl name="Form_Document.m_usrc_Main.pnl_MainMenu.loginControl1" imageincluded="1" link="" margin="4" heading="h2">
+            <div class="Title">
+              <h2 class="Title" id="b24">Urejanje uporabniških pravic</h2>
+              <div class="About">
+                <li>Urejevalnik dokumentov ne prikazuje prodajalne B.</li>
+              </div>
+              <img src="Form_Document_m_usrc_Main_pnl_MainMenu_loginControl1_aDvkd3VIQs2mgWYK3CAY63nN-EI1.png" />
+            </div>
+            <TControl name="Form_Document.m_usrc_Main.pnl_MainMenu.loginControl1.lbl_username" imageincluded="1" link="" margin="4" heading="h2">
+              <div class="Title">
+                <h2 class="Title" id="b25">Uporabniško ime in ime in priimek prijavljenega uporabnika.</h2>
+                <div class="About">
+                  <li>Urejevalnik dokumentov ne prikazuje prodajalne B.</li>
+                </div>
+                <img src="Form_Document_m_usrc_Main_pnl_MainMenu_loginControl1_lbl_username_MTpc0DN5ZZpI7VCJ6wx8JZIXGik1.png" />
+              </div>
+            </TControl>
+            <TControl name="Form_Document.m_usrc_Main.pnl_MainMenu.loginControl1.btn_UserInfo" imageincluded="1" link="" margin="4" heading="h2">
+              <div class="Title">
+                <h2 class="Title" id="b26">Informacije in nastavitve prijavljenega uporabnika</h2>
+                <div class="About">
+                  <li>Urejevalnik dokumentov ne prikazuje prodajalne B.</li>
+                </div>
+                <img src="Form_Document_m_usrc_Main_pnl_MainMenu_loginControl1_btn_UserInfo_EeLMLhqPsZIe3s8IcGHXjdgSLKE1.png" />
+                <div class="Description">S  klikom na zgornji gumb se nam <a href="../LoginControl/AWP_UserInfo_Form.html">prikaže dialog</a> kjer lahko vidimo informacije o prijavljenem uporabniku, prijavljeni uporabnik pa lahko v 
+<a href="../LoginControl/AWP_UserInfo_Form.html">tem dialogu</a> tudi spremeni svoje geslo.</div>
+              </div>
+            </TControl>
+            <TControl name="Form_Document.m_usrc_Main.pnl_MainMenu.loginControl1.btn_UserManager" imageincluded="1" link="" margin="4" heading="h2">
+              <div class="Title">
+                <h2 class="Title" id="b27">Urejanje pravic uporabnikov v večuporabniškem načinu</h2>
+                <div class="About">
+                  <li>Urejevalnik dokumentov ne prikazuje prodajalne B.</li>
+                </div>
+                <img src="Form_Document_m_usrc_Main_pnl_MainMenu_loginControl1_btn_UserManager_1vqsKj15g-2pJvqvJdXl6q2Oukc1.png" />
+                <div class="Description">Zgoraj prikazani gumb se prikazuje v Kontrolni vrstici samo, če imamo dodeljene
+skrbniške pravice ali pa pravice za urejanje uporabnikov.
+S klikom na zgoraj prikazani meni, se nam <a href="../LoginControl/AWP_UserManager.html">prikaže dialog za urejanje uporabnikov</a>.</div>
+              </div>
+            </TControl>
+          </TControl>
+          <TControl name="Form_Document.m_usrc_Main.pnl_MainMenu.btn_CodeTables" imageincluded="1" link="" margin="4" heading="h2">
+            <div class="Title">
+              <h2 class="Title" id="b28">Gumb za urejanje šifrantov</h2>
+              <div class="About">
+                <li>Urejevalnik dokumentov ne prikazuje prodajalne B.</li>
+              </div>
+              <img src="Form_Document_m_usrc_Main_pnl_MainMenu_btn_CodeTables_-_tC6rQIYw1YOTNkmoBOlsDFvRc1.png" />
+              <div class="Description">S klikom na zgoraj prikazani gumb, se nam <a href="../Form_CodeTables.html">prikaže dialog, kjer lahko izberemo posamezni šifrant in ga nato urejamo</a>.</div>
+            </div>
+          </TControl>
+          <TControl name="Form_Document.m_usrc_Main.pnl_MainMenu.usrc_FVI_SLO1" imageincluded="1" link="" margin="4" heading="h2">
+            <div class="Title">
+              <h2 class="Title" id="b29">Urejanje nastavitev za komunikacijo z davčno upravo</h2>
+              <div class="About">
+                <li>Urejevalnik dokumentov ne prikazuje prodajalne B.</li>
+              </div>
+              <img src="Form_Document_m_usrc_Main_pnl_MainMenu_usrc_FVI_SLO1_JpLHGvWdqCCkleoTZjyTEzbzC9w1.png" />
+              <div class="Description">S klikom na zgornji gumb se nam <a href="../FiscalVerificationOfInvoices_SLO/Form_MainFiscal.html"> prikaže dialog za urejanje nastavitev komunikacije z davčno upravo</a>.</div>
+            </div>
+            <TControl name="Form_Document.m_usrc_Main.pnl_MainMenu.usrc_FVI_SLO1.btn_FVI" imageincluded="1" link="" margin="4" heading="h2" />
+          </TControl>
+          <TControl name="Form_Document.m_usrc_Main.pnl_MainMenu.usrc_TangentaPrint1" imageincluded="1" link="" margin="4" heading="h2">
+            <div class="Title">
+              <h2 class="Title" id="b31">Nastavitve tiskanja dokumentov</h2>
+              <div class="About">
+                <li>Urejevalnik dokumentov ne prikazuje prodajalne B.</li>
+              </div>
+              <img src="Form_Document_m_usrc_Main_pnl_MainMenu_usrc_TangentaPrint1_QkwQX7tia1UVTr8aYu6M0HzbDao1.png" />
+              <div class="Description">S klikom na zgornji gumb se nam odpre <a href="../TangentaPrint/Form_DefinePrinters.html"> dialog za nastavitve tiskalnikov</a>.</div>
+            </div>
+            <TControl name="Form_Document.m_usrc_Main.pnl_MainMenu.usrc_TangentaPrint1.btn_Printers" imageincluded="1" link="" margin="4" heading="h2" />
+          </TControl>
+          <TControl name="Form_Document.m_usrc_Main.pnl_MainMenu.btn_Settings" imageincluded="1" link="" margin="4" heading="h2">
+            <div class="Title">
+              <h2 class="Title" id="b33">Programske nastavitve</h2>
+              <div class="About">
+                <li>Urejevalnik dokumentov ne prikazuje prodajalne B.</li>
+              </div>
+              <img src="Form_Document_m_usrc_Main_pnl_MainMenu_btn_Settings_sLlpTQ7ExQ-pLGR0Y1mLMKkiZ3o1.png" />
+              <div class="Description">S klikom na zgornji gumb se nam prikaže dialog za <a href="Form_ProgramSettings.html">Programske nastavitve</a>.</div>
+            </div>
+          </TControl>
+          <TControl name="Form_Document.m_usrc_Main.pnl_MainMenu.m_usrc_Help" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="Form_Document.m_usrc_Main.pnl_MainMenu.m_usrc_Help.btn_Help" imageincluded="1" link="" margin="4" heading="h2" />
+          </TControl>
+          <TControl name="Form_Document.m_usrc_Main.pnl_MainMenu.btn_Backup" imageincluded="1" link="" margin="4" heading="h2">
+            <div class="Title">
+              <h2 class="Title" id="b36">Gumb za dialog o podatkovni bazi</h2>
+              <div class="About">
+                <li>Urejevalnik dokumentov ne prikazuje prodajalne B.</li>
+              </div>
+              <img src="Form_Document_m_usrc_Main_pnl_MainMenu_btn_Backup_I7wPAG-k8FOJ6aeEyKVvTiJxVBk1.png" />
+              <div class="Description">S klikom na zgornji gumb se nam prikaže Dialog o podatkovni bazi.</div>
+            </div>
+          </TControl>
+          <TControl name="Form_Document.m_usrc_Main.pnl_MainMenu.btn_Exit" imageincluded="1" link="" margin="4" heading="h2">
+            <div class="Title">
+              <h2 class="Title" id="b37">Izhod iz programa Tangenta</h2>
+              <div class="About">
+                <li>Urejevalnik dokumentov ne prikazuje prodajalne B.</li>
+              </div>
+              <img src="Form_Document_m_usrc_Main_pnl_MainMenu_btn_Exit_JicvERmJg06QgDbGQ_GklGMEFbs1.png" />
+              <div class="Description">S klikon na zgornji gumb končamo delovanje programa Tangenta.</div>
+            </div>
+          </TControl>
+        </TControl>
+        <TControl name="Form_Document.m_usrc_Main.splitContainer1" imageincluded="1" link="" margin="4" heading="h2">
+          <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice" imageincluded="1" link="" margin="4" heading="h2">
+              <div class="Title">
+                <h2 class="Title" id="b160">Urejevalnik dokumentov</h2>
+                <div class="About">Prikazan je urejevalnik predračunov.<li>Urejevalnik dokumentov ne prikazuje prodajalne B.</li></div>
+                <img src="Form_Document_m_usrc_Main_splitContainer1_spl1_m_usrc_Invoice_Hius5v9aCItruj-3DUiTgzzLynI1.png" />
+              </div>
+              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.lbl_Number" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.txt_Number" imageincluded="1" link="" margin="4" heading="h2">
+                <div class="Title">
+                  <h2 class="Title" id="b161">Številka računa</h2>
+                  <div class="About">
+                    <li>Urejevalnik dokumentov ne prikazuje prodajalne B.</li>
+                  </div>
+                  <img src="Form_Document_m_usrc_Main_splitContainer1_spl1_m_usrc_Invoice_txt_Number_XQVXwwzCEp5c1AJbU6T4_4LBjX81.png" />
+                  <div class="Description">Zgornja kontrola prikazuje številko predračuna ali njegovega osnutka.</div>
+                </div>
+              </TControl>
+              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.chk_Head" imageincluded="1" link="" margin="4" heading="h2">
+                <div class="Title">
+                  <h2 class="Title" id="b162">Prikaz glave dokumenta</h2>
+                  <div class="About">
+                    <li>Urejevalnik dokumentov ne prikazuje prodajalne B.</li>
+                  </div>
+                  <img src="Form_Document_m_usrc_Main_splitContainer1_spl1_m_usrc_Invoice_chk_Head_fgomoYdwQAmqXXPEsGNR9iEcORM1.png" />
+                  <div class="Description">Če postavimo kljukico na zgoraj prikazani kontroli se v bo glava dokumenta prikazova sicer pa ne.
+S tem, ko izklopimo prikazovanje glave dokuemnta imamo več prostora za urejanje vsebine računov ali predračunov.<p>
+Kljukica pri "Glavi" pomeni, da bodo v <a href="#b24">Urejevalniku dokumentov</a> vidne tudi kontrole, s katerimi določamo
+podatke o naši organizaciji in stranki, kateri izstavljamo predračun.
+</p><p>
+To, da lahko Glavo predračuna, kjer so zapisani podatki o izdajatelju predračuna in naslovniku (stranki) predračuna prikažemo ali ne
+je realizarno zato, da je na majhnih zaslonih lahko več prostora za prikaz prodajaln.
+</p></div>
+                </div>
+              </TControl>
+              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.btn_Show_Shops" imageincluded="1" link="" margin="4" heading="h2">
+                <div class="Title">
+                  <h2 class="Title" id="b163">Prikaz prodajaln</h2>
+                  <img src="Form_Document_m_usrc_Main_splitContainer1_spl1_m_usrc_Invoice_btn_Show_Shops_kseyDv3T9PSu6m82sGaFIKk-Q9w1.png" />
+                  <div class="Description">S klikom na zgornji meni se nam prikaže dialog za prikaz prodajln, kjer lahko izberemo
+katere prodajalne bodo prikazane in katere ne.
+Dialog za prikaz prodajln nam ponudi v prikaz samo tiste prodajalne, ki so v programskih nastavitvah v uporabi!
+</div>
+                </div>
+              </TControl>
+              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.usrc_Currency1" imageincluded="1" link="" margin="4" heading="h2">
+                <div class="Title">
+                  <h2 class="Title" id="b164">Izbrana valuta</h2>
+                  <img src="Form_Document_m_usrc_Main_splitContainer1_spl1_m_usrc_Invoice_usrc_Currency1_MY23XrqsQ1ffn-HggxJUwgwIMj01.png" />
+                </div>
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.usrc_Currency1.lbl_Currency" imageincluded="1" link="" margin="4" heading="h2" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.usrc_Currency1.txt_Currency" imageincluded="1" link="" margin="4" heading="h2" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.usrc_Currency1.btn_SelectCurrency" imageincluded="1" link="" margin="4" heading="h2" />
+              </TControl>
+              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2" imageincluded="1" link="" margin="4" heading="h2">
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2" imageincluded="1" link="" margin="4" heading="h2">
+                  <div class="Title">
+                    <h2 class="Title" id="b165">Glava dokumenta</h2>
+                    <img src="Form_Document_m_usrc_Main_splitContainer1_spl1_m_usrc_Invoice_splitContainer2_spl2_LTJPDEf8O2Um7DSXHCCJVCLtVxs1.png" />
+                    <div class="Description">Glava računa vsebuje podatke o prodajalcu in kupcu.</div>
+                  </div>
+                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.lbl_MyOrganisation" imageincluded="1" link="" margin="4" heading="h2" />
+                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.btn_MyOrganisation" imageincluded="1" link="" margin="4" heading="h2">
+                    <div class="Title">
+                      <h2 class="Title" id="b46">Gumb za urejanje podatkov moje organizacije</h2>
+                      <img src="Form_Document_m_usrc_Main_splitContainer1_spl1_m_usrc_Invoice_splitContainer2_spl2_btn_MyOrganisation_voG5ypb0gjw5Za-IuYZYVcxOW1c1.png" />
+                      <div class="Description">S klikom na zgoraj prikazani gumb se nam odpre dialog, kjer lahko
+urejamo podatke o naši (moji) organizaciji.</div>
+                    </div>
+                  </TControl>
+                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.txt_MyOrganisation" imageincluded="1" link="" margin="4" heading="h2" />
+                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.usrc_Customer" imageincluded="1" link="" margin="4" heading="h2">
+                    <div class="Title">
+                      <h2 class="Title" id="b48">Gumb za urejanje podatkov o strankah</h2>
+                      <img src="Form_Document_m_usrc_Main_splitContainer1_spl1_m_usrc_Invoice_splitContainer2_spl2_usrc_Customer_HAE7zaFjE5529iEuOvhaJk87hOc1.png" />
+                      <div class="Description">S klikom na zgoraj prikazani spustni meni,določimo ali gre za stranko
+,ki je fizična ali pravna oseba. Ko to izberemo, se nam omogoči zgornji gumb kjer lahko gremo v dialog za urejanje podatkov o stranki.
+
+</div>
+                    </div>
+                    <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.usrc_Customer.lbl_Buyer" imageincluded="1" link="" margin="4" heading="h2" />
+                    <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.usrc_Customer.btn_Buyer" imageincluded="1" link="" margin="4" heading="h2" />
+                    <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.usrc_Customer.cmb_BuyerType" imageincluded="1" link="" margin="4" heading="h2" />
+                  </TControl>
+                </TControl>
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3" imageincluded="1" link="" margin="4" heading="h2">
+                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1" imageincluded="1" link="" margin="4" heading="h2">
+                    <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl4" imageincluded="1" link="" margin="4" heading="h2">
+                      <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl4.usrc_ShopA" imageincluded="1" link="" margin="4" heading="h2">
+                        <div class="Title">
+                          <h2 class="Title" id="b166">Prodajalna A</h2>
+                          <img src="Form_Document_m_usrc_Main_splitContainer1_spl1_m_usrc_Invoice_splitContainer2_spl3_splitContainer1_spl4_usrc_ShopA_stkD5KeY-p6d2F278-8-xnRv2741.png" />
+                        </div>
+                        <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl4.usrc_ShopA.lbl_ShopA_Name" imageincluded="1" link="" margin="4" heading="h2" />
+                        <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl4.usrc_ShopA.splitContainer1" imageincluded="1" link="" margin="4" heading="h2">
+                          <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl4.usrc_ShopA.splitContainer1.spl10" imageincluded="1" link="" margin="4" heading="h2">
+                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl4.usrc_ShopA.splitContainer1.spl10.dgvx_ShopA" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl4.usrc_ShopA.splitContainer1.spl10.dgvx_ShopA.DocProformaInvoice_ShopA_Item_$_aisha_$$Name" imageincluded="0" link="" margin="4" heading="h3" />
+                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl4.usrc_ShopA.splitContainer1.spl10.dgvx_ShopA.DocProformaInvoice_ShopA_Item_$_aisha_$$Description" imageincluded="0" link="" margin="4" heading="h3" />
+                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl4.usrc_ShopA.splitContainer1.spl10.dgvx_ShopA.DocProformaInvoice_ShopA_Item_$_aisha_$_tax_$$Name" imageincluded="0" link="" margin="4" heading="h3" />
+                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl4.usrc_ShopA.splitContainer1.spl10.dgvx_ShopA.DocProformaInvoice_ShopA_Item_$_aisha_$_tax_$$Rate" imageincluded="0" link="" margin="4" heading="h3" />
+                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl4.usrc_ShopA.splitContainer1.spl10.dgvx_ShopA.DocProformaInvoice_ShopA_Item_$_aisha_$_u_$$Name" imageincluded="0" link="" margin="4" heading="h3" />
+                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl4.usrc_ShopA.splitContainer1.spl10.dgvx_ShopA.DocProformaInvoice_ShopA_Item_$$Discount" imageincluded="0" link="" margin="4" heading="h3" />
+                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl4.usrc_ShopA.splitContainer1.spl10.dgvx_ShopA.DocProformaInvoice_ShopA_Item_$$dQuantity" imageincluded="0" link="" margin="4" heading="h3" />
+                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl4.usrc_ShopA.splitContainer1.spl10.dgvx_ShopA.DocProformaInvoice_ShopA_Item_$$PricePerUnit" imageincluded="0" link="" margin="4" heading="h3" />
+                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl4.usrc_ShopA.splitContainer1.spl10.dgvx_ShopA.DocProformaInvoice_ShopA_Item_$$EndPriceWithDiscountAndTax" imageincluded="0" link="" margin="4" heading="h3" />
+                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl4.usrc_ShopA.splitContainer1.spl10.dgvx_ShopA.DocProformaInvoice_ShopA_Item_$$TAX" imageincluded="0" link="" margin="4" heading="h3" />
+                            </TControl>
+                          </TControl>
+                        </TControl>
+                      </TControl>
+                    </TControl>
+                    <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11" imageincluded="1" link="" margin="4" heading="h2">
+                      <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3" imageincluded="1" link="" margin="4" heading="h2">
+                        <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12" imageincluded="1" link="" margin="4" heading="h2">
+                          <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopC" imageincluded="1" link="" margin="4" heading="h2">
+                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopC.lbl_ShopC_Name" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopC.usrc_PriceList1" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopC.usrc_PriceList1.lbl_PriceList" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopC.usrc_PriceList1.btn_PriceListType" imageincluded="1" link="" margin="4" heading="h2" />
+                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopC.usrc_PriceList1.cmb_PriceListType" imageincluded="1" link="" margin="4" heading="h2" />
+                            </TControl>
+                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopC.lbl_Stock" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopC.btn_Stock" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopC.lbl_Items" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopC.btn_Items" imageincluded="1" link="" margin="4" heading="h2" />
+                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopC.splitContainer3" imageincluded="1" link="" margin="4" heading="h2">
+                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopC.splitContainer3.spl13" imageincluded="1" link="" margin="4" heading="h2">
+                                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopC.splitContainer3.spl13.usrc_Atom_ItemsList" imageincluded="1" link="" margin="4" heading="h2">
+                                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopC.splitContainer3.spl13.usrc_Atom_ItemsList.m_usrc_Item_PageHandler" imageincluded="1" link="" margin="4" heading="h2" />
+                                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopC.splitContainer3.spl13.usrc_Atom_ItemsList.pnl_Atom_Items" imageincluded="1" link="" margin="4" heading="h2" />
+                                </TControl>
+                              </TControl>
+                            </TControl>
+                          </TControl>
+                        </TControl>
+                      </TControl>
+                    </TControl>
+                  </TControl>
+                </TControl>
+              </TControl>
+              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.lbl_Sum" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.usrc_AddOn1" imageincluded="1" link="" margin="4" heading="h2">
+                <div class="Title">
+                  <h2 class="Title" id="b109">Ostali podatki</h2>
+                  <div class="About">
+                    <li>Urejevalnik dokumentov ne prikazuje prodajalne B.</li>
+                  </div>
+                  <img src="Form_Document_m_usrc_Main_splitContainer1_spl1_m_usrc_Invoice_usrc_AddOn1_TBI_PpNZBswq-A9zTquRWf1FqEE1.png" />
+                </div>
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.usrc_AddOn1.btn_Notice" imageincluded="1" link="" margin="4" heading="h2" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.usrc_AddOn1.txt_Notice" imageincluded="1" link="" margin="4" heading="h2" />
+              </TControl>
+            </TControl>
+          </TControl>
+          <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18" imageincluded="1" link="" margin="4" heading="h2">
+            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable" imageincluded="1" link="" margin="4" heading="h2">
+              <div class="Title">
+                <h2 class="Title" id="b290">Preglednica dokumentov</h2>
+                <div class="About">
+                  <li>Urejevalnik dokumentov ne prikazuje prodajalne B.</li>
+                </div>
+                <img src="Form_Document_m_usrc_Main_splitContainer1_spl18_m_usrc_InvoiceTable_MSYpxnYF_krMkpRP3rT-42ITLHo1.png" />
+              </div>
+              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.btn_TimeSpan" imageincluded="1" link="" margin="4" heading="h2">
+                <div class="Title">
+                  <h2 class="Title" id="b291">Gumb za izbiro prikaza dokumentov glede na časovno obdobje.</h2>
+                  <div class="About">
+                    <li>Urejevalnik dokumentov ne prikazuje prodajalne B.</li>
+                  </div>
+                  <img src="Form_Document_m_usrc_Main_splitContainer1_spl18_m_usrc_InvoiceTable_btn_TimeSpan_8HZir4l8ON35rMnVnl8sKeXBZRI1.png" />
+                </div>
+              </TControl>
+              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.btn_Print" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.lbl_From_To" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.lbl_Payment1" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.lbl_Sum_All" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.lbl_Sum_Tax" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.lbl_Sum_WithoutTax" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.lbl_Payment2" imageincluded="1" link="" margin="4" heading="h2" />
+              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice" imageincluded="1" link="" margin="4" heading="h2">
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocProformaInvoice_$_dpinv_$$NumberInFinancialYear" imageincluded="0" link="" margin="4" heading="h3" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocProformaInvoice_$_dpinv_$$GrossSum" imageincluded="0" link="" margin="4" heading="h3" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.IssueDate" imageincluded="0" link="" margin="4" heading="h3" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocProformaInvoice_$_dpinv_$_acusper_$_aper_$_acfn_$$FirstName" imageincluded="0" link="" margin="4" heading="h3" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocProformaInvoice_$_dpinv_$_acusper_$_aper_$_acln_$$LastName" imageincluded="0" link="" margin="4" heading="h3" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.PaymentType_Name" imageincluded="0" link="" margin="4" heading="h3" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocProformaInvoice_$_dpinv_$$NetSum" imageincluded="0" link="" margin="4" heading="h3" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocProformaInvoice_$_dpinv_$$TaxSum" imageincluded="0" link="" margin="4" heading="h3" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocProformaInvoice_$_dpinv_$_acusper_$_aper_$_agsmnper_$$GsmNumber" imageincluded="0" link="" margin="4" heading="h3" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocProformaInvoice_$_dpinv_$_acusper_$_aper_$_aphnnper_$$PhoneNumber" imageincluded="0" link="" margin="4" heading="h3" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocProformaInvoice_$_dpinv_$_acusper_$_aper_$_aemailper_$$Email" imageincluded="0" link="" margin="4" heading="h3" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocProformaInvoice_$_dpinv_$_acusper_$_aper_$$DateOfBirth" imageincluded="0" link="" margin="4" heading="h3" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocProformaInvoice_$_dpinv_$_acusorg_$_aorg_$$Name" imageincluded="0" link="" margin="4" heading="h3" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocProformaInvoice_$_dpinv_$_acusorg_$_aorg_$$Tax_ID" imageincluded="0" link="" margin="4" heading="h3" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocProformaInvoice_$_dpinv_$_acusorg_$_aorg_$$Registration_ID" imageincluded="0" link="" margin="4" heading="h3" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocProformaInvoice_$_dpinv_$$Discount" imageincluded="0" link="" margin="4" heading="h3" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocProformaInvoice_$_dpinv_$$EndSum" imageincluded="0" link="" margin="4" heading="h3" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocProformaInvoice_$_awperiod_$_amcper_$_aper_$_acfn_$$FirstName" imageincluded="0" link="" margin="4" heading="h3" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocProformaInvoice_$_awperiod_$_amcper_$_aper_$_acln_$$LastName" imageincluded="0" link="" margin="4" heading="h3" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocProformaInvoice_$_awperiod_$_amcper_$_aoffice_$$Name" imageincluded="0" link="" margin="4" heading="h3" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocProformaInvoice_$_dpinv_$$FinancialYear" imageincluded="0" link="" margin="4" heading="h3" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocProformaInvoice_$$EventTime" imageincluded="0" link="" margin="4" heading="h3" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocProformaInvoice_$_dpinv_$$Draft" imageincluded="0" link="" margin="4" heading="h3" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocProformaInvoice_$_dpinv_$$DraftNumber" imageincluded="0" link="" margin="4" heading="h3" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocProformaInvoice_$_awperiod_$_aed_$$Name" imageincluded="0" link="" margin="4" heading="h3" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocProformaInvoice_$_dpinv_$$ID" imageincluded="0" link="" margin="4" heading="h3" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl18.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocProformaInvoice_$_jpinvt_$$ID" imageincluded="0" link="" margin="4" heading="h3" />
+              </TControl>
+            </TControl>
+          </TControl>
+        </TControl>
+      </TControl>
+    </TControl>
+  </body>
+</html>
