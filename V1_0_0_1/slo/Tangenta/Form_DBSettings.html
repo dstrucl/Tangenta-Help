@@ -48,14 +48,20 @@
              <span><a href="../PriceList.html">CENIKI</a></span>,
              <span><a href="../Printing.html">TISKANJE RAČUNOV</a></span>,
              <span><a href="../InvoicingOverview.html">PREGLED FAKTUR</a></span>,
-             <span><a href="../Support.html">PODPORA</a></span></div>
+             <span><a href="../Support.html">PODPORA</a></span>,
+             <span><a href="../News.html">NOVICE</a></span>,
+             <span><a href="../About.html">O PROGRAMU</a></span></div>
         </div>
       </div>
     </THeader>
     <TControl name="Form_DBSettings" imageincluded="1" link="" margin="4" heading="h1">
       <div class="Title">
-        <h1 class="Title" id="db233b79-081f-40d9-b9c7-41b57e81b0e2">Nastavitve v podatkovni bazi</h1>
+        <h1 class="Title" id="b184">Nastavitve v podatkovni bazi</h1>
+        <div class="About">Nastavitve delovanja programa Tangenta v podatkovni bazi imajo prednost pred <a href="Form_ProgramSettings.html">lokalnimi nastavitvami programa</a>. 
+Nastavitve delovanja v podatkovni bazi določajo način delovanja programa za vse instalacije programa Tangenta na vseh računalnikih in vseh uporabnikih, 
+ki se povežejo na izbrano podatkovno bazo.</div>
         <img src="Form_DBSettings.png" />
+        <div class="Description">Sprememba nastavitev delovanja programa Tangenta v podatkovni bazi vpliva na način delovanja ne glede na to iz katerega računalnika se povežemo na podatkovno bazo in velja za vse uporabnike!</div>
       </div>
       <TControl name="Form_DBSettings.usrc_NavigationButtons1" imageincluded="1" link="" margin="4" heading="h2">
         <TControl name="Form_DBSettings.usrc_NavigationButtons1.btn1" imageincluded="1" link="" margin="4" heading="h2" />
@@ -67,23 +73,74 @@
       <TControl name="Form_DBSettings.lbl_DataBaseVersion" imageincluded="1" link="" margin="4" heading="h2" />
       <TControl name="Form_DBSettings.grp_OperationMode" imageincluded="1" link="" margin="4" heading="h2">
         <div class="Title">
-          <h2 class="Title" id="1aa5cb21-722c-46c0-960a-44d9bdf1b953">Način delovanja</h2>
+          <h2 class="Title" id="b191">Način delovanja</h2>
           <img src="Form_DBSettings_grp_OperationMode.png" />
+          <div class="Description">Spodaj so razloženi načini delovanja programa.</div>
         </div>
-        <TControl name="Form_DBSettings.grp_OperationMode.rdb_MultiUserOperation" imageincluded="1" link="" margin="4" heading="h2" />
-        <TControl name="Form_DBSettings.grp_OperationMode.rdb_SingleUser" imageincluded="1" link="" margin="4" heading="h2" />
-        <TControl name="Form_DBSettings.grp_OperationMode.chk_SingleUserLoginAsAdministrator" imageincluded="1" link="" margin="4" heading="h2" />
+        <TControl name="Form_DBSettings.grp_OperationMode.rdb_MultiUserOperation" imageincluded="1" link="" margin="4" heading="h2">
+          <div class="Title">
+            <h2 class="Title" id="b192">Več-uporabniško delovanje</h2>
+            <div class="About">Več-uporabniško delovanje pomeni, vsakokratno prijavo v program z uporabniškim imenom in geslom.</div>
+            <img src="Form_DBSettings_grp_OperationMode_rdb_MultiUserOperation.png" />
+            <div class="Description">Če kliknete (postavite krogec) na Več uporabnikov, bo program Tangenta deloval v večuporabniškem načinu.</div>
+          </div>
+        </TControl>
+        <TControl name="Form_DBSettings.grp_OperationMode.rdb_SingleUser" imageincluded="1" link="" margin="4" heading="h2">
+          <div class="Title">
+            <h2 class="Title" id="b193">En sam uporabnik</h2>
+            <img src="Form_DBSettings_grp_OperationMode_rdb_SingleUser.png" />
+            <div class="Description">V enouporabniškem načinu je zahtevana prijava z skrbniškim geslom, v kolikor odkljukate 'Prijava z skrbniškim geslom', V kolikor ne odkljukate 'Prijava z skrbniškim geslom' se bo program zagnal brez prijave.</div>
+          </div>
+        </TControl>
+        <TControl name="Form_DBSettings.grp_OperationMode.chk_SingleUserLoginAsAdministrator" imageincluded="1" link="" margin="4" heading="h2">
+          <div class="Title">
+            <h2 class="Title" id="b194">Prijava z skrbniškim geslom</h2>
+            <div class="About">Prijava z skrbniškim geslom pomeni, da se boste morali ob zagonu vedno prijaviti z skrbniškim geslom. Izbira te opicije je dodana kot dodatna varnost, da ne bi nezaželjena oseba uprabila program in kaj spremenila.</div>
+            <img src="Form_DBSettings_grp_OperationMode_chk_SingleUserLoginAsAdministrator.png" />
+          </div>
+        </TControl>
         <TControl name="Form_DBSettings.grp_OperationMode.lbl_Administrator_Password" imageincluded="1" link="" margin="4" heading="h2" />
         <TControl name="Form_DBSettings.grp_OperationMode.usrc_Password1" imageincluded="1" link="" margin="4" heading="h2">
+          <div class="Title">
+            <h2 class="Title" id="b196">Skrbniško Geslo</h2>
+            <img src="Form_DBSettings_grp_OperationMode_usrc_Password1.png" />
+            <div class="Description">Skrbniško geslo je pomembno za delovanje programa samo v Eno-uporabniškem načinu. Programske nastavitve,nastavitve v podatkovni bazi, nastavitve tiskanja, oblike predlog za račune in predračune itd. lahko spremenimo samo tako, da pred tem vnesemo skrbniško geslo. Privzeto skrbniško geslo je 12345, zato to geslo spremenite že ob namestitvi programa. Skrbniško geslo mora biti dolgo vsaj pet znakov.</div>
+          </div>
           <TControl name="Form_DBSettings.grp_OperationMode.usrc_Password1.txt_Password" imageincluded="1" link="" margin="4" heading="h2" />
           <TControl name="Form_DBSettings.grp_OperationMode.usrc_Password1.lbl_Retype_Password" imageincluded="1" link="" margin="4" heading="h2" />
-          <TControl name="Form_DBSettings.grp_OperationMode.usrc_Password1.btn_PasswordView" imageincluded="1" link="" margin="4" heading="h2" />
+          <TControl name="Form_DBSettings.grp_OperationMode.usrc_Password1.btn_PasswordView" imageincluded="1" link="" margin="4" heading="h2">
+            <div class="Title">
+              <h2 class="Title" id="b199">Gumb za prikaz dejanskega gesla</h2>
+              <img src="Form_DBSettings_grp_OperationMode_usrc_Password1_btn_PasswordView.png" />
+              <div class="Description">Ko vnašemo geslo se nam geslo izpisuje ze zvezdicami:***.
+Če kliknemo na zgornji gumb, se nam dejansko geslo prikaže za nekaj sekund.
+</div>
+            </div>
+          </TControl>
           <TControl name="Form_DBSettings.grp_OperationMode.usrc_Password1.txt_Password_Retyped" imageincluded="1" link="" margin="4" heading="h2" />
         </TControl>
       </TControl>
-      <TControl name="Form_DBSettings.chk_StockCheckAtStartup" imageincluded="1" link="" margin="4" heading="h2" />
-      <TControl name="Form_DBSettings.chk_ShopC_ExclusivelySellFromStock" imageincluded="1" link="" margin="4" heading="h2" />
-      <TControl name="Form_DBSettings.chk_MultiCurrency" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_DBSettings.chk_StockCheckAtStartup" imageincluded="1" link="" margin="4" heading="h2">
+        <div class="Title">
+          <h2 class="Title" id="b201">Preverjanje zalog ob zagonu programa</h2>
+          <img src="Form_DBSettings_chk_StockCheckAtStartup.png" />
+          <div class="Description">V kolikor postavimo kljukico pri "Preverjanje zalog ob zagonu programa", bo program Tangenta vsakič preveril zaloge artiklov v prodajlni C. Postavljanje kljukice pri "Preverjanje zalog ob zagonu programa" je smiselno samo, če uporabljamo prodajalno C. Pri preverjanju zalog se preverja ali je rok trajanja nekega artikla že potekel, oziroma se jim bliža konec roka uporabe. Program Tangenta nas bo ob zagonu opozoril s prikazom vseh artiklov, ki so še v zalogah in jim je potekel rok uporabe ali pa sem jim bliža konec roka uporabe.</div>
+        </div>
+      </TControl>
+      <TControl name="Form_DBSettings.chk_ShopC_ExclusivelySellFromStock" imageincluded="1" link="" margin="4" heading="h2">
+        <div class="Title">
+          <h2 class="Title" id="b202">V prodajalni C je omogočena samo prodaja iz zalog</h2>
+          <img src="Form_DBSettings_chk_ShopC_ExclusivelySellFromStock.png" />
+          <div class="Description">Nekatera poslovanja so lahko takšna, da je možna oziroma dovoljena samo prodaja artikla ki se nahaja v zalogah. V kolikor artikel imamo, ni pa vpisan v zalogah, moramo najprej napisati prevzemnico s katero artikel vnesemo v zalogo. Šele nato ga lahko prodamo. V kolikor ne odkljukamo "V prodajalni C je omogočena samo prodaja iz zalog" lahko prodamo artikel tudi mimo zaloge.</div>
+        </div>
+      </TControl>
+      <TControl name="Form_DBSettings.chk_MultiCurrency" imageincluded="1" link="" margin="4" heading="h2">
+        <div class="Title">
+          <h2 class="Title" id="b203">Več valutno poslovanje</h2>
+          <img src="Form_DBSettings_chk_MultiCurrency.png" />
+          <div class="Description">Trenutno večvalutno poslovanje še ni podrpto v smislu, da lahko en račun izstavimo v eni valuti drug račun pa v drugi. Program trenutno omogoča večvalutno poslovanje tako, da ob namstitvi izberemo valuto poslovanja.</div>
+        </div>
+      </TControl>
     </TControl>
   </body>
 </html>

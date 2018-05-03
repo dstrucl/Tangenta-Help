@@ -79,16 +79,16 @@ ne glede na to iz katerega računalnika se povežemo na podatkovno bazo in velja
         <div class="Title">
           <h2 class="Title" id="dc32f84f-aeaa-471e-a9b2-4108be401fbe">Način delovanja</h2>
           <img src="nav_Form_DBSettings_grp_OperationMode.png" />
-          <div class="Description">Spodaj nadaljevanju so razloženi načini delovanja programa.</div>
+          <div class="Description">Spodaj so razloženi načini delovanja programa.</div>
         </div>
         <TControl name="nav_Form_DBSettings.grp_OperationMode.rdb_MultiUserOperation" imageincluded="1" link="" margin="4" heading="h2">
           <div class="Title">
             <h2 class="Title" id="87f55ccf-e4f1-4ef1-af72-4bf99681a40d">Večuporabniško delovanje</h2>
-            <div class="About">Večuporabniško delovanje pomeni, vsakokratno prijavo v program z uporabniškim imenom in geslom.
+            <div class="About">Več-uporabniško delovanje pomeni, vsakokratno prijavo v program z uporabniškim imenom in geslom.
 
 </div>
             <img src="nav_Form_DBSettings_grp_OperationMode_rdb_MultiUserOperation.png" />
-            <div class="Description">Če kliknete (postavite krogec) na Več uporabnikov, bo program Tangenta deloval v večuporabniškem načinu.
+            <div class="Description">Če kliknete (postavite krogec) na Več uporabnikov, bo program Tangenta deloval v več-uporabniškem načinu.
 
 </div>
           </div>
@@ -97,7 +97,7 @@ ne glede na to iz katerega računalnika se povežemo na podatkovno bazo in velja
           <div class="Title">
             <h2 class="Title" id="07e3c875-fbef-414f-9f88-414652c78cab">En sam uporabnik</h2>
             <img src="nav_Form_DBSettings_grp_OperationMode_rdb_SingleUser.png" />
-            <div class="Description">V enouporabniškem načinu je zahtevana prijava z skrbniškim geslom, v kolikor odkljukate
+            <div class="Description">V eno-uporabniškem načinu je zahtevana prijava z skrbniškim geslom, v kolikor odkljukate
 'Prijava z skrbniškim geslom', V kolikor ne odkljukate 'Prijava z skrbniškim geslom' se bo program
 zagnal brez prijave
 </div>
@@ -108,7 +108,7 @@ zagnal brez prijave
             <h2 class="Title" id="62afd998-d4c8-478c-88d1-0892bab03edb">Prijava z skrbniškim geslom</h2>
             <div class="About">Prijava z skrbniškim geslom pomeni, da se boste morali
 ob zagonu vedno prijaviti z skrbniškim geslom.
-Izbira te opicije je dodana kot dodatna varnast da ne bi 
+Izbira te opicije je dodana kot dodatna varnost, da ne bi 
 nezaželjena oseba uprabila program in kaj spremenila.
 </div>
             <img src="nav_Form_DBSettings_grp_OperationMode_chk_SingleUserLoginAsAdministrator.png" />
@@ -118,7 +118,7 @@ nezaželjena oseba uprabila program in kaj spremenila.
           <div class="Title">
             <h2 class="Title" id="ba801e58-7afc-476d-b78b-79df901c8ad7">Skrbniško Geslo</h2>
             <img src="nav_Form_DBSettings_grp_OperationMode_lbl_Administrator_Password.png" />
-            <div class="Description">Skrbniško geslo je pomembno za delovanje programa samo v Eno-uporabniškem načinu.
+            <div class="Description">Skrbniško geslo je pomembno za delovanje programa samo v eno-uporabniškem načinu.
 Programske nastavitve,nastavitve v podatkovni bazi, nastavitve tiskanja, oblike predlog za račune in predračune itd. lahko spremenimo samo tako, da pred tem vnesemo skrbniško geslo.
 Privzeto skrbniško geslo je 12345, zato to geslo spremenite ob namestitvi programa.
 Skrbniško geslo mora biti dolgo vsaj pet znakov.
@@ -138,20 +138,14 @@ Skrbniško geslo mora biti dolgo vsaj pet znakov.
           <h2 class="Title" id="da8d85b0-3b11-48d2-a6a9-b456e2ea9df4">Preverjanje zalog ob zagonu programa</h2>
           <img src="nav_Form_DBSettings_chk_StockCheckAtStartup.png" />
           <div class="Description">V kolikor postavimo kljukico pri "Preverjanje zalog ob zagonu programa", bo program
-Tangenta vsakič preveril zaloge artiklov v prodajlni C.
+Tangenta vsakič preveril zaloge artiklov v prodajalni C.
 Postavljanje kljukice pri "Preverjanje zalog ob zagonu programa" je smiselno samo, 
 če uporabljamo prodajalno C.
 
 Pri preverjanju zalog se preverja ali je rok trajanja nekega artikla
-že potekel, oziroma se jim bliža konec roka uporabe.
+že potekel, oziroma se mu bliža konec roka uporabe.
 Program Tangenta nas bo ob zagonu opozoril s prikazom vseh artiklov,
 ki so še v zalogah in jim je potekel rok uporabe ali pa sem jim bliža konec roka uporabe.
-
-
-
-
-
-
 
 </div>
         </div>
@@ -160,7 +154,7 @@ ki so še v zalogah in jim je potekel rok uporabe ali pa sem jim bliža konec ro
         <div class="Title">
           <h2 class="Title" id="e5fabd21-d574-4cf7-9cb5-803b962e5b00">V prodajalni C je omogočena samo prodaja iz zalog</h2>
           <img src="nav_Form_DBSettings_chk_ShopC_ExclusivelySellFromStock.png" />
-          <div class="Description">Nekateri poslovanja so lahko takšna, da je možna oziroma dovoljena samo prodaja artikla
+          <div class="Description">Nekatera poslovanja so lahko takšna, da je možna oziroma dovoljena samo prodaja artikla,
 ki se nahaja v zalogah. V kolikor artikel imamo, ni pa vpisan v zalogah, moramo najprej napisati prevzemnico
 s katero artikel vnesemo v zalogo. Šele nato ga lahko prodamo.
 
@@ -173,8 +167,8 @@ lahko prodamo artikel tudi mimo zaloge.
         <div class="Title">
           <h2 class="Title" id="a4edbc13-60c9-4120-bd55-9151a556dd08">Več valutno poslovanje</h2>
           <img src="nav_Form_DBSettings_chk_MultiCurrency.png" />
-          <div class="Description">Trenutno večvalutno poslovanje še ni podrpto v smislu, da lahko en račun izstavimo v eni valuti drug račun pa v drugi.
-Program trenutno omogoča večvalutno poslovanje tako da ob namstitvi izberemo valuto poslovanja.
+          <div class="Description">Trenutno večvalutno poslovanje še ni podrpto v smislu, da lahko en račun izstavimo v eni valuti, drug račun pa v drugi.
+Program trenutno omogoča večvalutno poslovanje tako, da ob namstitvi izberemo valuto poslovanja.
 </div>
         </div>
       </TControl>

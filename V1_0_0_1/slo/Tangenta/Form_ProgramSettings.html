@@ -48,13 +48,24 @@
              <span><a href="../PriceList.html">CENIKI</a></span>,
              <span><a href="../Printing.html">TISKANJE RAČUNOV</a></span>,
              <span><a href="../InvoicingOverview.html">PREGLED FAKTUR</a></span>,
-             <span><a href="../Support.html">PODPORA</a></span></div>
+             <span><a href="../Support.html">PODPORA</a></span>,
+             <span><a href="../News.html">NOVICE</a></span>,
+             <span><a href="../About.html">O PROGRAMU</a></span></div>
         </div>
       </div>
     </THeader>
     <TControl name="Form_ProgramSettings" imageincluded="1" link="" margin="4" heading="h1">
       <div class="Title">
-        <h1 class="Title" id="783eefcb-9600-4fe4-ab38-476532d4554b">Programske nastavitve</h1>
+        <h1 class="Title" id="b11">Programske nastavitve</h1>
+        <div class="About">Programske nastaitve so nastavitve, ki se shranjuje na vsakem lokalnem računalniku.
+V kolikor imate več blagajn, oziroma uporabljate program Tangenta na več računalnikih,
+potem velja, da Programske nastavitve določajo način delovanja programa Tangenta za vsak računalnik posebej.
+<a href="Form_DBSettings.html">Nastavitve podatkovne baze</a>, pa določajo način delovanja programa Tangenta za vse računalnike povezane, ki so povezani ali se povežejo
+na isto podatkovno bazo.
+Do <a href="Form_DBSettings.html">Nastavitev podatkovne baze</a> pridemo <a href="#b23">s klikom na gumb,ki je prikazan spodaj</a>.
+
+
+</div>
         <img src="Form_ProgramSettings.png" />
       </div>
       <TControl name="Form_ProgramSettings.usrc_NavigationButtons1" imageincluded="1" link="" margin="4" heading="h2">
@@ -65,18 +76,96 @@
         </TControl>
       </TControl>
       <TControl name="Form_ProgramSettings.lbL_ElectronicDevice_ID" imageincluded="1" link="" margin="4" heading="h2" />
-      <TControl name="Form_ProgramSettings.txt_ElectronicDevice_ID" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_ProgramSettings.txt_ElectronicDevice_ID" imageincluded="1" link="Form_ProgramSettings.lbL_ElectronicDevice_ID" margin="4" heading="h2">
+        <div class="Title">
+          <h2 class="Title" id="b18">Oznaka blagajne</h2>
+          <div class="About">Oznaka blagajne je ime elektronske naprave (lahko tudi računalnika), ki se zabeleži, kot podatek ob vsakem računu 
+ali predračunu z namenom, da se ve na katerem računalniku je bil dokument izdan.</div>
+          <img src="Form_ProgramSettings_txt_ElectronicDevice_ID_jFgWsvLUPg0yU8sojm4OhZTTY8M1.png" />
+          <div class="Description">Oznaka blagajne se izpisuje v številki računa. Oznaka blagajne naj bo čim krajša.
+V kolikor davčno potrjujete račune, morate po navodilih FURS izdelati
+Interni akt o popisu poslovnih prostorov, dodelitvi oznak poslovnim prostorom in pravilih za dodeljevanje
+zaporednih številk računov.
+<ul>
+Povezave:
+<li><a href="http://www.fu.gov.si/fileadmin/Internet/Nadzor/Podrocja/Davcne_blagajne_in_VKR/Obrazci/Interni_akt_-_primer_4.pdf">Interni_akt_-_primer_4.pdf</a></li><li><a href="https://www.racunovodja.com/clanki.asp?clanek=8938">https://www.racunovodja.com</a></li></ul></div>
+        </div>
+      </TControl>
       <TControl name="Form_ProgramSettings.lbl_Language" imageincluded="1" link="" margin="4" heading="h2" />
-      <TControl name="Form_ProgramSettings.cmb_Language" imageincluded="1" link="" margin="4" heading="h2" />
-      <TControl name="Form_ProgramSettings.chk_FullScreen" imageincluded="1" link="" margin="4" heading="h2" />
-      <TControl name="Form_ProgramSettings.chk_AllowToEditText" imageincluded="1" link="" margin="4" heading="h2" />
-      <TControl name="Form_ProgramSettings.btn_DBSettings" imageincluded="1" link="" margin="4" heading="h2" />
-      <TControl name="Form_ProgramSettings.btn_LogFile" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_ProgramSettings.cmb_Language" imageincluded="1" link="Form_ProgramSettings.lbl_Language" margin="4" heading="h2">
+        <div class="Title">
+          <h2 class="Title" id="b20">Izbira jezika</h2>
+          <img src="Form_ProgramSettings_cmb_Language_g6Le4UnpKEl9a21bKnxXBoHdZg81.png" />
+          <div class="Description">Z zgoraj prikazanim spustnim menijem, lahko nastavite drug jezik.
+Da bi program Tangenta, prikazoval dialoge v drugem jeziku, ga morate ponovno zagnati.
+
+
+</div>
+        </div>
+      </TControl>
+      <TControl name="Form_ProgramSettings.chk_FullScreen" imageincluded="1" link="" margin="4" heading="h2">
+        <div class="Title">
+          <h2 class="Title" id="b21">Delovanje čez cel zaslon</h2>
+          <img src="Form_ProgramSettings_chk_FullScreen_skZQZ5TaDgTbkyIursRylA76g2s1.png" />
+          <div class="Description">V kolikorm odkljukate "Čez cel zaslon" se bo zagonski dialog kot tudi glavni dialog po zagonu programa
+prikazal čez cel zaslon.
+</div>
+        </div>
+      </TControl>
+      <TControl name="Form_ProgramSettings.chk_AllowToEditText" imageincluded="1" link="" margin="4" heading="h2">
+        <div class="Title">
+          <h2 class="Title" id="b22">Urejenje besedil v oknih</h2>
+          <img src="Form_ProgramSettings_chk_AllowToEditText_yruHTu-hXVZ58B5FYfCGRZb8BzA1.png" />
+          <div class="Description">V kolikor odkljukate "Urejanje besedil v oknih",
+se bo program prestavil v način delovanja, ki omogoča
+neposredno spreminjanje napisov kontrol, kot so gumbi,oznake itd..
+
+
+
+</div>
+        </div>
+      </TControl>
+      <TControl name="Form_ProgramSettings.btn_DBSettings" imageincluded="1" link="" margin="4" heading="h2">
+        <div class="Title">
+          <h2 class="Title" id="b23">Nastavitve podatkovne baze.</h2>
+          <img src="Form_ProgramSettings_btn_DBSettings_as-FvLNeI80SBZGSE_C4-LWnAhg1.png" />
+          <div class="Description">S klikom na zgoraj prikazani gumb se nam prikaže
+dialog za nastavitve podatkovne baze.
+</div>
+        </div>
+      </TControl>
+      <TControl name="Form_ProgramSettings.btn_LogFile" imageincluded="1" link="" margin="4" heading="h2">
+        <div class="Title">
+          <h2 class="Title" id="b24">Dnevniška datoteka</h2>
+          <div class="About">Dnevniška ("Log") datoteka, je datoteka, v katero program Tangenta
+beleži pomembne podatke o lastnem delovanju, predvsem pa napake.
+Dnevniška datoteka služi strokovnjamom in izdelovalcem programa Tangenta,
+da lažje odpravijo napake ali nekatere druge nepravilnosti v delovanju programa.
+
+</div>
+          <img src="Form_ProgramSettings_btn_LogFile_HaAZgVTal3rnOxtIyHO-4KZ3Ekw1.png" />
+          <div class="Description">S klikom na zgornji gumb se nam prikaže dialog, za
+vpogled in nastavitve dnevniške datoteke.
+</div>
+        </div>
+      </TControl>
       <TControl name="Form_ProgramSettings.usrc_ShopsInuse1" imageincluded="1" link="" margin="4" heading="h2">
         <TControl name="Form_ProgramSettings.usrc_ShopsInuse1.grp_ShopsInUse" imageincluded="1" link="" margin="4" heading="h2">
           <div class="Title">
-            <h2 class="Title" id="62a0af58-89a3-416a-9dcc-0c3b08a84002">Shops In Use</h2>
-            <img src="Form_ProgramSettings_usrc_ShopsInuse1_grp_ShopsInUse.png" />
+            <h2 class="Title" id="b26">Prodajalne v uporabi</h2>
+            <img src="Form_ProgramSettings_usrc_ShopsInuse1_grp_ShopsInUse_ZVrZ_3li9p8i_WGfD8Y6GZYQxKQ1.png" />
+            <div class="Description">
+              <p>
+Za tiste prodajalne, ki bodo v uporabi na tem računalniku
+postavite kljukico. Najmanj ena prodajalna mora biti odkljukana!
+</p>
+              <p>
+V kolikor v namestitvenih korakih ob prvem zagonu programa ne določite drugače,
+se imena prodajln postavijo na :"Prodajalna A","Prodajalna B" in "Prodjalna C".
+V zgoraj prikazanih nastavitvah imate možnost, da prodajalne poimenujete v skladu s svojimi potrebami in željami.
+Sprememba imena prodajalne stopi v polno veljavo šele, ko program ponovno zaženete.
+</p>
+            </div>
           </div>
           <TControl name="Form_ProgramSettings.usrc_ShopsInuse1.grp_ShopsInUse.chk_A_in_use" imageincluded="1" link="" margin="4" heading="h2" />
           <TControl name="Form_ProgramSettings.usrc_ShopsInuse1.grp_ShopsInUse.lbl_ShopA_Name" imageincluded="1" link="" margin="4" heading="h2" />
@@ -91,27 +180,136 @@
       </TControl>
       <TControl name="Form_ProgramSettings.grp_ColorSettings" imageincluded="1" link="" margin="4" heading="h2">
         <div class="Title">
-          <h2 class="Title" id="f028d8c4-a485-4a02-af73-38815cf3ec62">Barvne nastavitve</h2>
-          <img src="Form_ProgramSettings_grp_ColorSettings.png" />
+          <h2 class="Title" id="b36">Barvne nastavitve</h2>
+          <div class="About">Spodaj so prikazane barvne nastavitve programa Tangenta.
+Smisel barvnih nastavitev, je v tem, da lažje razlikujemo pomen in vsebino
+pogovornih oken, glede na situacijo in trenutno vsebino.
+V Glavnem dialogu urejamo tako račune ali predračune. Kaj urejemo v glavnem meniju
+določimo z izbiro v glavnem spustnem meniju, v zgornji vrstici glavnega menija.
+Če tam piše "Račun", potem pregledujemo in urejamo račune. Če tam piše "Predračun" pomeni, da urejamo "Predračune".
+Da se lahko hitreje orientioramo kaj sploh urejamo je smiselno, da ima glavni dalog v kontrolni vrstici kadar urejemo račune, drugačni barvi ozadja in besedila 
+kot jo ima kadar urejamo predračune.
+
+
+
+
+
+
+
+
+</div>
+          <img src="Form_ProgramSettings_grp_ColorSettings_UjHTwbLBOZe8E2gjOIppGxcLsKo1.png" />
+          <div class="Description">Izbirate lahko med več <a href="#b38">barvnimi paletami</a>. Barve stopijo v veljavo takoj, ko jih izberete, kar pomeni,
+da vam za njihovo učinkovanje ni potrebno ponovno zagnati računalnika.
+</div>
         </div>
         <TControl name="Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1" imageincluded="1" link="" margin="4" heading="h2">
           <TControl name="Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Nature" imageincluded="1" link="" margin="4" heading="h2">
-            <TControl name="Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Nature.lbl_Col0" imageincluded="1" link="" margin="4" heading="h2" />
-            <TControl name="Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Nature.lbl_Col1" imageincluded="1" link="" margin="4" heading="h2" />
-            <TControl name="Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Nature.lbl_Col2" imageincluded="1" link="" margin="4" heading="h2" />
-            <TControl name="Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Nature.lbl_Col3" imageincluded="1" link="" margin="4" heading="h2" />
-            <TControl name="Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Nature.lbl_Col4" imageincluded="1" link="" margin="4" heading="h2" />
-            <TControl name="Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Nature.lbl_Col5" imageincluded="1" link="" margin="4" heading="h2" />
-            <TControl name="Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Nature.lbl_Col6" imageincluded="1" link="" margin="4" heading="h2" />
-            <TControl name="Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Nature.lbl_Col7" imageincluded="1" link="" margin="4" heading="h2" />
-            <TControl name="Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Nature.lbl_Col8" imageincluded="1" link="" margin="4" heading="h2" />
-            <TControl name="Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Nature.lbl_Col9" imageincluded="1" link="" margin="4" heading="h2" />
-            <TControl name="Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Nature.lbl_Col10" imageincluded="1" link="" margin="4" heading="h2" />
-            <TControl name="Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Nature.lbl_Col11" imageincluded="1" link="" margin="4" heading="h2" />
-            <TControl name="Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Nature.lbl_Col12" imageincluded="1" link="" margin="4" heading="h2" />
-            <TControl name="Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Nature.lbl_Col13" imageincluded="1" link="" margin="4" heading="h2" />
-            <TControl name="Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Nature.lbl_Col14" imageincluded="1" link="" margin="4" heading="h2" />
-            <TControl name="Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Nature.lbl_Col15" imageincluded="1" link="" margin="4" heading="h2" />
+            <div class="Title">
+              <h2 class="Title" id="b38">Barvna paleta</h2>
+              <img src="Form_ProgramSettings_grp_ColorSettings_usrc_SelectColorSheme1_Nature_cPUFIKbRvXwmsTg07NANcG0IfFk1.png" />
+              <div class="Description">Barvna paleta ima svoje ime. Vsaka paleta, ima 16 barvnih parov oštevilčenih od 0 do 15.
+Barvni par sestavljata barva za ozadje in barva pisave.
+Posamezni barvni pari so prikazani spodaj.
+
+</div>
+            </div>
+            <TControl name="Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Nature.lbl_Col0" imageincluded="1" link="" margin="4" heading="h2">
+              <div class="Title">
+                <h2 class="Title" id="b39">Barvna nastavitev za vnos podatkov v tabelo</h2>
+                <img src="Form_ProgramSettings_grp_ColorSettings_usrc_SelectColorSheme1_Nature_lbl_Col0_MQF3bw58jO2z-uTBUUGEO_cH3jo1.png" />
+              </div>
+            </TControl>
+            <TControl name="Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Nature.lbl_Col1" imageincluded="1" link="" margin="4" heading="h2">
+              <div class="Title">
+                <h2 class="Title" id="b40">Barvna nastavitev za vnos podatkov v pod-tabelo</h2>
+                <img src="Form_ProgramSettings_grp_ColorSettings_usrc_SelectColorSheme1_Nature_lbl_Col1_ioLrJ6GLadHN21bMN9NURTjnadw1.png" />
+              </div>
+            </TControl>
+            <TControl name="Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Nature.lbl_Col2" imageincluded="1" link="" margin="4" heading="h2">
+              <div class="Title">
+                <h2 class="Title" id="b41">Barvna nastavitev za vnos podatkov v pod-pod-tabelo</h2>
+                <img src="Form_ProgramSettings_grp_ColorSettings_usrc_SelectColorSheme1_Nature_lbl_Col2_DZh_UN3DmEuoR9nnOKVkkcKPJwk1.png" />
+              </div>
+            </TControl>
+            <TControl name="Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Nature.lbl_Col3" imageincluded="1" link="" margin="4" heading="h2">
+              <div class="Title">
+                <h2 class="Title" id="b42">Barvna nastavitev za vnos podatkov v pod-pod-pod-tabelo</h2>
+                <img src="Form_ProgramSettings_grp_ColorSettings_usrc_SelectColorSheme1_Nature_lbl_Col3_YgWeJPQMvyjAZBTBcVnab035Pjs1.png" />
+              </div>
+            </TControl>
+            <TControl name="Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Nature.lbl_Col4" imageincluded="1" link="" margin="4" heading="h2">
+              <div class="Title">
+                <h2 class="Title" id="b43">Barvi prodajalne A</h2>
+                <img src="Form_ProgramSettings_grp_ColorSettings_usrc_SelectColorSheme1_Nature_lbl_Col4_2WLS_9Sn3aXjpOiu8pHpcc9hIj01.png" />
+              </div>
+            </TControl>
+            <TControl name="Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Nature.lbl_Col5" imageincluded="1" link="" margin="4" heading="h2">
+              <div class="Title">
+                <h2 class="Title" id="b44">Barvi prodajalne B</h2>
+                <img src="Form_ProgramSettings_grp_ColorSettings_usrc_SelectColorSheme1_Nature_lbl_Col5_VVf9dRHOwisX05j9tGpVUWSVpbw1.png" />
+              </div>
+            </TControl>
+            <TControl name="Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Nature.lbl_Col6" imageincluded="1" link="" margin="4" heading="h2">
+              <div class="Title">
+                <h2 class="Title" id="b45">Barvi prodajalne C</h2>
+                <img src="Form_ProgramSettings_grp_ColorSettings_usrc_SelectColorSheme1_Nature_lbl_Col6_Lr9VJMAr-uiP-pq6anUUMlwUR141.png" />
+              </div>
+            </TControl>
+            <TControl name="Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Nature.lbl_Col7" imageincluded="1" link="" margin="4" heading="h2">
+              <div class="Title">
+                <h2 class="Title" id="b46">Barvi glave dokumenta</h2>
+                <img src="Form_ProgramSettings_grp_ColorSettings_usrc_SelectColorSheme1_Nature_lbl_Col7_klOyzGxGrbGgsug6YS-OcfxdH081.png" />
+              </div>
+            </TControl>
+            <TControl name="Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Nature.lbl_Col8" imageincluded="1" link="" margin="4" heading="h2">
+              <div class="Title">
+                <h2 class="Title" id="b47">Barvi artikla v Prodajalni C, ki ni v zalogi</h2>
+                <img src="Form_ProgramSettings_grp_ColorSettings_usrc_SelectColorSheme1_Nature_lbl_Col8_lCGp6bq1gVZwdVnUC9oU_O2qTGE1.png" />
+              </div>
+            </TControl>
+            <TControl name="Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Nature.lbl_Col9" imageincluded="1" link="" margin="4" heading="h2">
+              <div class="Title">
+                <h2 class="Title" id="b48">Barvi zagonskih korakov</h2>
+                <img src="Form_ProgramSettings_grp_ColorSettings_usrc_SelectColorSheme1_Nature_lbl_Col9_4hIrYjtEJlLbsanUe9qWVkOwE3Q1.png" />
+              </div>
+            </TControl>
+            <TControl name="Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Nature.lbl_Col10" imageincluded="1" link="" margin="4" heading="h2">
+              <div class="Title">
+                <h2 class="Title" id="b49">Barvi artikla iz zaloge</h2>
+                <img src="Form_ProgramSettings_grp_ColorSettings_usrc_SelectColorSheme1_Nature_lbl_Col10__gwRlfcZNWj9RHyWLS-Twa2AcK41.png" />
+              </div>
+            </TControl>
+            <TControl name="Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Nature.lbl_Col11" imageincluded="1" link="" margin="4" heading="h2">
+              <div class="Title">
+                <h2 class="Title" id="b50">Barvi urejevalnika dokumentov</h2>
+                <img src="Form_ProgramSettings_grp_ColorSettings_usrc_SelectColorSheme1_Nature_lbl_Col11_Ih0qEQLFOYMgGyQqaKmBRWeBV1w1.png" />
+              </div>
+            </TControl>
+            <TControl name="Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Nature.lbl_Col12" imageincluded="1" link="" margin="4" heading="h2">
+              <div class="Title">
+                <h2 class="Title" id="b51">Barvi preglednice dokumentov</h2>
+                <img src="Form_ProgramSettings_grp_ColorSettings_usrc_SelectColorSheme1_Nature_lbl_Col12_iWRuxJ41auxOR1rJs-Q48sxvQVc1.png" />
+              </div>
+            </TControl>
+            <TControl name="Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Nature.lbl_Col13" imageincluded="1" link="" margin="4" heading="h2">
+              <div class="Title">
+                <h2 class="Title" id="b52">Barvi sporočilnega dialoga</h2>
+                <img src="Form_ProgramSettings_grp_ColorSettings_usrc_SelectColorSheme1_Nature_lbl_Col13_oOXu_qCy6Q6Aqz6RBwYAfYUPpLw1.png" />
+              </div>
+            </TControl>
+            <TControl name="Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Nature.lbl_Col14" imageincluded="1" link="" margin="4" heading="h2">
+              <div class="Title">
+                <h2 class="Title" id="b53">Barvi pri urejanji računov</h2>
+                <img src="Form_ProgramSettings_grp_ColorSettings_usrc_SelectColorSheme1_Nature_lbl_Col14__45YYdE3_FOlMaVZzdzU__U3f3c1.png" />
+              </div>
+            </TControl>
+            <TControl name="Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Nature.lbl_Col15" imageincluded="1" link="" margin="4" heading="h2">
+              <div class="Title">
+                <h2 class="Title" id="b54">Barvi pri urejanju predračunov</h2>
+                <img src="Form_ProgramSettings_grp_ColorSettings_usrc_SelectColorSheme1_Nature_lbl_Col15_OhgDLCM296cGeUxRyDl0Sd6uWQc1.png" />
+              </div>
+            </TControl>
           </TControl>
           <TControl name="Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.rdb_Nature" imageincluded="1" link="" margin="4" heading="h2" />
           <TControl name="Form_ProgramSettings.grp_ColorSettings.usrc_SelectColorSheme1.Techno" imageincluded="1" link="" margin="4" heading="h2">
@@ -250,7 +448,13 @@
         </TControl>
       </TControl>
       <TControl name="Form_ProgramSettings.lbl_AppData" imageincluded="1" link="" margin="4" heading="h2" />
-      <TControl name="Form_ProgramSettings.txt_ApplicationDataFolder" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="Form_ProgramSettings.txt_ApplicationDataFolder" imageincluded="1" link="" margin="4" heading="h2">
+        <div class="Title">
+          <h2 class="Title" id="b183">Mapa lokalnih nastavitev</h2>
+          <div class="About">Povsem na dnu dialoga je prikazana mapa lokalnih nastavitev, kamor se shranjujejo programske nastavitve.</div>
+          <img src="Form_ProgramSettings_txt_ApplicationDataFolder_fqUToEJj3Q1swNraqkkhObq0vuI1.png" />
+        </div>
+      </TControl>
     </TControl>
   </body>
 </html>
