@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <title>Račun ni bil uspešno poslan ali potrjen na davčni upravi</title>
+  </head>
+  <body>
+    <THeader>
+      <div class="header">
+        <canvas id="TangentaLogo" width="60" height="50"></canvas>
+        <script type="text/javascript">
+        var canvas, context, canvaso, contexto;
+        canvaso = document.getElementById('TangentaLogo');
+        context = canvaso.getContext('2d');
+        context.lineWidth = 1;
+
+        // Draw vertical line
+        context.strokeStyle ='#936b20';
+        context.beginPath();
+        context.moveTo(30, 0);
+        context.lineTo(30, 50);
+        context.stroke();
+
+        // Draw large arc
+        context.beginPath();
+        context.arc(54, 26, 24,0.6*Math.PI,1.5*Math.PI, false);
+        context.stroke();
+
+        // Draw head circle
+        context.beginPath();
+        context.fillStyle = "#E2FFB0"/*"#CEF988";*/
+        context.arc(34, 6, 4,0,2*Math.PI, false);
+        context.fill();
+        context.stroke();
+
+        context.closePath();
+        context.restore();
+
+        </script>
+        <div class="header_border_with_radius">
+          <div class="header_menu">
+            <span>
+              <a href="../Tangenta.html">TANGENTA</a>
+            </span>,
+             <span><a href="../Invoice.html">RAČUNI</a></span>,
+             <span><a href="../ProformaInvoice.html">PREDRAČUNI</a></span>,
+             <span><a href="../Stock.html">ZALOGE</a></span>,
+             <span><a href="../PriceList.html">CENIKI</a></span>,
+             <span><a href="../Printing.html">TISKANJE RAČUNOV</a></span>,
+             <span><a href="../InvoicingOverview.html">PREGLED FAKTUR</a></span>,
+             <span><a href="../Support.html">PODPORA</a></span>,
+             <span><a href="../News.html">NOVICE</a></span>,
+             <span><a href="../About.html">O PROGRAMU</a></span></div>
+        </div>
+      </div>
+    </THeader>
+    <TControl name="FormFURSCommunicationERRORhandler" imageincluded="1" link="" margin="4" heading="h1">
+      <div class="Title">
+        <h1 class="Title" id="b358">Račun ni bil uspešno poslan ali potrjen na davčni upravi</h1>
+        <div class="About">Kadar pošiljanje računa davčni upravi ni uspešno se
+pojavi spodnji dialog.
+Program Tangenta bo v podatkovno bazo zabeležil, kateri računi še niso bili davčno potrjeni.
+Ob vsakem ponovnem zagonu vas bo spomnil katere račune ste dožni potrditi.
+Opozarjamo vas, da ne pozabite potrditi nepotrjene davčne račune v roku dveh delovnih dni!
+
+
+</div>
+        <img src="FormFURSCommunicationERRORhandler.png" />
+      </div>
+      <TControl name="FormFURSCommunicationERRORhandler.usrc_Help1" imageincluded="1" link="" margin="4" heading="h2">
+        <TControl name="FormFURSCommunicationERRORhandler.usrc_Help1.btn_Help" imageincluded="1" link="" margin="4" heading="h2" />
+      </TControl>
+      <TControl name="FormFURSCommunicationERRORhandler.lbl_ErrorMessage" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="FormFURSCommunicationERRORhandler.lbl_Message" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="FormFURSCommunicationERRORhandler.btn_SendLater" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="FormFURSCommunicationERRORhandler.btn_TryAagin" imageincluded="1" link="" margin="4" heading="h2" />
+      <TControl name="FormFURSCommunicationERRORhandler.btn_CheckInternetConnection" imageincluded="1" link="" margin="4" heading="h2" />
+    </TControl>
+  </body>
+</html>
