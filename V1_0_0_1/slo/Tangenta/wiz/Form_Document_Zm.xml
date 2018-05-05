@@ -85,7 +85,7 @@ $lt$ul$gt$
           </HelpWizzardTagDC>
           <HelpWizzardTagDC class="usrc_Invoice_Visible$true">
             <li>
-              <a href="#b24">Urejevalnik dokumentov</a> je viden</li>
+              <a href="#b143">Urejevalnik dokumentov</a> je viden</li>
           </HelpWizzardTagDC>
           <HelpWizzardTagDC class="usrc_Invoice_Visible$false">
             <li>Urejevalnik dokumentov ni viden, kar pomeni, da je vidna samo preglednica dokumentov</li>
@@ -229,13 +229,13 @@ kliknemo na levi zgornji gumb z napisom "Nov".</HelpWizzardTagDC>
               </div>
               <img src="Form_Document_m_usrc_Main_pnl_MainMenu_btn_SelectPanels.png" />
               <div class="Description">
-                <HelpWizzardTagDC class="Top$">S klikom na zgornji gumb se nam <a href="../Form_SelectPanels.html">prikaže dialog</a> za prikazovanje <a href="#b24">Urejavalnika</a> in <a href="#b113">Preglednice Dokumentov</a>.</HelpWizzardTagDC>
+                <HelpWizzardTagDC class="Top$">S klikom na zgornji gumb se nam <a href="../Form_SelectPanels.html">prikaže dialog</a> za prikazovanje <a href="#b143">Urejavalnika</a> in <a href="#b113">Preglednice Dokumentov</a>.</HelpWizzardTagDC>
               </div>
             </div>
           </TControl>
           <TControl name="Form_Document.m_usrc_Main.pnl_MainMenu.loginControl1" imageincluded="1" link="" margin="4" heading="h1">
             <div class="Title">
-              <h1 class="Title" id="b24">Urejanje uporabniških pravic</h1>
+              <h1 class="Title" id="b143">Urejanje uporabniških pravic</h1>
               <div class="About">
                 <HelpWizzardTagDC class="ShopA$false">
                   <li>Urejevalnik dokumentov ne prikazuje prodajalne A.</li>
@@ -440,7 +440,7 @@ S klikom na zgoraj prikazani meni, se nam <a href="../LoginControl/AWP_UserManag
           <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1" imageincluded="1" link="" margin="4" heading="h2">
             <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice" imageincluded="1" link="" margin="4" heading="h2">
               <div class="Title">
-                <h2 class="Title" id="#b24">Urejevalnik dokumentov</h2>
+                <h2 class="Title" id="#b143">Urejevalnik dokumentov</h2>
                 <div class="About">
                   <HelpWizzardTagDC class="DocType$Invoice">Prikazan je urejevalnik računov.</HelpWizzardTagDC>
                   <HelpWizzardTagDC class="DocType$ProformaInvoice">Prikazan je urejevalnik predračunov.</HelpWizzardTagDC>
@@ -498,7 +498,7 @@ S klikom na zgoraj prikazani meni, se nam <a href="../LoginControl/AWP_UserManag
 S tem, ko izklopimo prikazovanje glave dokuemnta imamo več prostora za urejanje vsebine računov ali predračunov.</HelpWizzardTagDC>
                     <HelpWizzardTagDC class="DocType$Invoice">
                       <p>
-Kljukica pri "Glavi" pomeni, da bodo v <a href="#b24">Urejevalniku dokumentov</a> vidne tudi kontrole, s katerimi določamo
+Kljukica pri "Glavi" pomeni, da bodo v <a href="#b143">Urejevalniku dokumentov</a> vidne tudi kontrole, s katerimi določamo
 podatke o naši organizaciji in stranki, kateri izstavljamo račun.
 </p>
                       <p>
@@ -508,7 +508,7 @@ je realizarno zato, da je na majhnih zaslonih lahko več prostora za prikaz prod
                     </HelpWizzardTagDC>
                     <HelpWizzardTagDC class="DocType$ProformaInvoice">
                       <p>
-Kljukica pri "Glavi" pomeni, da bodo v <a href="#b24">Urejevalniku dokumentov</a> vidne tudi kontrole, s katerimi določamo
+Kljukica pri "Glavi" pomeni, da bodo v <a href="#b143">Urejevalniku dokumentov</a> vidne tudi kontrole, s katerimi določamo
 podatke o naši organizaciji in stranki, kateri izstavljamo predračun.
 </p>
                       <p>
