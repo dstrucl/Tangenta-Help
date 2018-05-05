@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="../../style.css" />
@@ -404,7 +404,7 @@ odpremo nov predračun</a>.</HelpWizzardTagDC>
                     <li>Urejevalnik dokumentov ne prikazuje prodajalne C.</li>
                   </HelpWizzardTagDC>
                 </div>
-                <img src="Form_Document_m_usrc_Main_splitContainer1_spl1_m_usrc_Invoice_FXSYEqI-xk9lZ-7P3X8nDBsmHxw1.png" />
+                <img src="Form_Document_m_usrc_Main_splitContainer1_spl1_m_usrc_Invoice.png" />
               </div>
               <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.lbl_Number" imageincluded="1" link="" margin="4" heading="h2" />
               <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.txt_Number" imageincluded="1" link="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.lbl_Number" margin="4" heading="h2">
@@ -492,127 +492,93 @@ Dialog za prikaz prodajln nam ponudi v prikaz samo tiste prodajalne, ki so v pro
                 <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.usrc_Currency1.btn_SelectCurrency" imageincluded="1" link="" margin="4" heading="h2" />
               </TControl>
               <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2" imageincluded="1" link="" margin="4" heading="h2">
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl1" imageincluded="1" link="" margin="4" heading="h1">
+                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl1.lbl_MyOrganisation" imageincluded="1" link="" margin="4" heading="h1" />
+                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl1.btn_MyOrganisation" imageincluded="1" link="" margin="4" heading="h1" />
+                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl1.txt_MyOrganisation" imageincluded="1" link="" margin="4" heading="h1" />
+                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl1.usrc_Customer" imageincluded="1" link="" margin="4" heading="h1">
+                    <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl1.usrc_Customer.lbl_Buyer" imageincluded="1" link="" margin="4" heading="h1" />
+                    <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl1.usrc_Customer.btn_Buyer" imageincluded="1" link="" margin="4" heading="h1" />
+                    <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl1.usrc_Customer.cmb_BuyerType" imageincluded="1" link="" margin="4" heading="h1" />
+                  </TControl>
+                </TControl>
                 <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2" imageincluded="1" link="" margin="4" heading="h2">
                   <div class="Title">
                     <h2 class="Title" id="b34">Glava dokumenta</h2>
-                    <img src="Form_Document_m_usrc_Main_splitContainer1_spl1_m_usrc_Invoice_splitContainer2_spl2_LTJPDEf8O2Um7DSXHCCJVCLtVxs1.png" />
+                    <img src="Form_Document_m_usrc_Main_splitContainer1_spl1_m_usrc_Invoice_splitContainer2_spl2_Vz3S8glSbWEZASZMI7vMTfvsK4Y1.png" />
                     <div class="Description">
                       <HelpWizzardTagDC class="Top$">Glava računa vsebuje podatke o prodajalcu in kupcu.</HelpWizzardTagDC>
                     </div>
                   </div>
-                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.lbl_MyOrganisation" imageincluded="1" link="" margin="4" heading="h2" />
-                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.btn_MyOrganisation" imageincluded="1" link="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.lbl_MyOrganisation" margin="4" heading="h2">
-                    <div class="Title">
-                      <h2 class="Title" id="b46">Gumb za urejanje podatkov moje organizacije</h2>
-                      <img src="Form_Document_m_usrc_Main_splitContainer1_spl1_m_usrc_Invoice_splitContainer2_spl2_btn_MyOrganisation_wkt69cWfKOa5e_8GKGnqwAmj7yA1.png" />
-                      <div class="Description">
-                        <HelpWizzardTagDC class="usrc_InvoiceHead_Visible$true">S klikom na zgoraj prikazani gumb se nam odpre dialog, kjer lahko
-urejamo podatke o naši (moji) organizaciji.</HelpWizzardTagDC>
-                      </div>
-                    </div>
-                  </TControl>
-                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.txt_MyOrganisation" imageincluded="1" link="" margin="4" heading="h2" />
-                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.usrc_Customer" imageincluded="1" link="" margin="4" heading="h2">
-                    <div class="Title">
-                      <h2 class="Title" id="b48">Gumb za urejanje podatkov o strankah</h2>
-                      <img src="Form_Document_m_usrc_Main_splitContainer1_spl1_m_usrc_Invoice_splitContainer2_spl2_usrc_Customer_HAE7zaFjE5529iEuOvhaJk87hOc1.png" />
-                      <div class="Description">
-                        <HelpWizzardTagDC class="usrc_InvoiceTable_Visible$true">S klikom na zgoraj prikazani spustni meni,določimo ali gre za stranko
-,ki je fizična ali pravna oseba. Ko to izberemo, se nam omogoči zgornji gumb kjer lahko gremo v dialog za urejanje podatkov o stranki.
-
-</HelpWizzardTagDC>
-                      </div>
-                    </div>
-                    <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.usrc_Customer.lbl_Buyer" imageincluded="1" link="" margin="4" heading="h2" />
-                    <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.usrc_Customer.btn_Buyer" imageincluded="1" link="" margin="4" heading="h2" />
-                    <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.usrc_Customer.cmb_BuyerType" imageincluded="1" link="" margin="4" heading="h2" />
-                  </TControl>
-                </TControl>
-                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3" imageincluded="1" link="" margin="4" heading="h2">
-                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1" imageincluded="1" link="" margin="4" heading="h2">
-                    <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl4" imageincluded="1" link="" margin="4" heading="h2">
-                      <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl4.usrc_ShopA" imageincluded="1" link="" margin="4" heading="h2">
-                        <div class="Title">
-                          <h2 class="Title" id="b45">Prodajalna A</h2>
-                          <img src="Form_Document_m_usrc_Main_splitContainer1_spl1_m_usrc_Invoice_splitContainer2_spl3_splitContainer1_spl4_usrc_ShopA_stkD5KeY-p6d2F278-8-xnRv2741.png" />
-                        </div>
-                        <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl4.usrc_ShopA.lbl_ShopA_Name" imageincluded="1" link="" margin="4" heading="h1" />
-                        <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl4.usrc_ShopA.splitContainer1" imageincluded="1" link="" margin="4" heading="h2">
-                          <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl4.usrc_ShopA.splitContainer1.spl10" imageincluded="1" link="" margin="4" heading="h2">
-                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl4.usrc_ShopA.splitContainer1.spl10.dgvx_ShopA" imageincluded="1" link="" margin="4" heading="h2">
-                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl4.usrc_ShopA.splitContainer1.spl10.dgvx_ShopA.DocInvoice_ShopA_Item_$_aisha_$$Name" imageincluded="0" link="" margin="4" heading="h1" />
-                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl4.usrc_ShopA.splitContainer1.spl10.dgvx_ShopA.DocInvoice_ShopA_Item_$_aisha_$$Description" imageincluded="0" link="" margin="4" heading="h1" />
-                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl4.usrc_ShopA.splitContainer1.spl10.dgvx_ShopA.DocInvoice_ShopA_Item_$_aisha_$_tax_$$Name" imageincluded="0" link="" margin="4" heading="h1" />
-                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl4.usrc_ShopA.splitContainer1.spl10.dgvx_ShopA.DocInvoice_ShopA_Item_$_aisha_$_tax_$$Rate" imageincluded="0" link="" margin="4" heading="h1" />
-                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl4.usrc_ShopA.splitContainer1.spl10.dgvx_ShopA.DocInvoice_ShopA_Item_$_aisha_$_u_$$Name" imageincluded="0" link="" margin="4" heading="h1" />
-                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl4.usrc_ShopA.splitContainer1.spl10.dgvx_ShopA.DocInvoice_ShopA_Item_$$Discount" imageincluded="0" link="" margin="4" heading="h1" />
-                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl4.usrc_ShopA.splitContainer1.spl10.dgvx_ShopA.DocInvoice_ShopA_Item_$$dQuantity" imageincluded="0" link="" margin="4" heading="h1" />
-                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl4.usrc_ShopA.splitContainer1.spl10.dgvx_ShopA.DocInvoice_ShopA_Item_$$PricePerUnit" imageincluded="0" link="" margin="4" heading="h1" />
-                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl4.usrc_ShopA.splitContainer1.spl10.dgvx_ShopA.DocInvoice_ShopA_Item_$$EndPriceWithDiscountAndTax" imageincluded="0" link="" margin="4" heading="h1" />
-                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl4.usrc_ShopA.splitContainer1.spl10.dgvx_ShopA.DocInvoice_ShopA_Item_$$TAX" imageincluded="0" link="" margin="4" heading="h1" />
+                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1" imageincluded="1" link="" margin="4" heading="h1">
+                    <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl1" imageincluded="1" link="" margin="4" heading="h1">
+                      <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl1.usrc_ShopA" imageincluded="1" link="" margin="4" heading="h1">
+                        <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl1.usrc_ShopA.lbl_ShopA_Name" imageincluded="1" link="" margin="4" heading="h1" />
+                        <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl1.usrc_ShopA.splitContainer1" imageincluded="1" link="" margin="4" heading="h1">
+                          <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl1.usrc_ShopA.splitContainer1.spl2" imageincluded="1" link="" margin="4" heading="h1">
+                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl1.usrc_ShopA.splitContainer1.spl2.dgvx_ShopA" imageincluded="1" link="" margin="4" heading="h1">
+                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl1.usrc_ShopA.splitContainer1.spl2.dgvx_ShopA.DocInvoice_ShopA_Item_$_aisha_$$Name" imageincluded="0" link="" margin="4" heading="h1" />
+                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl1.usrc_ShopA.splitContainer1.spl2.dgvx_ShopA.DocInvoice_ShopA_Item_$_aisha_$$Description" imageincluded="0" link="" margin="4" heading="h1" />
+                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl1.usrc_ShopA.splitContainer1.spl2.dgvx_ShopA.DocInvoice_ShopA_Item_$_aisha_$_tax_$$Name" imageincluded="0" link="" margin="4" heading="h1" />
+                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl1.usrc_ShopA.splitContainer1.spl2.dgvx_ShopA.DocInvoice_ShopA_Item_$_aisha_$_tax_$$Rate" imageincluded="0" link="" margin="4" heading="h1" />
+                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl1.usrc_ShopA.splitContainer1.spl2.dgvx_ShopA.DocInvoice_ShopA_Item_$_aisha_$_u_$$Name" imageincluded="0" link="" margin="4" heading="h1" />
+                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl1.usrc_ShopA.splitContainer1.spl2.dgvx_ShopA.DocInvoice_ShopA_Item_$$Discount" imageincluded="0" link="" margin="4" heading="h1" />
+                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl1.usrc_ShopA.splitContainer1.spl2.dgvx_ShopA.DocInvoice_ShopA_Item_$$dQuantity" imageincluded="0" link="" margin="4" heading="h1" />
+                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl1.usrc_ShopA.splitContainer1.spl2.dgvx_ShopA.DocInvoice_ShopA_Item_$$PricePerUnit" imageincluded="0" link="" margin="4" heading="h1" />
+                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl1.usrc_ShopA.splitContainer1.spl2.dgvx_ShopA.DocInvoice_ShopA_Item_$$EndPriceWithDiscountAndTax" imageincluded="0" link="" margin="4" heading="h1" />
+                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl1.usrc_ShopA.splitContainer1.spl2.dgvx_ShopA.DocInvoice_ShopA_Item_$$TAX" imageincluded="0" link="" margin="4" heading="h1" />
                             </TControl>
                           </TControl>
                         </TControl>
                       </TControl>
                     </TControl>
-                    <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11" imageincluded="1" link="" margin="4" heading="h1">
-                      <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3" imageincluded="1" link="" margin="4" heading="h1">
-                        <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12" imageincluded="1" link="" margin="4" heading="h1">
-                          <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopB" imageincluded="1" link="" margin="4" heading="h1">
-                            <div class="Title">
-                              <h1 class="Title" id="b62">Prodajalna B</h1>
-                              <img src="hashname_1590956247_JfCWyr1kctFrUaj0KgX0ht9pAG41.png" />
-                            </div>
-                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopB.lbl_ShopB_Name" imageincluded="1" link="" margin="4" heading="h1" />
-                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopB.usrc_PriceList1" imageincluded="1" link="" margin="4" heading="h1">
-                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopB.usrc_PriceList1.lbl_PriceList" imageincluded="1" link="" margin="4" heading="h1" />
-                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopB.usrc_PriceList1.btn_PriceListType" imageincluded="1" link="" margin="4" heading="h1" />
-                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopB.usrc_PriceList1.cmb_PriceListType" imageincluded="1" link="" margin="4" heading="h1" />
+                    <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2" imageincluded="1" link="" margin="4" heading="h1">
+                      <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3" imageincluded="1" link="" margin="4" heading="h1">
+                        <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl1" imageincluded="1" link="" margin="4" heading="h1">
+                          <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl1.usrc_ShopB" imageincluded="1" link="" margin="4" heading="h1">
+                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl1.usrc_ShopB.lbl_ShopB_Name" imageincluded="1" link="" margin="4" heading="h1" />
+                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl1.usrc_ShopB.usrc_PriceList1" imageincluded="1" link="" margin="4" heading="h1">
+                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl1.usrc_ShopB.usrc_PriceList1.lbl_PriceList" imageincluded="1" link="" margin="4" heading="h1" />
+                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl1.usrc_ShopB.usrc_PriceList1.btn_PriceListType" imageincluded="1" link="" margin="4" heading="h1" />
+                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl1.usrc_ShopB.usrc_PriceList1.cmb_PriceListType" imageincluded="1" link="" margin="4" heading="h1" />
                             </TControl>
-                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopB.lbl_ShopB_Items" imageincluded="1" link="" margin="4" heading="h1" />
-                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopB.btn_edit_ShopB_Items" imageincluded="1" link="" margin="4" heading="h1" />
-                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopB.usrc_Help1" imageincluded="1" link="" margin="4" heading="h1">
-                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopB.usrc_Help1.btn_Help" imageincluded="1" link="" margin="4" heading="h1" />
+                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl1.usrc_ShopB.lbl_ShopB_Items" imageincluded="1" link="" margin="4" heading="h1" />
+                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl1.usrc_ShopB.btn_edit_ShopB_Items" imageincluded="1" link="" margin="4" heading="h1" />
+                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl1.usrc_ShopB.usrc_Help1" imageincluded="1" link="" margin="4" heading="h1">
+                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl1.usrc_ShopB.usrc_Help1.btn_Help" imageincluded="1" link="" margin="4" heading="h1" />
                             </TControl>
-                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopB.splitContainer2" imageincluded="1" link="" margin="4" heading="h1">
-                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopB.splitContainer2.spl13" imageincluded="1" link="" margin="4" heading="h1">
-                                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopB.splitContainer2.spl13.dgv_SelectedShopB_Items" imageincluded="1" link="" margin="4" heading="h1">
-                                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopB.splitContainer2.spl13.dgv_SelectedShopB_Items.btn_discount" imageincluded="0" link="" margin="4" heading="h1" />
-                                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopB.splitContainer2.spl13.dgv_SelectedShopB_Items.total_discount" imageincluded="0" link="" margin="4" heading="h1" />
-                                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopB.splitContainer2.spl13.dgv_SelectedShopB_Items.SelectedSimpleItemName" imageincluded="0" link="" margin="4" heading="h1" />
-                                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopB.splitContainer2.spl13.dgv_SelectedShopB_Items.SelectedSimpleItemPrice" imageincluded="0" link="" margin="4" heading="h1" />
-                                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopB.splitContainer2.spl13.dgv_SelectedShopB_Items.SelectedSimpleItemPriceTax" imageincluded="0" link="" margin="4" heading="h1" />
-                                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopB.splitContainer2.spl13.dgv_SelectedShopB_Items.SelectedSimpleItemPriceWithoutTax" imageincluded="0" link="" margin="4" heading="h1" />
-                                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopB.splitContainer2.spl13.dgv_SelectedShopB_Items.SelectedSimpleItemPriceDiscount" imageincluded="0" link="" margin="4" heading="h1" />
-                                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopB.splitContainer2.spl13.dgv_SelectedShopB_Items.SelectedSimpleItemRetailPricePerUnit" imageincluded="0" link="" margin="4" heading="h1" />
-                                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopB.splitContainer2.spl13.dgv_SelectedShopB_Items.SelectedSimpleItem_Count" imageincluded="0" link="" margin="4" heading="h1" />
-                                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl12.usrc_ShopB.splitContainer2.spl13.dgv_SelectedShopB_Items.SelectedSimpleItem_ExtraDiscount" imageincluded="0" link="" margin="4" heading="h1" />
+                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl1.usrc_ShopB.splitContainer2" imageincluded="1" link="" margin="4" heading="h1">
+                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl1.usrc_ShopB.splitContainer2.spl1" imageincluded="1" link="" margin="4" heading="h1">
+                                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl1.usrc_ShopB.splitContainer2.spl1.dgv_SelectedShopB_Items" imageincluded="1" link="" margin="4" heading="h1">
+                                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl1.usrc_ShopB.splitContainer2.spl1.dgv_SelectedShopB_Items.total_discount" imageincluded="0" link="" margin="4" heading="h1" />
+                                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl1.usrc_ShopB.splitContainer2.spl1.dgv_SelectedShopB_Items.SelectedSimpleItemName" imageincluded="0" link="" margin="4" heading="h1" />
+                                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl1.usrc_ShopB.splitContainer2.spl1.dgv_SelectedShopB_Items.SelectedSimpleItemPrice" imageincluded="0" link="" margin="4" heading="h1" />
+                                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl1.usrc_ShopB.splitContainer2.spl1.dgv_SelectedShopB_Items.SelectedSimpleItemPriceTax" imageincluded="0" link="" margin="4" heading="h1" />
+                                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl1.usrc_ShopB.splitContainer2.spl1.dgv_SelectedShopB_Items.SelectedSimpleItemPriceWithoutTax" imageincluded="0" link="" margin="4" heading="h1" />
+                                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl1.usrc_ShopB.splitContainer2.spl1.dgv_SelectedShopB_Items.SelectedSimpleItemRetailPricePerUnit" imageincluded="0" link="" margin="4" heading="h1" />
+                                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl1.usrc_ShopB.splitContainer2.spl1.dgv_SelectedShopB_Items.SelectedSimpleItem_Count" imageincluded="0" link="" margin="4" heading="h1" />
                                 </TControl>
                               </TControl>
                             </TControl>
                           </TControl>
                         </TControl>
-                        <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl17" imageincluded="1" link="" margin="4" heading="h1">
-                          <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl17.usrc_ShopC" imageincluded="1" link="" margin="4" heading="h1">
-                            <div class="Title">
-                              <h1 class="Title" id="b86">Prodajalna C</h1>
-                              <img src="hashname_-1166733128_J_9unHrTmiaDPfxyQ4ezCUnbyHs1.png" />
-                            </div>
-                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl17.usrc_ShopC.lbl_ShopC_Name" imageincluded="1" link="" margin="4" heading="h1" />
-                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl17.usrc_ShopC.usrc_PriceList1" imageincluded="1" link="" margin="4" heading="h1">
-                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl17.usrc_ShopC.usrc_PriceList1.lbl_PriceList" imageincluded="1" link="" margin="4" heading="h1" />
-                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl17.usrc_ShopC.usrc_PriceList1.btn_PriceListType" imageincluded="1" link="" margin="4" heading="h1" />
-                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl17.usrc_ShopC.usrc_PriceList1.cmb_PriceListType" imageincluded="1" link="" margin="4" heading="h1" />
+                        <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl2" imageincluded="1" link="" margin="4" heading="h1">
+                          <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl2.usrc_ShopC" imageincluded="1" link="" margin="4" heading="h1">
+                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl2.usrc_ShopC.lbl_ShopC_Name" imageincluded="1" link="" margin="4" heading="h1" />
+                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl2.usrc_ShopC.usrc_PriceList1" imageincluded="1" link="" margin="4" heading="h1">
+                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl2.usrc_ShopC.usrc_PriceList1.lbl_PriceList" imageincluded="1" link="" margin="4" heading="h1" />
+                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl2.usrc_ShopC.usrc_PriceList1.btn_PriceListType" imageincluded="1" link="" margin="4" heading="h1" />
+                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl2.usrc_ShopC.usrc_PriceList1.cmb_PriceListType" imageincluded="1" link="" margin="4" heading="h1" />
                             </TControl>
-                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl17.usrc_ShopC.lbl_Stock" imageincluded="1" link="" margin="4" heading="h1" />
-                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl17.usrc_ShopC.btn_Stock" imageincluded="1" link="" margin="4" heading="h1" />
-                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl17.usrc_ShopC.lbl_Items" imageincluded="1" link="" margin="4" heading="h1" />
-                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl17.usrc_ShopC.btn_Items" imageincluded="1" link="" margin="4" heading="h1" />
-                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl17.usrc_ShopC.splitContainer3" imageincluded="1" link="" margin="4" heading="h1">
-                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl17.usrc_ShopC.splitContainer3.spl18" imageincluded="1" link="" margin="4" heading="h1">
-                                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl17.usrc_ShopC.splitContainer3.spl18.usrc_Atom_ItemsList" imageincluded="1" link="" margin="4" heading="h1">
-                                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl17.usrc_ShopC.splitContainer3.spl18.usrc_Atom_ItemsList.m_usrc_Item_PageHandler" imageincluded="1" link="" margin="4" heading="h1" />
-                                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl3.splitContainer1.spl11.splitContainer3.spl17.usrc_ShopC.splitContainer3.spl18.usrc_Atom_ItemsList.pnl_Atom_Items" imageincluded="1" link="" margin="4" heading="h1" />
+                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl2.usrc_ShopC.lbl_Stock" imageincluded="1" link="" margin="4" heading="h1" />
+                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl2.usrc_ShopC.btn_Stock" imageincluded="1" link="" margin="4" heading="h1" />
+                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl2.usrc_ShopC.lbl_Items" imageincluded="1" link="" margin="4" heading="h1" />
+                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl2.usrc_ShopC.btn_Items" imageincluded="1" link="" margin="4" heading="h1" />
+                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl2.usrc_ShopC.splitContainer3" imageincluded="1" link="" margin="4" heading="h1">
+                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl2.usrc_ShopC.splitContainer3.spl1" imageincluded="1" link="" margin="4" heading="h1">
+                                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl2.usrc_ShopC.splitContainer3.spl1.usrc_Atom_ItemsList" imageincluded="1" link="" margin="4" heading="h1">
+                                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl2.usrc_ShopC.splitContainer3.spl1.usrc_Atom_ItemsList.m_usrc_Item_PageHandler" imageincluded="1" link="" margin="4" heading="h1" />
+                                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl2.usrc_ShopC.splitContainer3.spl1.usrc_Atom_ItemsList.pnl_Atom_Items" imageincluded="1" link="" margin="4" heading="h1" />
                                 </TControl>
                               </TControl>
                             </TControl>
@@ -649,10 +615,11 @@ na računu.
               </TControl>
             </TControl>
           </TControl>
-          <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl22" imageincluded="1" link="" margin="4" heading="h1">
-            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl22.m_usrc_InvoiceTable" imageincluded="1" link="" margin="4" heading="h1">
+          <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl2" imageincluded="1" link="" margin="4" heading="h1">
+            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl2.m_usrc_InvoiceTable" imageincluded="1" link="" margin="4" heading="h1">
               <div class="Title">
-                <h1 class="Title" id="b113">Preglednica dokumentov</h1>
+                <h1 class="Title" id="b85">Preglednica dokumentov
+</h1>
                 <div class="About">
                   <HelpWizzardTagDC class="ShopA$false">
                     <li>Urejevalnik dokumentov ne prikazuje prodajalne A.</li>
@@ -664,11 +631,11 @@ na računu.
                     <li>Urejevalnik dokumentov ne prikazuje prodajalne C.</li>
                   </HelpWizzardTagDC>
                 </div>
-                <img src="Form_Document_m_usrc_Main_splitContainer1_spl22_m_usrc_InvoiceTable_EMsgmi7OnNLSP-OBh9UCYP6EZsY1.png" />
+                <img src="Form_Document_m_usrc_Main_splitContainer1_spl2_m_usrc_InvoiceTable.png" />
               </div>
-              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl22.m_usrc_InvoiceTable.btn_TimeSpan" imageincluded="1" link="" margin="4" heading="h1">
+              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl2.m_usrc_InvoiceTable.btn_TimeSpan" imageincluded="1" link="" margin="4" heading="h1">
                 <div class="Title">
-                  <h1 class="Title" id="b114">Gumb za izbiro prikaza dokumentov glede na časovno obdobje.</h1>
+                  <h1 class="Title" id="b86">Prikaz dokumentov časovnega obdobja</h1>
                   <div class="About">
                     <HelpWizzardTagDC class="ShopA$false">
                       <li>Urejevalnik dokumentov ne prikazuje prodajalne A.</li>
@@ -680,61 +647,69 @@ na računu.
                       <li>Urejevalnik dokumentov ne prikazuje prodajalne C.</li>
                     </HelpWizzardTagDC>
                   </div>
-                  <img src="Form_Document_m_usrc_Main_splitContainer1_spl22_m_usrc_InvoiceTable_btn_TimeSpan_8HZir4l8ON35rMnVnl8sKeXBZRI1.png" />
+                  <img src="Form_Document_m_usrc_Main_splitContainer1_spl2_m_usrc_InvoiceTable_btn_TimeSpan.png" />
                 </div>
               </TControl>
-              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl22.m_usrc_InvoiceTable.btn_Print" imageincluded="1" link="" margin="4" heading="h1">
+              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl2.m_usrc_InvoiceTable.btn_Print" imageincluded="1" link="" margin="4" heading="h1">
                 <div class="Title">
-                  <h1 class="Title" id="b115">Izpiski</h1>
-                  <img src="Form_Document_m_usrc_Main_splitContainer1_spl22_m_usrc_InvoiceTable_btn_Print_JKMZJLnSzL1zkEieCtsdOmbhiJs1.png" />
-                  <div class="Description">
-                    <HelpWizzardTagDC class="Top$">S klikom na zgoraj prikazani gumb pridemo v <a href="../Form_PrintReport.html">dialog za izpiske</a>.</HelpWizzardTagDC>
+                  <h1 class="Title" id="b87">Izpiski in poročila</h1>
+                  <div class="About">
+                    <HelpWizzardTagDC class="ShopA$false">
+                      <li>Urejevalnik dokumentov ne prikazuje prodajalne A.</li>
+                    </HelpWizzardTagDC>
+                    <HelpWizzardTagDC class="ShopB$false">
+                      <li>Urejevalnik dokumentov ne prikazuje prodajalne B.</li>
+                    </HelpWizzardTagDC>
+                    <HelpWizzardTagDC class="ShopC$false">
+                      <li>Urejevalnik dokumentov ne prikazuje prodajalne C.</li>
+                    </HelpWizzardTagDC>
                   </div>
+                  <img src="Form_Document_m_usrc_Main_splitContainer1_spl2_m_usrc_InvoiceTable_btn_Print.png" />
                 </div>
               </TControl>
-              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl22.m_usrc_InvoiceTable.lbl_From_To" imageincluded="1" link="" margin="4" heading="h1" />
-              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl22.m_usrc_InvoiceTable.lbl_Payment1" imageincluded="1" link="" margin="4" heading="h1" />
-              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl22.m_usrc_InvoiceTable.lbl_Sum_All" imageincluded="1" link="" margin="4" heading="h1" />
-              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl22.m_usrc_InvoiceTable.lbl_Sum_Tax" imageincluded="1" link="" margin="4" heading="h1" />
-              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl22.m_usrc_InvoiceTable.lbl_Sum_WithoutTax" imageincluded="1" link="" margin="4" heading="h1" />
-              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl22.m_usrc_InvoiceTable.lbl_Payment2" imageincluded="1" link="" margin="4" heading="h1" />
-              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl22.m_usrc_InvoiceTable.dgvx_XInvoice" imageincluded="1" link="" margin="4" heading="h1">
-                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl22.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$$NumberInFinancialYear" imageincluded="0" link="" margin="4" heading="h1" />
-                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl22.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$$GrossSum" imageincluded="0" link="" margin="4" heading="h1" />
-                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl22.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$$FinancialYear" imageincluded="0" link="" margin="4" heading="h1" />
-                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl22.m_usrc_InvoiceTable.dgvx_XInvoice.IssueDate" imageincluded="0" link="" margin="4" heading="h1" />
-                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl22.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$_acusper_$_aper_$_acfn_$$FirstName" imageincluded="0" link="" margin="4" heading="h1" />
-                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl22.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$_acusper_$_aper_$_acln_$$LastName" imageincluded="0" link="" margin="4" heading="h1" />
-                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl22.m_usrc_InvoiceTable.dgvx_XInvoice.PaymentType_Name" imageincluded="0" link="" margin="4" heading="h1" />
-                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl22.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$$NetSum" imageincluded="0" link="" margin="4" heading="h1" />
-                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl22.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$$TaxSum" imageincluded="0" link="" margin="4" heading="h1" />
-                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl22.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$$EventTime" imageincluded="0" link="" margin="4" heading="h1" />
-                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl22.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$$Draft" imageincluded="0" link="" margin="4" heading="h1" />
-                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl22.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$$DraftNumber" imageincluded="0" link="" margin="4" heading="h1" />
-                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl22.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$_acusper_$_aper_$_agsmnper_$$GsmNumber" imageincluded="0" link="" margin="4" heading="h1" />
-                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl22.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$_acusper_$_aper_$_aphnnper_$$PhoneNumber" imageincluded="0" link="" margin="4" heading="h1" />
-                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl22.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$_acusper_$_aper_$_aemailper_$$Email" imageincluded="0" link="" margin="4" heading="h1" />
-                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl22.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$_acusper_$_aper_$$DateOfBirth" imageincluded="0" link="" margin="4" heading="h1" />
-                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl22.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$_acusorg_$_aorg_$$Name" imageincluded="0" link="" margin="4" heading="h1" />
-                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl22.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$_acusorg_$_aorg_$$Tax_ID" imageincluded="0" link="" margin="4" heading="h1" />
-                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl22.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$_acusorg_$_aorg_$$Registration_ID" imageincluded="0" link="" margin="4" heading="h1" />
-                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl22.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$$Paid" imageincluded="0" link="" margin="4" heading="h1" />
-                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl22.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$$Storno" imageincluded="0" link="" margin="4" heading="h1" />
-                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl22.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$$Discount" imageincluded="0" link="" margin="4" heading="h1" />
-                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl22.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$$EndSum" imageincluded="0" link="" margin="4" heading="h1" />
-                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl22.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_awperiod_$_amcper_$_aper_$_acfn_$$FirstName" imageincluded="0" link="" margin="4" heading="h1" />
-                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl22.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_awperiod_$_amcper_$_aper_$_acln_$$LastName" imageincluded="0" link="" margin="4" heading="h1" />
-                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl22.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_awperiod_$_amcper_$_aoffice_$$Name" imageincluded="0" link="" margin="4" heading="h1" />
-                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl22.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_awperiod_$_aed_$$Name" imageincluded="0" link="" margin="4" heading="h1" />
-                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl22.m_usrc_InvoiceTable.dgvx_XInvoice.EOR" imageincluded="0" link="" margin="4" heading="h1" />
-                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl22.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$_fvisbi_$$BarCodeValue" imageincluded="0" link="" margin="4" heading="h1" />
-                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl22.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$_iinv_$_fvisbi_$$InvoiceNumber" imageincluded="0" link="" margin="4" heading="h1" />
-                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl22.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$_iinv_$_fvisbi_$$SetNumber" imageincluded="0" link="" margin="4" heading="h1" />
-                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl22.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$_iinv_$_fvisbi_$$SerialNumber" imageincluded="0" link="" margin="4" heading="h1" />
-                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl22.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$$ID" imageincluded="0" link="" margin="4" heading="h1" />
-                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl22.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_jpinvt_$$ID" imageincluded="0" link="" margin="4" heading="h1" />
-                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl22.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$_fvisres_$$ID" imageincluded="0" link="" margin="4" heading="h1" />
-                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl22.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$_iinv_$_fvisbi_$$ID" imageincluded="0" link="" margin="4" heading="h1" />
+              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl2.m_usrc_InvoiceTable.lbl_From_To" imageincluded="1" link="" margin="4" heading="h1" />
+              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl2.m_usrc_InvoiceTable.lbl_Payment1" imageincluded="1" link="" margin="4" heading="h1" />
+              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl2.m_usrc_InvoiceTable.lbl_Sum_All" imageincluded="1" link="" margin="4" heading="h1" />
+              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl2.m_usrc_InvoiceTable.lbl_Sum_Tax" imageincluded="1" link="" margin="4" heading="h1" />
+              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl2.m_usrc_InvoiceTable.lbl_Sum_WithoutTax" imageincluded="1" link="" margin="4" heading="h1" />
+              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl2.m_usrc_InvoiceTable.lbl_Payment2" imageincluded="1" link="" margin="4" heading="h1" />
+              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl2.m_usrc_InvoiceTable.dgvx_XInvoice" imageincluded="1" link="" margin="4" heading="h1">
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl2.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$$NumberInFinancialYear" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl2.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$$GrossSum" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl2.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$$FinancialYear" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl2.m_usrc_InvoiceTable.dgvx_XInvoice.IssueDate" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl2.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$_acusper_$_aper_$_acfn_$$FirstName" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl2.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$_acusper_$_aper_$_acln_$$LastName" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl2.m_usrc_InvoiceTable.dgvx_XInvoice.PaymentType_Name" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl2.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$$NetSum" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl2.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$$TaxSum" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl2.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$$EventTime" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl2.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$$Draft" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl2.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$$DraftNumber" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl2.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$_acusper_$_aper_$_agsmnper_$$GsmNumber" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl2.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$_acusper_$_aper_$_aphnnper_$$PhoneNumber" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl2.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$_acusper_$_aper_$_aemailper_$$Email" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl2.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$_acusper_$_aper_$$DateOfBirth" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl2.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$_acusorg_$_aorg_$$Name" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl2.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$_acusorg_$_aorg_$$Tax_ID" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl2.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$_acusorg_$_aorg_$$Registration_ID" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl2.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$$Paid" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl2.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$$Storno" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl2.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$$Discount" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl2.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$$EndSum" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl2.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_awperiod_$_amcper_$_aper_$_acfn_$$FirstName" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl2.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_awperiod_$_amcper_$_aper_$_acln_$$LastName" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl2.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_awperiod_$_amcper_$_aoffice_$$Name" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl2.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_awperiod_$_aed_$$Name" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl2.m_usrc_InvoiceTable.dgvx_XInvoice.EOR" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl2.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$_fvisbi_$$BarCodeValue" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl2.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$_iinv_$_fvisbi_$$InvoiceNumber" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl2.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$_iinv_$_fvisbi_$$SetNumber" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl2.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$_iinv_$_fvisbi_$$SerialNumber" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl2.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$$ID" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl2.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_jpinvt_$$ID" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl2.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$_fvisres_$$ID" imageincluded="0" link="" margin="4" heading="h1" />
+                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl2.m_usrc_InvoiceTable.dgvx_XInvoice.JOURNAL_DocInvoice_$_dinv_$_iinv_$_fvisbi_$$ID" imageincluded="0" link="" margin="4" heading="h1" />
               </TControl>
             </TControl>
           </TControl>
