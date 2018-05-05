@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="../../style.css" />
@@ -66,10 +66,10 @@ $lt$ul$gt$
 
 </HelpWizzardTagDC>
           <HelpWizzardTagDC class="DocType$Invoice">
-            <li>Urejamo ali pregledujemo račune</li>
+            <li>Urejamo ali pregledujemo račune.</li>
           </HelpWizzardTagDC>
           <HelpWizzardTagDC class="DocType$ProformaInvoice">
-            <li>Urejamo ali pregledujemo predračune</li>
+            <li>Urejamo ali pregledujemo predračune.</li>
           </HelpWizzardTagDC>
           <HelpWizzardTagDC class="DBEmpty$true">
             <li>Podatkovna baza še nima vnešenih računov ali predračunov oziroma njihovih osnutkov.</li>
@@ -165,7 +165,7 @@ $lt$ul$gt$
           <HelpWizzardTagDC class="Bottom$">$lt$/ul$gt$
 </HelpWizzardTagDC>
         </div>
-        <img src="Form_Document_DHkatu6ZSqSooU5FakkZz99voDk1.png" />
+        <img src="Form_Document.png" />
         <div class="Description">
           <HelpWizzardTagDC class="Top$">Glavni dialog je sestavljen iz treh delov.
 <ul><li><a href="#b18">Kontrolne vrstice</a></li><li><a href="#b24">Urejevalnika dokumentov</a></li><li><a href="#b113">Preglednice dokumentov</a></li></ul></HelpWizzardTagDC>
@@ -390,7 +390,7 @@ odpremo nov predračun</a>.</HelpWizzardTagDC>
           <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1" imageincluded="1" link="" margin="4" heading="h2">
             <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice" imageincluded="1" link="" margin="4" heading="h2">
               <div class="Title">
-                <h2 class="Title" id="#b24">Urejevalnik dokumentov</h2>
+                <h2 class="Title" id="b24">Urejevalnik dokumentov</h2>
                 <div class="About">
                   <HelpWizzardTagDC class="DocType$Invoice">Prikazan je urejevalnik računov.</HelpWizzardTagDC>
                   <HelpWizzardTagDC class="DocType$ProformaInvoice">Prikazan je urejevalnik predračunov.</HelpWizzardTagDC>
