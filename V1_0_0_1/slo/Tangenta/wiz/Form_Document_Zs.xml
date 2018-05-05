@@ -165,7 +165,7 @@ $lt$ul$gt$
           <HelpWizzardTagDC class="Bottom$">$lt$/ul$gt$
 </HelpWizzardTagDC>
         </div>
-        <img src="Form_Document.png" />
+        <img src="Form_Document_RuRQfq1S9kgpd90LOmgbADN_Ol41.png" />
         <div class="Description">
           <HelpWizzardTagDC class="Top$">Glavni dialog je sestavljen iz treh delov.
 <ul><li><a href="#b18">Kontrolne vrstice</a></li><li><a href="#b143">Urejevalnika dokumentov</a></li><li><a href="#b85">Preglednice dokumentov</a></li></ul></HelpWizzardTagDC>
@@ -180,12 +180,6 @@ kliknemo na levi zgornji gumb z napisom "Nov".</HelpWizzardTagDC>
           <div class="Title">
             <h1 class="Title" id="b18">Kontrolna vrstica</h1>
             <div class="About">
-              <HelpWizzardTagDC class="ShopA$false">
-                <li>Urejevalnik dokumentov ne prikazuje prodajalne A.</li>
-              </HelpWizzardTagDC>
-              <HelpWizzardTagDC class="ShopB$false">
-                <li>Urejevalnik dokumentov ne prikazuje prodajalne B.</li>
-              </HelpWizzardTagDC>
               <HelpWizzardTagDC class="ShopC$false">
                 <li>Urejevalnik dokumentov ne prikazuje prodajalne C.</li>
               </HelpWizzardTagDC>
@@ -201,9 +195,6 @@ kliknemo na levi zgornji gumb z napisom "Nov".</HelpWizzardTagDC>
               <div class="About">
                 <HelpWizzardTagDC class="ShopA$false">
                   <li>Urejevalnik dokumentov ne prikazuje prodajalne A.</li>
-                </HelpWizzardTagDC>
-                <HelpWizzardTagDC class="ShopC$false">
-                  <li>Urejevalnik dokumentov ne prikazuje prodajalne C.</li>
                 </HelpWizzardTagDC>
               </div>
               <img src="Form_Document_m_usrc_Main_pnl_MainMenu_btn_New.png" />
@@ -222,9 +213,6 @@ odpremo nov predračun</a>.</HelpWizzardTagDC>
                 <HelpWizzardTagDC class="ShopA$false">
                   <li>Urejevalnik dokumentov ne prikazuje prodajalne A.</li>
                 </HelpWizzardTagDC>
-                <HelpWizzardTagDC class="ShopC$false">
-                  <li>Urejevalnik dokumentov ne prikazuje prodajalne C.</li>
-                </HelpWizzardTagDC>
               </div>
               <img src="Form_Document_m_usrc_Main_pnl_MainMenu_cmb_InvoiceType.png" />
               <div class="Description">
@@ -237,23 +225,12 @@ odpremo nov predračun</a>.</HelpWizzardTagDC>
           <TControl name="Form_Document.m_usrc_Main.pnl_MainMenu.cmb_FinancialYear" imageincluded="1" link="Form_Document.m_usrc_Main.pnl_MainMenu.lbl_FinancialYear" margin="4" heading="h1">
             <div class="Title">
               <h1 class="Title" id="b22">Finančno leto</h1>
-              <img src="Form_Document_m_usrc_Main_pnl_MainMenu_cmb_FinancialYear.png" />
+              <img src="Form_Document_m_usrc_Main_pnl_MainMenu_cmb_FinancialYear_P6Lg0hNKtgWJise1kueAo_2cKm01.png" />
             </div>
           </TControl>
           <TControl name="Form_Document.m_usrc_Main.pnl_MainMenu.btn_SelectPanels" imageincluded="1" link="" margin="4" heading="h1">
             <div class="Title">
               <h1 class="Title" id="b23">Vklop in izklop prikaza Urejevalnika dokumentov ali Predglednice dokumentov</h1>
-              <div class="About">
-                <HelpWizzardTagDC class="ShopA$false">
-                  <li>Urejevalnik dokumentov ne prikazuje prodajalne A.</li>
-                </HelpWizzardTagDC>
-                <HelpWizzardTagDC class="ShopB$false">
-                  <li>Urejevalnik dokumentov ne prikazuje prodajalne B.</li>
-                </HelpWizzardTagDC>
-                <HelpWizzardTagDC class="ShopC$false">
-                  <li>Urejevalnik dokumentov ne prikazuje prodajalne C.</li>
-                </HelpWizzardTagDC>
-              </div>
               <img src="Form_Document_m_usrc_Main_pnl_MainMenu_btn_SelectPanels.png" />
               <div class="Description">
                 <HelpWizzardTagDC class="Top$">S klikom na zgornji gumb se nam <a href="../Form_SelectPanels.html">prikaže dialog</a> za prikazovanje <a href="#b143">Urejavalnika</a> in <a href="#b113">Preglednice Dokumentov</a>.</HelpWizzardTagDC>
@@ -263,17 +240,6 @@ odpremo nov predračun</a>.</HelpWizzardTagDC>
           <TControl name="Form_Document.m_usrc_Main.pnl_MainMenu.btn_CodeTables" imageincluded="1" link="" margin="4" heading="h1">
             <div class="Title">
               <h1 class="Title" id="b28">Gumb za urejanje šifrantov</h1>
-              <div class="About">
-                <HelpWizzardTagDC class="ShopA$false">
-                  <li>Urejevalnik dokumentov ne prikazuje prodajalne A.</li>
-                </HelpWizzardTagDC>
-                <HelpWizzardTagDC class="ShopB$false">
-                  <li>Urejevalnik dokumentov ne prikazuje prodajalne B.</li>
-                </HelpWizzardTagDC>
-                <HelpWizzardTagDC class="ShopC$false">
-                  <li>Urejevalnik dokumentov ne prikazuje prodajalne C.</li>
-                </HelpWizzardTagDC>
-              </div>
               <img src="Form_Document_m_usrc_Main_pnl_MainMenu_btn_CodeTables.png" />
               <div class="Description">
                 <HelpWizzardTagDC class="Top$">S klikom na zgoraj prikazani gumb, se nam <a href="../Form_CodeTables.html">prikaže dialog, kjer lahko izberemo posamezni šifrant in ga nato urejamo</a>.</HelpWizzardTagDC>
@@ -283,17 +249,6 @@ odpremo nov predračun</a>.</HelpWizzardTagDC>
           <TControl name="Form_Document.m_usrc_Main.pnl_MainMenu.usrc_FVI_SLO1" imageincluded="1" link="" margin="4" heading="h1">
             <div class="Title">
               <h1 class="Title" id="b29">Urejanje nastavitev za komunikacijo z davčno upravo</h1>
-              <div class="About">
-                <HelpWizzardTagDC class="ShopA$false">
-                  <li>Urejevalnik dokumentov ne prikazuje prodajalne A.</li>
-                </HelpWizzardTagDC>
-                <HelpWizzardTagDC class="ShopB$false">
-                  <li>Urejevalnik dokumentov ne prikazuje prodajalne B.</li>
-                </HelpWizzardTagDC>
-                <HelpWizzardTagDC class="ShopC$false">
-                  <li>Urejevalnik dokumentov ne prikazuje prodajalne C.</li>
-                </HelpWizzardTagDC>
-              </div>
               <img src="Form_Document_m_usrc_Main_pnl_MainMenu_usrc_FVI_SLO1.png" />
               <div class="Description">
                 <HelpWizzardTagDC class="Top$">S klikom na zgornji gumb se nam <a href="../FiscalVerificationOfInvoices_SLO/Form_MainFiscal.html"> prikaže dialog za urejanje nastavitev komunikacije z davčno upravo</a>.</HelpWizzardTagDC>
@@ -304,17 +259,6 @@ odpremo nov predračun</a>.</HelpWizzardTagDC>
           <TControl name="Form_Document.m_usrc_Main.pnl_MainMenu.usrc_TangentaPrint1" imageincluded="1" link="" margin="4" heading="h1">
             <div class="Title">
               <h1 class="Title" id="b31">Nastavitve tiskanja dokumentov</h1>
-              <div class="About">
-                <HelpWizzardTagDC class="ShopA$false">
-                  <li>Urejevalnik dokumentov ne prikazuje prodajalne A.</li>
-                </HelpWizzardTagDC>
-                <HelpWizzardTagDC class="ShopB$false">
-                  <li>Urejevalnik dokumentov ne prikazuje prodajalne B.</li>
-                </HelpWizzardTagDC>
-                <HelpWizzardTagDC class="ShopC$false">
-                  <li>Urejevalnik dokumentov ne prikazuje prodajalne C.</li>
-                </HelpWizzardTagDC>
-              </div>
               <img src="Form_Document_m_usrc_Main_pnl_MainMenu_usrc_TangentaPrint1.png" />
               <div class="Description">
                 <HelpWizzardTagDC class="Top$">S klikom na zgornji gumb se nam odpre <a href="../TangentaPrint/Form_DefinePrinters.html"> dialog za nastavitve tiskalnikov</a>.</HelpWizzardTagDC>
@@ -325,17 +269,6 @@ odpremo nov predračun</a>.</HelpWizzardTagDC>
           <TControl name="Form_Document.m_usrc_Main.pnl_MainMenu.btn_Settings" imageincluded="1" link="" margin="4" heading="h1">
             <div class="Title">
               <h1 class="Title" id="b33">Programske nastavitve</h1>
-              <div class="About">
-                <HelpWizzardTagDC class="ShopA$false">
-                  <li>Urejevalnik dokumentov ne prikazuje prodajalne A.</li>
-                </HelpWizzardTagDC>
-                <HelpWizzardTagDC class="ShopB$false">
-                  <li>Urejevalnik dokumentov ne prikazuje prodajalne B.</li>
-                </HelpWizzardTagDC>
-                <HelpWizzardTagDC class="ShopC$false">
-                  <li>Urejevalnik dokumentov ne prikazuje prodajalne C.</li>
-                </HelpWizzardTagDC>
-              </div>
               <img src="Form_Document_m_usrc_Main_pnl_MainMenu_btn_Settings.png" />
               <div class="Description">
                 <HelpWizzardTagDC class="Top$">S klikom na zgornji gumb se nam prikaže dialog za <a href="Form_ProgramSettings.html">Programske nastavitve</a>.</HelpWizzardTagDC>
@@ -348,17 +281,6 @@ odpremo nov predračun</a>.</HelpWizzardTagDC>
           <TControl name="Form_Document.m_usrc_Main.pnl_MainMenu.btn_Backup" imageincluded="1" link="" margin="4" heading="h1">
             <div class="Title">
               <h1 class="Title" id="b36">Gumb za dialog o podatkovni bazi</h1>
-              <div class="About">
-                <HelpWizzardTagDC class="ShopA$false">
-                  <li>Urejevalnik dokumentov ne prikazuje prodajalne A.</li>
-                </HelpWizzardTagDC>
-                <HelpWizzardTagDC class="ShopB$false">
-                  <li>Urejevalnik dokumentov ne prikazuje prodajalne B.</li>
-                </HelpWizzardTagDC>
-                <HelpWizzardTagDC class="ShopC$false">
-                  <li>Urejevalnik dokumentov ne prikazuje prodajalne C.</li>
-                </HelpWizzardTagDC>
-              </div>
               <img src="Form_Document_m_usrc_Main_pnl_MainMenu_btn_Backup.png" />
               <div class="Description">
                 <HelpWizzardTagDC class="Top$">S klikom na zgornji gumb se nam prikaže Dialog o podatkovni bazi.</HelpWizzardTagDC>
@@ -368,17 +290,6 @@ odpremo nov predračun</a>.</HelpWizzardTagDC>
           <TControl name="Form_Document.m_usrc_Main.pnl_MainMenu.btn_Exit" imageincluded="1" link="" margin="4" heading="h1">
             <div class="Title">
               <h1 class="Title" id="b37">Izhod iz programa Tangenta</h1>
-              <div class="About">
-                <HelpWizzardTagDC class="ShopA$false">
-                  <li>Urejevalnik dokumentov ne prikazuje prodajalne A.</li>
-                </HelpWizzardTagDC>
-                <HelpWizzardTagDC class="ShopB$false">
-                  <li>Urejevalnik dokumentov ne prikazuje prodajalne B.</li>
-                </HelpWizzardTagDC>
-                <HelpWizzardTagDC class="ShopC$false">
-                  <li>Urejevalnik dokumentov ne prikazuje prodajalne C.</li>
-                </HelpWizzardTagDC>
-              </div>
               <img src="Form_Document_m_usrc_Main_pnl_MainMenu_btn_Exit.png" />
               <div class="Description">
                 <HelpWizzardTagDC class="Top$">S klikon na zgornji gumb končamo delovanje programa Tangenta.</HelpWizzardTagDC>
@@ -395,23 +306,12 @@ odpremo nov predračun</a>.</HelpWizzardTagDC>
                   <HelpWizzardTagDC class="DocType$Invoice">Prikazan je urejevalnik računov.</HelpWizzardTagDC>
                   <HelpWizzardTagDC class="DocType$ProformaInvoice">Prikazan je urejevalnik predračunov.</HelpWizzardTagDC>
                 </div>
-                <img src="Form_Document_m_usrc_Main_splitContainer1_spl1_m_usrc_Invoice.png" />
+                <img src="Form_Document_m_usrc_Main_splitContainer1_spl1_m_usrc_Invoice_3NbWwcyWp_FKk974-TYvhDQR2Oc1.png" />
               </div>
               <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.lbl_Number" imageincluded="1" link="" margin="4" heading="h2" />
               <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.txt_Number" imageincluded="1" link="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.lbl_Number" margin="4" heading="h2">
                 <div class="Title">
                   <h2 class="Title" id="b26">Številka računa</h2>
-                  <div class="About">
-                    <HelpWizzardTagDC class="ShopA$false">
-                      <li>Urejevalnik dokumentov ne prikazuje prodajalne A.</li>
-                    </HelpWizzardTagDC>
-                    <HelpWizzardTagDC class="ShopB$false">
-                      <li>Urejevalnik dokumentov ne prikazuje prodajalne B.</li>
-                    </HelpWizzardTagDC>
-                    <HelpWizzardTagDC class="ShopC$false">
-                      <li>Urejevalnik dokumentov ne prikazuje prodajalne C.</li>
-                    </HelpWizzardTagDC>
-                  </div>
                   <img src="Form_Document_m_usrc_Main_splitContainer1_spl1_m_usrc_Invoice_txt_Number.png" />
                   <div class="Description">
                     <HelpWizzardTagDC class="DocType$Invoice">Zgornja kontrola prikazuje številko računa ali njegovega osnutka.</HelpWizzardTagDC>
@@ -422,17 +322,6 @@ odpremo nov predračun</a>.</HelpWizzardTagDC>
               <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.chk_Head" imageincluded="1" link="" margin="4" heading="h2">
                 <div class="Title">
                   <h2 class="Title" id="b27">Prikaz glave dokumenta</h2>
-                  <div class="About">
-                    <HelpWizzardTagDC class="ShopA$false">
-                      <li>Urejevalnik dokumentov ne prikazuje prodajalne A.</li>
-                    </HelpWizzardTagDC>
-                    <HelpWizzardTagDC class="ShopB$false">
-                      <li>Urejevalnik dokumentov ne prikazuje prodajalne B.</li>
-                    </HelpWizzardTagDC>
-                    <HelpWizzardTagDC class="ShopC$false">
-                      <li>Urejevalnik dokumentov ne prikazuje prodajalne C.</li>
-                    </HelpWizzardTagDC>
-                  </div>
                   <img src="Form_Document_m_usrc_Main_splitContainer1_spl1_m_usrc_Invoice_chk_Head.png" />
                   <div class="Description">
                     <HelpWizzardTagDC class="Top$">Če postavimo kljukico na zgoraj prikazani kontroli se v bo glava dokumenta prikazova sicer pa ne.
@@ -496,7 +385,7 @@ Dialog za prikaz prodajln nam ponudi v prikaz samo tiste prodajalne, ki so v pro
                 <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2" imageincluded="1" link="" margin="4" heading="h2">
                   <div class="Title">
                     <h2 class="Title" id="b34">Glava dokumenta</h2>
-                    <img src="Form_Document_m_usrc_Main_splitContainer1_spl1_m_usrc_Invoice_splitContainer2_spl2.png" />
+                    <img src="Form_Document_m_usrc_Main_splitContainer1_spl1_m_usrc_Invoice_splitContainer2_spl2_YaNDWGj1inTadczvx3AOddsZI2A1.png" />
                     <div class="Description">
                       <HelpWizzardTagDC class="Top$">Glava računa vsebuje podatke o prodajalcu in kupcu.</HelpWizzardTagDC>
                     </div>
@@ -523,63 +412,6 @@ Dialog za prikaz prodajln nam ponudi v prikaz samo tiste prodajalne, ki so v pro
                         </TControl>
                       </TControl>
                     </TControl>
-                    <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2" imageincluded="1" link="" margin="4" heading="h1">
-                      <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3" imageincluded="1" link="" margin="4" heading="h1">
-                        <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl1" imageincluded="1" link="" margin="4" heading="h1">
-                          <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl1.usrc_ShopB" imageincluded="1" link="" margin="4" heading="h1">
-                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl1.usrc_ShopB.lbl_ShopB_Name" imageincluded="1" link="" margin="4" heading="h1" />
-                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl1.usrc_ShopB.usrc_PriceList1" imageincluded="1" link="" margin="4" heading="h1">
-                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl1.usrc_ShopB.usrc_PriceList1.lbl_PriceList" imageincluded="1" link="" margin="4" heading="h1" />
-                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl1.usrc_ShopB.usrc_PriceList1.btn_PriceListType" imageincluded="1" link="" margin="4" heading="h1" />
-                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl1.usrc_ShopB.usrc_PriceList1.cmb_PriceListType" imageincluded="1" link="" margin="4" heading="h1" />
-                            </TControl>
-                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl1.usrc_ShopB.lbl_ShopB_Items" imageincluded="1" link="" margin="4" heading="h1" />
-                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl1.usrc_ShopB.btn_edit_ShopB_Items" imageincluded="1" link="" margin="4" heading="h1" />
-                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl1.usrc_ShopB.usrc_Help1" imageincluded="1" link="" margin="4" heading="h1">
-                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl1.usrc_ShopB.usrc_Help1.btn_Help" imageincluded="1" link="" margin="4" heading="h1" />
-                            </TControl>
-                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl1.usrc_ShopB.splitContainer2" imageincluded="1" link="" margin="4" heading="h1">
-                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl1.usrc_ShopB.splitContainer2.spl1" imageincluded="1" link="" margin="4" heading="h1">
-                                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl1.usrc_ShopB.splitContainer2.spl1.dgv_SelectedShopB_Items" imageincluded="1" link="" margin="4" heading="h1">
-                                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl1.usrc_ShopB.splitContainer2.spl1.dgv_SelectedShopB_Items.btn_discount" imageincluded="0" link="" margin="4" heading="h1" />
-                                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl1.usrc_ShopB.splitContainer2.spl1.dgv_SelectedShopB_Items.total_discount" imageincluded="0" link="" margin="4" heading="h1" />
-                                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl1.usrc_ShopB.splitContainer2.spl1.dgv_SelectedShopB_Items.SelectedSimpleItemName" imageincluded="0" link="" margin="4" heading="h1" />
-                                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl1.usrc_ShopB.splitContainer2.spl1.dgv_SelectedShopB_Items.SelectedSimpleItemPrice" imageincluded="0" link="" margin="4" heading="h1" />
-                                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl1.usrc_ShopB.splitContainer2.spl1.dgv_SelectedShopB_Items.SelectedSimpleItemPriceTax" imageincluded="0" link="" margin="4" heading="h1" />
-                                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl1.usrc_ShopB.splitContainer2.spl1.dgv_SelectedShopB_Items.SelectedSimpleItemPriceWithoutTax" imageincluded="0" link="" margin="4" heading="h1" />
-                                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl1.usrc_ShopB.splitContainer2.spl1.dgv_SelectedShopB_Items.SelectedSimpleItemPriceDiscount" imageincluded="0" link="" margin="4" heading="h1" />
-                                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl1.usrc_ShopB.splitContainer2.spl1.dgv_SelectedShopB_Items.SelectedSimpleItemRetailPricePerUnit" imageincluded="0" link="" margin="4" heading="h1" />
-                                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl1.usrc_ShopB.splitContainer2.spl1.dgv_SelectedShopB_Items.SelectedSimpleItem_Count" imageincluded="0" link="" margin="4" heading="h1" />
-                                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl1.usrc_ShopB.splitContainer2.spl1.dgv_SelectedShopB_Items.SelectedSimpleItem_ExtraDiscount" imageincluded="0" link="" margin="4" heading="h1" />
-                                </TControl>
-                              </TControl>
-                            </TControl>
-                          </TControl>
-                        </TControl>
-                        <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl2" imageincluded="1" link="" margin="4" heading="h1">
-                          <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl2.usrc_ShopC" imageincluded="1" link="" margin="4" heading="h1">
-                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl2.usrc_ShopC.lbl_ShopC_Name" imageincluded="1" link="" margin="4" heading="h1" />
-                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl2.usrc_ShopC.usrc_PriceList1" imageincluded="1" link="" margin="4" heading="h1">
-                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl2.usrc_ShopC.usrc_PriceList1.lbl_PriceList" imageincluded="1" link="" margin="4" heading="h1" />
-                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl2.usrc_ShopC.usrc_PriceList1.btn_PriceListType" imageincluded="1" link="" margin="4" heading="h1" />
-                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl2.usrc_ShopC.usrc_PriceList1.cmb_PriceListType" imageincluded="1" link="" margin="4" heading="h1" />
-                            </TControl>
-                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl2.usrc_ShopC.lbl_Stock" imageincluded="1" link="" margin="4" heading="h1" />
-                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl2.usrc_ShopC.btn_Stock" imageincluded="1" link="" margin="4" heading="h1" />
-                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl2.usrc_ShopC.lbl_Items" imageincluded="1" link="" margin="4" heading="h1" />
-                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl2.usrc_ShopC.btn_Items" imageincluded="1" link="" margin="4" heading="h1" />
-                            <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl2.usrc_ShopC.splitContainer3" imageincluded="1" link="" margin="4" heading="h1">
-                              <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl2.usrc_ShopC.splitContainer3.spl1" imageincluded="1" link="" margin="4" heading="h1">
-                                <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl2.usrc_ShopC.splitContainer3.spl1.usrc_Atom_ItemsList" imageincluded="1" link="" margin="4" heading="h1">
-                                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl2.usrc_ShopC.splitContainer3.spl1.usrc_Atom_ItemsList.m_usrc_Item_PageHandler" imageincluded="1" link="" margin="4" heading="h1" />
-                                  <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl1.m_usrc_Invoice.splitContainer2.spl2.splitContainer1.spl2.splitContainer3.spl2.usrc_ShopC.splitContainer3.spl1.usrc_Atom_ItemsList.pnl_Atom_Items" imageincluded="1" link="" margin="4" heading="h1" />
-                                </TControl>
-                              </TControl>
-                            </TControl>
-                          </TControl>
-                        </TControl>
-                      </TControl>
-                    </TControl>
                   </TControl>
                 </TControl>
               </TControl>
@@ -592,15 +424,6 @@ Dialog za prikaz prodajln nam ponudi v prikaz samo tiste prodajalne, ki so v pro
 na računu.
 
 </HelpWizzardTagDC>
-                    <HelpWizzardTagDC class="ShopA$false">
-                      <li>Urejevalnik dokumentov ne prikazuje prodajalne A.</li>
-                    </HelpWizzardTagDC>
-                    <HelpWizzardTagDC class="ShopB$false">
-                      <li>Urejevalnik dokumentov ne prikazuje prodajalne B.</li>
-                    </HelpWizzardTagDC>
-                    <HelpWizzardTagDC class="ShopC$false">
-                      <li>Urejevalnik dokumentov ne prikazuje prodajalne C.</li>
-                    </HelpWizzardTagDC>
                   </div>
                   <img src="Form_Document_m_usrc_Main_splitContainer1_spl1_m_usrc_Invoice_usrc_AddOn1.png" />
                 </div>
@@ -619,22 +442,11 @@ na računu.
                     <li>Urejevalnik dokumentov ne prikazuje prodajalne A.</li>
                   </HelpWizzardTagDC>
                 </div>
-                <img src="Form_Document_m_usrc_Main_splitContainer1_spl2_m_usrc_InvoiceTable.png" />
+                <img src="Form_Document_m_usrc_Main_splitContainer1_spl2_m_usrc_InvoiceTable_EMsgmi7OnNLSP-OBh9UCYP6EZsY1.png" />
               </div>
               <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl2.m_usrc_InvoiceTable.btn_TimeSpan" imageincluded="1" link="" margin="4" heading="h1">
                 <div class="Title">
                   <h1 class="Title" id="b86">Prikaz dokumentov časovnega obdobja</h1>
-                  <div class="About">
-                    <HelpWizzardTagDC class="ShopA$false">
-                      <li>Urejevalnik dokumentov ne prikazuje prodajalne A.</li>
-                    </HelpWizzardTagDC>
-                    <HelpWizzardTagDC class="ShopB$false">
-                      <li>Urejevalnik dokumentov ne prikazuje prodajalne B.</li>
-                    </HelpWizzardTagDC>
-                    <HelpWizzardTagDC class="ShopC$false">
-                      <li>Urejevalnik dokumentov ne prikazuje prodajalne C.</li>
-                    </HelpWizzardTagDC>
-                  </div>
                   <img src="Form_Document_m_usrc_Main_splitContainer1_spl2_m_usrc_InvoiceTable_btn_TimeSpan.png" />
                   <div class="Description">
                     <HelpWizzardTagDC class="Top$">S klikom na zgoraj prikazani gumb se nam prikaže <a href="../Form_Select_TimeSpan.html">dialog za izbiro obdobja</a> prikazanega v preglednici dokumentov.</HelpWizzardTagDC>
@@ -644,17 +456,6 @@ na računu.
               <TControl name="Form_Document.m_usrc_Main.splitContainer1.spl2.m_usrc_InvoiceTable.btn_Print" imageincluded="1" link="" margin="4" heading="h1">
                 <div class="Title">
                   <h1 class="Title" id="b87">Izpiski in poročila</h1>
-                  <div class="About">
-                    <HelpWizzardTagDC class="ShopA$false">
-                      <li>Urejevalnik dokumentov ne prikazuje prodajalne A.</li>
-                    </HelpWizzardTagDC>
-                    <HelpWizzardTagDC class="ShopB$false">
-                      <li>Urejevalnik dokumentov ne prikazuje prodajalne B.</li>
-                    </HelpWizzardTagDC>
-                    <HelpWizzardTagDC class="ShopC$false">
-                      <li>Urejevalnik dokumentov ne prikazuje prodajalne C.</li>
-                    </HelpWizzardTagDC>
-                  </div>
                   <img src="Form_Document_m_usrc_Main_splitContainer1_spl2_m_usrc_InvoiceTable_btn_Print.png" />
                   <div class="Description">
                     <HelpWizzardTagDC class="Top$">S klikom na zgoraj prikazani gumb se nam prikaže <a href="..//Form_PrintReport.html">dialog za izpiske</a> prikazanega obdobja v preglednici dokumentov.</HelpWizzardTagDC>

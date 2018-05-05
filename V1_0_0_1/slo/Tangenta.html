@@ -8,7 +8,7 @@
  </head>
  <body>
      <div class="relative">
-		 <canvas id="TangentaLogo" width="300" height="500"></canvas>
+		 <canvas id="TangentaLogo" width="300" height="550"></canvas>
 		 <div class = "title_position">TANGENTA</div>
 		 <div class="content">
 			 <div class="keyfeatures">
@@ -40,37 +40,75 @@
 				 iz zaloge ali direktno iz tovarne.
 			 </div>
 		 </div>
-     </div>
+		 
+		 <div class="header_border_with_radius">
+			<div class = "header_menu">
+			 <span><a href="Tangenta.html">TANGENTA</a></span>,
+			 <span><a href="Invoice.html">RAČUNI</a></span>,
+			 <span><a href="ProformaInvoice.html">PREDRAČUNI</a></span>,
+			 <span><a href="Stock.html">ZALOGE</a></span>,
+			 <span><a href="PriceList.html">CENIKI</a></span>,
+			 <span><a href="Printing.html">TISKANJE RAČUNOV</a></span>,
+			 <span><a href="InvoicingOverview.html">PREGLED FAKTUR</a></span>,
+			 <span><a href="Support.html">PODPORA</a></span>,
+			 <span><a href="News.html">NOVICE</a></span>,
+			 <span><a href="About.html">O PROGRAMU</a></span>
+			 </div>
+		</div>		
 
 	 <script type="text/javascript">
-var canvas, context, canvaso, contexto;
-canvaso = document.getElementById('TangentaLogo');
-context = canvaso.getContext('2d');
-context.lineWidth = 2;
+		var canvas, context, canvaso, contexto;
+		canvaso = document.getElementById('TangentaLogo');
+		context = canvaso.getContext('2d');
+		context.lineWidth = 2;
 
-// Draw vertical line
-context.strokeStyle ='#D2B48C';
-context.beginPath();
-context.moveTo(30, 0);
-context.lineTo(30, 500);
-context.stroke();
+		// Draw vertical line
+		context.strokeStyle ='#D2B48C';
+		context.beginPath();
+		context.moveTo(30, 0);
+		context.lineTo(30, 500);
+		context.stroke();
 
-// Draw large arc
-context.beginPath();
-context.arc(272, 259, 240,0.6*Math.PI,1.5*Math.PI, false);
-context.stroke();
+		// Draw large arc
+		context.beginPath();
+		context.arc(272, 259, 240,0.6*Math.PI,1.5*Math.PI, false);
+		context.stroke();
 
-// Draw head circle
-context.beginPath();
-context.fillStyle = "#E2FFB0"/*"#CEF988";*/
-context.arc(72, 60, 40,0,2*Math.PI, false);
-context.fill();
-context.stroke();
+		// Draw head circle
+		context.beginPath();
+		context.fillStyle = "#E2FFB0"/*"#CEF988";*/
+		context.arc(72, 60, 40,0,2*Math.PI, false);
+		context.fill();
+		context.stroke();
+ 		context.closePath();
+		context.lineWidth = 1;
+		
 
-context.closePath();
-context.restore();
+		// Draw vertical line
+		context.strokeStyle ='#936b20';
+		context.beginPath();
+		context.moveTo(30, 500);
+		context.lineTo(30, 550);
+		context.stroke();
 
-</script>
-   
+		// Draw large arc
+		context.beginPath();
+		context.arc(54, 526, 24,0.6*Math.PI,1.5*Math.PI, false);
+		context.stroke();
+
+		// Draw head circle
+		context.beginPath();
+		context.fillStyle = "#E2FFB0"/*"#CEF988";*/
+		context.arc(34, 506, 4,0,2*Math.PI, false);
+		context.fill();
+		context.stroke();
+
+		context.closePath();
+		context.restore();
+
+		</script>
+ 		 
+	</div>
+
 </body>
 </html>
