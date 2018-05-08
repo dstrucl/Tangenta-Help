@@ -104,6 +104,13 @@
         padding-bottom: 0.2cm;
     }
     
+	div.ShopA{
+	 display:block;
+	 position:absolute;
+	 left: 30px;
+     top: 600px;	
+	}
+	
     img {
         padding-top: 0.5cm;
         padding-left: 0.5cm;
