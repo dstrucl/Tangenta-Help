@@ -1580,4 +1580,32 @@
     <ControlUniqueName>nav_SQLiteConnectionDialog.btn_SQLiteInfo</ControlUniqueName>
     <ID>#b390</ID>
   </BookmarkDic>
+  <BookmarkDic>
+    <ControlUniqueName>st_Form_GetDBType.usrc_NavigationButtons1</ControlUniqueName>
+    <ID>#b391</ID>
+  </BookmarkDic>
+  <BookmarkDic>
+    <ControlUniqueName>st_Form_GetDBType.usrc_NavigationButtons1.btn1</ControlUniqueName>
+    <ID>#b392</ID>
+  </BookmarkDic>
+  <BookmarkDic>
+    <ControlUniqueName>st_Form_GetDBType.usrc_NavigationButtons1.btn2</ControlUniqueName>
+    <ID>#b393</ID>
+  </BookmarkDic>
+  <BookmarkDic>
+    <ControlUniqueName>st_Form_GetDBType.usrc_NavigationButtons1.btn3</ControlUniqueName>
+    <ID>#b394</ID>
+  </BookmarkDic>
+  <BookmarkDic>
+    <ControlUniqueName>st_Form_GetDBType.usrc_NavigationButtons1.usrc_Help1</ControlUniqueName>
+    <ID>#b395</ID>
+  </BookmarkDic>
+  <BookmarkDic>
+    <ControlUniqueName>st_Form_GetDBType.usrc_NavigationButtons1.usrc_Help1.btn_Help</ControlUniqueName>
+    <ID>#b396</ID>
+  </BookmarkDic>
+  <BookmarkDic>
+    <ControlUniqueName>st_Form_GetDBType.lbl_SelectDataBase</ControlUniqueName>
+    <ID>#b397</ID>
+  </BookmarkDic>
 </NewDataSet>

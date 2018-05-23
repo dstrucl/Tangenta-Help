@@ -215,6 +215,8 @@ h2{
 
 
 div.Shops{
+	width: 1020px;
+	font-size: 80%;
 	 display:block;
 	 position:absolute;
 	 left: 30px;
