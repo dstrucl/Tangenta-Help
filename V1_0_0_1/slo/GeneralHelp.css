@@ -117,3 +117,23 @@
     }
 
 
+	p.About{
+		color: #936b20;
+        font-size: 100%;
+        padding-top: 0.2cm;
+        padding-left: 0.8cm;
+        padding-right: 0.5cm;
+        padding-bottom: 0.1cm;
+		width: 720px;
+    }
+	
+	ul.About{
+		list-style-type:disc;
+		color: #936b20;
+        font-size: 100%;
+        padding-top: 0.1cm;
+        padding-left: 1.8cm;
+        padding-right: 0.5cm;
+        padding-bottom: 0.2cm;
+		width: 820px;
+    }
